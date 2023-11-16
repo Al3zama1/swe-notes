@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "a205d4c51dfd12bb",
+    "type": "split",
+    "children": [
+      {
+        "id": "53f72f983726e443",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f50609540c5454cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docker/4. Docker File - Build Custom Docker Image.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "be4a053cdfa35459",
+    "type": "split",
+    "children": [
+      {
+        "id": "9640f08cf18ade1b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15a10c3afa389214",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eeb2477e98a3820f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "907affb3c7671d09",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c3b5aeab179f53b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "291c5cf83d2f3b7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30c4b9f932fa72c0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docker/4. Docker File - Build Custom Docker Image.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "02f39caef6f96d6b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docker/4. Docker File - Build Custom Docker Image.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b2ad34e887e7e20b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9ea566714554ffa8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docker/4. Docker File - Build Custom Docker Image.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false
+    }
+  },
+  "active": "f50609540c5454cc",
+  "lastOpenFiles": [
+    "Master Java/concurrency/1. Threads.md",
+    "docker/4. Docker File - Build Custom Docker Image.md",
+    "Master Java/concurrency",
+    "Master Java",
+    "docker/5. Docker Volumes.md",
+    "docker/3. Docker VS Virtual Machines ?.md",
+    "docker/2.  What is a Docker Image?.md",
+    "docker/1. What Is A Container.md",
+    "Design Patterns/0. Design Principles.md",
+    "Pub-Sub/Kafka/4. Distributed System.md",
+    "Pub-Sub/Kafka/3. Consumer Group.md",
+    "Pub-Sub/Kafka/2. Queue vs Pub Sub.md",
+    "Pub-Sub/Kafka/1. Kafka Broker.md",
+    "docker/img/volumes-in-docker-compose.png",
+    "docker/img/named-volume-type.png",
+    "docker/img/anonymous-volume-type.png",
+    "docker/img/host-volume-type.png",
+    "docker/img/create-docker-image.png",
+    "docker/img/docker-image-incompatible-kernel.png",
+    "docker/img",
+    "docker/img/docker-vs-vm.png",
+    "Untitled.md",
+    "docker",
+    "Pub-Sub/Kafka/img/kafka-distributed-consumer.png",
+    "Pub-Sub/Kafka/img/consumer-group-with-multiple-consumers.png",
+    "Pub-Sub/Kafka/img/consumer-broker-flow.png",
+    "projects/Full Stack Reddit Clone Application.md",
+    "projects",
+    "System Design/Capacity Estimation/0. Overview.md",
+    "System Design/Capacity Estimation/1. Traffic Estimation.md",
+    "System Design/Capacity Estimation/2. Storage Estimation.md",
+    "System Design/Capacity Estimation/3. Bandwidth Estimation.md",
+    "System Design/Capacity Estimation/4. Memory Estimation (Caching).md",
+    "Design Patterns/10. Iterator Pattern(Behavioral).md",
+    "System Design/Capacity Estimation",
+    "System Design",
+    "Design Patterns/8. Facade Pattern(structural).md",
+    "Design Patterns/1. Strategy Pattern (Behavioral).md",
+    "Design Patterns/img",
+    "Design Patterns/9. Builder Pattern(Creational).md",
+    "UML",
+    "Design Patterns/7. Adapter Pattern(Structural).md",
+    "Design Patterns/6. Command Pattern (Behavioral).md",
+    "Design Patterns/5. Singleton Pattern (Creational).md",
+    "Design Patterns/3. Decorator Pattern(Structural).md",
+    "Design Patterns",
+    "Untitled.canvas"
+  ]
+}
