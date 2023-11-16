@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docker/4. Docker File - Build Custom Docker Image.md",
+                "file": "Master Java/Concurrency/1.  Java Concurrency And Multithreading.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docker/4. Docker File - Build Custom Docker Image.md",
+                "file": "Master Java/Concurrency/1.  Java Concurrency And Multithreading.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docker/4. Docker File - Build Custom Docker Image.md",
+                "file": "Master Java/Concurrency/1.  Java Concurrency And Multithreading.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docker/4. Docker File - Build Custom Docker Image.md"
+                "file": "Master Java/Concurrency/1.  Java Concurrency And Multithreading.md"
+              }
+            }
+          },
+          {
+            "id": "88c19fe3848f88ef",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
               }
             }
           }
@@ -149,8 +160,11 @@
   },
   "active": "f50609540c5454cc",
   "lastOpenFiles": [
-    "Master Java/concurrency/1. Threads.md",
     "docker/4. Docker File - Build Custom Docker Image.md",
+    "Master Java/Concurrency/1.  Java Concurrency And Multithreading.md",
+    "Master Java/Concurrency",
+    "Master Java",
+    "Master Java/concurrency/1. Threads.md",
     "Master Java/concurrency",
     "Master Java",
     "docker/5. Docker Volumes.md",
@@ -189,12 +203,9 @@
     "Design Patterns/1. Strategy Pattern (Behavioral).md",
     "Design Patterns/img",
     "Design Patterns/9. Builder Pattern(Creational).md",
-    "UML",
     "Design Patterns/7. Adapter Pattern(Structural).md",
     "Design Patterns/6. Command Pattern (Behavioral).md",
     "Design Patterns/5. Singleton Pattern (Creational).md",
-    "Design Patterns/3. Decorator Pattern(Structural).md",
-    "Design Patterns",
     "Untitled.canvas"
   ]
 }
