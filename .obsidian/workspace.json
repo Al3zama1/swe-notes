@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Java/Concurrency/1.  Java Concurrency And Multithreading.md",
+                "file": "Master Java/Concurrency/4. Concurrency Models.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master Java/Concurrency/1.  Java Concurrency And Multithreading.md",
+                "file": "Master Java/Concurrency/4. Concurrency Models.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master Java/Concurrency/1.  Java Concurrency And Multithreading.md",
+                "file": "Master Java/Concurrency/4. Concurrency Models.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Java/Concurrency/1.  Java Concurrency And Multithreading.md"
+                "file": "Master Java/Concurrency/4. Concurrency Models.md"
               }
             }
           },
@@ -160,8 +160,11 @@
   },
   "active": "f50609540c5454cc",
   "lastOpenFiles": [
-    "docker/4. Docker File - Build Custom Docker Image.md",
+    "Master Java/Concurrency/3. Multithreading Costs.md",
+    "Master Java/Concurrency/4. Concurrency Models.md",
+    "Master Java/Concurrency/2. Multithreading Benefits.md",
     "Master Java/Concurrency/1.  Java Concurrency And Multithreading.md",
+    "docker/4. Docker File - Build Custom Docker Image.md",
     "Master Java/Concurrency",
     "Master Java",
     "Master Java/concurrency/1. Threads.md",
@@ -203,9 +206,6 @@
     "Design Patterns/1. Strategy Pattern (Behavioral).md",
     "Design Patterns/img",
     "Design Patterns/9. Builder Pattern(Creational).md",
-    "Design Patterns/7. Adapter Pattern(Structural).md",
-    "Design Patterns/6. Command Pattern (Behavioral).md",
-    "Design Patterns/5. Singleton Pattern (Creational).md",
     "Untitled.canvas"
   ]
 }
