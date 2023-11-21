@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Java/Concurrency/4. Concurrency Models.md",
+                "file": "Master Java/Concurrency/Creating And Starting Threads.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master Java/Concurrency/4. Concurrency Models.md",
+                "file": "Master Java/Concurrency/Creating And Starting Threads.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master Java/Concurrency/4. Concurrency Models.md",
+                "file": "Master Java/Concurrency/Creating And Starting Threads.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Java/Concurrency/4. Concurrency Models.md"
+                "file": "Master Java/Concurrency/Creating And Starting Threads.md"
               }
             }
           },
@@ -159,10 +160,13 @@
   },
   "active": "f50609540c5454cc",
   "lastOpenFiles": [
+    "Master Java/Concurrency/6. Concurrency vs Parallelism.md",
+    "Master Java/Concurrency/Creating And Starting Threads.md",
+    "Master Java/Concurrency/5. Same-Threading.md",
+    "Master Java/Concurrency/4. Concurrency Models.md",
     "Master Java/Concurrency/3. Multithreading Costs.md",
     "Master Java/Concurrency/2. Multithreading Benefits.md",
     "Master Java/Concurrency/1.  Java Concurrency And Multithreading.md",
-    "Master Java/Concurrency/4. Concurrency Models.md",
     "docker/4. Docker File - Build Custom Docker Image.md",
     "Master Java/Concurrency",
     "Master Java",
@@ -201,10 +205,7 @@
     "Design Patterns/10. Iterator Pattern(Behavioral).md",
     "System Design/Capacity Estimation",
     "System Design",
-    "Design Patterns/8. Facade Pattern(structural).md",
-    "Design Patterns/1. Strategy Pattern (Behavioral).md",
     "Design Patterns/img",
-    "Design Patterns/9. Builder Pattern(Creational).md",
     "Untitled.canvas"
   ]
 }
