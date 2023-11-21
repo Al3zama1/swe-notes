@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Java/Concurrency/Creating And Starting Threads.md",
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master Java/Concurrency/Creating And Starting Threads.md",
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master Java/Concurrency/Creating And Starting Threads.md",
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Java/Concurrency/Creating And Starting Threads.md"
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md"
               }
             }
           },
@@ -160,13 +159,20 @@
   },
   "active": "f50609540c5454cc",
   "lastOpenFiles": [
-    "Master Java/Concurrency/6. Concurrency vs Parallelism.md",
-    "Master Java/Concurrency/Creating And Starting Threads.md",
-    "Master Java/Concurrency/5. Same-Threading.md",
-    "Master Java/Concurrency/4. Concurrency Models.md",
-    "Master Java/Concurrency/3. Multithreading Costs.md",
-    "Master Java/Concurrency/2. Multithreading Benefits.md",
-    "Master Java/Concurrency/1.  Java Concurrency And Multithreading.md",
+    "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
+    "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
+    "Master Java/Concurrency/Basics Of Java Concurrency/2. Race Conditions And Critical Sections.md",
+    "Master Java/Concurrency/Basics Of Java Concurrency/1. Creating And Starting Threads.md",
+    "Master Java/Concurrency/Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
+    "Master Java/Concurrency/Problems In Java Concurrency",
+    "Master Java/Concurrency/Untitled.md",
+    "Master Java/Concurrency/Basics Of Java Concurrency",
+    "Master Java/Concurrency/Concurrency And Multithreading Theory",
+    "Master Java/Concurrency/Concurrency And Multithreading Theory/6. Concurrency vs Parallelism.md",
+    "Master Java/Concurrency/Concurrency And Multithreading Theory/5. Same-Threading.md",
+    "Master Java/Concurrency/Concurrency And Multithreading Theory/4. Concurrency Models.md",
+    "Master Java/Concurrency/Concurrency And Multithreading Theory/3. Multithreading Costs.md",
+    "Master Java/Concurrency/Concurrency And Multithreading Theory/2. Multithreading Benefits.md",
     "docker/4. Docker File - Build Custom Docker Image.md",
     "Master Java/Concurrency",
     "Master Java",
@@ -199,13 +205,6 @@
     "projects",
     "System Design/Capacity Estimation/0. Overview.md",
     "System Design/Capacity Estimation/1. Traffic Estimation.md",
-    "System Design/Capacity Estimation/2. Storage Estimation.md",
-    "System Design/Capacity Estimation/3. Bandwidth Estimation.md",
-    "System Design/Capacity Estimation/4. Memory Estimation (Caching).md",
-    "Design Patterns/10. Iterator Pattern(Behavioral).md",
-    "System Design/Capacity Estimation",
-    "System Design",
-    "Design Patterns/img",
     "Untitled.canvas"
   ]
 }
