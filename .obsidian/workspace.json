@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md"
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md"
               }
             }
           },
@@ -159,14 +160,14 @@
   },
   "active": "f50609540c5454cc",
   "lastOpenFiles": [
+    "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
+    "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
+    "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md",
+    "Master Java/Concurrency/Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
     "Master Java/Concurrency/Concurrency And Multithreading Theory/6. Concurrency vs Parallelism.md",
     "Master Java/Concurrency/Concurrency And Multithreading Theory/5. Same-Threading.md",
-    "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
-    "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md",
-    "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
     "Master Java/Concurrency/Basics Of Java Concurrency/2. Race Conditions And Critical Sections.md",
     "Master Java/Concurrency/Basics Of Java Concurrency/1. Creating And Starting Threads.md",
-    "Master Java/Concurrency/Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
     "Master Java/Concurrency/Problems In Java Concurrency",
     "Master Java/Concurrency/Untitled.md",
     "Master Java/Concurrency/Basics Of Java Concurrency",
