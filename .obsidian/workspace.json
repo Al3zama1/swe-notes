@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md",
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/6. Java Happens Before Guarantee.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md",
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/6. Java Happens Before Guarantee.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md",
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/6. Java Happens Before Guarantee.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md"
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/6. Java Happens Before Guarantee.md"
               }
             }
           },
@@ -160,9 +160,10 @@
   },
   "active": "f50609540c5454cc",
   "lastOpenFiles": [
+    "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md",
+    "Master Java/Concurrency/Basics Of Java Concurrency/6. Java Happens Before Guarantee.md",
     "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
     "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
-    "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md",
     "Master Java/Concurrency/Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
     "Master Java/Concurrency/Concurrency And Multithreading Theory/6. Concurrency vs Parallelism.md",
     "Master Java/Concurrency/Concurrency And Multithreading Theory/5. Same-Threading.md",
@@ -205,7 +206,6 @@
     "Pub-Sub/Kafka/img/consumer-broker-flow.png",
     "projects/Full Stack Reddit Clone Application.md",
     "projects",
-    "System Design/Capacity Estimation/0. Overview.md",
     "Untitled.canvas"
   ]
 }
