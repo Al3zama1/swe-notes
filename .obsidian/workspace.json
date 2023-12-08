@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/7. Java Synchronized Blocks.md",
+                "file": "docker/3. Docker VS Virtual Machines ?.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/7. Java Synchronized Blocks.md",
+                "file": "docker/3. Docker VS Virtual Machines ?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/7. Java Synchronized Blocks.md",
+                "file": "docker/3. Docker VS Virtual Machines ?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/7. Java Synchronized Blocks.md"
+                "file": "docker/3. Docker VS Virtual Machines ?.md"
               }
             }
           },
@@ -160,12 +159,18 @@
   },
   "active": "f50609540c5454cc",
   "lastOpenFiles": [
-    "Master Java/Concurrency/Basics Of Java Concurrency/6. Java Happens Before Guarantee.md",
+    "docker/2.  What is a Docker Image?.md",
+    "docker/1. What Is A Container.md",
+    "Master Java/Concurrency/Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
+    "Pub-Sub/Kafka/1. Kafka Broker.md",
+    "Pub-Sub/Kafka/3. Consumer Group.md",
+    "Pub-Sub/Kafka/4. Distributed System.md",
+    "Pub-Sub/Kafka/2. Queue vs Pub Sub.md",
     "Master Java/Concurrency/Basics Of Java Concurrency/7. Java Synchronized Blocks.md",
+    "Master Java/Concurrency/Basics Of Java Concurrency/6. Java Happens Before Guarantee.md",
     "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md",
     "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
     "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
-    "Master Java/Concurrency/Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
     "Master Java/Concurrency/Concurrency And Multithreading Theory/6. Concurrency vs Parallelism.md",
     "Master Java/Concurrency/Concurrency And Multithreading Theory/5. Same-Threading.md",
     "Master Java/Concurrency/Basics Of Java Concurrency/2. Race Conditions And Critical Sections.md",
@@ -185,13 +190,7 @@
     "Master Java",
     "docker/5. Docker Volumes.md",
     "docker/3. Docker VS Virtual Machines ?.md",
-    "docker/2.  What is a Docker Image?.md",
-    "docker/1. What Is A Container.md",
     "Design Patterns/0. Design Principles.md",
-    "Pub-Sub/Kafka/4. Distributed System.md",
-    "Pub-Sub/Kafka/3. Consumer Group.md",
-    "Pub-Sub/Kafka/2. Queue vs Pub Sub.md",
-    "Pub-Sub/Kafka/1. Kafka Broker.md",
     "docker/img/volumes-in-docker-compose.png",
     "docker/img/named-volume-type.png",
     "docker/img/anonymous-volume-type.png",
