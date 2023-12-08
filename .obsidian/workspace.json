@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docker/3. Docker VS Virtual Machines ?.md",
+                "file": "Logging/Consistent Logging.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docker/3. Docker VS Virtual Machines ?.md",
+                "file": "Logging/Consistent Logging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docker/3. Docker VS Virtual Machines ?.md",
+                "file": "Logging/Consistent Logging.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docker/3. Docker VS Virtual Machines ?.md"
+                "file": "Logging/Consistent Logging.md"
               }
             }
           },
@@ -159,6 +160,9 @@
   },
   "active": "f50609540c5454cc",
   "lastOpenFiles": [
+    "docker/3. Docker VS Virtual Machines ?.md",
+    "Logging/Consistent Logging.md",
+    "Logging",
     "docker/2.  What is a Docker Image?.md",
     "docker/1. What Is A Container.md",
     "Master Java/Concurrency/Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
@@ -189,7 +193,6 @@
     "Master Java/concurrency",
     "Master Java",
     "docker/5. Docker Volumes.md",
-    "docker/3. Docker VS Virtual Machines ?.md",
     "Design Patterns/0. Design Principles.md",
     "docker/img/volumes-in-docker-compose.png",
     "docker/img/named-volume-type.png",
@@ -199,12 +202,10 @@
     "docker/img/docker-image-incompatible-kernel.png",
     "docker/img",
     "docker/img/docker-vs-vm.png",
-    "Untitled.md",
     "docker",
     "Pub-Sub/Kafka/img/kafka-distributed-consumer.png",
     "Pub-Sub/Kafka/img/consumer-group-with-multiple-consumers.png",
     "Pub-Sub/Kafka/img/consumer-broker-flow.png",
-    "projects",
     "Untitled.canvas"
   ]
 }
