@@ -13,24 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Logging/Consistent Logging.md",
+                "file": "docker/5. Docker Volumes.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "95757668e7ac6431",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.3"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -80,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Logging/Consistent Logging.md",
+                "file": "docker/5. Docker Volumes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Logging/Consistent Logging.md",
+                "file": "docker/5. Docker Volumes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Logging/Consistent Logging.md"
+                "file": "docker/5. Docker Volumes.md"
               }
             }
           },
@@ -171,13 +159,13 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "95757668e7ac6431",
+  "active": "f50609540c5454cc",
   "lastOpenFiles": [
+    "docker/1. What Is A Container.md",
+    "docker/2.  What is a Docker Image?.md",
     "docker/3. Docker VS Virtual Machines ?.md",
     "Logging/Consistent Logging.md",
     "Logging",
-    "docker/2.  What is a Docker Image?.md",
-    "docker/1. What Is A Container.md",
     "Master Java/Concurrency/Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
     "Pub-Sub/Kafka/1. Kafka Broker.md",
     "Pub-Sub/Kafka/3. Consumer Group.md",
