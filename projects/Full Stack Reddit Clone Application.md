@@ -1,1 +1,0 @@
-Developed a production ready Reddit clone

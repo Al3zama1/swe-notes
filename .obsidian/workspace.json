@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "53f72f983726e443",
+        "id": "544c86a3cb477b57",
         "type": "tabs",
         "children": [
           {
-            "id": "f50609540c5454cc",
+            "id": "4f8eeb09b0e1e908",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
+                "file": "Gradle/2. Gradle Project Structure.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 406.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
+                "file": "Gradle/2. Gradle Project Structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
+                "file": "Gradle/2. Gradle Project Structure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md"
+                "file": "Gradle/2. Gradle Project Structure.md"
               }
             }
           },
@@ -159,54 +160,54 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "f50609540c5454cc",
+  "active": "4f8eeb09b0e1e908",
   "lastOpenFiles": [
-    "Master Java/Concurrency/Basics Of Java Concurrency/2. Race Conditions And Critical Sections.md",
-    "Master Java/Concurrency/Basics Of Java Concurrency/1. Creating And Starting Threads.md",
+    "Gradle/1. Introduction to Gradle.md",
+    "Gradle/2. Gradle Project Structure.md",
+    "build.md",
+    "().md",
+    "Gradle/img/build-gradle-kts-file.png",
+    "Gradle/img",
+    "Logging/Consistent Logging.md",
+    "Gradle",
+    "Master Java/Concurrency/2. Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
+    "Master Java/Concurrency/2. Basics Of Java Concurrency/2. Race Conditions And Critical Sections.md",
+    "Master Java/Concurrency/2. Basics Of Java Concurrency/1. Creating And Starting Threads.md",
     "docker/5. Docker Volumes.md",
     "docker/1. What Is A Container.md",
     "docker/2.  What is a Docker Image?.md",
     "docker/3. Docker VS Virtual Machines ?.md",
-    "Logging/Consistent Logging.md",
     "Logging",
-    "Master Java/Concurrency/Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
+    "Master Java/Concurrency/1. Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
     "Pub-Sub/Kafka/1. Kafka Broker.md",
     "Pub-Sub/Kafka/3. Consumer Group.md",
     "Pub-Sub/Kafka/4. Distributed System.md",
     "Pub-Sub/Kafka/2. Queue vs Pub Sub.md",
-    "Master Java/Concurrency/Basics Of Java Concurrency/7. Java Synchronized Blocks.md",
-    "Master Java/Concurrency/Basics Of Java Concurrency/6. Java Happens Before Guarantee.md",
-    "Master Java/Concurrency/Basics Of Java Concurrency/5. Java Memory Model.md",
-    "Master Java/Concurrency/Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
-    "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
-    "Master Java/Concurrency/Concurrency And Multithreading Theory/6. Concurrency vs Parallelism.md",
-    "Master Java/Concurrency/Concurrency And Multithreading Theory/5. Same-Threading.md",
+    "Master Java/Concurrency/2. Basics Of Java Concurrency/7. Java Synchronized Blocks.md",
+    "Master Java/Concurrency/2. Basics Of Java Concurrency/6. Java Happens Before Guarantee.md",
+    "Master Java/Concurrency/2. Basics Of Java Concurrency/5. Java Memory Model.md",
+    "Master Java/Concurrency/2. Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
+    "Master Java/Concurrency/1. Concurrency And Multithreading Theory/6. Concurrency vs Parallelism.md",
+    "Master Java/Concurrency/1. Concurrency And Multithreading Theory/5. Same-Threading.md",
     "Master Java/Concurrency/Problems In Java Concurrency",
     "Master Java/Concurrency/Untitled.md",
-    "Master Java/Concurrency/Basics Of Java Concurrency",
-    "Master Java/Concurrency/Concurrency And Multithreading Theory",
-    "Master Java/Concurrency/Concurrency And Multithreading Theory/4. Concurrency Models.md",
-    "Master Java/Concurrency/Concurrency And Multithreading Theory/3. Multithreading Costs.md",
-    "Master Java/Concurrency/Concurrency And Multithreading Theory/2. Multithreading Benefits.md",
-    "docker/4. Docker File - Build Custom Docker Image.md",
+    "Master Java/Concurrency/2. Basics Of Java Concurrency",
+    "Master Java/Concurrency/1. Concurrency And Multithreading Theory",
+    "Master Java/Concurrency/1. Concurrency And Multithreading Theory/4. Concurrency Models.md",
+    "Master Java/Concurrency/1. Concurrency And Multithreading Theory/3. Multithreading Costs.md",
     "Master Java/Concurrency",
     "Master Java",
-    "Master Java/concurrency/1. Threads.md",
     "Master Java/concurrency",
     "Master Java",
-    "Design Patterns/0. Design Principles.md",
     "docker/img/volumes-in-docker-compose.png",
     "docker/img/named-volume-type.png",
     "docker/img/anonymous-volume-type.png",
     "docker/img/host-volume-type.png",
     "docker/img/create-docker-image.png",
     "docker/img/docker-image-incompatible-kernel.png",
-    "docker/img",
     "docker/img/docker-vs-vm.png",
-    "docker",
     "Pub-Sub/Kafka/img/kafka-distributed-consumer.png",
     "Pub-Sub/Kafka/img/consumer-group-with-multiple-consumers.png",
-    "Pub-Sub/Kafka/img/consumer-broker-flow.png",
     "Untitled.canvas"
   ]
 }
