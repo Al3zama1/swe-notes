@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docker/5. Docker Volumes.md",
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docker/5. Docker Volumes.md",
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docker/5. Docker Volumes.md",
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docker/5. Docker Volumes.md"
+                "file": "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md"
               }
             }
           },
@@ -161,6 +161,9 @@
   },
   "active": "f50609540c5454cc",
   "lastOpenFiles": [
+    "Master Java/Concurrency/Basics Of Java Concurrency/2. Race Conditions And Critical Sections.md",
+    "Master Java/Concurrency/Basics Of Java Concurrency/1. Creating And Starting Threads.md",
+    "docker/5. Docker Volumes.md",
     "docker/1. What Is A Container.md",
     "docker/2.  What is a Docker Image?.md",
     "docker/3. Docker VS Virtual Machines ?.md",
@@ -178,8 +181,6 @@
     "Master Java/Concurrency/Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
     "Master Java/Concurrency/Concurrency And Multithreading Theory/6. Concurrency vs Parallelism.md",
     "Master Java/Concurrency/Concurrency And Multithreading Theory/5. Same-Threading.md",
-    "Master Java/Concurrency/Basics Of Java Concurrency/2. Race Conditions And Critical Sections.md",
-    "Master Java/Concurrency/Basics Of Java Concurrency/1. Creating And Starting Threads.md",
     "Master Java/Concurrency/Problems In Java Concurrency",
     "Master Java/Concurrency/Untitled.md",
     "Master Java/Concurrency/Basics Of Java Concurrency",
@@ -193,7 +194,6 @@
     "Master Java/concurrency/1. Threads.md",
     "Master Java/concurrency",
     "Master Java",
-    "docker/5. Docker Volumes.md",
     "Design Patterns/0. Design Principles.md",
     "docker/img/volumes-in-docker-compose.png",
     "docker/img/named-volume-type.png",
