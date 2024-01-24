@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gradle/3. How Gradle Works With Java.md",
+                "file": "Gradle/5. The Gradle Task Graph.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gradle/3. How Gradle Works With Java.md",
+                "file": "Gradle/5. The Gradle Task Graph.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Gradle/3. How Gradle Works With Java.md",
+                "file": "Gradle/5. The Gradle Task Graph.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Gradle/3. How Gradle Works With Java.md"
+                "file": "Gradle/5. The Gradle Task Graph.md"
               }
             }
           },
@@ -160,14 +160,16 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "4f8eeb09b0e1e908",
   "lastOpenFiles": [
+    "Gradle/4. Kotlin Essentials For Gradle.md",
+    "Gradle/5. The Gradle Task Graph.md",
+    "Gradle/3. How Gradle Works With Java.md",
     "Gradle/img/gradle-project layout.png",
     "Gradle/img/project-dependencies-showcase.png",
     "Gradle/img/gradle-jar-output-location.png",
     "Gradle/img/gradle-resources-output-location.png",
     "Gradle/img/single-project-strucute-format.png",
-    "Gradle/3. How Gradle Works With Java.md",
     "Gradle/img/gradle-compile-output-location.png",
     "Gradle/2. Gradle Project Structure.md",
     "build.md",
@@ -197,7 +199,6 @@
     "Master Java/Concurrency/1. Concurrency And Multithreading Theory/6. Concurrency vs Parallelism.md",
     "Master Java/Concurrency/1. Concurrency And Multithreading Theory/5. Same-Threading.md",
     "Master Java/Concurrency/Problems In Java Concurrency",
-    "Master Java/Concurrency/Untitled.md",
     "Master Java/Concurrency/2. Basics Of Java Concurrency",
     "Master Java/Concurrency/1. Concurrency And Multithreading Theory",
     "Master Java/Concurrency",
@@ -207,7 +208,6 @@
     "docker/img/volumes-in-docker-compose.png",
     "docker/img/named-volume-type.png",
     "docker/img/anonymous-volume-type.png",
-    "docker/img/host-volume-type.png",
     "Untitled.canvas"
   ]
 }
