@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gradle/2. Gradle Project Structure.md",
+                "file": "Gradle/3. How Gradle Works With Java.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gradle/2. Gradle Project Structure.md",
+                "file": "Gradle/3. How Gradle Works With Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Gradle/2. Gradle Project Structure.md",
+                "file": "Gradle/3. How Gradle Works With Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Gradle/2. Gradle Project Structure.md"
+                "file": "Gradle/3. How Gradle Works With Java.md"
               }
             }
           },
@@ -160,12 +160,19 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "4f8eeb09b0e1e908",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
-    "Gradle/1. Introduction to Gradle.md",
+    "Gradle/img/gradle-project layout.png",
+    "Gradle/img/project-dependencies-showcase.png",
+    "Gradle/img/gradle-jar-output-location.png",
+    "Gradle/img/gradle-resources-output-location.png",
+    "Gradle/img/single-project-strucute-format.png",
+    "Gradle/3. How Gradle Works With Java.md",
+    "Gradle/img/gradle-compile-output-location.png",
     "Gradle/2. Gradle Project Structure.md",
     "build.md",
     "().md",
+    "Gradle/1. Introduction to Gradle.md",
     "Gradle/img/build-gradle-kts-file.png",
     "Gradle/img",
     "Logging/Consistent Logging.md",
@@ -193,8 +200,6 @@
     "Master Java/Concurrency/Untitled.md",
     "Master Java/Concurrency/2. Basics Of Java Concurrency",
     "Master Java/Concurrency/1. Concurrency And Multithreading Theory",
-    "Master Java/Concurrency/1. Concurrency And Multithreading Theory/4. Concurrency Models.md",
-    "Master Java/Concurrency/1. Concurrency And Multithreading Theory/3. Multithreading Costs.md",
     "Master Java/Concurrency",
     "Master Java",
     "Master Java/concurrency",
@@ -203,11 +208,6 @@
     "docker/img/named-volume-type.png",
     "docker/img/anonymous-volume-type.png",
     "docker/img/host-volume-type.png",
-    "docker/img/create-docker-image.png",
-    "docker/img/docker-image-incompatible-kernel.png",
-    "docker/img/docker-vs-vm.png",
-    "Pub-Sub/Kafka/img/kafka-distributed-consumer.png",
-    "Pub-Sub/Kafka/img/consumer-group-with-multiple-consumers.png",
     "Untitled.canvas"
   ]
 }
