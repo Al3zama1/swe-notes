@@ -160,10 +160,12 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "4f8eeb09b0e1e908",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
-    "Gradle/4. Kotlin Essentials For Gradle.md",
+    "Gradle/img/java-plugin-task-graph.png",
+    "Gradle/img/task-graph.png",
     "Gradle/5. The Gradle Task Graph.md",
+    "Gradle/4. Kotlin Essentials For Gradle.md",
     "Gradle/3. How Gradle Works With Java.md",
     "Gradle/img/gradle-project layout.png",
     "Gradle/img/project-dependencies-showcase.png",
@@ -197,7 +199,6 @@
     "Master Java/Concurrency/2. Basics Of Java Concurrency/5. Java Memory Model.md",
     "Master Java/Concurrency/2. Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
     "Master Java/Concurrency/1. Concurrency And Multithreading Theory/6. Concurrency vs Parallelism.md",
-    "Master Java/Concurrency/1. Concurrency And Multithreading Theory/5. Same-Threading.md",
     "Master Java/Concurrency/Problems In Java Concurrency",
     "Master Java/Concurrency/2. Basics Of Java Concurrency",
     "Master Java/Concurrency/1. Concurrency And Multithreading Theory",
@@ -207,7 +208,6 @@
     "Master Java",
     "docker/img/volumes-in-docker-compose.png",
     "docker/img/named-volume-type.png",
-    "docker/img/anonymous-volume-type.png",
     "Untitled.canvas"
   ]
 }
