@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Design Patterns/4. Factory Patterns (Creational).md",
+                "file": "Design Patterns/6. Command Pattern (Behavioral).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Design Patterns/4. Factory Patterns (Creational).md",
+                "file": "Design Patterns/6. Command Pattern (Behavioral).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Design Patterns/4. Factory Patterns (Creational).md",
+                "file": "Design Patterns/6. Command Pattern (Behavioral).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Design Patterns/4. Factory Patterns (Creational).md"
+                "file": "Design Patterns/6. Command Pattern (Behavioral).md"
               }
             }
           },
@@ -161,6 +161,8 @@
   },
   "active": "4f8eeb09b0e1e908",
   "lastOpenFiles": [
+    "Design Patterns/5. Singleton Pattern (Creational).md",
+    "Design Patterns/4. Factory Patterns (Creational).md",
     "Design Patterns/3. Decorator Pattern(Structural).md",
     "Design Patterns/2. Observer Pattern (Behavioral).md",
     "Design Patterns/0. Design Principles.md",
@@ -197,8 +199,6 @@
     "Pub-Sub/Kafka/3. Consumer Group.md",
     "Pub-Sub/Kafka/4. Distributed System.md",
     "Pub-Sub/Kafka/2. Queue vs Pub Sub.md",
-    "Master Java/Concurrency/2. Basics Of Java Concurrency/7. Java Synchronized Blocks.md",
-    "Master Java/Concurrency/2. Basics Of Java Concurrency/6. Java Happens Before Guarantee.md",
     "Master Java/Concurrency/Problems In Java Concurrency",
     "Master Java/Concurrency/2. Basics Of Java Concurrency",
     "Master Java/Concurrency/1. Concurrency And Multithreading Theory",
