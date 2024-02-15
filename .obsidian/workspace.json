@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "redis/2. Keys Expiration Time (TTL).md",
+                "file": "redis/3. Strings.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis/2. Keys Expiration Time (TTL).md",
+                "file": "redis/3. Strings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "redis/2. Keys Expiration Time (TTL).md",
+                "file": "redis/3. Strings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "redis/2. Keys Expiration Time (TTL).md"
+                "file": "redis/3. Strings.md"
               }
             }
           },
@@ -162,8 +162,9 @@
   },
   "active": "aa014ffb0612c092",
   "lastOpenFiles": [
-    "redis/1. Data Types.md",
     "redis/2. Keys Expiration Time (TTL).md",
+    "redis/3. Strings.md",
+    "redis/1. Data Types.md",
     "redis/img/keys-vs-scan.png",
     "redis/img",
     "Design Patterns/6. Command Pattern (Behavioral).md",
@@ -202,7 +203,6 @@
     "docker/3. Docker VS Virtual Machines ?.md",
     "Logging",
     "Master Java/Concurrency/1. Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
-    "Pub-Sub/Kafka/1. Kafka Broker.md",
     "Master Java/Concurrency/Problems In Java Concurrency",
     "Master Java/Concurrency/2. Basics Of Java Concurrency",
     "Master Java/Concurrency/1. Concurrency And Multithreading Theory",
