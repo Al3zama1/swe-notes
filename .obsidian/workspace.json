@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "redis/4. Hashes.md",
+                "file": "redis/5. Lists.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis/4. Hashes.md",
+                "file": "redis/5. Lists.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "redis/4. Hashes.md",
+                "file": "redis/5. Lists.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "redis/4. Hashes.md"
+                "file": "redis/5. Lists.md"
               }
             }
           },
@@ -162,10 +162,11 @@
   },
   "active": "aa014ffb0612c092",
   "lastOpenFiles": [
+    "redis/2. Keys Expiration Time (TTL).md",
+    "redis/5. Lists.md",
+    "redis/4. Hashes.md",
     "redis/1. Key Space.md",
     "redis/3. Strings.md",
-    "redis/4. Hashes.md",
-    "redis/2. Keys Expiration Time (TTL).md",
     "redis/img/keys-vs-scan.png",
     "redis/img",
     "Design Patterns/6. Command Pattern (Behavioral).md",
@@ -201,7 +202,6 @@
     "docker/5. Docker Volumes.md",
     "docker/1. What Is A Container.md",
     "docker/2.  What is a Docker Image?.md",
-    "docker/3. Docker VS Virtual Machines ?.md",
     "Logging",
     "Master Java/Concurrency/Problems In Java Concurrency",
     "Master Java/Concurrency/2. Basics Of Java Concurrency",
