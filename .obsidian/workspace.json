@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "544c86a3cb477b57",
+        "id": "10b94a76d180a996",
         "type": "tabs",
         "children": [
           {
-            "id": "4f8eeb09b0e1e908",
+            "id": "aa014ffb0612c092",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Design Patterns/6. Command Pattern (Behavioral).md",
+                "file": "redis/2. Keys Expiration Time (TTL).md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 406.5
+    "width": 406.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Design Patterns/6. Command Pattern (Behavioral).md",
+                "file": "redis/2. Keys Expiration Time (TTL).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Design Patterns/6. Command Pattern (Behavioral).md",
+                "file": "redis/2. Keys Expiration Time (TTL).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Design Patterns/6. Command Pattern (Behavioral).md"
+                "file": "redis/2. Keys Expiration Time (TTL).md"
               }
             }
           },
@@ -159,8 +160,14 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "4f8eeb09b0e1e908",
+  "active": "aa014ffb0612c092",
   "lastOpenFiles": [
+    "redis/1. Data Types.md",
+    "redis/2. Keys Expiration Time (TTL).md",
+    "redis/img/keys-vs-scan.png",
+    "redis/img",
+    "Design Patterns/6. Command Pattern (Behavioral).md",
+    "redis",
     "Design Patterns/5. Singleton Pattern (Creational).md",
     "Design Patterns/4. Factory Patterns (Creational).md",
     "Design Patterns/3. Decorator Pattern(Structural).md",
@@ -196,17 +203,11 @@
     "Logging",
     "Master Java/Concurrency/1. Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
     "Pub-Sub/Kafka/1. Kafka Broker.md",
-    "Pub-Sub/Kafka/3. Consumer Group.md",
-    "Pub-Sub/Kafka/4. Distributed System.md",
-    "Pub-Sub/Kafka/2. Queue vs Pub Sub.md",
     "Master Java/Concurrency/Problems In Java Concurrency",
     "Master Java/Concurrency/2. Basics Of Java Concurrency",
     "Master Java/Concurrency/1. Concurrency And Multithreading Theory",
     "Master Java/Concurrency",
     "Master Java",
-    "Master Java/concurrency",
-    "Master Java",
-    "docker/img/volumes-in-docker-compose.png",
     "Untitled.canvas"
   ]
 }
