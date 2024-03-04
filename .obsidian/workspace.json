@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "redis/5. Lists.md",
+                "file": "Gradle/1. Introduction to Gradle.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "503cc60dbde8de41",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.8"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 406.5,
-    "collapsed": true
+    "width": 406.5
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis/5. Lists.md",
+                "file": "Gradle/1. Introduction to Gradle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "redis/5. Lists.md",
+                "file": "Gradle/1. Introduction to Gradle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "redis/5. Lists.md"
+                "file": "Gradle/1. Introduction to Gradle.md"
               }
             }
           },
@@ -160,10 +170,15 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "aa014ffb0612c092",
+  "active": "503cc60dbde8de41",
   "lastOpenFiles": [
-    "redis/2. Keys Expiration Time (TTL).md",
+    "Gradle/5. The Gradle Task Graph.md",
+    "Gradle/4. Kotlin Essentials For Gradle.md",
+    "Gradle/3. How Gradle Works With Java.md",
+    "Gradle/2. Gradle Project Structure.md",
+    "Gradle/1. Introduction to Gradle.md",
     "redis/5. Lists.md",
+    "redis/2. Keys Expiration Time (TTL).md",
     "redis/4. Hashes.md",
     "redis/1. Key Space.md",
     "redis/3. Strings.md",
@@ -177,9 +192,6 @@
     "Design Patterns/2. Observer Pattern (Behavioral).md",
     "Design Patterns/0. Design Principles.md",
     "Design Patterns/1. Strategy Pattern (Behavioral).md",
-    "Gradle/3. How Gradle Works With Java.md",
-    "Gradle/4. Kotlin Essentials For Gradle.md",
-    "Gradle/5. The Gradle Task Graph.md",
     "Gradle/img/java-plugin-task-graph.png",
     "Gradle/img/task-graph.png",
     "Gradle/img/gradle-project layout.png",
@@ -188,10 +200,8 @@
     "Gradle/img/gradle-resources-output-location.png",
     "Gradle/img/single-project-strucute-format.png",
     "Gradle/img/gradle-compile-output-location.png",
-    "Gradle/2. Gradle Project Structure.md",
     "build.md",
     "().md",
-    "Gradle/1. Introduction to Gradle.md",
     "Gradle/img/build-gradle-kts-file.png",
     "Gradle/img",
     "Logging/Consistent Logging.md",
