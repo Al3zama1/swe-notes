@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3868f514db8aceaa",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.11"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -159,7 +170,7 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "aa014ffb0612c092",
+  "active": "3868f514db8aceaa",
   "lastOpenFiles": [
     "Gradle/5. The Gradle Task Graph.md",
     "Gradle/4. Kotlin Essentials For Gradle.md",
