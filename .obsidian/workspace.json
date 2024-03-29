@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "238487910e6822d9",
+        "id": "e62d4f3651d2582e",
         "type": "tabs",
         "children": [
           {
-            "id": "7fd4f3228338601e",
+            "id": "a5129d53bfb62bee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/IPv4 Addressing.md",
+                "file": "CCNA/Interfaces and Cables.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 406.5,
-    "collapsed": true
+    "width": 252.5
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/IPv4 Addressing.md",
+                "file": "CCNA/Interfaces and Cables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/IPv4 Addressing.md",
+                "file": "CCNA/Interfaces and Cables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/IPv4 Addressing.md"
+                "file": "CCNA/Interfaces and Cables.md"
               }
             }
           },
@@ -160,17 +159,28 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "7fd4f3228338601e",
+  "active": "a5129d53bfb62bee",
   "lastOpenFiles": [
-    "CCNA/img/router-interface-brief.png",
-    "CCNA/img/maximum-hosts-per-network.png",
-    "ipv4-address-classes-details.md",
+    "CCNA/Ethernet LAN Switching.md",
+    "CCNA/CLI Introduction.md",
+    "CCNA/OSI Model & TCP-IP.md",
+    "CCNA/img/osi-versus-tcp-ip.png",
+    "CCNA/img/osi-pdus.png",
+    "CCNA/Interfaces and Cables.md",
+    "CCNA/img/rj-45-four-pairs.png",
+    "CCNA/Network Devices.md",
     "CCNA/IPv4 Addressing.md",
-    "CCNA/img/ipv4-address-classes-details.png",
+    "CCNA/img/utp-fiber-comarison.png",
+    "CCNA/img/fiber-optic-cable-standards.png",
+    "CCNA/img/router-interface-brief.png",
+    "CCNA/img/fiber-optic-cable-structure.png",
+    "CCNA/img/fiber-optic-cable.png",
+    "CCNA/img/rj-45-transmit-receive.png",
+    "CCNA/img/rj-45-crossover-cable.png",
+    "ipv4-address-classes-details.md",
     "Untitled.md",
     "img/ipv4-address-classes.md",
     "img",
-    "CCNA/img/ipv4-address-classes.png",
     "Gradle/1. Introduction to Gradle.md",
     "CCNA/img",
     "CCNA",
@@ -183,7 +193,6 @@
     "redis/4. Hashes.md",
     "redis/1. Key Space.md",
     "redis/3. Strings.md",
-    "redis/img/keys-vs-scan.png",
     "redis/img",
     "Design Patterns/6. Command Pattern (Behavioral).md",
     "redis",
@@ -193,18 +202,8 @@
     "Design Patterns/2. Observer Pattern (Behavioral).md",
     "Design Patterns/0. Design Principles.md",
     "Design Patterns/1. Strategy Pattern (Behavioral).md",
-    "Gradle/img/java-plugin-task-graph.png",
-    "Gradle/img/task-graph.png",
-    "Gradle/img/gradle-project layout.png",
-    "Gradle/img/project-dependencies-showcase.png",
-    "Gradle/img/gradle-jar-output-location.png",
-    "Gradle/img/gradle-resources-output-location.png",
-    "build.md",
-    "().md",
     "Gradle/img",
-    "Logging/Consistent Logging.md",
     "Gradle",
-    "Master Java/Concurrency/2. Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
     "Logging",
     "Master Java/Concurrency/Problems In Java Concurrency",
     "Master Java/Concurrency/2. Basics Of Java Concurrency",
