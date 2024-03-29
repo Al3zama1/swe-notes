@@ -17,3 +17,5 @@ The non "x" values in the first IP octet indicate the first possible IP address 
 	* It is used to test the 'network stack' (OSI, TCP/IP model) on the local device.
 	* When a host sends network traffic in the mentioned address range, the traffic is simply processed back up the network model stack.
 
+![IPv4 address classes details](./img/ipv4-address-classes-details.png)
+
