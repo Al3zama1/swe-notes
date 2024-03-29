@@ -4,33 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "10b94a76d180a996",
+        "id": "0d84f8588a2ff7ec",
         "type": "tabs",
         "children": [
           {
-            "id": "aa014ffb0612c092",
+            "id": "639895a982437e95",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gradle/1. Introduction to Gradle.md",
+                "file": "CCNA/IPv4 Addressing.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "3868f514db8aceaa",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.11"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -80,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 406.5
+    "width": 406.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -96,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gradle/1. Introduction to Gradle.md",
+                "file": "CCNA/IPv4 Addressing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Gradle/1. Introduction to Gradle.md",
+                "file": "CCNA/IPv4 Addressing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Gradle/1. Introduction to Gradle.md"
+                "file": "CCNA/IPv4 Addressing.md"
               }
             }
           },
@@ -170,13 +160,20 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "3868f514db8aceaa",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
+    "Untitled.md",
+    "CCNA/IPv4 Addressing.md",
+    "img/ipv4-address-classes.md",
+    "img",
+    "CCNA/img/ipv4-address-classes.png",
+    "Gradle/1. Introduction to Gradle.md",
+    "CCNA/img",
+    "CCNA",
     "Gradle/5. The Gradle Task Graph.md",
     "Gradle/4. Kotlin Essentials For Gradle.md",
     "Gradle/3. How Gradle Works With Java.md",
     "Gradle/2. Gradle Project Structure.md",
-    "Gradle/1. Introduction to Gradle.md",
     "redis/5. Lists.md",
     "redis/2. Keys Expiration Time (TTL).md",
     "redis/4. Hashes.md",
@@ -202,22 +199,15 @@
     "Gradle/img/gradle-compile-output-location.png",
     "build.md",
     "().md",
-    "Gradle/img/build-gradle-kts-file.png",
     "Gradle/img",
     "Logging/Consistent Logging.md",
     "Gradle",
     "Master Java/Concurrency/2. Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
     "Master Java/Concurrency/2. Basics Of Java Concurrency/2. Race Conditions And Critical Sections.md",
     "Master Java/Concurrency/2. Basics Of Java Concurrency/1. Creating And Starting Threads.md",
-    "docker/5. Docker Volumes.md",
-    "docker/1. What Is A Container.md",
-    "docker/2.  What is a Docker Image?.md",
     "Logging",
     "Master Java/Concurrency/Problems In Java Concurrency",
     "Master Java/Concurrency/2. Basics Of Java Concurrency",
-    "Master Java/Concurrency/1. Concurrency And Multithreading Theory",
-    "Master Java/Concurrency",
-    "Master Java",
     "Untitled.canvas"
   ]
 }
