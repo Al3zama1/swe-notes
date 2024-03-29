@@ -11,8 +11,12 @@
             "id": "82c73aa594cca3fd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CCNA/IPv4 Addressing.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CCNA/IPv4 Addressing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CCNA/IPv4 Addressing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CCNA/IPv4 Addressing.md"
+              }
             }
           },
           {
@@ -153,13 +161,15 @@
   },
   "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
-    "CCNA/OSI Model & TCP-IP.md",
+    "CCNA/IPv4 Header.md",
+    "CCNA/IPv4 Addressing.md",
+    "CCNA/Network Devices.md",
+    "CCNA/img/ipv4-addresses.png",
     "CCNA/Ethernet LAN Switching.md",
+    "CCNA/OSI Model & TCP-IP.md",
     "CCNA/Interfaces and Cables.md",
     "CCNA/img/ethernet-frame.png",
-    "CCNA/IPv4 Addressing.md",
     "CCNA/CLI Introduction.md",
-    "CCNA/Network Devices.md",
     "CCNA/img/osi-versus-tcp-ip.png",
     "CCNA/img/osi-pdus.png",
     "CCNA/img/rj-45-four-pairs.png",
@@ -168,7 +178,6 @@
     "CCNA/img/router-interface-brief.png",
     "CCNA/img/fiber-optic-cable-structure.png",
     "CCNA/img/fiber-optic-cable.png",
-    "CCNA/img/rj-45-transmit-receive.png",
     "ipv4-address-classes-details.md",
     "Untitled.md",
     "img/ipv4-address-classes.md",

@@ -3,6 +3,9 @@ IPv4 addressing operates in the 3rd layer of the OSI model stack - the Network l
 * Provides logical addressing (IP addressing).
 * Provides path selection between source and destination.
 * Routes operate at Layer 3.
+* The length of IP addresses is 4 bytes (32 bits).
+
+![sample network with IPv4 addresses](./img/ipv4-addresses.png)
 
 ## IPv4 Address Classes
 IPv4 addresses are divided into five different classes. The class of the IPv4 address is determined by the first octet of the IP address.
