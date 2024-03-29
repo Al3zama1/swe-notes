@@ -20,5 +20,5 @@ The non "x" values in the first IP octet indicate the first possible IP address 
 ![IPv4 address classes details](./img/ipv4-address-classes-details.png)
 
 * The number of assignable addresses per network is subtracted by 2. Therefore, the assignable addresses in a network are in the range of 1 - 254.
-	* The first address (0) in the network is reserved for the network address.
-	* The last address (255) in the network is reserved for the broadcast address.
+	* The first address (0) in the network is reserved for the network address, denoted by all host bits set to 0.
+	* The last address (255) in the network is reserved for the broadcast address, denoted by all host bits set to 1.
