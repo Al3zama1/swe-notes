@@ -20,7 +20,6 @@ The non `x` values in the first octet indicate the first possible IP address for
 ![IPv4 address classes details](./img/ipv4-address-classes-details.png)
 
 ## Maximum Hosts per Network
-
 Every network contains a network and broadcast addresses that cannot be used. For a class C address, the first usable address is 1 and the last usable address is 254.
 * Suppose we have the address `192.168.1.0/24`
 	* The first usable address is `192.168.1.1/24`
@@ -45,7 +44,7 @@ $$
 * `Protocol`: Because the interfaces at layer 1 are down, layer 2 cannot operate.
 	* You will never see an interface with a `down` status and `up` in the protocol column. Although, the reverse is possible.
 
-Assign IP and Subnet Mast to router interface
+#### Assign IP and Subnet Mast to router interface
 ```
 R1#configure terminal
 R1(config)#interface [interface]
@@ -53,6 +52,7 @@ R1(config-if)#ip address 10.255.255.254 255.0.0.0
 R1(config-if)#no shutdown
 ```
 
+#### Other Commands
 `R1#show interfaces [interface]`
 * Shows information primarily about the layer 1 and 2 of the interface, but also some layer 3.
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/Interfaces and Cables.md",
+                "file": "CCNA/Ethernet LAN Switching.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/Interfaces and Cables.md",
+                "file": "CCNA/Ethernet LAN Switching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/Interfaces and Cables.md",
+                "file": "CCNA/Ethernet LAN Switching.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/Interfaces and Cables.md"
+                "file": "CCNA/Ethernet LAN Switching.md"
               }
             }
           },
@@ -161,15 +161,15 @@
   },
   "active": "a5129d53bfb62bee",
   "lastOpenFiles": [
+    "CCNA/IPv4 Addressing.md",
     "CCNA/Ethernet LAN Switching.md",
     "CCNA/CLI Introduction.md",
+    "CCNA/Interfaces and Cables.md",
+    "CCNA/Network Devices.md",
     "CCNA/OSI Model & TCP-IP.md",
     "CCNA/img/osi-versus-tcp-ip.png",
     "CCNA/img/osi-pdus.png",
-    "CCNA/Interfaces and Cables.md",
     "CCNA/img/rj-45-four-pairs.png",
-    "CCNA/Network Devices.md",
-    "CCNA/IPv4 Addressing.md",
     "CCNA/img/utp-fiber-comarison.png",
     "CCNA/img/fiber-optic-cable-standards.png",
     "CCNA/img/router-interface-brief.png",
