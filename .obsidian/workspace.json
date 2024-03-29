@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 406.5
+    "width": 406.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -161,6 +162,8 @@
   },
   "active": "7fd4f3228338601e",
   "lastOpenFiles": [
+    "CCNA/img/router-interface-brief.png",
+    "CCNA/img/maximum-hosts-per-network.png",
     "ipv4-address-classes-details.md",
     "CCNA/IPv4 Addressing.md",
     "CCNA/img/ipv4-address-classes-details.png",
@@ -196,14 +199,12 @@
     "Gradle/img/project-dependencies-showcase.png",
     "Gradle/img/gradle-jar-output-location.png",
     "Gradle/img/gradle-resources-output-location.png",
-    "Gradle/img/single-project-strucute-format.png",
     "build.md",
     "().md",
     "Gradle/img",
     "Logging/Consistent Logging.md",
     "Gradle",
     "Master Java/Concurrency/2. Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
-    "Master Java/Concurrency/2. Basics Of Java Concurrency/2. Race Conditions And Critical Sections.md",
     "Logging",
     "Master Java/Concurrency/Problems In Java Concurrency",
     "Master Java/Concurrency/2. Basics Of Java Concurrency",
