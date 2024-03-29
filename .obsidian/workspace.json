@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e62d4f3651d2582e",
+        "id": "1d0188283cada70a",
         "type": "tabs",
         "children": [
           {
-            "id": "a5129d53bfb62bee",
+            "id": "82c73aa594cca3fd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CCNA/Ethernet LAN Switching.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/Ethernet LAN Switching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/Ethernet LAN Switching.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CCNA/Ethernet LAN Switching.md"
-              }
+              "state": {}
             }
           },
           {
@@ -159,15 +151,15 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "a5129d53bfb62bee",
+  "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
+    "CCNA/OSI Model & TCP-IP.md",
+    "CCNA/Ethernet LAN Switching.md",
     "CCNA/Interfaces and Cables.md",
     "CCNA/img/ethernet-frame.png",
-    "CCNA/Ethernet LAN Switching.md",
     "CCNA/IPv4 Addressing.md",
     "CCNA/CLI Introduction.md",
     "CCNA/Network Devices.md",
-    "CCNA/OSI Model & TCP-IP.md",
     "CCNA/img/osi-versus-tcp-ip.png",
     "CCNA/img/osi-pdus.png",
     "CCNA/img/rj-45-four-pairs.png",
