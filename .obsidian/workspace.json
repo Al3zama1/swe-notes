@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/IPv4 Addressing.md",
+                "file": "CCNA/Switch Interfaces.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 252.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/IPv4 Addressing.md",
+                "file": "CCNA/Switch Interfaces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/IPv4 Addressing.md",
+                "file": "CCNA/Switch Interfaces.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/IPv4 Addressing.md"
+                "file": "CCNA/Switch Interfaces.md"
               }
             }
           },
@@ -161,13 +162,14 @@
   },
   "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
+    "CCNA/Ethernet LAN Switching.md",
+    "CCNA/Switch Interfaces.md",
+    "CCNA/Interfaces and Cables.md",
     "CCNA/IPv4 Header.md",
     "CCNA/IPv4 Addressing.md",
     "CCNA/Network Devices.md",
     "CCNA/img/ipv4-addresses.png",
-    "CCNA/Ethernet LAN Switching.md",
     "CCNA/OSI Model & TCP-IP.md",
-    "CCNA/Interfaces and Cables.md",
     "CCNA/img/ethernet-frame.png",
     "CCNA/CLI Introduction.md",
     "CCNA/img/osi-versus-tcp-ip.png",
@@ -201,7 +203,6 @@
     "Design Patterns/4. Factory Patterns (Creational).md",
     "Design Patterns/3. Decorator Pattern(Structural).md",
     "Design Patterns/2. Observer Pattern (Behavioral).md",
-    "Design Patterns/0. Design Principles.md",
     "Gradle/img",
     "Gradle",
     "Logging",
