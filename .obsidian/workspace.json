@@ -160,10 +160,12 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "82c73aa594cca3fd",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
-    "CCNA/img/duplex-speed-negotiation.png",
+    "CCNA/img/interface-errors.png",
     "CCNA/Switch Interfaces.md",
+    "CCNA/img/device-autonegotiation-disabled.png",
+    "CCNA/img/duplex-speed-negotiation.png",
     "CCNA/img/switch-collision-domains.png",
     "CCNA/Interfaces and Cables.md",
     "CCNA/img/half-duplex-collision.png",
@@ -178,8 +180,6 @@
     "CCNA/img/osi-versus-tcp-ip.png",
     "CCNA/img/osi-pdus.png",
     "CCNA/img/rj-45-four-pairs.png",
-    "CCNA/img/utp-fiber-comarison.png",
-    "CCNA/img/fiber-optic-cable-standards.png",
     "ipv4-address-classes-details.md",
     "Untitled.md",
     "img/ipv4-address-classes.md",
