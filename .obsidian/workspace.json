@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/Switch Interfaces.md",
+                "file": "CCNA/1 Network Devices.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5,
-    "collapsed": true
+    "width": 252.5
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/Switch Interfaces.md",
+                "file": "CCNA/1 Network Devices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/Switch Interfaces.md",
+                "file": "CCNA/1 Network Devices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/Switch Interfaces.md"
+                "file": "CCNA/1 Network Devices.md"
               }
             }
           },
@@ -160,23 +159,23 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "82c73aa594cca3fd",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
-    "CCNA/IPv4 Header.md",
-    "CCNA/Switch Interfaces.md",
+    "CCNA/4 CLI Introduction.md",
+    "CCNA/5 Ethernet LAN Switching.md",
+    "CCNA/6 IPv4 Addressing.md",
+    "CCNA/8 IPv4 Header.md",
+    "CCNA/2 Interfaces and Cables.md",
+    "CCNA/1 Network Devices.md",
+    "CCNA/3 OSI Model & TCP-IP.md",
+    "CCNA/7 Switch Interfaces.md",
     "CCNA/img/interface-errors.png",
     "CCNA/img/device-autonegotiation-disabled.png",
     "CCNA/img/duplex-speed-negotiation.png",
     "CCNA/img/switch-collision-domains.png",
-    "CCNA/Interfaces and Cables.md",
     "CCNA/img/half-duplex-collision.png",
-    "CCNA/Ethernet LAN Switching.md",
-    "CCNA/IPv4 Addressing.md",
-    "CCNA/Network Devices.md",
     "CCNA/img/ipv4-addresses.png",
-    "CCNA/OSI Model & TCP-IP.md",
     "CCNA/img/ethernet-frame.png",
-    "CCNA/CLI Introduction.md",
     "CCNA/img/osi-versus-tcp-ip.png",
     "CCNA/img/osi-pdus.png",
     "CCNA/img/rj-45-four-pairs.png",

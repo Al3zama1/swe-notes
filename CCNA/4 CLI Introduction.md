@@ -64,11 +64,11 @@ Router(config)# end/exit
 
 #### Configuration Files
 * Running configuration is the current, active configuration file on the device. As you enter commands in the CLI, you edit the active configuration.
-	* `Router# show running-config` shows the configuration.
+	* `Router#show running-config` shows the configuration.
 * Startup configuration is the configuration file that will be loaded upon restart of the device.
 	* `Router#show startup-config` shows the configuration.
 
 #### Save The Configuration Methods
-* `Router#save`
-* `Router#save memory`
+* `Router#write`
+* `Router#write memory`
 * `Router#copy running-config startup-config`
