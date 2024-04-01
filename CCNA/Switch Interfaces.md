@@ -98,4 +98,5 @@ Errors that can show up on interfaces that otherwise seem to be working. These a
 * **CRC**: Frames that failed the CRC check (in the Ethernet FCS trailer).
 * **Frame**: Frames that have an incorrect format (due to an error).
 * **Input errors**: Total of various counters, such as the above four.
+	* Total of various counters of errors received by the device
 * **Output errors**: Frames that the switch tried to send, but failed due to an error.
