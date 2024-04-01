@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/1 Network Devices.md",
+                "file": "CCNA/6 IPv4 Addressing.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/1 Network Devices.md",
+                "file": "CCNA/6 IPv4 Addressing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/1 Network Devices.md",
+                "file": "CCNA/6 IPv4 Addressing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/1 Network Devices.md"
+                "file": "CCNA/6 IPv4 Addressing.md"
               }
             }
           },
@@ -159,16 +159,16 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
-    "CCNA/4 CLI Introduction.md",
-    "CCNA/5 Ethernet LAN Switching.md",
+    "CCNA/7 Switch Interfaces.md",
     "CCNA/6 IPv4 Addressing.md",
-    "CCNA/8 IPv4 Header.md",
+    "CCNA/5 Ethernet LAN Switching.md",
+    "CCNA/4 CLI Introduction.md",
+    "CCNA/3 OSI Model & TCP-IP.md",
     "CCNA/2 Interfaces and Cables.md",
     "CCNA/1 Network Devices.md",
-    "CCNA/3 OSI Model & TCP-IP.md",
-    "CCNA/7 Switch Interfaces.md",
+    "CCNA/8 IPv4 Header.md",
     "CCNA/img/interface-errors.png",
     "CCNA/img/device-autonegotiation-disabled.png",
     "CCNA/img/duplex-speed-negotiation.png",

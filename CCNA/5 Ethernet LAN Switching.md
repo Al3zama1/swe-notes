@@ -20,7 +20,7 @@
 #### Type/Length
 * 2 bytes (16 bits) field length.
 * A value of `1500 or less` in this field indicates the `length` of the encapsulated packet (in bytes).
-* A value of `1536 or greater` in this field indicates the `type` of the encapsulated packet (usually IPv4 or IPv6, ARP, etc...) and length is determined via other methods.
+* A value of `1536 or greater` in this field indicates the `type` of the encapsulated packet (usually IPv4, IPv6, ARP, etc...) and length is determined via other methods.
 * `IPv4`: 0x0800 hexadecimal and 2048 in decimal.
 * `IPv6`: 0x86DD hexadecimal and 34525 decimal. 
 * `ARP`: 0x0806 hexadecimal
@@ -71,7 +71,7 @@ When looking to initiate communication with another host, we often only know the
 	* The reply is unicast and includes the following properties
 		* Source IP address
 		* Destination IP address
-		* Source MAC address
+		* Source MAC address (information that was needed)
 		* Destination MAC address.
 	* Upon Arrival to the destination, the MAC address + IP address information from the target host will be used to populate an entry in the ARP table.
 
@@ -81,7 +81,7 @@ When looking to initiate communication with another host, we often only know the
 * **Type dynamic**
 	* Learned via ARP
 
-## Witch MAC Address Table Commands
+## Switch MAC Address Table Commands
 
 #### Display MAC Address From Switch
 `SW1#show mac address-table`
