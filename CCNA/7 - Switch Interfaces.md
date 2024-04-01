@@ -26,11 +26,11 @@ Fa0/3           disable        1       a-full    auto     10/100BaseTX
 * **Duplex** indicates whether the device is capable of sending and receiving data at the same time.
 	* Duplex is auto by default on Cisco switches. It will negotiate with the connected device and use full-duplex if possible.
 	* a-full means that full-duplex was automatically negotiated with the device and the interface it is connected to in the switch.
-* **Speed** is negotiated automatically by default. The interfaces shown above are fast ethernet interfaces so they are capable of speeds of 10Mbps and 100 Mbps.
+* **Speed** is negotiated automatically by default. The interfaces shown above are fast ethernet interfaces so they are capable of speeds of 10 Mbps and 100 Mbps.
 	* The switch will automatically negotiate the speed and pick the highest speed possible by both, the device and the interface that it is connected to.
-	* a-100 in this case means that a speed of 100Mbps was automatically negotiated between the device and the interface it is connected to. 
+	* a-100 in this case means that a speed of 100 Mbps was automatically negotiated between the device and the interface it is connected to. 
 * **Type** indicates the type of interfaces.
-	* In this case they all are RJ-45 interfaces that support 10Mbps and 100 Mbps.
+	* In this case they all are RJ-45 interfaces that support 10 Mbps and 100 Mbps.
 	* They could also be SFP (small form-factor pluggable) for fiber standards.
 Auto negotiation usually works well for the interfaces. Therefore, most of the time they will remain that way
 
