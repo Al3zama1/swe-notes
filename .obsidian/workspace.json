@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/8 - IPv4 Header.md",
+                "file": "CCNA/9 - Routing Fundamentals.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5,
-    "collapsed": true
+    "width": 252.5
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/8 - IPv4 Header.md",
+                "file": "CCNA/9 - Routing Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/8 - IPv4 Header.md",
+                "file": "CCNA/9 - Routing Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/8 - IPv4 Header.md"
+                "file": "CCNA/9 - Routing Fundamentals.md"
               }
             }
           },
@@ -162,9 +161,10 @@
   },
   "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
+    "CCNA/8 - IPv4 Header.md",
+    "CCNA/9 - Routing Fundamentals.md",
     "CCNA/img/ipv4-header.png",
     "CCNA/5 - Ethernet LAN Switching.md",
-    "CCNA/8 - IPv4 Header.md",
     "CCNA/7 - Switch Interfaces.md",
     "CCNA/6 - IPv4 Addressing.md",
     "CCNA/4 - CLI Introduction.md",
