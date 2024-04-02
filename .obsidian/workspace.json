@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5,
-    "collapsed": true
+    "width": 252.5
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -162,8 +161,11 @@
   },
   "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
-    "CCNA/9 - Routing Fundamentals.md",
+    "CCNA/img/router-default-route.png",
     "CCNA/10 - Static Routing.md",
+    "CCNA/img/packet-travel-with-hops.png",
+    "CCNA/img/static-route-config.png",
+    "CCNA/9 - Routing Fundamentals.md",
     "CCNA/8 - IPv4 Header.md",
     "CCNA/img/local-route.png",
     "CCNA/img/connected-route.png",
@@ -179,9 +181,6 @@
     "CCNA/img/interface-errors.png",
     "CCNA/img/device-autonegotiation-disabled.png",
     "CCNA/img/duplex-speed-negotiation.png",
-    "CCNA/img/switch-collision-domains.png",
-    "CCNA/img/half-duplex-collision.png",
-    "CCNA/img/ipv4-addresses.png",
     "ipv4-address-classes-details.md",
     "Untitled.md",
     "img/ipv4-address-classes.md",
@@ -202,7 +201,6 @@
     "Design Patterns/6. Command Pattern (Behavioral).md",
     "redis",
     "Design Patterns/5. Singleton Pattern (Creational).md",
-    "Design Patterns/4. Factory Patterns (Creational).md",
     "Gradle/img",
     "Gradle",
     "Logging",
