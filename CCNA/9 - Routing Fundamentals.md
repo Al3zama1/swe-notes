@@ -9,12 +9,12 @@ Routing is the process that routers use to determine the path that IP packets sh
 
 ## Where Do Routers Send Packages ?
 * Packages are sent to the **next-hop** (the next router in the path to the destination) when the router is not directly connected to the destination network.
-* Packages are sent to the destination device when the router is directly connected to the destination network.
-* Routers keep packages when the destination is the router's IP address.
+* Packages are sent to the destination device when the router is directly connected to the destination network (**Connected Route**).
+* Routers keep packages when the destination is the router's IP address (**Local Route**).
 
 ## Routing Table
 ![routing table overview](./img/route-table-overview.png)
-The **connected** and local **routes** are neither static nor dynamic routes. They are added automatically when an interface is configured.
+The **connected** and **local** routes are neither static nor dynamic routes. They are added automatically when an interface is configured with an IP address and enabled (no shutdown).
 
 #### Connected Routes
 ![connected route](./img/connected-route.png)
@@ -46,7 +46,7 @@ L      192.168.1.1/32 is directly connected, GigabitEthernet0/2
 * The route to 192.168.1.1/32 includes only 1 IP address (192.168.1.1)
 * **Most specific** matching route is the **matching route** with the **longest prefix length**.
 	* When R1 receives a packet destined for 192.168.1.1, it will select the route to 192.168.1.1/32. It will receive the packet for itself, rather than forward it out of G0/2 (Local Route).
-
+	* This is different than switches, which look for an exact match int he MAC address table to forward frames.
 
 #### What Does The Following Mean ?
 `192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks`
