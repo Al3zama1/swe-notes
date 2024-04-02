@@ -34,6 +34,8 @@ The header is read left to right, top to bottom. Top left being the first bit an
 	* Bit 1 is the don't fragment (DF bit), used to indicate a packet that should not be fragmented.
 	* Bit 2 is the more fragments (MF bit), set to 1 to indicate more fragments in the packet and 0 to indicate the last frame.
 		* Unfragmented packets will always have their MF bit set to 0 since there are no fragments.
+	* Bit of 0 means `Not set`
+	* Bit of 1 means `Set`
 * **Fragment Offset Field**: Indicate the position of the fragment within the original, unfragmented IP packet.
 	* Length of 13 bits
 	* Allows fragmented packets to be reassembled even if the fragments arrive out of order.
