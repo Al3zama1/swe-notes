@@ -10,7 +10,7 @@ The header is read left to right, top to bottom. Top left being the first bit an
 	* Minimum IPv4 header length is 20 (value 5) bytes with empty Options field.
 	* Maximum IPv4 header length is 60 (value 15) bytes with maximum length Options field.
 		* The maximum size of the IP Options field is 40 bytes
-* **DSCP (Differentiated Services Code Point)**: 
+* **DSCP (Differentiated Services Code Point)**:
 	* Length of 6 bits.
 	* Used for QoS (Quality of Service).
 	* Used to prioritize delay-sensitive data (streaming voice, video, etc).
