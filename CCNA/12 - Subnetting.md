@@ -83,4 +83,37 @@ This is called subnetting because we are only using a subset of the total availa
 ![subnet question solution](./img/class-c-subnet-quiz-solution.jpg)
 
 
-## Subnetting Trick
+#### Subnetting Trick
+```
+192.168.1.0/26
+
+For class C subnets, only the bits of the last octet are changed.
+192 . 168 . 1 . 0
+
+Subnet: 192.168.1.0/26
+0    0  |  0    0    0    0    0    0
+Network |  Host Portion
+Portion |
+
+Subnet: 192.168.1.64/26
+0    1  |  0    0    0    0    0    0
+Network |  Host Portion
+Portion |
+
+Subnet: 192.168.1.128/26
+1    0  |  0    0    0    0    0    0
+Network |  Host Portion
+Portion |
+
+Subnet: 192.168.1.192/26
+1    1  |  0    0    0    0    0    0
+Network |  Host Portion
+Portion |
+```
+
+* An easy way to calculate the subnets is to keep on adding the value given by the last bit of the network portion.
+* Above, the last network portion bit gives a value of 64. Therefore, the next subnets are obtaining by adding 64 continuously.
+
+#### Subnetting Example
+Divide ` 192.168.255.0/24` network into five subnets of equal size. Identify the five subnets.
+
