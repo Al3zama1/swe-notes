@@ -49,7 +49,7 @@ How many usable addresses are there in each network?
 * 203.0.113.0/30
 	* 2 host bits = 4 total addresses.
 	* (2^2) - 2 = 2 usable addresses.
-	* Netmask = 255.255.255.250
+	* Netmask = 255.255.255.252
 * 203.0.113.0/31
 	* 1 host bit = 2 total addresses.
 	* (2^1) - 2 = 0 usable addresses.
@@ -65,7 +65,7 @@ How many usable addresses are there in each network?
 	* Will probably never use a /32 mask to configure an actual interface. However, there are some uses for a /32 mask.
 	* a /32 mask can be used when you want to create a static route not a network, but just to one specific host.
 
-This is called subnetting because we are only using a subset of the total available addresses in the address class that we might be working. In this case we are creating subnets for a class C network.
+This is called subnetting because we are only using a subset of the total available addresses in the address class that we are working on. In this case we are creating subnets for a class C network.
 * For example, in the /30 mask we have 4 total addresses (203.0.113.0 - 203.0.113.3). The remaining addresses in the 203.0.113.0/24 address block (203.0.113.4 - 203.0.113.255) are available to be used in other subnets.
 ![subnet class C network](./img/CIDR-Notation-24.png)
 
