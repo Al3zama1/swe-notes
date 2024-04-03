@@ -13,6 +13,7 @@ IPv4 addresses are divided into five different classes. The class of the IPv4 ad
 
 The non `x` values in the first octet indicate the first possible IP address for the given IPv4 address class. Setting all remaining `x` to 1 indicate the last possible IP address. Therefore, all addresses between the first and last possible addresses are available for use.
 
+* Only Classes A, B, and C can be assigned to devices.
 * IPv4 class D addresses are multicast addresses.
 * IPv4 class E addresses are Reserved (experimental purposes).
 * For class A IPv4 addresses,  the first and last addresses are reserved. Therefore, the usable addresses are in the range 1 - 126. The 127 address range is reserved for Lookback addresses.
