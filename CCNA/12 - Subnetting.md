@@ -79,3 +79,8 @@ This is called subnetting because we are only using a subset of the total availa
 * Unfortunately we can't always make subnets have exactly the number of addresses we need.
 * That is fine because its good because it provides room for growth in the future.
 
+#### Subnetting Example Solution
+![subnet question solution](./img/class-c-subnet-quiz-solution.jpg)
+
+
+## Subnetting Trick
