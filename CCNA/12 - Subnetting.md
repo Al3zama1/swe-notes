@@ -82,4 +82,21 @@ How many usable addresses are there in each network?
 This is called subnetting because we are only using a subset of the total available addresses in the address class that we are working on. In this case we are creating subnets for a class C network.
 ![subnet class C network](./img/CIDR-Notation-24.png)
 
+#### Subnetting Examples (Classes A,B, and C)
+==**The process of subnetting Class A, Class B, and Class C networks is EXACTLY THE SAME.**==
+![subnetting examples](./img/subnetting-1.jpg)
+![subnetting examples](./img/subnetting-2.jpeg)
+![subnetting examples](./img/subnetting-3.jpeg)
+![subnetting examples](./img/subnetting-4.jpeg)
+![subnetting examples](./img/subnetting-5.jpeg)
 
+## Variable-Length Subnet Masks
+* Until now, we have practices subnetting using **FLSM** (Fixed-Length Subnet Masks). 
+* This means that all of the subnets use the same prefix length (ie. subnetting a class C network into 4 subnets using /26).
+* **VLSM** (Variable-Length Subnet Masks) is the process of creating subnets of different sizes, to make your use of network addresses more efficient.
+* VLSM is more complicated that FLSM, but it's easy if you follow the steps correctly.
+
+![vlsm introduction](./img/vlsm-intro.png)
+* We need to create 5 subnets, which means we need to borrow 3 host bits.
+* The remaining host bits are 5, which allow for a maximum of 30 usable addresses (32 total).
+* Using FLSM, we can only give each subnet a total of 30 usable addresses, which is not enough to meet the required number of host for some of the subnets.

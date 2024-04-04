@@ -159,11 +159,21 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "82c73aa594cca3fd",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
+    "CCNA/img/vlsm-intro.png",
+    "CCNA/img/subnetting-2.jpeg",
+    "CCNA/img/subnetting-1.jpg",
+    "CCNA/12 - Subnetting.md",
+    "CCNA/img/subnetting-5.jpeg",
+    "CCNA/img/subnetting-5.jpeg.crdownload",
+    "CCNA/img/subnetting-4.jpeg",
+    "CCNA/img/subnetting-3.jpeg",
+    "CCNA/img/subnetting-3.jpeg.crdownload",
+    "CCNA/img/subnetting-2.jpeg.crdownload",
+    "CCNA/img/subentting-1.jpg.crdownload",
     "CCNA/img/class-c-subnet-quiz-solution.jpg",
     "CCNA/img/class-c-subnetting-26.png",
-    "CCNA/12 - Subnetting.md",
     "CCNA/img/class-c-subnetting-sample2.png",
     "CCNA/img/CIDR-Notation-24.png",
     "CCNA/6 - IPv4 Addressing.md",
@@ -178,12 +188,6 @@
     "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/2 - Interfaces and Cables.md",
     "CCNA/1 - Network Devices.md",
-    "CCNA/img/router-default-route.png",
-    "CCNA/img/packet-travel-with-hops.png",
-    "CCNA/img/static-route-config.png",
-    "CCNA/img/local-route.png",
-    "CCNA/img/connected-route.png",
-    "CCNA/img/route-table-overview.png",
     "ipv4-address-classes-details.md",
     "Untitled.md",
     "img/ipv4-address-classes.md",
@@ -203,10 +207,6 @@
     "redis/img",
     "redis",
     "Gradle/img",
-    "Gradle",
-    "Logging",
-    "Master Java/Concurrency/Problems In Java Concurrency",
-    "Master Java/Concurrency/2. Basics Of Java Concurrency",
     "Untitled.canvas"
   ]
 }
