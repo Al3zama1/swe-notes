@@ -5,8 +5,12 @@ The picture below contains 5 broadcast domain, therefore there is 5 separate LAN
 ![LAN broadcast domain](./img/LAN-broadcast-domain.png)
 
 ## What is a VLAN?
+A VLAN is a way to logically split up a layer 2 broadcast domain to make multiple separate broadcast domains.
+
 The example below shows a single LAN with different departments where a computer in the engineering department sends a broadcast message intended for other PC's in the same department. However, since there is no clear division between the different departments in the LAN, all PC's in all departments will receive the broadcast message.
 ![example without VLAN](./img/no-vlan.png)
+
+#### What is the purpose of VLANS ?
 * **Performance Issues**: Lots of unnecessary broadcast traffic can reduce network performance. 
 	* Above, a broadcast message was intended for the Engineering department, but was propagated to all hosts in all departments.
 	* Minimize unnecessary traffic in the network.
