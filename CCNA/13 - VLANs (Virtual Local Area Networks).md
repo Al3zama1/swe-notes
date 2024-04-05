@@ -85,3 +85,6 @@ SW1(config-vlan)#name ENGINEERING // change default VLAN name.
 * An **access port** is a  switch port  which belongs to a single VLAN, and usually connects to end hosts like PCs.
 	* Its called an access port because it gives the end hosts access to the network.
 * There is another is another type of switch port called **trunk port** that can carry multiple VLANs.
+## Trunk Ports
+
+

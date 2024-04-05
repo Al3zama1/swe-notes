@@ -159,10 +159,11 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "82c73aa594cca3fd",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
-    "CCNA/img/vlan-configuration.png",
+    "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+    "CCNA/img/vlan-configuration.png",
     "CCNA/img/vlan-layer2-segmenting.png",
     "CCNA/img/vlan-misconfiguration.png",
     "CCNA/img/no-vlan.png",
@@ -183,7 +184,6 @@
     "CCNA/9 - Routing Fundamentals.md",
     "CCNA/8 - IPv4 Header.md",
     "CCNA/7 - Switch Interfaces.md",
-    "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/4 - CLI Introduction.md",
     "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/2 - Interfaces and Cables.md",
