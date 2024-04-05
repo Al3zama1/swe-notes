@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/13 - VLANs.md",
+                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/13 - VLANs.md",
+                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/13 - VLANs.md",
+                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/13 - VLANs.md"
+                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md"
               }
             }
           },
@@ -161,22 +161,22 @@
   },
   "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
+    "CCNA/img/vlan-configuration.png",
+    "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+    "CCNA/img/vlan-layer2-segmenting.png",
+    "CCNA/img/vlan-misconfiguration.png",
+    "CCNA/img/no-vlan.png",
+    "CCNA/img/LAN-broadcast-domain.png",
     "CCNA/12 - Subnetting.md",
-    "CCNA/13 - VLANs.md",
     "CCNA/img/vlsm-intro.png",
     "CCNA/img/subnetting-2.jpeg",
     "CCNA/img/subnetting-1.jpg",
     "CCNA/img/subnetting-5.jpeg",
     "CCNA/img/subnetting-5.jpeg.crdownload",
     "CCNA/img/subnetting-4.jpeg",
-    "CCNA/img/subnetting-3.jpeg",
     "CCNA/img/subnetting-3.jpeg.crdownload",
     "CCNA/img/subnetting-2.jpeg.crdownload",
     "CCNA/img/subentting-1.jpg.crdownload",
-    "CCNA/img/class-c-subnet-quiz-solution.jpg",
-    "CCNA/img/class-c-subnetting-26.png",
-    "CCNA/img/class-c-subnetting-sample2.png",
-    "CCNA/img/CIDR-Notation-24.png",
     "CCNA/6 - IPv4 Addressing.md",
     "CCNA/11 - Life of a Packet.md",
     "CCNA/10 - Static Routing.md",
@@ -203,7 +203,6 @@
     "redis/2. Keys Expiration Time (TTL).md",
     "redis/4. Hashes.md",
     "redis/1. Key Space.md",
-    "redis/3. Strings.md",
     "redis/img",
     "redis",
     "Gradle/img",
