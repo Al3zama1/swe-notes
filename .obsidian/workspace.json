@@ -159,10 +159,13 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
-    "CCNA/5 - Ethernet LAN Switching.md",
+    "CCNA/img/801-1Q-tag-format.png",
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+    "CCNA/img/trunk-ports.png",
+    "CCNA/img/multiple-switch-topology-vlan.png",
+    "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/img/vlan-configuration.png",
     "CCNA/img/vlan-layer2-segmenting.png",
     "CCNA/img/vlan-misconfiguration.png",
@@ -171,10 +174,7 @@
     "CCNA/12 - Subnetting.md",
     "CCNA/img/vlsm-intro.png",
     "CCNA/img/subnetting-2.jpeg",
-    "CCNA/img/subnetting-1.jpg",
-    "CCNA/img/subnetting-5.jpeg",
     "CCNA/img/subnetting-5.jpeg.crdownload",
-    "CCNA/img/subnetting-4.jpeg",
     "CCNA/img/subnetting-3.jpeg.crdownload",
     "CCNA/img/subnetting-2.jpeg.crdownload",
     "CCNA/img/subentting-1.jpg.crdownload",
