@@ -4,13 +4,12 @@
 The picture below contains 5 broadcast domain, therefore there is 5 separate LANs
 ![LAN broadcast domain](./img/LAN-broadcast-domain.png)
 
-## What is a VLAN?
+## VLAN
 A VLAN is a way to logically split up a layer 2 broadcast domain to make multiple separate broadcast domains.
 
+#### Why are VLANs Needed ?
 The example below shows a single LAN with different departments where a computer in the engineering department sends a broadcast message intended for other PC's in the same department. However, since there is no clear division between the different departments in the LAN, all PC's in all departments will receive the broadcast message.
 ![example without VLAN](./img/no-vlan.png)
-
-#### What is the purpose of VLANS ?
 * **Performance Issues**: Lots of unnecessary broadcast traffic can reduce network performance. 
 	* Above, a broadcast message was intended for the Engineering department, but was propagated to all hosts in all departments.
 	* Minimize unnecessary traffic in the network.
@@ -18,7 +17,6 @@ The example below shows a single LAN with different departments where a computer
 	* Configuring security policies on a router/firewall does not have any effect on hosts communicating in the same LAN.
 	* PCs in the same LAN can reach each other directly, without passing through the router.
 
-## Layer 3 and 2 Segmentation
 #### Layer 3 Segmentation
 The 3 departments have been separated into 3 different subnets to provide Layer 3 separation.
 ![VLAN misconfiguration](./img/vlan-misconfiguration.png)
@@ -35,10 +33,10 @@ The switch interfaces are configures to be in a specific VLAN to provide Layer 2
 * The switch does not perform **inter-VALN Routing**. It must send the traffic through the router to change VLAN.
 * **NOTE**: Same subnet communication between two hosts is not possible if they are connected to interfaces that are configured with different VLANs.
 
-## VLAN Configuration
+#### VLAN Configuration
  ![VLAN configuration](./img/vlan-configuration.png)
 
-#### Display VLANs
+##### Display VLANs
 ```
 Switch#show vlan brief
 
@@ -70,7 +68,7 @@ VLAN Name           Status         Ports
 * VLANS 1002, 1003, 1004, 1004, 1005 are for old technologies that are not needed for the CCNA.
 * VLANs 1, 1002 - 1005 exist by default and **cannot be deleted**.
 
-#### Set VLANs
+##### Set VLANs
 ```
 SW1(config)#interface range g1/0 - 3
 SW1(config-if-range)switchport mode access
