@@ -56,7 +56,7 @@ VLAN Name           Status         Ports
 			
 								   Gig0/1, Gig0/2
 
-1002 fddi-default   active
+  fddi-default   active
 
 1003 token-ring-default active
 

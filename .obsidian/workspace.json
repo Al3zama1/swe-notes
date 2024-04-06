@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+                "file": "CCNA/14 - VLANs Part Two.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+                "file": "CCNA/14 - VLANs Part Two.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+                "file": "CCNA/14 - VLANs Part Two.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md"
+                "file": "CCNA/14 - VLANs Part Two.md"
               }
             }
           },
@@ -159,11 +159,12 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
+    "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+    "CCNA/14 - VLANs Part Two.md",
     "CCNA/img/roas-path-flow.png",
     "CCNA/img/native-VLAN-bad-example.png",
-    "CCNA/13 - VLANs (Virtual Local Area Networks).md",
     "CCNA/img/native-VLAN-example.png",
     "CCNA/8 - IPv4 Header.md",
     "CCNA/img/801-1Q-tag-format.png",
@@ -174,7 +175,6 @@
     "CCNA/img/vlan-layer2-segmenting.png",
     "CCNA/img/vlan-misconfiguration.png",
     "CCNA/img/no-vlan.png",
-    "CCNA/img/LAN-broadcast-domain.png",
     "CCNA/12 - Subnetting.md",
     "CCNA/img/subnetting-5.jpeg.crdownload",
     "CCNA/img/subnetting-3.jpeg.crdownload",
