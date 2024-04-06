@@ -98,8 +98,7 @@ SW1(config-vlan)#name ENGINEERING // change default VLAN name.
 Using Trunk ports, the number of connections between Switch to Switch and Switch to Router decreased from 3 to 1 physical connection.
 ![trunk ports](./img/trunk-ports.png)
 * Switches will `tag` all frames that they send over a trunk link.
-* This allows the receiving switch to know which VLAN the frame belongs to.
-	* In the example above, SW2 tags the message arriving from VLAN10 before sending it to SW1 through the trunk port. Upon arrival, SW1 will look at the tag from the message received in the trunk port to figure out what VLAN it belongs to.
+* Switches will look at the tag of all frames received over a trunk link to determine the VLAN that it belongs to.
 * Other common names for access ports and trunk ports:
 	* Trunk ports: **tagged ports**
 	* Access ports: **untagged ports**
@@ -124,4 +123,127 @@ Using Trunk ports, the number of connections between Switch to Switch and Switch
 
 
 ![IEEE 803.1Q tag format](./img/801-1Q-tag-format.png)
+
+* ***TPID (Tag Protocol Identifier)**:
+	* 16 bits (2 bytes) in length.
+	* Identifies the protocol used to create the frame VLAN tag.
+	* Always set to a value of 0x8100 that indicates that the frame is 802.1Q tagged.
+* **PCP (Priority Code Point)**:
+	* 3 bits in length.
+	* Used for **Class of Service (CoS)**, which prioritizes important traffic in congested networks.
+* **DEI(Drop Eligible Indicator)**: 
+	* 1 bit in length.
+	* Used to indicate frames that can be dropped if the network is congested.
+* **VID(VLAN ID)**:
+	* 12 bits in length.
+	* Identifies the VLAN the frame belongs to.
+	* 12 bits in length = 4096 total VLANs (2^12), range 0 - 4095.
+		* VLANS 0 and 4095 are reserved and can't be used.
+		* Therefore, the actual range of VLANs is 1 - 4094.
+	* Cisco's proprietary ISL also has a VLAN range of 1 - 4094.
+#### VLAN ranges
+* The range of VLANs (1 - 4094) is divided into two sections:
+	* Normal VLANs: 1 - 1005.
+	* Extended VLANs: 1006 - 4094.
+* Some oder devices cannot use the extended VLAN range, however it's safe to expect that modern switches will support the extended VLAN range.
+
+#### Native VLAN
+* 802.1Q has a feature called the **native VLAN**. (ISL does not have this feature).
+* The native VLAN is VLAN 1 by default on all trunk ports, however this can be manually configure on each trunk port. The change has to be made in all trunk port interfaces.
+* The switch does not add an 802.1Q tag to frames in the native VLAN of a trunk port.
+* When a switch receives an untagged frame on a trunk port, it assumes the frame belongs to the native VLAN.
+* **It's very important that the native VLAN matches between switches**.
+	* Switches will still forward traffic if there is a native VLAN mismatch, but problems may occur.
+
+##### Native VLAN Good Example
+The native VLAN has been configured to be VLAN 10 on the trunk link between SW1 and SW2.
+![native VLAN example](./img/native-VLAN-example.png)
+
+#### Native VLAN Bad Example
+The native VLAN configuration between SW1 and SW2 do not match.
+![native VLAN misconfiguration](./img/native-VLAN-bad-example.png)
+
+#### Trunk Configuration
+
+##### Set Switch Interfaces as Trunk
+```
+SW1(config)#interface g0/0
+SW1(config-if)#switchport mode trunk
+Command rejected: An interface whose trunk encapsulation is "Auto" can not be configured to "trunk" mode.
+SW1(config-if)#switchport trunk encapsulation ?
+  dot1q     Interface uses only 802.1q trunking encapsulation when trunking.
+  isl       Interface used only ISL trunking encapsulation when trunking.
+  negotiate Device will negotiate trunking encapuslation with peer on   
+			  interface.
+
+SW1(config-if)#switchport trunk encapsulation dot1q
+SW1(config-if)#switchport mode trunk
+
+```
+* Many modern switches do not support Cisco's ISL at all. They only support 802.1Q (dot1q).
+* However, switches that do support both (like the one in the example above) have a trunk encapsulation of `Auto`by default.
+* To manually configure the interface as a trunk port, you must first set the encapsulation to 802.1Q or ISL. This is not necessary on switches that only support 802.1Q.
+* After you set the encapsulation type, you can then configure the interface as a trunk.
+
+##### View Trunk Interfaces
+```
+SW1# show interface trunk
+Port   Mode  Encapsulation  Status     Native vlan
+Gi0/0  on    802.1q         trunking   1
+
+Port   Vlans allowed on trunk 
+Gi0/0  1 - 4094
+
+Port   Vlans allowed and active in managemetn domain
+Gi0/0  1, 10, 30
+
+Port   Vlans in spanning tree forwarding state and not pruned
+Gi0/0  1, 10, 30
+```
+*  `Mode on` means that the interface was manually configured as a trunk.
+* `Vlans allowed on trunk `
+	* By default all VLANs are allowed on the trunk. However, for security reason we should limit which VLANs can be forwarded on the trunk.
+	* This will also avoid unnecessary network traffic, maintaining performance.
+* `Vlans allowed and active in management domain`
+	* Includes the default VLAN 1 and other VLANs configured on the switch.
+	* Note that the default VLANS 1002 - 1005 are not shown. These VLANs are not really used in modern networks.
+* `Vlans in spanning tree forwarding state and not pruned`
+	* Will cover this field later
+
+##### `show vlan brief` vs `show interface trunk`
+* The `show vlan brief` command shows the access ports assigned to each VLAN, not the trunk ports that allow each VLAN.
+* Use the `show interface trunk` command instead to confirm trunk ports.
+
+##### Configure Allowed VLANs on a Trunk
+```
+SW1(configure)# interface g0/0
+SW1(config-if)#switchport trunk allowed vlan ?
+WORD   VLAN ID's of the allowed VLANs when this port is in trunking mode
+add    add VLANs to the current list
+all    All VLANs
+except all VLANs except the following
+none   no VLANs
+remove  remove VLANs from the current list
+
+SW1(config-if)#switchport trunk allowed vlan
+```
+* `WORD`: Allows you to simply configure the list of VLANs allowed
+	* `switchport trunk allowed vlan 10,30`
+	* Will replace the allowed VLANs with the ones specified in the command.
+* `add`: Allows you to add allowed VLANs to the currently existing list.
+	* `switchport trunk allowed vlan add 20`
+	* Will add the specified VLANs to the list of allowed VLANs.
+* `remove`: Allows you to remove VLAN from the list of allowed VLANs in the trunk port.
+	* `switchport trunk allowed vlan remove 20`
+
+##### Configured Allowed VLANs on the Trunk Port
+![trunk ports](./img/trunk-ports.png)
+* Only VLANs 10 and 30 need to be allowed on the trunk port connection between SW1 and SW2.
+* There is not reason for frames in VLAN 20 to go to SW1 directly, therefore VLAN 20 should not be allowed on the trunk port connection.
+
+##### Native VLAN Configuration
+* For security purposes, it is best to change the native VLAN to an unused VLAN.
+	* Its about limiting unnecessary traffic in the network and controlling what traffic is allowed.
+* Make sure the native VLAN matches between switches.
+`SW1(config-if)#switchport trunk native vlan 1001`
 
