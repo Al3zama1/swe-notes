@@ -247,3 +247,27 @@ SW1(config-if)#switchport trunk allowed vlan
 * Make sure the native VLAN matches between switches.
 `SW1(config-if)#switchport trunk native vlan 1001`
 
+## Router on a Stick (ROAS)
+![router on a stick traffic flow](./img/roas-path-flow.png)
+* ROAS is used to route between multiple VLANs using a single interface on the router and switch.
+* The switch interface is configured as a regular trunk.
+* The router interface is configured with **subinterfaces**. Each subinterface is assigned a VLAN tag and IP address.
+* The router will behave as if frames arriving with a certain VLAN tag have arrived on the subinterface configured with that VLAN tag.
+* The router will tag frames sent out of each interface with the VLAN tag configured on the subinterface.
+#### Configure Router on a Stick (ROAS)
+```
+R1(config)#interface g0/0
+R1(config-if)interface g0/0.10
+R1(config-subif)#encapsulation dot1q 10
+R1(config-subif)#ip address 192.168.1.62 255.255.255.192
+
+R1(config-if)interface g0/0.20
+R1(config-subif)#encapsulation dot1q 20
+R1(config-subif)#ip address 192.168.1.126 255.255.255.192
+
+R1(config-if)interface g0/0.30
+R1(config-subif)#encapsulation dot1q 30
+R1(config-subif)#ip address 192.168.1.190 255.255.255.192
+```
+
+* The sub-interface number does not have to match the VLAN number.  However, it is highly recommended that they do match, to make it easier to understand.
