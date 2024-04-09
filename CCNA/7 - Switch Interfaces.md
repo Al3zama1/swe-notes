@@ -1,4 +1,3 @@
-
 ## Switch Interfaces Default Status
 ```
 SW1>enable
