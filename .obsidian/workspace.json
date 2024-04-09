@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/14 - VLANs Part Two.md",
+                "file": "CCNA/2 - Interfaces and Cables.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/14 - VLANs Part Two.md",
+                "file": "CCNA/2 - Interfaces and Cables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/14 - VLANs Part Two.md",
+                "file": "CCNA/2 - Interfaces and Cables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/14 - VLANs Part Two.md"
+                "file": "CCNA/2 - Interfaces and Cables.md"
               }
             }
           },
@@ -161,8 +161,11 @@
   },
   "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
-    "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+    "CCNA/1 - Network Devices.md",
     "CCNA/14 - VLANs Part Two.md",
+    "Untitled.md",
+    "ipv4-address-classes-details.md",
+    "CCNA/13 - VLANs (Virtual Local Area Networks).md",
     "CCNA/img/roas-path-flow.png",
     "CCNA/img/native-VLAN-bad-example.png",
     "CCNA/img/native-VLAN-example.png",
@@ -188,9 +191,6 @@
     "CCNA/4 - CLI Introduction.md",
     "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/2 - Interfaces and Cables.md",
-    "CCNA/1 - Network Devices.md",
-    "ipv4-address-classes-details.md",
-    "Untitled.md",
     "img/ipv4-address-classes.md",
     "img",
     "Gradle/1. Introduction to Gradle.md",
