@@ -24,8 +24,10 @@ The non `x` values in the first octet indicate the first possible IP address for
 ![IPv4 address classes details](./img/ipv4-address-classes-details.png)
 
 ## Maximum Hosts per Network
-Every network contains a network and broadcast addresses that cannot be used. For a class C address, the first usable address is 1 and the last usable address is 254.
+Every network contains a network and broadcast addresses that cannot be used.
 * Suppose we have the address `192.168.1.0/24`
+	* The network address is `192.168.1.0/24`
+	* The broadcast address is `192.168.1.255/24`
 	* The first usable address is `192.168.1.1/24`
 	* The last usable address is `192.168.1.254/24`
 ![IPv4 address classes details](./img/maximum-hosts-per-network.png)
