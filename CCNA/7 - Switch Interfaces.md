@@ -83,7 +83,7 @@ Hubs are simple repeaters which operate at layer 1, repeating whatever signals t
 
 What if auto negotiation is disabled on the device connected to the switch? 
 * **Speed**: The switch will try to sense the speed that the other device is operating at. If it fails to sense the speed, it will use the slowest supported speed (ie. 10 Mbps on a 10/100/1000 interface).
-* **Duplex**: If the speed is 10 or 100 Mbps, the switch will use half duplex. If the speed is 1000 Mbps or greater, use full duplex.
+* **Duplex**: If the speed is 100 Mbps or less, the switch will use half duplex. If the speed is greater than 100 Mbps, it will use full duplex.
 
 ![devices with auto negotiation disabled](./img/device-autonegotiation-disabled.png)
 The switch is using auto negotiation and the 3 PCs have manual fixed speed and duplex settings. It is assumed that the switch successfully detects the speeds that the 3 PCs are operating at.

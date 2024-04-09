@@ -21,6 +21,8 @@ Ethernet is a collection of network protocols/standards. Network protocols speci
 
 ## UTP Cables
 UTP stands for unshielded twisted pair. This type of cable is vulnerable to electromagnetic interference (EMI) because it has no shielding.  The twist actually helps protect agains EMI.
+* **Speeds of 100 Mbps or less only require 2 pairs (4 wires)**.
+* **Speeds Greater than 100 Mbps require 4 pairs (8 wires)**.
 
 ![rj-45 cables](./img/rj-45-wires.png)
 
