@@ -51,7 +51,7 @@ Router(config)# end/exit
 * `enable secret is not affected.`
 
 #### Disable Password Encryption
-* `Router(config)#no password-encryption` will deactivate password encryption.
+* `Router(config)#no service password-encryption` will deactivate password encryption.
 * Current encrypted passwords will not be decrypted.
 * Future passwords will not be encrypted.
 * `enable secret` is not affected.

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/3 - OSI Model & TCP-IP.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/3 - OSI Model & TCP-IP.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/3 - OSI Model & TCP-IP.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/3 - OSI Model & TCP-IP.md"
+                "file": "CCNA/5 - Ethernet LAN Switching.md"
               }
             }
           },
@@ -161,6 +161,8 @@
   },
   "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
+    "CCNA/4 - CLI Introduction.md",
+    "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/2 - Interfaces and Cables.md",
     "CCNA/1 - Network Devices.md",
     "CCNA/14 - VLANs Part Two.md",
@@ -189,8 +191,6 @@
     "CCNA/10 - Static Routing.md",
     "CCNA/9 - Routing Fundamentals.md",
     "CCNA/7 - Switch Interfaces.md",
-    "CCNA/4 - CLI Introduction.md",
-    "CCNA/3 - OSI Model & TCP-IP.md",
     "img/ipv4-address-classes.md",
     "img",
     "Gradle/1. Introduction to Gradle.md",
