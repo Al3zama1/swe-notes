@@ -42,7 +42,7 @@ Crossover cable is used for communication between two devices that send and rece
 ![devices transmit and receive cables](./img/rj-45-transmit-receive.png)
 
 #### UTP Four Wire Pairs
-Speeds greater than 100BASE-T require all 8 wires be used. Higher speeds are supported due to the fact that each pair is bidirectional rather than each pair sending data in a single direction.
+**Speeds greater than 100BASE-T require all 8 wires be used**. Higher speeds are supported due to the fact that each pair is bidirectional rather than each pair sending data in a single direction.
 ![utp 8 wires](./img/rj-45-four-pairs.png)
 
 ## Auto MDI-X
@@ -65,7 +65,7 @@ Most modern networking devices have evolved beyond having to worry about straigh
 * More expensive than multimode fiber (due to more expensive laser-based SFP transmitters).
 
 #### Transmit and Receive Data
-Fiber-optic cables send light over glass fibers rather than electrical signals over copper wires. Two cables is two cables, each with its own connector. One is used for sending data and the other is used for receiving data.
+Fiber-optic cables send light over glass fibers rather than electrical signals over copper wires. One cable is two wires, each with its own connector. One is used for sending data and the other is used for receiving data.
 ![fiber optic cable](./img/fiber-optic-cable.png)
 
 #### SFP (Small Form-Factor Pluggable)
