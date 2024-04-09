@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/5 - Ethernet LAN Switching.md",
+                "file": "CCNA/6 - IPv4 Addressing.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/5 - Ethernet LAN Switching.md",
+                "file": "CCNA/6 - IPv4 Addressing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/5 - Ethernet LAN Switching.md",
+                "file": "CCNA/6 - IPv4 Addressing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/5 - Ethernet LAN Switching.md"
+                "file": "CCNA/6 - IPv4 Addressing.md"
               }
             }
           },
@@ -161,6 +161,7 @@
   },
   "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
+    "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/4 - CLI Introduction.md",
     "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/2 - Interfaces and Cables.md",
@@ -176,7 +177,6 @@
     "CCNA/img/801-1Q-tag-format.png",
     "CCNA/img/trunk-ports.png",
     "CCNA/img/multiple-switch-topology-vlan.png",
-    "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/img/vlan-configuration.png",
     "CCNA/img/vlan-layer2-segmenting.png",
     "CCNA/img/vlan-misconfiguration.png",

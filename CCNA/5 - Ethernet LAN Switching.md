@@ -28,14 +28,14 @@
 * 4 bytes (32 bits) field length.
 * Detects corrupted data by running a `CRC(Cyclic Redundancy Check)` algorithm over the received data.
 
-#### NOTE On Ethernet Frame Heaer Structure
+#### NOTE On Ethernet Frame Header Structure
 * The `Preamble + SFD` might not be included as part of the Ethernet frame header depending on how you define it.
 	* Therefore, the size of the Ethernet header + trailer could be 18 bytes (6+ 6 + 2 + 4) rather than 26 bytes.
 #### Ethernet Frame Minimum Size
 * The minimum size for an Ethernet frame (`Header` + `Payload[Packet]` + `Trailer`) is 64 bytes.
 * The minimum payload (packet) size is 46 bytes.
 	* 64 bytes - 18 bytes (header + trailer) = 46 bytes.
-	* Padding bytes in the form of 0s (hexadecimal) are added when the payload size is less than 46 bytes.
+	* Padding bytes in the form of 0s (hexadecimal) are added when the payload size if less than 46 bytes.
 		* ie. 34-byte packet + 12-byte padding = 46 bytes.
 
 ## MAC Address
@@ -49,7 +49,7 @@
 ## Switch Functionality
 * Switches `learn`, `flood`, and `fordward` packets
 	* **Learn**
-		* Switches dynamically learn MAC addresses when a new frame arrives. The association between the source MAC address of the packet and the interface that it came is is written to the switch's `MAC Address Table`.
+		* Switches dynamically learn MAC addresses when a new frame arrives. The association between the source MAC address of the frame and the interface through which it came is written to the switch's `MAC Address Table`.
 		* `Aging`: Associations in a switch's MAC address table are removed after 5 minutes of inactivity.
 		* `Dynamic MAC address` is an address that is learned automatically by the switch.
 	* **Flood**
@@ -84,7 +84,7 @@ When looking to initiate communication with another host, we often only know the
 ## Switch MAC Address Table Commands
 
 #### Display MAC Address From Switch
-`SW1#show mac address-table`
+`SW1#show mac address-table` 
 * Indicates the Vlan.
 * Indicates the MAC Address.
 * Indicates the Type.
