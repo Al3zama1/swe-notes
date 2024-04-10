@@ -10,13 +10,13 @@
 #### IP Address Waste
 * Company X needs IP addressing for 5000 end hosts.
 * A **class C** network does not provide enough addresses, so a **class B** network must be assigned.
-* This will result in about 60000 addresses being wasted.
+* This will result in about 60,000 addresses being wasted.
 
 
 ## CIDR (Classless Inter-Domain Routing)
 * When the internet was first created, the creators did not predict that the internet would become as large as it is today.
 * This resulted in wasted address space like the examples above. Now a days IP address exhaustion has become a problem because there is not enough addresses.
-* The IETF (Internet Engineering Task Force) introduces CIDR in 1993 to replace the 'classful' addressing system. This remedies the issue of wasted addresses.
+* The IETF (Internet Engineering Task Force) introduced CIDR in 1993 to replace the 'classful' addressing system. This remedies the issue of wasted addresses.
 * CIDR removed the requirements of prefix length set by the different network classes.
 	* Class A = /8
 	* Class B = /16
@@ -67,7 +67,7 @@ How many usable addresses are there in each network?
 	* (2^1) - 2 = 0 usable addresses.
 	* 7 borrowed host bit makes 128 subnets possible.
 	* Subnet mask = 255.255.255.254
-	* For a point-to-point connection like the one shown above it is possible to use  a /31 mask and is recommended.
+	* For a point-to-point connection like the one shown above it is possible to use  a /31 mask and it is recommended. However, don't use it for the CCNA like that.
 		* Normally it would not be possible because there would leave no addresses for the network and broadcast addresses.
 		* However, for a dedicated point-to-point connection, there is really no need for the network and broadcast addresses.
 		* Routers will give the following warning when using /31 mask: `Warning: use /31 mask on non point-to-point interfaces cautiously`.

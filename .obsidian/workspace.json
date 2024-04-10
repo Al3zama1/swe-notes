@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/10 - Static Routing.md",
+                "file": "CCNA/12 - Subnetting.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/10 - Static Routing.md",
+                "file": "CCNA/12 - Subnetting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/10 - Static Routing.md",
+                "file": "CCNA/12 - Subnetting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/10 - Static Routing.md"
+                "file": "CCNA/12 - Subnetting.md"
               }
             }
           },
@@ -161,6 +161,8 @@
   },
   "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
+    "CCNA/11 - Life of a Packet.md",
+    "CCNA/10 - Static Routing.md",
     "CCNA/9 - Routing Fundamentals.md",
     "CCNA/8 - IPv4 Header.md",
     "CCNA/6 - IPv4 Addressing.md",
@@ -189,8 +191,6 @@
     "CCNA/img/subnetting-3.jpeg.crdownload",
     "CCNA/img/subnetting-2.jpeg.crdownload",
     "CCNA/img/subentting-1.jpg.crdownload",
-    "CCNA/11 - Life of a Packet.md",
-    "CCNA/10 - Static Routing.md",
     "img/ipv4-address-classes.md",
     "img",
     "Gradle/1. Introduction to Gradle.md",
