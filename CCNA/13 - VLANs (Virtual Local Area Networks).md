@@ -56,7 +56,7 @@ VLAN Name           Status         Ports
 			
 								   Gig0/1, Gig0/2
 
-  fddi-default   active
+1002  fddi-default   active
 
 1003 token-ring-default active
 
@@ -84,11 +84,11 @@ SW1(config-vlan)#name ENGINEERING // change default VLAN name.
 	* A switch port connected to an end host should enter access mode by default. However, it's better to explicitly configure the setting and not rely on auto negotiation.
 * An **access port** is a  switch port  which belongs to a single VLAN, and usually connects to end hosts like PCs.
 	* Its called an access port because it gives the end hosts access to the network.
-* There is another is another type of switch port called **trunk port** that can carry multiple VLANs.
+* There is another  type of switch port called **trunk port** that can carry multiple VLANs.
 ## Trunk Ports
 * There is a link between SW1 and SW2 in VLAN10 to allow for communication between all hosts in VLAN10. Furthermore, the link is needed for hosts in VLAN10 connected to SW1 to be able to reach the router and travel to the other VLANs.
 * VLAN30 is connected to SW1, therefore there must be a link for that VLAN between SW1 and SW2 to be able to reach the router and travel to the other VLANs.
-* There is not a link between SW1 and SW2 for VLAN20 because there is no hosts in that VLAN connected to to SW1. Hosts in VLAN20 can contact hosts in the other VLANs by simply going though SW2 to R1 for inter-VLAN communication.
+* There is not a link between SW1 and SW2 for VLAN20 because there is no hosts in that VLAN connected to to SW1. Hosts in VLAN20 can contact hosts in the other VLANs by simply going through SW2 to R1 for inter-VLAN communication.
 
 ![network topology with VLAN connected to different switches](./img/multiple-switch-topology-vlan.png)
 * In a small network with few VLANs, it is possible to use a separate interface for each VLAN when connecting switches to switches, and switches to routers.
@@ -106,7 +106,7 @@ Using Trunk ports, the number of connections between Switch to Switch and Switch
 #### VLAN Tagging
 * There are two main trunking protocols: 
 	* **ISL (Inter-Switch Link)**.
-	* **IEEE 202.1Q** usually called "dot1q".
+	* **IEEE 802.1Q** usually called "dot1q".
 * ISL is an old Cisco proprietary protocol created before the industry standard IEEE 802.1Q.
 * IEEE 802.1Q is an industry standard protocol created by the IEEE (Institute of Electrical and Electronics Engineers).
 * You will probably NEVER user ISL in the real world. Even modern Cisco equipment doesn't support it. For the CCNA, you only need to learn 802.1Q.
@@ -130,7 +130,7 @@ Using Trunk ports, the number of connections between Switch to Switch and Switch
 	* Always set to a value of 0x8100 that indicates that the frame is 802.1Q tagged.
 * **PCP (Priority Code Point)**:
 	* 3 bits in length.
-	* Used for **Class of Service (CoS)**, which prioritizes important traffic in congested networks.
+	* Used for **Quality of Service (QoS)**, which prioritizes important traffic in congested networks.
 * **DEI(Drop Eligible Indicator)**: 
 	* 1 bit in length.
 	* Used to indicate frames that can be dropped if the network is congested.
@@ -145,7 +145,7 @@ Using Trunk ports, the number of connections between Switch to Switch and Switch
 * The range of VLANs (1 - 4094) is divided into two sections:
 	* Normal VLANs: 1 - 1005.
 	* Extended VLANs: 1006 - 4094.
-* Some oder devices cannot use the extended VLAN range, however it's safe to expect that modern switches will support the extended VLAN range.
+* Some older devices cannot use the extended VLAN range, however it's safe to expect that modern switches will support the extended VLAN range.
 
 #### Native VLAN
 * 802.1Q has a feature called the **native VLAN**. (ISL does not have this feature).
