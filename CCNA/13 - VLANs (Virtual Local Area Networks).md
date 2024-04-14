@@ -116,6 +116,7 @@ Using Trunk ports, the number of connections between Switch to Switch and Switch
 | Preamble | SFD | Destination | Source | 802.1Q | Type |
 | -------- | --- | ----------- | ------ | ------ | ---- |
 * The 802.1Q tag is inserted between the Source and Type/Length fields of the Ethernet frame header.
+* **It wont be included in the frame header when frames are sent in the native VLAN.**
 * The tag is 4 bytes (32 bits) in length.
 * The tag consists of two main fields:
 	* **Tag Protocol Identifier (TPID)**
@@ -271,3 +272,24 @@ R1(config-subif)#ip address 192.168.1.190 255.255.255.192
 ```
 
 * The sub-interface number does not have to match the VLAN number.  However, it is highly recommended that they do match, to make it easier to understand.
+
+## Native VLAN on a Router (ROAS)
+* Traffic in the native VLAN is more efficient because frames are not tagged, making them smaller. As a result, more frames can be sent per second.
+	* The 802.1Q header field is not included for frames in the native VLAN.
+
+#### Native VLAN Configuration on a Router
+There are 2 methods of configuring the native VLAN on a router:
+* **Method 1:** Use the command `encapsulation dot1q vlan-id native ` on the router.
+* **Method 2:** Configure the IP address for the native VLAN on the router's physical interface (the `encapsulation dot1q vlan-id` command is not necessary)
+	* This method does not use a subinterface at all.
+
+```
+METHOD 1:
+R1(config)#interface g0/0.10
+R1(config-subif)#encapsulation dot1q 10 native
+R1(config-subif)#
+
+METHOD 2:
+R1(config)#interface g0/0
+R1(config-if)#ip address 192.168.1.62 255.255.255.192
+```

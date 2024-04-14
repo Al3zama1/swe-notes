@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+                "file": "CCNA/14 - VLANs Part Two.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+                "file": "CCNA/14 - VLANs Part Two.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+                "file": "CCNA/14 - VLANs Part Two.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md"
+                "file": "CCNA/14 - VLANs Part Two.md"
               }
             }
           },
@@ -159,24 +159,27 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "82c73aa594cca3fd",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
+    "CCNA/img/layer-two-switch-inter-vlan-routing.png",
     "CCNA/14 - VLANs Part Two.md",
+    "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+    "CCNA/img/multilayer-switch-inter-vlan-routing.png",
     "CCNA/12 - Subnetting.md",
     "CCNA/11 - Life of a Packet.md",
     "CCNA/10 - Static Routing.md",
     "CCNA/9 - Routing Fundamentals.md",
     "CCNA/8 - IPv4 Header.md",
+    "CCNA/7 - Switch Interfaces.md",
     "CCNA/6 - IPv4 Addressing.md",
     "CCNA/5 - Ethernet LAN Switching.md",
-    "CCNA/7 - Switch Interfaces.md",
-    "CCNA/2 - Interfaces and Cables.md",
     "CCNA/4 - CLI Introduction.md",
     "CCNA/3 - OSI Model & TCP-IP.md",
+    "CCNA/2 - Interfaces and Cables.md",
     "CCNA/1 - Network Devices.md",
+    "Gradle/1. Introduction to Gradle.md",
     "Untitled.md",
     "ipv4-address-classes-details.md",
-    "CCNA/13 - VLANs (Virtual Local Area Networks).md",
     "CCNA/img/roas-path-flow.png",
     "CCNA/img/native-VLAN-bad-example.png",
     "CCNA/img/native-VLAN-example.png",
@@ -185,15 +188,12 @@
     "CCNA/img/multiple-switch-topology-vlan.png",
     "CCNA/img/vlan-configuration.png",
     "CCNA/img/vlan-layer2-segmenting.png",
-    "CCNA/img/vlan-misconfiguration.png",
-    "CCNA/img/no-vlan.png",
     "CCNA/img/subnetting-5.jpeg.crdownload",
     "CCNA/img/subnetting-3.jpeg.crdownload",
     "CCNA/img/subnetting-2.jpeg.crdownload",
     "CCNA/img/subentting-1.jpg.crdownload",
     "img/ipv4-address-classes.md",
     "img",
-    "Gradle/1. Introduction to Gradle.md",
     "CCNA/img",
     "CCNA",
     "Gradle/5. The Gradle Task Graph.md",
@@ -203,7 +203,6 @@
     "redis/5. Lists.md",
     "redis/2. Keys Expiration Time (TTL).md",
     "redis/4. Hashes.md",
-    "redis/1. Key Space.md",
     "redis/img",
     "redis",
     "Gradle/img",
