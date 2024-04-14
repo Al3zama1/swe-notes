@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 252.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -159,10 +160,11 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
-    "CCNA/img/layer-two-switch-inter-vlan-routing.png",
+    "CCNA/img/multilayer-switch-connect-to-internet.png",
     "CCNA/14 - VLANs Part Two.md",
+    "CCNA/img/layer-two-switch-inter-vlan-routing.png",
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
     "CCNA/img/multilayer-switch-inter-vlan-routing.png",
     "CCNA/12 - Subnetting.md",
@@ -187,7 +189,6 @@
     "CCNA/img/trunk-ports.png",
     "CCNA/img/multiple-switch-topology-vlan.png",
     "CCNA/img/vlan-configuration.png",
-    "CCNA/img/vlan-layer2-segmenting.png",
     "CCNA/img/subnetting-5.jpeg.crdownload",
     "CCNA/img/subnetting-3.jpeg.crdownload",
     "CCNA/img/subnetting-2.jpeg.crdownload",

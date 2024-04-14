@@ -30,4 +30,7 @@ Process of inter-VLAN communication when a multilayer switch is used.
 * It is assumed that SW2 already has the mac address from the destination PC in its mac address table. Otherwise, the switch would have flooded VLAN 10 to find it.
 * Since SW2 is layer 3 aware, it does not have to go to R1.
 
-
+#### Communication Outside the LAN
+* SW2 is the default gateway, therefore hosts that need to communicate outside of their VLAN will need to communicate with it.
+* In addition to configuring switch virtual interfaces (SVIs) on multilayer switches, its physical interfaces can be configured to operate like router interfaces.
+![Multilayer switch communication outside of LAN](./img/multilayer-switch-connect-to-internet.png)
