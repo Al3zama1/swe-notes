@@ -11,25 +11,26 @@
 * A multilayer switch is capable of both switching and routing.
 * It is Layer 3 aware.
 * Its interfaces can be configured to behave like router interfaces and assign IP addresses to them.
-* Switch Virtual Interfaces (SVI) can be created for each VLAN to allow for inter-VLAN communication. Each SVI is assigned an IP address.
+* It can have **Switch Virtual Interfaces (SVI)**.
 * Routes can be configured on it, just like a router.
 
-#### Multilayer Switch Inter-VLAN Routing via SVI
-* SVIs (Switch Virtual Interfaces) are the virtual interfaces you can assign IP addresses to in a multilayer switch.
-* Configure each PC to use the SVI (NOT the router) as their gateway address.
-* To send traffic to different subnets/VLANs, the PCs will send traffic to the switch, and the switch will perform inter-VLAN routing.
+#### Switch Virtual Interfaces (SVI)
+* Switch Virtual Interfaces (SVI) can be created for each VLAN to allow for inter-VLAN communication. Each SVI is given an IP address that helps establish a link between a subnet and a VLAN.
+* SVIs are set up as the default gateway for all the clients in their respective VLANs, instead of the router. This avoids sending frames to the router for inter-VLAN routing.
+* When a frames arrives, it will send it to the VLAN that is associated with the subnet where the destination IP belongs.
 
-Process of inter-VLAN communication when a multilayer switch is used.
+The example below shows the process of communication between two PCs in different VLANS when a Layer 3 switch is used.
 ![multilayer switch inter vlan routing](./img/multilayer-switch-inter-vlan-routing.png)
+* PC in VLAN 20 sees that its target is in a different subnet, therefore it will communicate with its default gateway.
+	* The default gateway for VLAN 20 is SVI with IP 192.168.1.126.
+* SW2 will see that the destination IP belongs in the subnet associated with VLAN 10, therefore forward the frame to VLAN 10. Effectively carrying out inter-VLAN routing.
 * It is assumed that SW2 already has the mac address from the destination PC in its mac address table. Otherwise, the switch would have flooded VLAN 10 to find it.
-* Since SW2 is layer 3 aware, it does not have to go to R1 for inter-VLAN communication.
-
 #### Communication Outside the LAN
+The example below shows the process of communication between two devices that are not in the same LAN.
 ![Multilayer switch communication outside of LAN](./img/multilayer-switch-connect-to-internet.png)
-* Hosts communicate with the multilayer switch for both, inter-VLAN and outside the LAN communication.
-	* The switch will perform inter-VLAN switching for same LAN communication and forward traffic to the router for outside the LAN communication.
-* Multilayer switch interfaces can be configured to perform like router interfaces instead of switch port interfaces.
-	* In the example above, SW2 interface G0/1 is configured with an IP address. This address is used as the default route for communication outside of the LAN.
+* PC in VLAN 20 sees that its target is in a different subnet, therefore it will communicate with its default gateway.
+* The switch will see that none of the SVIs are associated with the subnet where the target IP is located. Therefore, it will communicate with its configured default route.
+	* For its default route, interface G0/1 was configured as a router interface and assigned an IP address. Communication will go that way to the Router for outside the LAN communication.
 
 #### Multilayer Switch to Router Configuration
 ```
