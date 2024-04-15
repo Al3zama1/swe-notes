@@ -5,20 +5,19 @@
 	* It's efficient in terms of interfaces because only 1 is used.
 	* However, in a busy network all of the traffic going to the router and back to the switch in a single interface can cause network congestion.
 	* Therefore, in large networks, a multilayer switch is the preferred method of inter-VLAN routing.
-* Multilayer Switch 
+* Multilayer Switch can also be used to perform inter-VLAN routing without the need to go to the router.
 
 ## Layer 3 (Multilayer) Switches
 * A multilayer switch is capable of both switching and routing.
 * It is Layer 3 aware.
-* You can assign IP addresses to its interfaces, like a router.
-* You can create virtual interfaces for each VLAN, and assign IP addresses to those interfaces.
-* You can configure routes on it, just like a router.
-* It can be used for inter-VLAN routing.
+* Its interfaces can be configured to behave like router interfaces and assign IP addresses to them.
+* Switch Virtual Interfaces (SVI) can be created for each VLAN to allow for inter-VLAN communication. Each SVI is assigned an IP address.
+* Routes can be configured on it, just like a router.
 
 #### Multilayer Switch Inter-VLAN Routing via SVI
 * SVIs (Switch Virtual Interfaces) are the virtual interfaces you can assign IP addresses to in a multilayer switch.
 * Configure each PC to use the SVI (NOT the router) as their gateway address.
-* To send traffic to different subnets/VLANs, the PCs will send traffic to the switch, and the switch will route the traffic.
+* To send traffic to different subnets/VLANs, the PCs will send traffic to the switch, and the switch will perform inter-VLAN routing.
 
 Process of inter-VLAN communication when a multilayer switch is used.
 ![multilayer switch inter vlan routing](./img/multilayer-switch-inter-vlan-routing.png)
@@ -26,8 +25,6 @@ Process of inter-VLAN communication when a multilayer switch is used.
 * Since SW2 is layer 3 aware, it does not have to go to R1 for inter-VLAN communication.
 
 #### Communication Outside the LAN
-* SW2 is the default gateway, therefore hosts that need to communicate outside of their VLAN will need to communicate with it.
-* In addition to configuring switch virtual interfaces (SVIs) on multilayer switches, its physical interfaces can be configured to operate like router interfaces.
 ![Multilayer switch communication outside of LAN](./img/multilayer-switch-connect-to-internet.png)
 * Hosts communicate with the multilayer switch for both, inter-VLAN and outside the LAN communication.
 	* The switch will perform inter-VLAN switching for same LAN communication and forward traffic to the router for outside the LAN communication.
