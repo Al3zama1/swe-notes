@@ -162,6 +162,8 @@
   },
   "active": "15a10c3afa389214",
   "lastOpenFiles": [
+    "CCNA/img/stp-root-bridge.png",
+    "CCNA/img/old-bridge-id.png",
     "CCNA/img/stp-bpdu.png",
     "CCNA/img/broadcast-storms.png",
     "CCNA/img/network-with-redundancy.png",
@@ -192,8 +194,6 @@
     "Gradle/1. Introduction to Gradle.md",
     "Untitled.md",
     "ipv4-address-classes-details.md",
-    "CCNA/img/roas-path-flow.png",
-    "CCNA/img/native-VLAN-bad-example.png",
     "CCNA/img/subnetting-5.jpeg.crdownload",
     "CCNA/img/subnetting-3.jpeg.crdownload",
     "CCNA/img/subnetting-2.jpeg.crdownload",

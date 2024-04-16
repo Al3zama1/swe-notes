@@ -37,3 +37,10 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 * Switches use one field in the STP BPDU, the **Bridge ID** field, to elect a **root bridge** for the network.
 * The switch with the lowest **Bridge ID** becomes the **root bridge**.
 * All ports on the **root bridge** are put in a forwarding state, and other switches in the topology must have a path to reach the root bridge.
+![root bridge selection](./img/stp-root-bridge.png)
+* SW1 is selected as the root bridge since all switches have the same bridge priority and it has the lowest MAC address.
+##### Old Bridge ID Format
+![Old bridge ID format](./img/old-bridge-id.png)
+* The Bridge Priority is compared first. If they tie, the MAC address is then compared.`
+* The default bridge priority is 32768 on all switches, so by default the MAC address is used as the tie-breaker (lowest MAC address value becomes the root bridge).
+##### New Bridge ID Format
