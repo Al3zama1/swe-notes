@@ -22,10 +22,18 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 ## Spanning Tree Protocol (STP)
 * This section will cover **Classic Spanning Tree protocol** which is defined in IEEE 803.1D.
 * Switches from all vendors run STP by default because it is very important to prevent Layer 2 loops.
-* STP prevents Layer 2 loops by placing redundant ports in a blocking state, essentially disabling the interface.
-* These interfaces act as backups that can enter a forwarding state if an active (currently forwarding) interface fails.
+* STP prevents Layer 2 loops by placing redundant ports in a blocking state, essentially disabling the interface. These interfaces act as backups that can enter a forwarding state if an active (currently forwarding) interface fails.
 * Interfaces in a forwarding state behave normally. They send and receive all normal traffic.
 * Interfaces in a blocking state only send or receive STP messages (called BPDUs = Bridge Protocol Date Units).
 	* STP still uses the term 'bridge'. However, when we use the term 'bridge', we really mean 'switch'. Bridges are not in use in modern networks.
-* 
 
+
+#### How Does STP Works
+* By selecting which ports are **forwarding** and which ports are **blocking**, STP creates a single path to/from each point in the network. This prevents Layer 2 loops.
+* There is a set process that STP uses to determine which ports should be forwarding and which should be blocking.
+* STP-enabled switches send/receive Hello BPDUs out of all interfaces. The default timer is 2 seconds (the switch will send a Hello BPDU out of every interface once every 2 seconds.)
+* If a switch receives a Hello BPDU on an interface, it knows that the interface is connected to another switch (routers, PCs, etc. do not use STP, so they do not send Hello BPDUs).
+![STP BPDU](./img/stp-bpdu.png)
+* Switches use one field in the STP BPDU, the **Bridge ID** field, to elect a **root bridge** for the network.
+* The switch with the lowest **Bridge ID** becomes the **root bridge**.
+* All ports on the **root bridge** are put in a forwarding state, and other switches in the topology must have a path to reach the root bridge.
