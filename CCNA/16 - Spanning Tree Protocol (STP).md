@@ -44,3 +44,6 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 * The Bridge Priority is compared first. If they tie, the MAC address is then compared.`
 * The default bridge priority is 32768 on all switches, so by default the MAC address is used as the tie-breaker (lowest MAC address value becomes the root bridge).
 ##### New Bridge ID Format
+![Updated bridge id](./img/updated-bridge-id.png)
+* Cisco switches use a version of STP called **PVST** (Per-VLAN Spanning Tree). PVST runs a separate STP instance in each VLAN. Therefore, in each VLAN different interfaces can be forwarding/blocking.
+
