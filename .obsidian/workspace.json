@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/14 - VLANs Part Two.md",
+                "file": "CCNA/15 - DTP & VTP.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/14 - VLANs Part Two.md",
+                "file": "CCNA/15 - DTP & VTP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/14 - VLANs Part Two.md",
+                "file": "CCNA/15 - DTP & VTP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/14 - VLANs Part Two.md"
+                "file": "CCNA/15 - DTP & VTP.md"
               }
             }
           },
@@ -162,8 +162,12 @@
   },
   "active": "82c73aa594cca3fd",
   "lastOpenFiles": [
-    "CCNA/img/multilayer-switch-connect-to-internet.png",
+    "CCNA/16 - Spanning Tree Protocol.md",
+    "CCNA/15 - DTP & VTP.md",
+    "CCNA/img/vtp-problem.png",
+    "CCNA/img/DTP-dynamic-desirable.png",
     "CCNA/14 - VLANs Part Two.md",
+    "CCNA/img/multilayer-switch-connect-to-internet.png",
     "CCNA/img/layer-two-switch-inter-vlan-routing.png",
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
     "CCNA/img/multilayer-switch-inter-vlan-routing.png",
@@ -187,8 +191,6 @@
     "CCNA/img/native-VLAN-example.png",
     "CCNA/img/801-1Q-tag-format.png",
     "CCNA/img/trunk-ports.png",
-    "CCNA/img/multiple-switch-topology-vlan.png",
-    "CCNA/img/vlan-configuration.png",
     "CCNA/img/subnetting-5.jpeg.crdownload",
     "CCNA/img/subnetting-3.jpeg.crdownload",
     "CCNA/img/subnetting-2.jpeg.crdownload",
@@ -203,7 +205,6 @@
     "Gradle/2. Gradle Project Structure.md",
     "redis/5. Lists.md",
     "redis/2. Keys Expiration Time (TTL).md",
-    "redis/4. Hashes.md",
     "redis/img",
     "redis",
     "Gradle/img",
