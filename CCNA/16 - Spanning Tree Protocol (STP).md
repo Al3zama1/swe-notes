@@ -67,9 +67,21 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 ##### Root Port Selection
 * Each remaining switch will select one of its interfaces to be its **root port**. The interface with the lowest root cost will be the root port. Root ports are also in a forwarding state.
 * **Root Cost**: The total cost of the outgoing interfaces along the path to the root bridge. The cost of the receiving interface is not counted.
+	* When a switch has multiple interfaces with the same root cost, the interface connected to the neighbor with the lowest Bridge ID will be selected as the root port.
+* The ports connected to another switch's root port must be designated because the root port is the switch's path to the root bridge and other switches must not block it.
 
 **Switch Interfaces STP Cost**
 ![switch interface root cost](./img/stp-root-cost.png)
 
-* SW1 is the root bridge in this example, so it has a cost of 0 on all interfaces.
-* 
+![root port selection sample](./img/root-port-selection-example.png)
+* SW 2:
+	* Designated as the root bridge because it has the lowest Bridge Priority.
+	* All its interfaces are set to designated (forwarding).
+* W 1: 
+	* Interface G0/0 is the root port because its root cost for the outgoing interface to get to SW2 is 4.
+	* Interface G0/1 is designated because it is connected to SW3's root port.
+* SW 4:
+	* Interface G0/1 is the root port because its root cost for the outgoing interface to get to SW2 is 4.
+* SW 3:
+	* There is a tie on both interfaces for the outgoing cost to get to the root bridge.
+	* SW1 has a lower Bridge ID than SW 4, therefore interface G0/0 is picked as the root bridge because you can get to SW 1 through it.
