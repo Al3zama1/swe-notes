@@ -61,7 +61,7 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 * Once the topology has converged and all switches agree on the root bridge, only the root bridge sends BPDUs. Other switches in the network will forward these BPDUs, but will not generate their own original BPDUs.
 * All other switches in the topology must have a path to reach the root bridge.
 ![rood bridge with updated bridge id](./img/updated-topology-for-root-bridge.png)
-* The Bridge Priority is compared first. If they tie, the MAC address is then compared to break the tie.
+* **The Bridge Priority is compared first. If they tie, the MAC address is then compared to break the tie.**
 * SW1 is selected as the root bridge since all switches have the same bridge priority and it has the lowest MAC address.
 
 ### Step 2
