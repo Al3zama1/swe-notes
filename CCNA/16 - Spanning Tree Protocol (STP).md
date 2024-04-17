@@ -11,7 +11,8 @@
 #### Network With Redundancy
 ![Network with redundancy](./img/network-with-redundancy.png)
 * Hosts in this network can take multiple paths to reach other hosts in the  LAN and to get to the internet (outside the LAN).
-* The availability of multiple pathways creates network redundancy for when connections fail.
+* The availability of multiple pathways creates network redundancy for when connections fail. 
+* The redundancy added can lead to loops in the LAN, creating unnecessary traffic that affects the network performance.
 
 ## Broadcast Storms
 The image below shows what would happen when PC1 tried to communicate with PC2 and PC1 didn't know the destination's MAC address.
@@ -28,26 +29,47 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 	* STP still uses the term 'bridge'. However, when we use the term 'bridge', we really mean 'switch'. Bridges are not in use in modern networks.
 
 
-#### How Does STP Works
+#### Spanning Tree Protocol Steps
+1. The switch with the lowest bridge ID is elected as the root bridge. All ports on the root bridge are **designated ports** (forwarding state).
+2. Each remaining switch will select one of its interfaces to be its **root port**. The interface with the lowest root cost will be the root port. Root ports are also in a forwarding state.
+#### Root Bridge Selection
+##### STP BPDU (Bridge Protocol Data Unit)
 * By selecting which ports are **forwarding** and which ports are **blocking**, STP creates a single path to/from each point in the network. This prevents Layer 2 loops.
 * There is a set process that STP uses to determine which ports should be forwarding and which should be blocking.
 * STP-enabled switches send/receive Hello BPDUs out of all interfaces. The default timer is 2 seconds (the switch will send a Hello BPDU out of every interface once every 2 seconds.)
 * If a switch receives a Hello BPDU on an interface, it knows that the interface is connected to another switch (routers, PCs, etc. do not use STP, so they do not send Hello BPDUs).
 ![STP BPDU](./img/stp-bpdu.png)
-* Switches use one field in the STP BPDU, the **Bridge ID** field, to elect a **root bridge** for the network.
-* The switch with the lowest **Bridge ID** becomes the **root bridge**.
-* All ports on the **root bridge** are put in a forwarding state, and other switches in the topology must have a path to reach the root bridge.
+##### Root Bridge
+* The switch with the lowest bridge ID is elected as the root bridge. All ports on the root bridge are **designated ports**, which are in a forwarding state.
+* When a switch is powered on, it assumes it is the root bridge. It will only give up its position if it receives a superior BPDU (lower Bridge ID).
+* Once the topology has converged and all switches agree on the root bridge, only the root bridge sends BPDUs. Other switches in the network will forward these BPDUs, but will not generate their own original BPDUs.
+* All other switches in the topology must have a path to reach the root bridge.
 ![root bridge selection](./img/stp-root-bridge.png)
+* The Bridge Priority is compared first. If they tie, the MAC address is then compared to break the tie.
 * SW1 is selected as the root bridge since all switches have the same bridge priority and it has the lowest MAC address.
-##### Old Bridge ID Format
+
+**Old Bridge ID Format**
 ![Old bridge ID format](./img/old-bridge-id.png)
-* The Bridge Priority is compared first. If they tie, the MAC address is then compared.`
+* The Bridge Priority is compared first. If they tie, the MAC address is then compared to break the tie.`
 * The default bridge priority is 32768 on all switches, so by default the MAC address is used as the tie-breaker (lowest MAC address value becomes the root bridge).
-##### New Bridge ID Format
+
+**New Bridge ID Format**
 ![Updated bridge id](./img/updated-bridge-id.png)
 * VLAN ID is included in Bridge priority because Cisco switches use a version of STP called **PVST** (Per-VLAN Spanning Tree). PVST runs a separate STP instance in each VLAN. Therefore, in each VLAN different interfaces can be forwarding/blocking.
 ![bridge priority structure](./img/bridge-priority.png)
 * The default bridge priority used to be 32768 because it is a 16 bit field and the most significant bit is set to 1 by default.
 * With the addition of the Extended System ID (VLAN ID), which sets the default VLAN to 1, the default bridge priority became 32769.
 	* In the default VLAN of 1, the default bridge priority is actually 32769 (32768 + 1).
+* The **bridge priority** + **extended system ID** is a single field in the Bridge ID. However, the extended system ID is set and cannot be changed because it is determined by the VLAN ID. Therefore, it is only possible to change the total Bridge Priority (Bridge Priority + Extended System ID) in units of 4096 - the value of the least significant bit of the Bridge Priority section.
+* Whatever value is chosen for the Bridge Priority section will be added to the Extended System ID section to get the total Bridge Priority number.
+![rood bridge with updated bridge id](./img/updated-topology-for-root-bridge.png)
+* Different switches can be the root bridge in different VLANs. For example, SW1 could be the root bridge for VLAN 1, SW3 the root bridge for VLAN 2, etc...
+##### Root Port Selection
+* Each remaining switch will select one of its interfaces to be its **root port**. The interface with the lowest root cost will be the root port. Root ports are also in a forwarding state.
+* **Root Cost**: The total cost of the outgoing interfaces along the path to the root bridge. The cost of the receiving interface is not counted.
+
+**Switch Interfaces STP Cost**
+![switch interface root cost](./img/stp-root-cost.png)
+
+* SW1 is the root bridge in this example, so it has a cost of 0 on all interfaces.
 * 
