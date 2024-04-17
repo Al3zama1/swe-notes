@@ -30,8 +30,18 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 
 
 #### Spanning Tree Protocol Steps
-1. The switch with the lowest bridge ID is elected as the root bridge. All ports on the root bridge are **designated ports** (forwarding state).
-2. Each remaining switch will select one of its interfaces to be its **root port**. The interface with the lowest root cost will be the root port. Root ports are also in a forwarding state.
+1. One switch is selected as the root bridge. All ports on the root bridge are **designated ports** (forwarding state). 
+	1. Root Bridge Selection:
+		1. Lowest bridge ID
+2. Each remaining switch will select one of its interfaces to be its **root port** (forwarding state). Ports across from the root port are always designated ports.
+	1. Root Port Selection:
+		1. Lowest Root cost.
+		2. Lowest neighbor bridge ID.
+		3. Lowest neighbor port ID.
+3. Each remaining collision domain will select one interface to be a **designated port** (forwarding state). The other port in the collision domain will be **non-designated** (blocking)
+	1. Designated Port Selection:
+		1. Interface on switch with lowest root cost.
+		2. Interface on switch with lowest bridge ID
 #### Root Bridge Selection
 ##### STP BPDU (Bridge Protocol Data Unit)
 * By selecting which ports are **forwarding** and which ports are **blocking**, STP creates a single path to/from each point in the network. This prevents Layer 2 loops.
@@ -68,6 +78,7 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 * Each remaining switch will select one of its interfaces to be its **root port**. The interface with the lowest root cost will be the root port. Root ports are also in a forwarding state.
 * **Root Cost**: The total cost of the outgoing interfaces along the path to the root bridge. The cost of the receiving interface is not counted.
 	* When a switch has multiple interfaces with the same root cost, the interface connected to the neighbor with the lowest Bridge ID will be selected as the root port.
+	* What if two switches have two connections between them and the root cost and Bridge ID are the same ? The interface connected to the interface on the neighbor switch with the lowest **STP Port ID** will become the root port. The neighbor switch's port ID is used to break the tie, no the local switch's ID.
 * The ports connected to another switch's root port must be designated because the root port is the switch's path to the root bridge and other switches must not block it.
 
 **Switch Interfaces STP Cost**
@@ -85,3 +96,18 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 * SW 3:
 	* There is a tie on both interfaces for the outgoing cost to get to the root bridge.
 	* SW1 has a lower Bridge ID than SW 4, therefore interface G0/0 is picked as the root bridge because you can get to SW 1 through it.
+
+**STP Port ID**
+![stp port ID](./img/stp-port-number.png)
+* The port number is used as the tiebreaker if the priorities tie.
+* Usually you just need to look at the port number. For example, G0/0 is lower than G1/0, etc...
+
+Example below shows example where there is a tie for both root cost and Bridge ID. Therefore, the Interface ID is used to break the tie as explained above.
+![](./img/multiple-connections-between-switches-root-port-tie.png)
+
+##### Block Redundant Ports
+![](./img/stp-block-redundant-ports.png)
+* The connection between SW2 through interface G0/0 and SW3 through interface G0/1 is redundant. Therefore it must be blocked.
+* However, the interfaces at both ends cannot be blocked because every collision domain must have a single STP designated port. The rules for which port is blocked are shown in the picture above.
+	* When switches are used, each link is a separate collision domain. They are shown in the picture with the colored rectangles.
+
