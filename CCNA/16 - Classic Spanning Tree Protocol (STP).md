@@ -242,9 +242,15 @@ SW1(config-if)#
 ```
 SW1(config)#inteface g0/2
 SW1(config-if)#spanning-tree bpduguard enabled
-SW1(config-if)#
 ```
 * `SW1(config)#spanning-tree portfast bpduguard default`: enable BPDU Guard by default on all Portfast-enabled interfaces from Global Configuration Mode.
+
+* Enable Interface disabled by BPDU Guard. 
+* The issue must be fixed before enabling the interface, otherwise it will be disabled again.
+```
+SW1(config-if)#shutdown
+SW1(config-if)#no shutdown
+```
 ### Root Guard (Optional for the CCNA)
 * If you enable **root guard** on an interface, even if it receives a superior BPDU (lower Bridge ID), the switch will not accept the new switch as the root bridge. The interface will be disabled.
 	* This helps maintain the Spanning Tree topology if someone plugs another switch into the network either with bad intent, or perhaps without knowing the impact of their action.
