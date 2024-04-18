@@ -276,3 +276,16 @@ SW3(config)#spanning-tree vlan 1 root secondary
 ### STP Load-Balancing
 * If you have multiple VLANs in your network, blocking the same interface in each VLAN is a waste of interface bandwidth. That connection will do nothing, just waiting for another connection to fail so it can start forwarding.
 * However, if you configure a different root bridge for different VLANs, different VLANs will disable different interfaces.
+* This leads to different connections being used in different VLANs. As a result, the load is balanced across different interfaces.
+
+### Port Cost/Priority
+```
+SW2(config-if)#spanning-tree vlan 1 ?
+cost          Change an interface's spanning tree port path cost
+port-priority Change an interface's spanning tree port priority
+```
+* Both command above are configured on a per-VLAN basis.
+* `cost` refers to the root cost.
+	* It's used to determine the root port on switches and to determine designated and non-designated ports.
+* `port-priority` is the first half of the port ID, which is the final tiebreaker in determining the root port. **PRACTICE THIS IN PACKET TRACER TO REALLY UNDERSTAND IT**
+* These values can be modified to change the result of the root port or designated port selection process.
