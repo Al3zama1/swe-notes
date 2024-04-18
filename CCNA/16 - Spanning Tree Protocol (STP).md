@@ -115,7 +115,82 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 ### Display spanning Tree Information
 
 `SW1(confgi)#show-spanning-tree`
+
+
 ![show spanning-tree command](./img/show-spanning-tree.png)
+
+* "Apanning tree enabled protocol ieee": means that the classic STP is being used.
+* All the way at the bottom in the interfaces, the Cost field refers to the outgoing interface cost and not the total root cost.
 * The command will list separate sections, each listing STP information for a specific VLAN because Cisco uses PVST (per-VLAN Spanning Tree).
 	* `SW1(confgi)#show spanning-tree vlan #` can be used to show STP information for that specific VLAN.
-* 
+* For each STP VLAN section, it will display the Bridge ID, and Root ID information.
+	* Root ID: 
+		* Displays information about the root bridge such as its priority, and MAC address.
+		* It will also display through which interface the root bridge is reached and the cost to get to it.
+		* When viewing information on the actual root bridge, it will just say that it is the root bridge and will not display port and cost fields.
+	* Bridge ID:
+		* Displays information about the switch itself such as its Priority and MAC address.
+
+`SW1(confgi)#show-spanning-tree detail`
+* show similar information to `show spanning-tree`, but with more detail.
+
+`SW1(confgi)#show-spanning-tree summary`
+* Lists each VLAN, and shows how many interfaces are in each STP state.
+	* Blocking
+	* Listenning
+	* Learning
+	* Forwarding
+	* STP Active: By default, every interface that is connected to another device and enabled will have STP running.
+
+## STP States
+![stp states](./img/stp-states.png)
+* Root/Designated ports remain stable in a **forwarding** state.
+* Non-designated ports remain stable in a **Blocking** state.
+* **Listening** and **Learning** are transitional states which are passed through when an interface is activated, or when a Blocking port must transition to a Forwarding state due to a change in the network topology.
+* There is also a **Disabled** state which is for interfaces that are administratively disabled (shutdown).
+
+### Blocking State
+* Non-designated ports are in a **blocking** state.
+* Interfaces in a Blocking state are effectively disabled to prevent loops.
+* Interfaces in a Blocking state do not send/receive regular network traffic.
+* Interfaces in a Blocking state receive STP BPDUs.
+* Interfaces in a Blocking state do not forward STP BPDUs.
+* Interfaces in a Blocking state do not learn MAC addresses.
+### Listening State
+* After the Blocking state, interfaces with the Designated or Root role enter **Listening** state.
+* Only Designated or Root ports enter the Listening state (Non-designated ports are always Blocking).
+* The listening state is 15 seconds long by default. This is determined by the **Forward delay** timer.
+* An interface in the Listening state ONLY forwards/receives STP BPDUs. It does NOT send/receive regular traffic.
+* An interface in the Listening state does not learn MAC addresses from regular traffic that arrives on the interface.
+### Learning State
+* After Listening state, a Designated or Root port will enter the **Learning** state.
+* The Learning state is 15 seconds long by default. This is determined by the **Forward delay** timer (the same time is used for both the Listening and Learning state).
+* An interface in the Learning state only sends/receives STP BPDUs. It does not send/receive regular traffic.
+* An interface in the Learning state *learns* MAC addresses from regular traffic that arrives on the interface.
+### Forwarding State
+* Root and Designated ports are in a **Forwarding** state.
+* A port in the Forwarding state operates normal.
+* A port in the Forwarding state sends/receives BPDUs.
+* A port in the Forwarding state sends/receives normal traffic.
+* A port in the Forwarding state learns MAC addresses.
+
+## STP Timers
+![stp timesr](./img/stp-timers.png)
+
+### Hello Timer
+* Non Root Bridge switches in the network do not originate their own BPDUs, but they will forward BPDUs they receive.
+* **Switches will only forward BPDUs on their Designated ports.** Therefore, Non-Designated and Root Ports will be the ones receiving the BPDUs.
+
+###  Max Age Timer
+Image below focuses on SW1 interface G0/0 to explain the Max Age timer. There is a problem with the link between SW1 and SW2, therefore the interface G0/0 will eventually reach its timer limit of 0.
+![stp max age timer](./img/stp-max-age-timer.png)
+* If another BPDU is receive before the max age timer counts down to 0, the timer will reset to 20 seconds and no change will occur.
+* If another BPDU is not received, the max age timer counts down to 0 and the switch will reevaluate its STP choices, including root bridge, local root, designated, and non-designated ports.
+* If a non-designated port is selected to become a designated or root port, it will transition from the blocking state to the listening state (15 seconds), learning state (15 seconds), and then finally the forwarding state. Therefore, it can take a total of 50 seconds for a blocking interface to transition to forwarding.
+	* A forwarding interface can move directly into a blocking state. There is no worry about creating a loop by blocking an interface.
+
+## STP BPDU
+
+## STP Optional Features
+
+## STP Configuration
