@@ -208,7 +208,8 @@ In the image below, SW1's G0/0 interface goes down, therefore it cannot keep on 
 	* 02 is the number of the port itself.
 * **Message Age** starts at 0 at the root bridge and is increased by 1 each time it is forwarded by another switch. It is subtracted from the max age when a switch receives a BPDU. For example, if the BPDU is passed through 5 switches, when it reaches the 6th switch, it will immediately reduce its max age timer to 15. Meaning each time it receives a BPDU its max age will reset to 15 instead of 20, even though the max age timer is 20.
 ## STP Optional Features (STP Toolkit)
-* Features that can be enabled to improve the functionality of Spanning Tree Protocol in some way.
+* STP runs by default so you don't actually have to configure it. However, if you leave it with the default settings, there is no guarantee that traffic will be following optimal path.
+* It's a good idea to explicitly configure which switch should be the root for each VLAN and also set different roots for different VLANs so each VLAN uses different links, balancing the load of the network traffic.
 ### Portfast
 * It solves one problem of Spanning Tree.
 * Portfast can be enabled on interfaces which are connected to end hosts. These interfaces are Designated ports.
