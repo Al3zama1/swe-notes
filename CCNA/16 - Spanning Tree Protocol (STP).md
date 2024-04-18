@@ -110,3 +110,12 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 * However, the interfaces at both ends cannot be blocked because every collision domain must have a single STP designated port. The rules for which port is blocked are shown in the picture above.
 	* When switches are used, each link is a separate collision domain. They are shown in the picture with the colored rectangles.
 
+## Commands
+
+### Display spanning Tree Information
+
+`show-spanning-tree`
+![show spanning-tree command](./img/show-spanning-tree.png)
+* The command will list separate sections for each configured VLAN in the switch. In this case only STP information pertaining to VLAN 1 is shown because it is the only existing VLAN.
+	* you can specify a specific VLAN after spanning-tree to only view STP information regarding the specified VLAN.
+* For each VLAN, it will show the Bridge ID information, Root ID priority
