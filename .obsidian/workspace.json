@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "de51ff2c7dea0fbe",
+        "id": "9dc3b34f6aa5e267",
         "type": "tabs",
         "children": [
           {
-            "id": "b6d2aaf837db81f7",
+            "id": "5c97acdbaf886adf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/16 - Spanning Tree Protocol (STP).md",
+                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/16 - Spanning Tree Protocol (STP).md",
+                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/16 - Spanning Tree Protocol (STP).md",
+                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/16 - Spanning Tree Protocol (STP).md"
+                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md"
               }
             }
           },
@@ -159,10 +159,12 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "b6d2aaf837db81f7",
+  "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
+    "2024-04-15.md",
+    "Untitled 1.canvas",
+    "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
     "CCNA/6 - IPv4 Addressing.md",
-    "CCNA/16 - Spanning Tree Protocol (STP).md",
     "CCNA/img/stp-bpdu-wireshark.png",
     "CCNA/img/stp-max-age-timer.png",
     "CCNA/img/stp-timers.png",
@@ -180,7 +182,6 @@
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
     "CCNA/12 - Subnetting.md",
     "Untitled.canvas",
-    "2024-04-15.md",
     "CCNA/11 - Life of a Packet.md",
     "CCNA/10 - Static Routing.md",
     "CCNA/9 - Routing Fundamentals.md",

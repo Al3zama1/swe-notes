@@ -177,13 +177,13 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 ## STP Timers
 ![stp timesr](./img/stp-timers.png)
 
-* The STP timers on the root bridge determine the STP timers for the entire network.
+* The STP timers on the root bridge determine the STP timers for the entire network even if they are configured differently.
 ### Hello Timer
 * Non Root Bridge switches in the network do not originate their own BPDUs, but they will forward BPDUs they receive.
 * **Switches will only forward BPDUs on their Designated ports.** Therefore, Non-Designated and Root Ports will be the ones receiving the BPDUs.
 
 ###  Max Age Timer
-Image below focuses on SW1 interface G0/0 to explain the Max Age timer. There is a problem with the link between SW1 and SW2, therefore the interface G0/0 will eventually reach its timer limit of 0.
+In the image below, SW1's G0/0 interface goes down, therefore it cannot keep on sending BPDUs to SW2's G0/1 interface. As a result, SW2's G0/1 interface will eventually reach its Max Age Timer, triggering a change in the STP topology.
 ![stp max age timer](./img/stp-max-age-timer.png)
 * If another BPDU is receive before the max age timer counts down to 0, the timer will reset to 20 seconds and no change will occur.
 * If another BPDU is not received, the max age timer counts down to 0 and the switch will reevaluate its STP choices, including root bridge, local root, designated, and non-designated ports.
@@ -207,6 +207,72 @@ Image below focuses on SW1 interface G0/0 to explain the Max Age timer. There is
 	* 80 in hexadecimal is equivalent to 128, which is the default port priority.
 	* 02 is the number of the port itself.
 * **Message Age** starts at 0 at the root bridge and is increased by 1 each time it is forwarded by another switch. It is subtracted from the max age when a switch receives a BPDU. For example, if the BPDU is passed through 5 switches, when it reaches the 6th switch, it will immediately reduce its max age timer to 15. Meaning each time it receives a BPDU its max age will reset to 15 instead of 20, even though the max age timer is 20.
-## STP Optional Features
+## STP Optional Features (STP Toolkit)
+* Features that can be enabled to improve the functionality of Spanning Tree Protocol in some way.
+### Portfast
+* It solves one problem of Spanning Tree.
+* Portfast can be enabled on interfaces which are connected to end hosts. These interfaces are Designated ports.
+* When they are first turned on or first connected to the PCs, they must go through the Listening and Learning stages before they can start forwarding traffic. This takes a total of 30 seconds (15 seconds each stage as discussed previously).
+	* When you first connect an end host to a switch interface, its light will be orange because it is not in the forwarding sate yet. Its interface light will turn green after 30 seconds once it is done going through the Listening and Learning stages.
+	* Spanning Tree goes through this process before putting a port in the forwarding state because Layer 2 loops are so dangerous for a network. The switch wants to be absolutely sure no loop will be formed before forwarding out of any given interface.
+* However, only interfaces connected to another switch can form a Layer 2 loop. There is no risk of forming a loop with an end host. Therefore, there is no need to wait 30 seconds on interfaces connected to end hosts. 
+* **Portfast** allows a port to move immediately to the Forwarding state, bypassing Listening and Learning. If used, it must be enabled only on ports connected to end hosts. If enabled on a port connected to another switch, it could cause a Layer 2 loop.
+* **There is a risk that cabling reassignment could lead to Layer 2 loops with Portfast enabled. For example, the reassignment of a switch interface where Portfast is enabled from an end host to another switch, resulting in loops.**
+	* **BPDU Guard** can be enabled to protect agains such loops.
+#### Portfast Configuration
+```
+SW1(config)#inteface g0/2
+SW1(config-if)#spanning-tree portfast
+%Warning: portfast should only be enabled on ports connected to a single
+host. Connecting hubs, concentrators, switches, bridges, etc... to this
+interface when portfast is enabled, can cause temporary bridging loops.
+Use with CAUTION
 
+%Portfast has been configured on FastEthernet0/1 but will only
+have effect when the interface is in a non-trunking mode.
+SW1(config-if)#
+```
+* `SW1(config)#spanning-tree portfast default`: enable portfast by default on all access ports (non trunk ports) from Global Configuration Mode.
+
+### BPDU Guard
+* If an interface with BPDU Guard enabled receives a BPDU from another switch, the interface will be shut down to prevent a loop from forming.
+
+#### BPDU Guard Configuration
+```
+SW1(config)#inteface g0/2
+SW1(config-if)#spanning-tree bpduguard enabled
+SW1(config-if)#
+```
+* `SW1(config)#spanning-tree portfast bpduguard default`: enable BPDU Guard by default on all Portfast-enabled interfaces from Global Configuration Mode.
+### Root Guard (Optional for the CCNA)
+* If you enable **root guard** on an interface, even if it receives a superior BPDU (lower Bridge ID), the switch will not accept the new switch as the root bridge. The interface will be disabled.
+	* This helps maintain the Spanning Tree topology if someone plugs another switch into the network either with bad intent, or perhaps without knowing the impact of their action.
+
+### Loop Guard (Optional for the CCNA)
+* If you enable **loop guard** on an interface, even if the interface stops receiving BPDUs, it will not start forwarding. The interface will be disabled.
+	* This prevents loops that can happen if an interface fails only in one direction, causing what is called a 'unidirectional link' that can't receive data, but is still able to forward it, or the opposite.
 ## STP Configuration
+### Configure the Spanning Tree Mode
+```
+Switch(config)#spanning-tree mode ?
+pvst       Per-Vlan spanning tree mode
+rapid-pvst Per-Vlan rapid spanning tree mode
+```
+* `pvst`is the classic Spanning Tree, but with Cisco's per-VLAN addition. Previous STP notes have been on this Spanning Tree mode.
+* `rapid-pvst` is an improved version. Modern Cisco switches run rapid-PVST by default, and usually there is no reason to change it.
+
+### Root Bridge Configuration
+* A specific switch can be configured to be the root bridge by manipulating the bridge priority of the switch.
+* It's is possible to configure something called a secondary root bridge, which will be next in line to become the root bridge if the current root bridge fails.
+```
+SW3(config)#spanning-tree vlan 1 root primary
+```
+* The above command sets the STP priority to 24576. If another switch already has a priority lower than 24576, it sets this switch's priority to 4096 less than the other switch's priority.
+```
+SW3(config)#spanning-tree vlan 1 root secondary
+```
+* The above command sets the STP priority to 28672.
+
+### STP Load-Balancing
+* If you have multiple VLANs in your network, blocking the same interface in each VLAN is a waste of interface bandwidth. That connection will do nothing, just waiting for another connection to fail so it can start forwarding.
+* However, if you configure a different root bridge for different VLANs, different VLANs will disable different interfaces.
