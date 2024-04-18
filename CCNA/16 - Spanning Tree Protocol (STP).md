@@ -114,8 +114,8 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 
 ### Display spanning Tree Information
 
-`show-spanning-tree`
+`SW1(confgi)#show-spanning-tree`
 ![show spanning-tree command](./img/show-spanning-tree.png)
-* The command will list separate sections for each configured VLAN in the switch. In this case only STP information pertaining to VLAN 1 is shown because it is the only existing VLAN.
-	* you can specify a specific VLAN after spanning-tree to only view STP information regarding the specified VLAN.
-* For each VLAN, it will show the Bridge ID information, Root ID priority
+* The command will list separate sections, each listing STP information for a specific VLAN because Cisco uses PVST (per-VLAN Spanning Tree).
+	* `SW1(confgi)#show spanning-tree vlan #` can be used to show STP information for that specific VLAN.
+* 

@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 252.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -162,8 +163,8 @@
   "active": "b6d2aaf837db81f7",
   "lastOpenFiles": [
     "CCNA/img/show-spanning-tree.png",
-    "CCNA/img/show-spanning-tree.png",
     "CCNA/16 - Spanning Tree Protocol (STP).md",
+    "CCNA/img/show-spanning-tree.png",
     "CCNA/img/stp-block-redundant-ports.png",
     "CCNA/img/multiple-connections-between-switches-root-port-tie.png",
     "CCNA/img/stp-port-number.png",
@@ -177,8 +178,6 @@
     "CCNA/12 - Subnetting.md",
     "CCNA/img/updated-topology-for-root-bridge.png",
     "CCNA/img/bridge-priority.png",
-    "CCNA/img/updated-bridge-id.png",
-    "CCNA/img/stp-root-bridge.png",
     "CCNA/6 - IPv4 Addressing.md",
     "Untitled.canvas",
     "2024-04-15.md",
