@@ -177,6 +177,7 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 ## STP Timers
 ![stp timesr](./img/stp-timers.png)
 
+* The STP timers on the root bridge determine the STP timers for the entire network.
 ### Hello Timer
 * Non Root Bridge switches in the network do not originate their own BPDUs, but they will forward BPDUs they receive.
 * **Switches will only forward BPDUs on their Designated ports.** Therefore, Non-Designated and Root Ports will be the ones receiving the BPDUs.
@@ -190,7 +191,22 @@ Image below focuses on SW1 interface G0/0 to explain the Max Age timer. There is
 	* A forwarding interface can move directly into a blocking state. There is no worry about creating a loop by blocking an interface.
 
 ## STP BPDU
-
+![STP BPDU Wireshark Analysis](./img/stp-bpdu-wireshark.png)
+* In the Ethernet header we have the destination MAC address for which Cisco's PVST+ uses the destination MAC address of 01:00:0c:cc:cc:cd.
+	* PVST: Only ISL trunk encapsulation.
+	* PVST+: Supports 802.1Q. When the term PVST is used, it refers to PVST+ because ISL is pretty much never used anymore.
+* Regular STP (not Cisco's PVST+) uses a destination MAC address of 01:80:c2:00:00:00.
+* **Protocol Identifier** is always 0x0000 for spanning Tree Protocol.
+* **Protocol Version Identifier** is set to 0 for the classic Spanning Tree.
+* **BPDU Type** is 0x00 for a configuration BPDU.
+* BPDU flags are used to signal topology changes to other switches.
+* **Root Bridge Identifier** includes the information from the Root Bridge in the network.
+* **Root Path Cost** gives the total cost to get to the root bridge.
+* **Bridge Identifier** includes the STP information about the switch that sent the BPDU.
+* **Port Identifier** is the interface which sent the BPDU. Above, its value is 0x8002
+	* 80 in hexadecimal is equivalent to 128, which is the default port priority.
+	* 02 is the number of the port itself.
+* **Message Age** starts at 0 at the root bridge and is increased by 1 each time it is forwarded by another switch. It is subtracted from the max age when a switch receives a BPDU. For example, if the BPDU is passed through 5 switches, when it reaches the 6th switch, it will immediately reduce its max age timer to 15. Meaning each time it receives a BPDU its max age will reset to 15 instead of 20, even though the max age timer is 20.
 ## STP Optional Features
 
 ## STP Configuration
