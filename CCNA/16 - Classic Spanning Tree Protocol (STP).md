@@ -252,6 +252,7 @@ SW1(config-if)#
 * If you enable **loop guard** on an interface, even if the interface stops receiving BPDUs, it will not start forwarding. The interface will be disabled.
 	* This prevents loops that can happen if an interface fails only in one direction, causing what is called a 'unidirectional link' that can't receive data, but is still able to forward it, or the opposite.
 ## STP Configuration
+* STP is configured y default, but it is better to do manual configuration to ensure best performance.
 ### Configure the Spanning Tree Mode
 ```
 Switch(config)#spanning-tree mode ?
