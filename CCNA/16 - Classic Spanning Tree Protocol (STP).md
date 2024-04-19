@@ -28,8 +28,7 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 * Interfaces in a forwarding state behave normally. They send and receive all normal traffic.
 * Interfaces in a blocking state only send or receive STP messages (called BPDUs = Bridge Protocol Date Units).
 	* STP still uses the term 'bridge'. However, when we use the term 'bridge', we really mean 'switch'. Bridges are not in use in modern networks.
-
-
+	
 ## Spanning Tree Protocol Steps
 
 ### Step 1: 
