@@ -15,17 +15,21 @@
 ## Rapid PVST+
 RSTP is not a timer-based spanning tree algorithm like 802.1D. Therefore, RSTP offers an improvement over the 30 seconds or more that 802.1D takes to move a link to forwarding. The heart of the protocol is a new bridge-bridge handshake mechanism, which allows ports to move directly to forwarding.
 
+### Compatibility
+* Rapid STP is compatible with Classic STP. The interface(s) on the Rapid STP-enabled switch connected to the Classic STP-enabled switch will operate in Classic STP mode (timers, blocking -> listening -> learning -> forwarding process, etc...).
 
-## Optional STP Features Implemented Into RSTP/Rapid PVST+
+### Optional STP Features Implemented Into RSTP/Rapid PVST+
 * These optional features are not in the exam topics, but it's good to be aware of them.
 * These features are Optional in classic STP. They must be configured to operate on the switch (not necessary for the CCNA).
 * These features are built into RSTP and operate by default, therefore they do not have to be configured.
 * The purpose of these features is to help blocking/discarding ports move rapidly to forwarding.
 
-## UPlinkFast
+#### PortFast
+allows a port to move immediately to the Forwarding state, bypassing Listening and Learning. It must be used only on ports connected to end hosts and not switches, which will cause Layer 2 loops.
+#### UPlinkFast
 * Classic STP optional features that allows switch interfaces to immediately move from blocking to forwarding state. It's built into RSTP, therefore it does not beed to be activated when using RSTP/Rapid PVST+.
 
-### BackboneFast
+#### BackboneFast
 Lets assume SW2's root port stops is cut off, so it stops receiving BPDUs from the root bridge (SW1). It will then assume it is the root bridge, so it will send it's own BPDUs to SW3.
 SW3 is now receiving BPDUs from both SW1 and SW2, but SW2's  BPDU are inferior - they have a higher bridge ID. Without the BackboneFast functionality, SW3 would just ignore these BPDUs from SW2 until its non-designated port, in classic STP, finally changes to a forwarding state and forwards the superior BPDUs from SW1 to SW2. SW2 then accepts SW1 as its root bridge again.
 ![](./img/backbonefast-1.png)
@@ -39,6 +43,10 @@ BackboneFast allows switches to expire the Max Age timer on their interfaces. In
 * RSTP elects designated ports with the same rules as STP.
 
 ### STP and RSTP Differences
+
+#### BPDUs
+* In classic STP, only the root bridge creates BPDUs and the other switches just forward the BPDUs they receive. However, in Raping STP, all switches create and send their own BPDUs from their designated ports.
+* In classic STP, a switch waits 10 Hello intervals (20 seconds). In rapid STP, a switch considers a neighbor lost if it misses 3 BPDUs (6 seconds). It will then flush (clear) all MAC addresses learned on that interface.
 
 #### RSTP Interfaces Speed Outgoing Cost
 ![stp vs rstp port cost](./img/st-vs-rstp-port-cost.png)
@@ -63,3 +71,44 @@ BackboneFast allows switches to expire the Max Age timer on their interfaces. In
 		* ==Function as a backup for a designated port==. 
 		* The switch chooses the interface with the lowest port ID to be its designated port, and the other will be the backup port.
 		* This only happens when two interfaces are connected to the same collision domain (via a hub). Hubs are not used in modern networks, so you will probably not encounter an RSTP backup port.
+
+#### RSTP vs RSTP BPDU
+![rstp BPDU](./img/stp-rstp-wireshark.png)
+* Protocol Version Identifier:
+	* Classic STP has a version of 0.
+	* RSTP has a version of 2.
+* BPDU Type: 0x02 for RSTP and 0x00 for classic STP.
+* BPDU Flags:
+	* Classic STP uses only 2 of the eight bits - the first and last one.
+	* RSTP uses all 8 bits and they are used in the negotiation process that allows RSTP to converge much faster than Classic STP.
+### RSTP Example 1
+Identify the root bridge and the RSTP port role of each switch interface in the following network.
+![RSTP example](./img/rstp-example1.png)
+
+### RSTP Link Types
+* RSTP distinguishes between three different link types:
+	* **Edge**: a port that is connected to an end host. It moves directly to forwarding, without negotiation.
+	* **Pint-to-point**: a direct connection between two switches.
+	* **Shared**: a connection to a hub. The connection must operate in half-duplex.
+
+![rstp link types](./img/rstp-link-types.png)
+#### Edge Link Type
+* Edge ports are connected to end hosts.
+* There is no risk of creating loops when connected to end hosts, therefore they can move straight to the forwarding state without the negotiation process.
+* They function like a Classic STP port with PortFast enabled. The PortFast functionality is built into RSTP by default.
+* You configure an edge port by enabling PortFast on the interface.
+`SW1(config-if)#spanning-tree portfast`
+
+#### Point-to-Point Link Type
+* Point-to-point ports connect directly to another switch.
+* They function in full-duplex.
+* It's not necessary to configure the interface as point-to-point (it should be detected).
+	* Manual configuration: `SW1(config-if)#spanning-tree link-type point-to-point`
+
+#### Shared Link Type
+* Shared ports connect to another switch (or switches) via a hub.
+* They function in half-duplex.
+* It's not necessary to configure the interfaces as shared (it should be detected).
+	* Manual configuration: `SW1(config-if)#spanning-tree link-type shared`
+
+### RSTP Example 1

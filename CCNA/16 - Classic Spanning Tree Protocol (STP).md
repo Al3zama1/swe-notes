@@ -119,7 +119,7 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 
 ![show spanning-tree command](./img/show-spanning-tree.png)
 
-* "Apanning tree enabled protocol ieee": means that the classic STP is being used.
+* "Spanning tree enabled protocol ieee": means that Cisco's version of classic STP is being used (PVST).
 * All the way at the bottom in the interfaces, the Cost field refers to the outgoing interface cost and not the total root cost.
 * The command will list separate sections, each listing STP information for a specific VLAN because Cisco uses PVST (per-VLAN Spanning Tree).
 	* `SW1(confgi)#show spanning-tree vlan #` can be used to show STP information for that specific VLAN.
@@ -195,9 +195,9 @@ In the image below, SW1's G0/0 interface goes down, therefore it cannot keep on 
 * In the Ethernet header we have the destination MAC address for which Cisco's PVST+ uses the destination MAC address of 01:00:0c:cc:cc:cd.
 	* PVST: Only ISL trunk encapsulation.
 	* PVST+: Supports 802.1Q. When the term PVST is used, it refers to PVST+ because ISL is pretty much never used anymore.
-* Regular STP (not Cisco's PVST+) uses a destination MAC address of 01:80:c2:00:00:00.
+* Regular IEEE STP (not Cisco's PVST+) uses a destination MAC address of 01:80:c2:00:00:00.
 * **Protocol Identifier** is always 0x0000 for spanning Tree Protocol.
-* **Protocol Version Identifier** is set to 0 for the classic Spanning Tree.
+* **Protocol Version Identifier** is set to 0 for the Classic Spanning Tree.
 * **BPDU Type** is 0x00 for a configuration BPDU.
 * BPDU flags are used to signal topology changes to other switches.
 * **Root Bridge Identifier** includes the information from the Root Bridge in the network.
