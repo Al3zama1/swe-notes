@@ -111,6 +111,6 @@ Identify the root bridge and the RSTP port role of each switch interface in the 
 * It's not necessary to configure the interfaces as shared (it should be detected).
 	* Manual configuration: `SW1(config-if)#spanning-tree link-type shared`
 
-### RSTP Example 1
+### RSTP Example 2
 ![rstp example](./img/rstp-example2.png)
 
