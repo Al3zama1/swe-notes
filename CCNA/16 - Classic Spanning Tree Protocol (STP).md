@@ -21,7 +21,7 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 * Spanning Tree Protocol (STP) is a Layer 2 protocol that is used to prevent infinite loops in a LAN, just like Time to Live (TTL) is used to prevent loops at Layer 3.
 * Network congestion isn't the only problem. Each time a frame arrives on a switchport, the switch uses the source MAC address field to learn the MAC address and update its MAC address table.When frames with the same source MAC address repeatedly arrive on different interfaces, the switch is continuously updating the interface in its MAC address table. This is known as **MAC Address Flapping**.
 ## Spanning Tree Protocol (STP)
-* This section will cover **Classic Spanning Tree protocol** which is defined in IEEE 803.1D.
+* This section will cover **Classic Spanning Tree protocol** which is defined in IEEE 802.1D.
 * Switches from all vendors run STP by default because it is very important to prevent Layer 2 loops.
 * STP prevents Layer 2 loops by placing redundant ports in a blocking state, essentially disabling the interface. These interfaces act as backups that can enter a forwarding state if an active (currently forwarding) interface fails.
 * By selecting which ports are **forwarding** and which ports are **blocking**, STP creates a single path to/from each point in the network. This prevents Layer 2 loops.
