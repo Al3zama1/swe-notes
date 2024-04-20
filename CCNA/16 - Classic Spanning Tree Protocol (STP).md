@@ -55,7 +55,8 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 	* In the default VLAN of 1, the default bridge priority is 32769 (32768 + 1).
 * The **bridge priority** + **extended system ID** is a single field in the Bridge ID. However, the extended system ID is set and cannot be changed because it is determined by the VLAN ID. Therefore, it is only possible to change the total Bridge Priority (Bridge Priority + Extended System ID) in units of 4096 - the value of the least significant bit of the Bridge Priority section.
 #### Root Bridge
-* The switch with the lowest **Bridge ID** is elected as the **root bridge**. All ports on the root bridge are **designated ports**, which are in a forwarding state.
+* The switch with the lowest **Bridge ID** is elected as the **root bridge**. 
+* The root bridge has a **designated port** in each collision domain it is connected to.
 * When a switch is powered on, it assumes it is the root bridge. It will only give up its position if it receives a superior BPDU (lower Bridge ID).
 * Once the topology has converged and all switches agree on the root bridge, only the root bridge sends BPDUs. Other switches in the network will forward these BPDUs, but will not generate their own original BPDUs.
 * All other switches in the topology must have a path to reach the root bridge.

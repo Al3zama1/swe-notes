@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/1 - Network Devices.md",
+                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/1 - Network Devices.md",
+                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/1 - Network Devices.md",
+                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/1 - Network Devices.md"
+                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md"
               }
             }
           },
@@ -161,9 +161,9 @@
   },
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
+    "CCNA/1 - Network Devices.md",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
-    "CCNA/1 - Network Devices.md",
     "CCNA/2 - Interfaces and Cables.md",
     "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/4 - CLI Introduction.md",
