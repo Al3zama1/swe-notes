@@ -114,3 +114,13 @@ Identify the root bridge and the RSTP port role of each switch interface in the 
 ### RSTP Example 2
 ![rstp example](./img/rstp-example2.png)
 
+### RSTP Example 3
+![rstp example 3](./img/rstp-example3.png)
+* **Root Bridge**: SW1
+	* The root bridge has two interfaces connected to the same collision domain (F0/2,F0/3). However, only one designated port can exist per collision domain. Therefore, interface F0/2 is chosen as the Designated port and F0/3 as the Backup port.
+* Edge ports (edge link type) connected to end hosts as shown above, will also be p2p ports if they are using full-duplex. 
+	* p2p means full duplex is enabled.
+	* Edge means PortFast is enabled.
+	* On a real switch, the link type wold be shown as both edge and p2p in the switch's console.
+* SW1's F0/24 interface is connected to a Hub, but there are PCs connected to the hub. Therefore, it is an edge port. The hub basically doesn't exist in terms of Spanning Tree. It's different than if it were connected to a switch here.
+	* F0/24 is an edge and shared port.

@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 252.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -162,8 +163,9 @@
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
-    "CCNA/1 - Network Devices.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
+    "CCNA/img/rstp-example3.png",
+    "CCNA/1 - Network Devices.md",
     "CCNA/2 - Interfaces and Cables.md",
     "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/4 - CLI Introduction.md",
@@ -190,7 +192,6 @@
     "CCNA/img/pvst-versions-comparison.png",
     "2024-04-15.md",
     "Untitled 1.canvas",
-    "CCNA/img/stp-bpdu-wireshark.png",
     "Untitled.canvas",
     "Gradle/1. Introduction to Gradle.md",
     "Untitled.md",
