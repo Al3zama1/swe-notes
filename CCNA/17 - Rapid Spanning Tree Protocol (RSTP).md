@@ -86,11 +86,6 @@ Identify the root bridge and the RSTP port role of each switch interface in the 
 ![RSTP example](./img/rstp-example1.png)
 
 ### RSTP Link Types
-* RSTP distinguishes between three different link types:
-	* **Edge**: a port that is connected to an end host. It moves directly to forwarding, without negotiation.
-	* **Pint-to-point**: a direct connection between two switches.
-	* **Shared**: a connection to a hub. The connection must operate in half-duplex.
-
 ![rstp link types](./img/rstp-link-types.png)
 #### Edge Link Type
 * Edge ports are connected to end hosts.
@@ -100,13 +95,15 @@ Identify the root bridge and the RSTP port role of each switch interface in the 
 `SW1(config-if)#spanning-tree portfast`
 
 #### Point-to-Point Link Type
-* Point-to-point ports connect directly to another switch.
+* Point-to-point ports connect directly to another switch. 
+* A connection from a switch interface to an end host can also be considered point-to-point if the end host is using full-duplex.
 * They function in full-duplex.
 * It's not necessary to configure the interface as point-to-point (it should be detected).
 	* Manual configuration: `SW1(config-if)#spanning-tree link-type point-to-point`
 
 #### Shared Link Type
 * Shared ports connect to another switch (or switches) via a hub.
+* A shared port could also connect to a hub that forwards frames to end hosts. In this case, the switch port/interface can be considered both, a shared port and an edge port if PortFast is enabled.
 * They function in half-duplex.
 * It's not necessary to configure the interfaces as shared (it should be detected).
 	* Manual configuration: `SW1(config-if)#spanning-tree link-type shared`
@@ -123,4 +120,4 @@ Identify the root bridge and the RSTP port role of each switch interface in the 
 	* Edge means PortFast is enabled.
 	* On a real switch, the link type wold be shown as both edge and p2p in the switch's console.
 * SW1's F0/24 interface is connected to a Hub, but there are PCs connected to the hub. Therefore, it is an edge port. The hub basically doesn't exist in terms of Spanning Tree. It's different than if it were connected to a switch here.
-	* F0/24 is an edge and shared port.
+	* F0/24 is both, an edge port with PortFast enabled and a shared port.

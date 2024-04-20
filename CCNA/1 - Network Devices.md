@@ -28,5 +28,5 @@ Firewalls are specialty network security devices that control network traffic en
 * Are known as 'Next-Generation Firewalls' when they include more modern and advanced filtering capabilities.
 * ASA and Firepower are some Cisco Firewall models.
 
-There is another type of firewall called 'Host-based firewall. This is a software application that filters traffic entering and exiting a host machine, like a PC. Even in a network with a hardware firewall, each host should include a host-based firewall as an extra line of defence.
+There is another type of firewall called 'Host-based firewall. This is a software application that filters traffic entering and exiting a host machine, like a PC. Even in a network with a hardware firewall, each host should include a host-based firewall as an extra line of defense.
 
