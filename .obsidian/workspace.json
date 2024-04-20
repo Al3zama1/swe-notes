@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
+                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
+                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
+                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md"
+                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md"
               }
             }
           },
@@ -161,8 +161,8 @@
   },
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
-    "CCNA/1 - Network Devices.md",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
+    "CCNA/1 - Network Devices.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CCNA/2 - Interfaces and Cables.md",
     "CCNA/3 - OSI Model & TCP-IP.md",

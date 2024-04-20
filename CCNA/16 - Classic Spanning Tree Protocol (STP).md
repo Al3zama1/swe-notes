@@ -37,7 +37,7 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 	1. Lowest bridge ID
 
 #### STP Bridge Protocol Data Unit (BPDU)
-* STP-enabled switches send/receive Hello BPDUs out of all interfaces. The default timer is 2 seconds (the switch will send a Hello BPDU out of every interface once every 2 seconds.)
+* STP-enabled switches can send/receive Hello BPDUs out of all eligible interfaces. The ability of a switch's interfaces to send BPDUs is determined by its state (disabled, blocking, listening, learning, forwarding). The default timer for sending BPDUs is 2 seconds.
 * If a switch receives a Hello BPDU on an interface, it knows that the interface is connected to another switch (routers, PCs, etc. do not use STP, so they do not send Hello BPDUs).
 ![STP BPDU](./img/stp-bpdu.png)
 
