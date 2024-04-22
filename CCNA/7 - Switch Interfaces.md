@@ -67,7 +67,6 @@ It describes how devices avoid collisions in a half duplex situation and how to 
 * The process repeats.
 
 ## Collision Domain
-
 #### Switches vs Hubs
 Hubs are simple repeaters which operate at layer 1, repeating whatever signals they receive. Switches operate at layer 2, using layer 2 addressing, MAC addresses to send frames to specific hosts. Furthermore, switches won't try to send two frames to the same host at once.
 
