@@ -79,7 +79,6 @@ Hubs are simple repeaters which operate at layer 1, repeating whatever signals t
 * Interfaces that can run at different speeds (10/100 or 10/100/1000) have default settings of `speed auto` and `duplex auto`. 
 * Interfaces advertise their capabilities to the connected device and they negotiate the best `speed` and `duplex` settings they are both capable of.
 ![speed and duplex negotiation](./img/duplex-speed-negotiation.png)
-
 What if auto negotiation is disabled on the device connected to the switch? 
 * **Speed**: The switch will try to sense the speed that the other device is operating at. If it fails to sense the speed, it will use the slowest supported speed (ie. 10 Mbps on a 10/100/1000 interface).
 * **Duplex**: If the speed is 100 Mbps or less, the switch will use half duplex. If the speed is greater than 100 Mbps, it will use full duplex.
