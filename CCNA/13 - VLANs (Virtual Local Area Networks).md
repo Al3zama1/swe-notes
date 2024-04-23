@@ -18,7 +18,7 @@ The example below shows a single LAN with different departments where a computer
 The 3 departments have been separated into 3 different subnets to provide Layer 3 separation.
 ![VLAN misconfiguration](./img/vlan-misconfiguration.png)
 * Although the three departments have been separated into three subnets (Layer 3), they are still in the same broadcast domain (Layer 2).
-* The switch has no notion of Layer 3 IP addresses, it only looks at the layer 2 address. It will look that the address is the broadcast address and consequently forward the frame to all connected hosts.
+* The switch has no notion of Layer 3 IP addresses, it only looks at the layer 2 address. It will see that the destination MAC address is the broadcast address and consequently forward the frame to all connected hosts.
 * One solution would be to use a different Switch device for each of the subnets.
 	* This might not be practical because most likely not all Switch interfaces will be used per subnet. Resulting in high cost and wasted Switch interfaces.
 
