@@ -1,14 +1,12 @@
 ## What is a LAN ?
 * A LAN is a single **broadcast domain**, including all devices in that broadcast domain.
 * A **broadcast domain** is  the group of devices which will receive a broadcast frame (destination MAC FFF.FFFF.FFFF) sent by any one of the members.
-The picture below contains 5 broadcast domain, therefore there is 5 separate LANs
+The picture below contains 4 broadcast domain, therefore there are 4 separate LANs
 ![LAN broadcast domain](./img/LAN-broadcast-domain.png)
-
 ## VLAN
 A VLAN is a way to logically split up a layer 2 broadcast domain to make multiple separate broadcast domains.
-
 #### Why are VLANs Needed ?
-The example below shows a single LAN with different departments where a computer in the engineering department sends a broadcast message intended for other PC's in the same department. However, since there is no clear division between the different departments in the LAN, all PC's in all departments will receive the broadcast message.
+The example below shows a single LAN with different departments where a computer in the engineering department sends a broadcast message intended for another PC's in the same department. However, since there is no clear division between the different departments in the LAN, all PC's in all departments will receive the broadcast message.
 ![example without VLAN](./img/no-vlan.png)
 * **Performance Issues**: Lots of unnecessary broadcast traffic can reduce network performance. 
 	* Above, a broadcast message was intended for the Engineering department, but was propagated to all hosts in all departments.
@@ -16,7 +14,6 @@ The example below shows a single LAN with different departments where a computer
 * **Security Reasons**: Even within the same office, you want to limit who has access to what.
 	* Configuring security policies on a router/firewall does not have any effect on hosts communicating in the same LAN.
 	* PCs in the same LAN can reach each other directly, without passing through the router.
-
 #### Layer 3 Segmentation
 The 3 departments have been separated into 3 different subnets to provide Layer 3 separation.
 ![VLAN misconfiguration](./img/vlan-misconfiguration.png)
