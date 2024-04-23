@@ -92,7 +92,7 @@ SW1(config-vlan)#name ENGINEERING // change default VLAN name.
 * However, when the number of VLANs increases, this is not viable. It will result in wasted interfaces, and often routers won't have enough interfaces for each VLAN.
 * You can use **trunk ports** to carry traffic from multiple VLANs over a single interface.  
 
-Using Trunk ports, the number of connections between Switch to Switch and Switch to Router decreased from 3 to 1 physical connection.
+Using Trunk ports, the number of connections between Switch to Switch and Switch to Router decreased to 1 physical connection.
 ![trunk ports](./img/trunk-ports.png)
 * Switches will `tag` all frames that they send over a trunk link.
 * Switches will look at the tag of all frames received over a trunk link to determine the VLAN that it belongs to.
