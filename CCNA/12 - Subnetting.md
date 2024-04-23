@@ -12,7 +12,6 @@
 * A **class C** network does not provide enough addresses, so a **class B** network must be assigned.
 * This will result in about 60,000 addresses being wasted.
 
-
 ## CIDR (Classless Inter-Domain Routing)
 * When the internet was first created, the creators did not predict that the internet would become as large as it is today.
 * This resulted in wasted address space like the examples above. Now a days IP address exhaustion has become a problem because there is not enough addresses.
