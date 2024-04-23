@@ -3,7 +3,7 @@
 	* This works, but if you have many VLANs you probably won't have enough interfaces on the router for all VLANs.
 * Router on a stick(ROAS), which uses a single trunk connection to carry traffic for all VLANs between the switch and router.
 	* It's efficient in terms of interfaces because only 1 is used.
-	* However, in a busy network all of the traffic going to the router and back to the switch in a single interface can cause network congestion.
+	* However, in a busy network all, of the traffic going to the router and back to the switch in a single interface can cause network congestion.
 	* Therefore, in large networks, a multilayer switch is the preferred method of inter-VLAN routing.
 * Multilayer Switch can also be used to perform inter-VLAN routing without the need to go to the router.
 

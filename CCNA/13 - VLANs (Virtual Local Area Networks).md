@@ -290,3 +290,4 @@ METHOD 2:
 R1(config)#interface g0/0
 R1(config-if)#ip address 192.168.1.62 255.255.255.192
 ```
+ 
