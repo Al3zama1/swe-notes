@@ -49,7 +49,6 @@ L      192.168.1.1/32 is directly connected, GigabitEthernet0/2
 
 #### What Does The Following Mean ?
 `192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks`
-When an IP address is assigned to a router interface, two subnets with different masks are added to the routing table.
 * Connected Route: `192.168.1.0/24` with mask `255.255.255.0`.
 * Local Route: `192.168.1.0/32` with mask `255.255.255.255`.
 * It means that the above mentioned IP addresses fit within the `192.168.1.0/24` network.
