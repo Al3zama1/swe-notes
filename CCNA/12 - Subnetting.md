@@ -93,7 +93,7 @@ This is called subnetting because we are only using a subset of the total availa
 * Until now, we have practices subnetting using **FLSM** (Fixed-Length Subnet Masks). 
 * This means that all of the subnets use the same prefix length (ie. subnetting a class C network into 4 subnets using /26).
 * **VLSM** (Variable-Length Subnet Masks) is the process of creating subnets of different sizes, to make your use of network addresses more efficient.
-* VLSM is more complicated that FLSM, but it's easy if you follow the steps correctly.
+* VLSM is more complicated than FLSM, but it's easy if you follow the steps correctly.
 
 ![vlsm introduction](./img/vlsm-intro.png)
 * We need to create 5 subnets, which means we need to borrow 3 host bits.
