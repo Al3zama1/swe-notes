@@ -50,11 +50,12 @@ desirable Set trunking mode dynamic negotiation parameter to DESIRABLE
 * It is designed for large networks with many VLANs, so that you don't have to configure each VLAN on every switch.
 * It is rarely used, and it is recommended that you do not use it.
 * There are three VTP versions: 1, 2, and 3. Most modern Cisco switches support all three, but older switches might only support 1 and 2.
+	* VTP v1/v2 do not support the extended VLAN range (1006 - 4094). Only VTP V3 supports them.
 
 #### VTP Modes
 * There are three VTP modes: **server**, **client**, and **transparent**.
-* **Cisco switches operate in VTP server mode by default.**
 * **VTP Servers**:
+	* Cisco switches operate in VTP server mode by default.
 	* Can add/modify/delete VLANs.
 	* Store the VLAN database in nonvolatile RAM (NVRAM).
 	* Will increase the **revision number** every time a VLAN is added/modified/deleted.
