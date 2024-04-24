@@ -25,19 +25,13 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 * Switches from all vendors run STP by default because it is very important to prevent Layer 2 loops.
 * STP prevents Layer 2 loops by placing redundant ports in a blocking state, essentially disabling the interface. These interfaces act as backups that can enter a forwarding state if an active (currently forwarding) interface fails.
 * By selecting which ports are **forwarding** and which ports are **blocking**, STP creates a single path to/from each point in the network. This prevents Layer 2 loops.
-* Interfaces in a forwarding state behave normally. They send and receive all normal traffic.
-* Interfaces in a blocking state only send or receive STP messages (called BPDUs = Bridge Protocol Date Units).
-	* STP still uses the term 'bridge'. However, when we use the term 'bridge', we really mean 'switch'. Bridges are not in use in modern networks.
-	
 ## Spanning Tree Protocol Steps
-
 ### Step 1: 
-* One switch is selected as the root bridge. All ports on the root bridge are **designated ports** (forwarding state). 
+* One switch is selected as the root bridge.
 * Root Bridge Selection:
 	1. Lowest bridge ID
-
 #### STP Bridge Protocol Data Unit (BPDU)
-* STP-enabled switches can send/receive Hello BPDUs out of all eligible interfaces. The ability of a switch's interfaces to send BPDUs is determined by its state (disabled, blocking, listening, learning, forwarding). The default timer for sending BPDUs is 2 seconds.
+* STP-enabled switches can send/receive Hello BPDUs out of all eligible interfaces. The ability of a switch's interfaces to send/receive BPDUs is determined by its state (disabled, blocking, listening, learning, forwarding). The default timer for sending BPDUs is 2 seconds.
 * If a switch receives a Hello BPDU on an interface, it knows that the interface is connected to another switch (routers, PCs, etc. do not use STP, so they do not send Hello BPDUs).
 ![STP BPDU](./img/stp-bpdu.png)
 
