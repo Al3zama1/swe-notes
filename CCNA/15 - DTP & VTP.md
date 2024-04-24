@@ -68,9 +68,9 @@ desirable Set trunking mode dynamic negotiation parameter to DESIRABLE
 	* Will synchronize their VLAN database to the server with the highest revision number in their VTP domain.
 	* Will advertise their VLAN database, and forward VTP advertisements to other clients over their trunk ports.
 * **VTP Transparent**:
-	* Switches in VTP transparent mode do not participate in the VTP domain (do not sync its VLAN database).
+	* Switches in VTP transparent mode do not participate in the VTP domain (do not sync its VLAN database to the VTP server).
 	* Maintains its own VLAN database in NVRAM. It can add/modify/delete VLANs, but they won't be advertised to other switches.
-	* Will only forward VTP advertisements that are in the same domain as it.
+	* Will forward VTP advertisements that are in the same domain as it.
 #### VTP Configuration
 
 **VTP Mode Configuration**
