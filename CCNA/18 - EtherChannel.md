@@ -257,4 +257,27 @@ Modern network designs often leans toward using Layer 3 connections between swit
 ![EtherChannel loops](./img2/etherchannel-loops.png)
 Even if we are using EtherChannel, Layer 2 loops can still occur if multiple switches are connected together in a loop as shown in the above picture. Therefore Spanning Tree will block one of these *port-channel* interfaces.
 
-However, if all of these connections between switches were made using routed ports instead of Layer 2 switchports, there would be no need to run Spanning Tree at all. Routed ports don't forward Layer 2 broadcasts, 
+![Layer 3 EtherChannel](./img2/layer3-etherchannel.png)
+However, if all of these connections between switches were made using routed ports instead of Layer 2 switchports, there would be no need to run Spanning Tree at all. Routed ports don't forward Layer 2 broadcasts, so no Layer 2 loops can be formed.
+```
+Switch(config)#interface range f0/1 -3
+Switch(config-if-range)#no switchport
+Switch(config-if-range)#channel-group 1 mode active
+Creating a port-channel interface Port-channel 1
+
+Switch(config-if-range)#interface p01
+Switch(config-if)#ip address 10.0.0.1 255.255.255.252
+Switch(config-if)#
+```
+
+## Commands
+* Configure the EtherChannel load-balancing method on the switch
+	* `SW(config)#port-channel load-balance <mode>`
+* Display information about the load-balancing settings
+	* `SW#show etherchannel load-balance`
+* Configure an interface to be part of an EtherChannel
+	* `SW(config-if)#channel-group <number> mode <desirable|auto|active|passive|on>`
+* Display a summary of EtherChannels on the switch
+	* `SW#show etherchannel summary`
+* Display information about the virtual port-channel interfaces on the switch
+	* `SW#show etherchannel port-channel`
