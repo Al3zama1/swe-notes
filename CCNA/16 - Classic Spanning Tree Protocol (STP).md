@@ -87,12 +87,12 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 
 #### STP Port ID
 ![stp port ID](./img/stp-port-number.png)
-* The port number is used as the tiebreaker if the priorities tie (neighbor bridge IDs).
+* The 'port number' is used as the tiebreaker if there is a tie in port priority.
 * Usually you just need to look at the port number. For example, G0/0 is lower than G1/0, etc...
 
-Below shows example where there is a tie for both root cost and Bridge ID. Therefore, the Interface ID is used to break the tie as explained above.
+Below shows example where there is a tie for both root cost and Bridge ID. Therefore, the STP port ID of SW1 is used to break the tie as explained above.
 ![](./img/multiple-connections-between-switches-root-port-tie.png)
-* SW3 interface G0/2 is picked as the root port because it is connected to the lowest neighbor interface out of G0/1 and G0/2.
+* SW3 interface G0/2 is picked as the root port because it is connected to the lowest STP Port ID neighbor interface.
 ### Step 3:
 * Each remaining collision domain will select one interface to be a **designated port** (forwarding state). The other port in the collision domain will be **non-designated** (blocking)
 * Designated Port Selection:
@@ -157,7 +157,7 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 * An interface in the Listening state ONLY forwards/receives STP BPDUs. It does NOT send/receive regular traffic.
 * An interface in the Listening state does not learn MAC addresses from regular traffic that arrives on the interface.
 ### Learning State
-* After Listening state, a Designated or Root port will enter the **Learning** state.
+* After Listening state, a Designated or Root port role will enter the **Learning** state.
 * The Learning state is 15 seconds long by default. This is determined by the **Forward delay** timer (the same time is used for both the Listening and Learning state).
 * An interface in the Learning state only sends/receives STP BPDUs. It does not send/receive regular traffic.
 * An interface in the Learning state *learns* MAC addresses from regular traffic that arrives on the interface.
