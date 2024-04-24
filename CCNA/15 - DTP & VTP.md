@@ -59,18 +59,20 @@ desirable Set trunking mode dynamic negotiation parameter to DESIRABLE
 	* Can add/modify/delete VLANs.
 	* Store the VLAN database in nonvolatile RAM (NVRAM).
 	* Will increase the **revision number** every time a VLAN is added/modified/deleted.
-	* Will advertise the latest version of the VLAN database on trunk interfaces, and the VTP clients will synchronize their VLAN database to it.
+	* Can originate and forward VTP advertisements.
 		* If a switch with no VTP domain (domain NULL) receives a VTP advertisement with a VTP domain name, it will automatically join that VTP domain.
 	* **VTP servers also function as VTP clients. Therefore, a VTP server will synchronize to another VTP server/client with a higher revision number.**
 * **VTP Clients**:
 	* Cannot add/modify/delete VLANs.
 	* Do not store the VLAN database in NVRAM (in VTP v3, they do).
-	* Will synchronize their VLAN database to the server with the highest revision number in their VTP domain.
-	* Will advertise their VLAN database, and forward VTP advertisements to other clients over their trunk ports.
+	* Synchronizes its VLAN database to VTP advertisements with a higher revision number in the same VTP domain.
+	* Forwards received VTP messages over trunk interfaces.
+	* Can originate VTP advertisements.
 * **VTP Transparent**:
-	* Switches in VTP transparent mode do not participate in the VTP domain (do not sync its VLAN database to the VTP server).
-	* Maintains its own VLAN database in NVRAM. It can add/modify/delete VLANs, but they won't be advertised to other switches.
-	* Will forward VTP advertisements that are in the same domain as it.
+	* Can create/delete/modify VLANs.
+	* Does not update its VLAN database based on received advertisements.
+	* Forwards received VTP advertisements that match the transparent switch's domain. It will also forward VTP advertisements regardless of matching domain if the transparent switch's domain is set to NULL.
+	* Does not originate VTP advertisements.
 #### VTP Configuration
 
 **VTP Mode Configuration**
