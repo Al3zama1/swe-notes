@@ -160,10 +160,12 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "5c97acdbaf886adf",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
-    "CCNA/img2/asw-to-dsw-with-multiple-links.png",
+    "CCNA/img2/etherchanel-with-broadcast-frame.png",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
+    "CCNA/18 - EtherChannel.md",
+    "CCNA/img2/asw-to-dsw-with-multiple-links.png",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
     "CCNA/15 - DTP & VTP.md",
     "CCNA/14 - VLANs Part Two.md",
@@ -180,7 +182,6 @@
     "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/2 - Interfaces and Cables.md",
     "CCNA/1 - Network Devices.md",
-    "CCNA/18 - EtherChannel.md",
     "CCNA/img/rstp-example3.png",
     "CCNA/img/rstp-example3.png",
     "CCNA/img/rstp-example2.png",
@@ -191,7 +192,6 @@
     "CCNA/img/backbonefast-2.png",
     "CCNA/img/backbonefast-1.png",
     "CCNA/img/rstp-port-states.png",
-    "CCNA/img/st-vs-rstp-port-cost.png",
     "2024-04-15.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
