@@ -79,7 +79,6 @@ on        Enable Etherchannel only
 passive   Enable LACP only if a LACP device is detected
 
 Switch(config-if-range)#channel-group 1 mode desirable
-Switch(config-if-range)#
 Creating a port-channel interface Port-channel 1
 
 Switch#show ip interface brief
