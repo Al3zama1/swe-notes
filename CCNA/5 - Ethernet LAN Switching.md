@@ -35,7 +35,7 @@
 * The minimum size for an Ethernet frame (`Header` + `Payload[Packet]` + `Trailer`) is 64 bytes.
 * The minimum payload (packet) size is 46 bytes.
 	* 64 bytes - 18 bytes (header + trailer) = 46 bytes.
-	* Padding bytes in the form of 0s (hexadecimal) are added when the payload size if less than 46 bytes.
+	* Padding bytes in the form of 0s (hexadecimal) are added when the payload size is less than 46 bytes.
 		* ie. 34-byte packet + 12-byte padding = 46 bytes.
 
 ## MAC Address

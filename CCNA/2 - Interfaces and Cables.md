@@ -52,7 +52,6 @@ Most modern networking devices have evolved beyond having to worry about straigh
 
 
 ## Fiber-Optic Connections
-
 #### Structure of Fiber Cable
 ![fiber glass cable structure](./img/fiber-optic-cable-structure.png)
 #### Multimode Fiber

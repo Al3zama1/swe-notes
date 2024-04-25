@@ -57,7 +57,7 @@ Router(config)# end/exit
 * `enable secret` is not affected.
 
 #### Enable Secret
-* `Router(config)# enable secret <secret>` will set encrypted password for the device.
+* `Router(config)#enable secret <secret>` will set encrypted password for the device.
 * It has a more secure encryption mechanism, MD5 type encryption.
 * If both secret and password are set, secret takes precedence.
 * The `service password-encryption` has no effect on secret.

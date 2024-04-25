@@ -1,5 +1,4 @@
 **What is a networking model**?  Networking models categorize and provide a structure for networking protocols and standards.
-
 ## OSI (Open Systems Interconnection) Model
 #### Application Layer
 * Layer closes to the end user.
