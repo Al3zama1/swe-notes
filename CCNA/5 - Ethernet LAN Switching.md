@@ -27,7 +27,6 @@
 #### FCS (Frame Check Sequence)
 * 4 bytes (32 bits) field length.
 * Detects corrupted data by running a `CRC(Cyclic Redundancy Check)` algorithm over the received data.
-
 #### NOTE On Ethernet Frame Header Structure
 * The `Preamble + SFD` might not be included as part of the Ethernet frame header depending on how you define it.
 	* Therefore, the size of the Ethernet header + trailer could be 18 bytes (6+ 6 + 2 + 4) rather than 26 bytes.
@@ -37,7 +36,6 @@
 	* 64 bytes - 18 bytes (header + trailer) = 46 bytes.
 	* Padding bytes in the form of 0s (hexadecimal) are added when the payload size is less than 46 bytes.
 		* ie. 34-byte packet + 12-byte padding = 46 bytes.
-
 ## MAC Address
 * 6-byte (48 bits) physical address assigned to the device when it is made.
 * A.K.A `Burned-In Address(BIA)`
@@ -45,7 +43,6 @@
 * Written as 12 hexadecimals characters.
 * The first 3 bytes are OUI (Organizationally Unique Identifier), which is assigned to the company making the device.
 * The last 3 bytes are unique to the device itself.
-
 ## Switch Functionality
 * Switches `learn`, `flood`, and `fordward` packets
 	* **Learn**
@@ -57,7 +54,6 @@
 		* `Broadcast frames` are flooded out all interfaces except the one where it came.
 	* **Fordward**
 		* `Known unicast frames` are forwarded out the switch interface associated with the destination MAC address.
-
 ## ARP (Address Resolution Protocol)
 When looking to initiate communication with another host, we often only know the IP address or domain name of the target device. However, the MAC address of the target or next hop device is also required. ARP is the protocol used to discover the Layer 2 address (MAC address) of a know Layer 3 address (IP address).
 * ARP Request
@@ -74,22 +70,18 @@ When looking to initiate communication with another host, we often only know the
 		* Source MAC address (information that was needed)
 		* Destination MAC address.
 	* Upon Arrival to the destination, the MAC address + IP address information from the target host will be used to populate an entry in the ARP table.
-
 #### ARP Record Types
 * **Type static**
 	* Default entry
 * **Type dynamic**
 	* Learned via ARP
-
 ## Switch MAC Address Table Commands
-
 #### Display MAC Address From Switch
 `SW1#show mac address-table` 
 * Indicates the Vlan.
 * Indicates the MAC Address.
 * Indicates the Type.
 * Indicates the Ports/Interfaces associated with the given MAC address.
-
 #### Remove MAC Address From Switch
 * Clear all dynamic MAC addresses
 	* `SW1#clear mac address-table dynamic`
