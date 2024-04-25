@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/18 - EtherChannel.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/18 - EtherChannel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/18 - EtherChannel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md"
+                "file": "CCNA/18 - EtherChannel.md"
               }
             }
           },
@@ -162,8 +162,8 @@
   },
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
-    "CCNA/18 - EtherChannel.md",
     "CCNA/19 - Dynamic Routing.md",
+    "CCNA/18 - EtherChannel.md",
     "CCNA/img2/layer3-etherchannel.png",
     "CCNA/img2/etherchannel-loops.png",
     "CCNA/img2/etherchanel-with-broadcast-frame.png",

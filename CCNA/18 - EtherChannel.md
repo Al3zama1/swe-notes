@@ -31,7 +31,7 @@ As shown above, when a PC sends a broadcast frame, ASW1 will send it out all int
 	* Destination IP
 	* Source and Destination IP
 * The load balance options available depend on the switch model being used.
-### Show EtherChannel Configuration
+### Show EtherChannel Load-Balancing Configuration
 ```
 Switch#show etherchannel load-balance
 EtherChannel Load-Balancing Configuration:
