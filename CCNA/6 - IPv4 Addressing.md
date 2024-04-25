@@ -49,7 +49,6 @@ $$
 * `Method`: Method by which the interface was assigned an IP address. 
 * `Protocol`: Because the interfaces at layer 1 are down, layer 2 cannot operate.
 	* You will never see an interface with a `down` status and `up` in the protocol column. Although, the reverse is possible.
-
 #### Assign IP and Subnet Mast to router interface
 ```
 R1#configure terminal
