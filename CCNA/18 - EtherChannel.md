@@ -144,7 +144,7 @@ Switch(config-if-range)#
 	* If you configure `channel-group 1 mode desirable/auto` , the interface will automatically use PAgP. If you configure `channel-group 1 mode active/passive`, the interface will automatically use LACP.
 
 ### Port-Channel interface Configuration
-After configuring the EtherChanel, in whatever mode, PAgP, LACP, or static, the port-channel interface itself has to be configured.
+After configuring the EtherChanel, in whatever mode, PAgP, LACP, or static, the port-channel virtual interface itself has to be configured.
 ```
 Switch(config)#interface port-channel 1
 \\ when ISL and dot1q are both supported by the switch
@@ -164,7 +164,7 @@ Po1 1
 Port Vlans in spanning tree forwarding state and not pruned
 Po1 1
 ```
-* The individual physical interfaces aren't listed here, only the port-channel virtual interface.
+* The individual physical interfaces aren't listed here, only the port-channel virtual interface. However, all changes made to the virtual port-channel interface will be propagated to all physical interfaces in it.
 * The physical interfaces in the EtherChannel must have matching configurations.
 	* Same duplex (full/half)
 	* Same speed
