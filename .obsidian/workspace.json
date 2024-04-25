@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/18 - EtherChannel.md",
+                "file": "CCNA/19 - Dynamic Routing.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/18 - EtherChannel.md",
+                "file": "CCNA/19 - Dynamic Routing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/18 - EtherChannel.md",
+                "file": "CCNA/19 - Dynamic Routing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/18 - EtherChannel.md"
+                "file": "CCNA/19 - Dynamic Routing.md"
               }
             }
           },
@@ -160,13 +160,14 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
+    "CCNA/18 - EtherChannel.md",
+    "CCNA/19 - Dynamic Routing.md",
     "CCNA/img2/layer3-etherchannel.png",
     "CCNA/img2/etherchannel-loops.png",
     "CCNA/img2/etherchanel-with-broadcast-frame.png",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
-    "CCNA/18 - EtherChannel.md",
     "CCNA/img2/asw-to-dsw-with-multiple-links.png",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
     "CCNA/15 - DTP & VTP.md",
@@ -191,7 +192,6 @@
     "CCNA/img/rstp-link-types.png",
     "CCNA/img/stp-rstp-wireshark.png",
     "CCNA/img/rstp-example1.png",
-    "CCNA/img/backbonefast-2.png",
     "2024-04-15.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
