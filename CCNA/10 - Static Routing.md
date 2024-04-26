@@ -1,12 +1,9 @@
-Static routes enable routers to send packages to remote destinations that are aren't directly connected to the router itself.
-
+Static routes enable routers to send packages to remote destinations that aren't directly connected to the router itself.
 ## Default Gateway
 * End hosts can send packets directly to destinations in their connected network.
 * To send packets to destinations outside of their local network, they must send the packets to their **default gateway/route**.
-
 ## Static Route Configuration
 ![static routes configuration on routers](./img/static-route-config.png)
-
 #### Static Route Configuration Options
 Use whatever static configuration method is preferred.
 1. Configure the IP address of the next-hop router.
@@ -17,10 +14,8 @@ Use whatever static configuration method is preferred.
 	* This is generally not a problem, but  you should stick to `next-hop` or `exit-interface next-hop`.
 3. Configure both, exit interface and next-hop IP address.
 	1. `R2(config)#ip route ip-address netmask exit-interface next-hop`
-
 ## Communication Across Router Hops
 ![Communication between devices across hops](./img/packet-travel-with-hops.png)
-
 ## Router Default Route
 * A **default route** is a route to 0.0.0.0/0 because it matches every route in the case no other more specific route is found.
 * If the router doesn't have any more specific routes that match a packet's destination IP address, the router will forward the packet using the **default route**.
