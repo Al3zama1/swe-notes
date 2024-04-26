@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+                "file": "CCNA/14 - VLANs Part Two.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+                "file": "CCNA/14 - VLANs Part Two.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+                "file": "CCNA/14 - VLANs Part Two.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md"
+                "file": "CCNA/14 - VLANs Part Two.md"
               }
             }
           },
@@ -161,8 +161,8 @@
   },
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
-    "CCNA/14 - VLANs Part Two.md",
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+    "CCNA/14 - VLANs Part Two.md",
     "CCNA/12 - Subnetting.md",
     "CCNA/11 - Life of a Packet.md",
     "CCNA/10 - Static Routing.md",
