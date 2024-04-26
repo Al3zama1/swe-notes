@@ -159,9 +159,7 @@ The native VLAN has been configured to be VLAN 10 on the trunk link between SW1 
 #### Native VLAN Bad Example
 The native VLAN configuration between SW1 and SW2 do not match.
 ![native VLAN misconfiguration](./img/native-VLAN-bad-example.png)
-
 #### Trunk Configuration
-
 ##### Set Switch Interfaces as Trunk
 ```
 SW1(config)#interface g0/0
@@ -181,7 +179,6 @@ SW1(config-if)#switchport mode trunk
 * However, switches that do support both (like the one in the example above) have a trunk encapsulation of `Auto`by default.
 * To manually configure the interface as a trunk port, you must first set the encapsulation to 802.1Q or ISL. This is not necessary on switches that only support 802.1Q.
 * After you set the encapsulation type, you can then configure the interface as a trunk.
-
 ##### View Trunk Interfaces
 ```
 SW1# show interface trunk
@@ -237,13 +234,11 @@ SW1(config-if)#switchport trunk allowed vlan
 ![trunk ports](./img/trunk-ports.png)
 * Only VLANs 10 and 30 need to be allowed on the trunk port connection between SW1 and SW2.
 * There is not reason for frames in VLAN 20 to go to SW1 directly, therefore VLAN 20 should not be allowed on the trunk port connection.
-
 ##### Native VLAN Configuration
 * For security purposes, it is best to change the native VLAN to an unused VLAN.
 	* Its about limiting unnecessary traffic in the network and controlling what traffic is allowed.
 * Make sure the native VLAN matches between switches.
 `SW1(config-if)#switchport trunk native vlan 1001`
-
 ## Router on a Stick (ROAS)
 ![router on a stick traffic flow](./img/roas-path-flow.png)
 * ROAS is used to route between multiple VLANs using a single interface on the router and switch.
@@ -253,7 +248,6 @@ SW1(config-if)#switchport trunk allowed vlan
 * The router will tag frames sent out of each interface with the VLAN tag configured on the subinterface.
 #### Configure Router on a Stick (ROAS)
 ```
-R1(config)#interface g0/0
 R1(config-if)interface g0/0.10
 R1(config-subif)#encapsulation dot1q 10
 R1(config-subif)#ip address 192.168.1.62 255.255.255.192
@@ -268,17 +262,15 @@ R1(config-subif)#ip address 192.168.1.190 255.255.255.192
 ```
 
 * The sub-interface number does not have to match the VLAN number.  However, it is highly recommended that they do match, to make it easier to understand.
-
 ## Native VLAN on a Router (ROAS)
 * Traffic in the native VLAN is more efficient because frames are not tagged, making them smaller. As a result, more frames can be sent per second.
 	* The 802.1Q header field is not included for frames in the native VLAN.
-
 #### Native VLAN Configuration on a Router
 There are 2 methods of configuring the native VLAN on a router:
 * **Method 1:** Use the command `encapsulation dot1q vlan-id native ` on the router.
 * **Method 2:** Configure the IP address for the native VLAN on the router's physical interface (the `encapsulation dot1q vlan-id` command is not necessary)
 	* This method does not use a subinterface at all.
-
+	
 ```
 METHOD 1:
 R1(config)#interface g0/0.10

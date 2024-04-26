@@ -6,14 +6,12 @@
 	* However, in a busy network all, of the traffic going to the router and back to the switch in a single interface can cause network congestion.
 	* Therefore, in large networks, a multilayer switch is the preferred method of inter-VLAN routing.
 * Multilayer Switch can also be used to perform inter-VLAN routing without the need to go to the router.
-
 ## Layer 3 (Multilayer) Switches
 * A multilayer switch is capable of both switching and routing.
 * It is Layer 3 aware.
 * Its interfaces can be configured to behave like router interfaces and assign IP addresses to them.
 * It can have **Switch Virtual Interfaces (SVI)**.
 * Routes can be configured on it, just like a router.
-
 #### Switch Virtual Interfaces (SVI)
 * Switch Virtual Interfaces (SVI) can be created for each VLAN to allow for inter-VLAN communication. Each SVI is given an IP address that helps establish a link between a subnet and a VLAN.
 * SVIs are set up as the default gateway for all the clients in their respective VLANs, instead of the router. This avoids sending frames to the router for inter-VLAN routing.
@@ -31,7 +29,6 @@ The example below shows the process of communication between two devices that ar
 * PC in VLAN 20 sees that its target is in a different subnet, therefore it will communicate with its default gateway.
 * The switch will see that the destination IP address is not in any of the subnets associated with the SVIs. Therefore, it will communicate with its configured default route.
 	* For its default route, interface G0/1 was configured as a router interface and assigned an IP address. Communication will go that way to the Router for outside the LAN communication.
-
 #### Multilayer Switch to Router Configuration
 ```
 R1(config)#default interface g0/0 // reset interface config
@@ -51,7 +48,6 @@ SW2(config)#ip route 0.0.0.0 0.0.0.0 192.168.1.194
 * `ip routing` enables Layer 3 routing on the switch
 * `no switchport`
 	* Configures the interface as a Layer 3 port, not a Layer 2 switchport.
-
 #### Switch Virtual Interface Configuration
 ```
 SW2(config)#interface vlan 10
@@ -67,7 +63,6 @@ SW2(config-if)#ip address 192.168.1.190 255.255.255.192
 SW2(config-if)#no shutdown
 ```
 * SVIs are shutdown by default, so remember to use `no shutdown`.
-
 ### Requirements for a SVI to be `up/up`
 * The VLAN for which the SVI is being created must exist on the switch.
 	* Creating a SVI for a non-existing VLAN, will not create the VLAN automatically.
