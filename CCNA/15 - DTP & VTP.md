@@ -37,14 +37,12 @@ desirable Set trunking mode dynamic negotiation parameter to DESIRABLE
 * `Switchport`: indicates whether the interface is operating at a layer 2 level.
 * `Administrative Mode:` indicates the switchport mode that is configured on the interface.
 * `Operational Mode:` indicates the actual mode that is being used by the interface.
-
 #### Trunk Encapsulation Negotiation
 * Switches that support both **802.1Q** and **ISL** trunk encapsulations can use DTP to negotiate the encapsulation they will use.
 * This negotiation is enabled by default, as the default trunk encapsulation mode is: `switchport trunk encapsulation negotiate`
 	* If you want to manually configure a trunk interface on a switch that supports both 802.1Q and ISL, you must first set a specific encapsulation mode. It cannot stay in negotiate mode.
 * ISL is favored over 802.1Q, therefore ISL will be selected if both switches support it.
 * DTP frames are sent in VLAN1 when using ISL and in the native VLAN when using 802.1Q (the default native VLAN is VLAN 1 BTW).
-
 ## VLAN Trunking Protocol (VTP)
 * It's a Cisco proprietary protocol that allows you to configure VLANs on a central VTP server switch, and other switches (VTP clients) will synchronize their VLAN database to the server.
 * It is designed for large networks with many VLANs, so that you don't have to configure each VLAN on every switch.
