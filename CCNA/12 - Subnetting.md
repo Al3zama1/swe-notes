@@ -6,12 +6,10 @@
 ![example of wasted IP addresses](./img/ip-address-waste.png)
 * The network connecting the San Francisco and New York offices of a corporation is a `point-to-point network`. Its only purpose is to connect the two corporation offices.
 * Even when the network (class C) with the least number of addresses for hosts is picket, 252 addresses are unused.
-
 #### IP Address Waste
 * Company X needs IP addressing for 5000 end hosts.
 * A **class C** network does not provide enough addresses, so a **class B** network must be assigned.
 * This will result in about 60,000 addresses being wasted.
-
 ## CIDR (Classless Inter-Domain Routing)
 * When the internet was first created, the creators did not predict that the internet would become as large as it is today.
 * This resulted in wasted address space like the examples above. Now a days IP address exhaustion has become a problem because there is not enough addresses.
@@ -28,7 +26,6 @@
 $$
 Number\ of\ Subnets\ Possible:\ 2^x, x = number\ of\ borrowed\ host\ bits
 $$
-
 #### Subnets/Hosts (Class C)
 How many usable addresses are there in each network?
 * 203.0.113.0/25
@@ -80,7 +77,6 @@ How many usable addresses are there in each network?
 
 This is called subnetting because we are only using a subset of the total available addresses in the address class that we are working on. In this case we are creating subnets for a class C network.
 ![subnet class C network](./img/CIDR-Notation-24.png)
-
 #### Subnetting Examples (Classes A,B, and C)
 ==**The process of subnetting Class A, Class B, and Class C networks is EXACTLY THE SAME.**==
 ![subnetting examples](./img/subnetting-1.jpg)
@@ -88,7 +84,6 @@ This is called subnetting because we are only using a subset of the total availa
 ![subnetting examples](./img/subnetting-3.jpeg)
 ![subnetting examples](./img/subnetting-4.jpeg)
 ![subnetting examples](./img/subnetting-5.jpeg)
-
 ## Variable-Length Subnet Masks
 * Until now, we have practices subnetting using **FLSM** (Fixed-Length Subnet Masks). 
 * This means that all of the subnets use the same prefix length (ie. subnetting a class C network into 4 subnets using /26).
@@ -102,12 +97,10 @@ This is called subnetting because we are only using a subset of the total availa
 * VLSM allows us to assign variable length prefixes for the different subnets needed. 
 	* The total number of usable addresses needed across all 5 subnets is 194. The class C network can host a total of 254 usable addresses, which is more than the addresses needed.
 	* Setting different prefix lengths allows us to create subnets tailored to the needs of each subnet. Allowing for better distribution of the addresses among the subnets depending on the requirements of each subnet.
-
 #### VLSM Assignment Steps
 1. Assign the largest subnet at the start of the address space.
 2. Assign the second-largest subnet after it.
 3. Repeat the process until all subnets have been assigned.
-
 #### Tokyo LAN A
 * Network Address: 192.168.1.0/25
 ```
@@ -128,7 +121,6 @@ METHOD 2: turn all host bits to 1. Remember, the first bit was borrowed by the n
 * First usable address: 192.168.1.1/25
 * Last usable address:192.168.1.126/25
 * Total number of usable host addresses: 2^7 = 128 total addresses - (broadcast + network) = 126 usable addresses.
-
 #### Toronto LAN B
 * Network Address: 192.168.1.128/26
 	* Add one to the broadcast address of the previous subnet.
@@ -152,7 +144,6 @@ The value of the last bit borrowed is 64. Therefore, the network address of the 
 * First usable address: 192.168.1.129/26
 * Last usable address: 192.168.1.190/26
 * Total number of usable hosts: 2^6 = 64 total addresses - 2 = 62 usable addresses.
-
 #### Toronto LAN A
 * Network address: 192.168.1.192/27
 	* Add one to the broadcast address of the previous subnet.
@@ -176,7 +167,6 @@ The value of the last borrowed bit is 32. The network address of the next subnet
 * The first usable address: 192.168.1.193/27
 * The last usable address: 192.168.1.222/27
 * Total number of usable hosts: 2^5 = 32 total addresses - 2 = 30 usable addresses.
-
 #### Tokyo LAN B
 * Network address: 192.168.1.224/28
 * Broadcast Address: 192.168.1.239/28
@@ -197,7 +187,6 @@ The first 4 bits are borrowed. The value of the last borrowed bit is 16
 * First usable address: 192.168.1.225/28
 * Last usable address: 192.168.1.238/28
 * Total number of usable hosts: 2^4 = 16 total addresses - 2 = 14 usable addresses.
-
 #### Point-to-point Connection 
 ==Even though it is possible to use a /31 prefix length for a point-to-point connection. For the CCNA I should avoid using it.==
 * Network address: 192.168.1.240/30
@@ -219,8 +208,6 @@ The first 6 bits are borrowed. The value of the last borrowed bit is 4
 * First usable address: 192.168.1.241/30
 * Last usable address: 192.168.1.243/30
 * Total number of usable hosts addresses: 2^2 = 4 total addresses - 2 = 2 usable addresses.
-
-
 ## Broadcast Addresses and Subnetting
 Lets assume that we are woking with a network address `192.168.5.0/24` and that we have created the following subnets:
 * Subnet 1: `192.168.5.0/25`
