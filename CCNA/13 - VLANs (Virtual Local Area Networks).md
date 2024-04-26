@@ -29,7 +29,6 @@ The switch interfaces are configures to be in a specific VLAN to provide Layer 2
 * A switch will not forward traffic between VLANs, including **broadcast/unknown unicast*** traffic.
 * The switch does not perform **inter-VALN Routing**. It must send the traffic through the router to change VLAN.
 * **NOTE**: Same subnet communication between two hosts is not possible if they are connected to interfaces that are configured with different VLANs.
-
 #### VLAN Configuration
  ![VLAN configuration](./img/vlan-configuration.png)
 
