@@ -3,17 +3,14 @@
 * Modern networks are expected to run 24/7 365 days a year. Even a short downtime can be disastrous for a business.
 * If one network component fails, you must ensure that other components will take over with little to no downtime.
 * As much as possible, you must implement redundancy at every possible point in the network.
-
 #### Network Without Redundancy
 ![Network without redundancy](./img/network-without-redundancy.png)
 * If a failure occurs at the 'x' and the connection is lost, all hosts in the LAN lose connectivity to the internet.
-
 #### Network With Redundancy
 ![Network with redundancy](./img/network-with-redundancy.png)
 * Hosts in this network can take multiple paths to reach other hosts in the  LAN and to get to the internet (outside the LAN).
 * The availability of multiple pathways creates network redundancy for when connections fail. 
 * The redundancy added can lead to loops in the LAN, creating unnecessary traffic that affects the network performance.
-
 ## Broadcast Storms
 The image below shows what would happen when PC1 tried to communicate with PC2 and PC1 didn't know the destination's MAC address.
 ![broadcast storms](./img/broadcast-storms.png)
@@ -34,12 +31,10 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 * STP-enabled switches can send/receive Hello BPDUs out of all eligible interfaces. The ability of a switch's interfaces to send/receive BPDUs is determined by its state (disabled, blocking, listening, learning, forwarding). The default timer for sending BPDUs is 2 seconds.
 * If a switch receives a Hello BPDU on an interface, it knows that the interface is connected to another switch (routers, PCs, etc. do not use STP, so they do not send Hello BPDUs).
 ![STP BPDU](./img/stp-bpdu.png)
-
 ##### Old Bridge ID Format
 ![Old bridge ID format](./img/old-bridge-id.png)
 * The Bridge Priority is compared first. If they tie, the MAC address is then compared to break the tie.`
 * The default bridge priority is 32768 on all switches, so by default the MAC address is used as the tie-breaker (lowest MAC address value becomes the root bridge).
-
 ##### New Bridge ID Format
 ![Updated bridge id](./img/updated-bridge-id.png)
 * VLAN ID is included in Bridge priority because Cisco switches use a version of STP called **PVST** (Per-VLAN Spanning Tree). PVST runs a separate STP instance in each VLAN. Therefore, in each VLAN different interfaces can be forwarding/blocking and the root bridge can be different per VLAN.
@@ -67,11 +62,9 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 		*  When a switch has multiple interfaces with the same root cost, the interface connected to the neighbor switch with the lowest Bridge ID will be selected as the root port.
 	1. Lowest neighbor port ID.
 		* What if two switches have two connections between them and the root cost and Bridge ID are the same ? The interface connected to the interface on the neighbor switch with the lowest **STP Port ID** will become the root port. The neighbor switch's port ID is used to break the tie, no the local switch's ID.
-
 #### Switch Interfaces STP Cost
 ![switch interface root cost](./img/stp-root-cost.png)
 #### Root Bridge & Root Port Selection
-
 ![root port selection sample](./img/root-port-selection-example.png)
 * SW 2:
 	* Designated as the root bridge because it has the lowest Bridge ID.
@@ -103,16 +96,10 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 * The connection between SW2 through interface G0/0 and SW3 through interface G0/1 is redundant. Therefore it must be blocked.
 * However, the interfaces at both ends cannot be blocked because every collision domain must have a single STP designated port. The rules for which port is blocked are shown in the picture above.
 	* When switches are used, each link is a separate collision domain. They are shown in the picture with the colored rectangles.
-
 ## Commands
-
 ### Display spanning Tree Information
-
 `SW1(confgi)#show-spanning-tree`
-
-
 ![show spanning-tree command](./img/show-spanning-tree.png)
-
 * "Spanning tree enabled protocol ieee": means that Cisco's version of classic STP is being used (PVST).
 * All the way at the bottom in the interfaces, the Cost field refers to the outgoing interface cost and not the total root cost.
 * The command will list separate sections, each listing STP information for a specific VLAN because Cisco uses PVST (per-VLAN Spanning Tree).
@@ -123,7 +110,7 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 		* It will also display through which interface the root bridge is reached and the cost to get to it.
 		* When viewing information on the actual root bridge, it will just say that it is the root bridge and will not display port and cost fields.
 	* Bridge ID:
-		* Displays information about the switch itself such as its Priority and MAC address.
+		* Displays information about the switch in which the information is being shown such as its Priority and MAC address.
 
 `SW1(confgi)#show-spanning-tree detail`
 * show similar information to `show spanning-tree`, but with more detail.
@@ -135,14 +122,12 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 	* Learning
 	* Forwarding
 	* STP Active: By default, every interface that is connected to another device and enabled will have STP running.
-
 ## STP States
 ![stp states](./img/stp-states.png)
 * Root/Designated ports remain stable in a **forwarding** state.
 * Non-designated ports remain stable in a **Blocking** state.
 * **Listening** and **Learning** are transitional states which are passed through when an interface is activated, or when a Blocking port must transition to a Forwarding state due to a change in the network topology.
 * There is also a **Disabled** state which is for interfaces that are administratively disabled (shutdown).
-
 ### Blocking State
 * Non-designated ports are in a **blocking** state.
 * Interfaces in a Blocking state are effectively disabled to prevent loops.
@@ -167,10 +152,8 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 * A port in the Forwarding state sends/receives BPDUs.
 * A port in the Forwarding state sends/receives normal traffic.
 * A port in the Forwarding state learns MAC addresses.
-
 ## STP Timers
 ![stp timesr](./img/stp-timers.png)
-
 * The STP timers on the root bridge determine the STP timers for the entire network even if they are configured differently.
 ### Hello Timer
 * Non Root Bridge switches in the network do not originate their own BPDUs, but they will forward BPDUs they receive.
@@ -183,7 +166,6 @@ In the image below, SW1's G0/0 interface goes down, therefore it cannot keep on 
 * If another BPDU is not received, the max age timer counts down to 0 and the switch will reevaluate its STP choices, including root bridge, local root, designated, and non-designated ports.
 * If a non-designated port is selected to become a designated or root port, it will transition from the blocking state to the listening state (15 seconds), learning state (15 seconds), and then finally the forwarding state. Therefore, it can take a total of 50 seconds for a blocking interface to transition to forwarding.
 	* A forwarding interface can move directly into a blocking state. There is no worry about creating a loop by blocking an interface.
-
 ## STP BPDU
 ![STP BPDU Wireshark Analysis](./img/stp-bpdu-wireshark.png)
 * In the Ethernet header we have the destination MAC address for which Cisco's PVST+ uses the destination MAC address of 01:00:0c:cc:cc:cd.
@@ -228,10 +210,8 @@ have effect when the interface is in a non-trunking mode.
 SW1(config-if)#
 ```
 * `SW1(config)#spanning-tree portfast default`: enable portfast by default on all access ports (non trunk ports) from Global Configuration Mode.
-
 ### BPDU Guard
 * If an interface with BPDU Guard enabled receives a BPDU from another switch, the interface will be shut down to prevent a loop from forming.
-
 #### BPDU Guard Configuration
 ```
 SW1(config)#inteface g0/2
@@ -248,7 +228,6 @@ SW1(config-if)#no shutdown
 ### Root Guard (Optional for the CCNA)
 * If you enable **root guard** on an interface, even if it receives a superior BPDU (lower Bridge ID), the switch will not accept the new switch as the root bridge. The interface will be disabled.
 	* This helps maintain the Spanning Tree topology if someone plugs another switch into the network either with bad intent, or perhaps without knowing the impact of their action.
-
 ### Loop Guard (Optional for the CCNA)
 * If you enable **loop guard** on an interface, even if the interface stops receiving BPDUs, it will not start forwarding. The interface will be disabled.
 	* This prevents loops that can happen if an interface fails only in one direction, causing what is called a 'unidirectional link' that can't receive data, but is still able to forward it, or the opposite.
@@ -262,7 +241,6 @@ rapid-pvst Per-Vlan rapid spanning tree mode
 ```
 * `pvst`is the classic Spanning Tree, but with Cisco's per-VLAN addition. Previous STP notes have been on this Spanning Tree mode.
 * `rapid-pvst` is an improved version. Modern Cisco switches run rapid-PVST by default, and usually there is no reason to change it.
-
 ### Root Bridge Configuration
 * A specific switch can be configured to be the root bridge by manipulating the bridge priority of the switch.
 * It's is possible to configure something called a secondary root bridge, which will be next in line to become the root bridge if the current root bridge fails.
