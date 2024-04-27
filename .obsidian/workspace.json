@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/12 - Subnetting.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/12 - Subnetting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/12 - Subnetting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md"
+                "file": "CCNA/12 - Subnetting.md"
               }
             }
           },
@@ -161,8 +161,8 @@
   },
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
-    "CCNA/img2/ospv-vs-rip-path-selection.png",
     "CCNA/19 - Dynamic Routing.md",
+    "CCNA/img2/ospv-vs-rip-path-selection.png",
     "CCNA/img2/dynamic-routing-metrics.png",
     "CCNA/img2/ecmp-static-routes.png",
     "CCNA/img2/ECMP-dynamic-routing.png",

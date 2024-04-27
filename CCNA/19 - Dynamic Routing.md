@@ -73,12 +73,12 @@ The numbers below are the values used on Cisco devices. Other vendors might rank
 |   Directly connected    |   0    |
 |         Static          |   1    |
 |   External BGP (eBGP)   |   20   |
-|          EIGRP          |   90   |
+|     Internal EIGRP      |   90   |
 |          IGRP           |  100   |
 |          OSPF           |  110   |
 |          IS-IS          |  115   |
 |           RIP           |  120   |
-|    EIGRP (external)     |  170   |
+|     External EIGRP      |  170   |
 |   Internal BGP (iBGP)   |  200   |
 |     Unstable route      |  225   |
 * **Unstable route**: If the administrative distance is 255, the router does not believe the source of that route and does not install the route in the routing table.
