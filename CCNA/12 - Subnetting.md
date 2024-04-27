@@ -108,14 +108,7 @@ This is called subnetting because we are only using a subset of the total availa
 ```
 * Broadcast Address:192.168.1.127/25
 ```
-METHOD 1:
-.0 0 0 0 0 0 0 0
-The prefix length is /25, therefore only the 1st bit of the last octet is borrowed. Using the trick we can get the next subnet by adding the value of the last borrowed bit. Then we just subtract 1 to get the broadcast address of this subnet.
-
-Value of last borrowed bit = 2^7 = 128
-Therefore 0 + 128 = 128 (next subnet) - 1 = 127 broadcast address
-
-METHOD 2: turn all host bits to 1. Remember, the first bit was borrowed by the network.
+METHOD 1: turn all host bits to 1. Remember, the first bit was borrowed by the network.
 .0 1 1 1 1 1 1 1 = 127
 ```
 * First usable address: 192.168.1.1/25
@@ -131,14 +124,6 @@ The first 2 bits are borrowed
 1 0 0 0 0 0 0 0 = 128
 Turn all host bits to 1 to get the broadcast network
 1 0 1 1 1 1 1 1 = 191
-192.168.1.191/26
-
-METHOD 2:
-The first 2 bits are borrowed
-1 0 0 0 0 0 0 0
-The value of the last bit borrowed is 64. Therefore, the network address of the next subnet can be obtained by adding that value. Then, we subtract 1 to get the broadcast network of the current subnet.
-128 + 64 = 192 (network address of next subnet)
-192 - 1 = 191
 192.168.1.191/26
 ```
 * First usable address: 192.168.1.129/26
@@ -156,13 +141,6 @@ Turn all host bits to 1 to get the broadcast network
 1 1 0 1 1 1 1 1 = 223
 192.168.1.223/27
 
-METHOD 2: 
-The first 3 bits are borrowed.
-The value of the last borrowed bit is 32. The network address of the next subnet can be obtained by adding 32. Then, 1 is subtracted to obtain the broadcast network of the current subnet.
-192 + 32 = 224 (network address of next subnet)
-124 - 1 = 223
-192.168.1.223/27
-
 ```
 * The first usable address: 192.168.1.193/27
 * The last usable address: 192.168.1.222/27
@@ -176,12 +154,6 @@ The first 4 bits are borrowed
 1 1 1 0 0 0 0 0 = 224
 Turn all host bits to 1 to get the broadcast address
 1 1 1 0 1 1 1 1 = 239
-192.168.1.239/28
-
-METHOD 2:
-The first 4 bits are borrowed. The value of the last borrowed bit is 16
-224 + 16 = 240 (network address of the next subnet)
-240 - 1 = 239
 192.168.1.239/28
 ```
 * First usable address: 192.168.1.225/28
@@ -197,12 +169,6 @@ The first 6 bits are borrowed
 1 1 1 1 0 0 0 0 = 240
 turn all host bits to 1 to get the broadcast address
 1 1 1 1 0 0 1 1 = 243
-192.168.1.243/30
-
-METHOD 2:
-The first 6 bits are borrowed. The value of the last borrowed bit is 4
-240 + 4 = 244 (network address of the next subnet)
-244 - 1 = 243
 192.168.1.243/30
 ```
 * First usable address: 192.168.1.241/30
