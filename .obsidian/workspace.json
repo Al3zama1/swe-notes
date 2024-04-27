@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/12 - Subnetting.md",
+                "file": "CCNA/19 - Dynamic Routing.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/12 - Subnetting.md",
+                "file": "CCNA/19 - Dynamic Routing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/12 - Subnetting.md",
+                "file": "CCNA/19 - Dynamic Routing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/12 - Subnetting.md"
+                "file": "CCNA/19 - Dynamic Routing.md"
               }
             }
           },
@@ -161,7 +161,10 @@
   },
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
+    "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
+    "CCNA/21 - OSPF.md",
+    "CCNA/12 - Subnetting.md",
     "CCNA/img2/ospv-vs-rip-path-selection.png",
     "CCNA/img2/dynamic-routing-metrics.png",
     "CCNA/img2/ecmp-static-routes.png",
@@ -176,7 +179,6 @@
     "CCNA/15 - DTP & VTP.md",
     "CCNA/14 - VLANs Part Two.md",
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
-    "CCNA/12 - Subnetting.md",
     "CCNA/11 - Life of a Packet.md",
     "CCNA/10 - Static Routing.md",
     "CCNA/9 - Routing Fundamentals.md",
@@ -205,7 +207,6 @@
     "img",
     "CCNA/img",
     "CCNA",
-    "Gradle/5. The Gradle Task Graph.md",
     "redis/img",
     "redis"
   ]

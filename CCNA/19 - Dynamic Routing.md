@@ -62,9 +62,6 @@ Router(config)#ip route 10.0.0.0 255.0.0.0 10.0.13.2 ?
 <1-255> Distance metric for this route
 ```
 * Above, the 'Distance metric for this route' refers to the administrative distance (AD) and not the metric.
-### Floating Static Routes
-* By changing the AD of a static route, you can make it less preferred than routes learned by a dynamic routing protocol to the same destination (make sure the static route's AD is higher than the routing protocol's AD).
-* The route will be inactive (not in the routing table) unless the route learned by the dynamic routing protocol is removed(for example, the remote router stops advertising it for some reason, or an interface failure causes an adjacency with a neighbor to be lost).
 ### Administrative Distance (AD) Chart
 The numbers below are the values used on Cisco devices. Other vendors might rank them differently.
 
@@ -82,3 +79,6 @@ The numbers below are the values used on Cisco devices. Other vendors might rank
 |   Internal BGP (iBGP)   |  200   |
 |     Unstable route      |  225   |
 * **Unstable route**: If the administrative distance is 255, the router does not believe the source of that route and does not install the route in the routing table.
+### Floating Static Routes
+* By changing the AD of a static route, you can make it less preferred than routes learned by a dynamic routing protocol to the same destination (make sure the static route's AD is higher than the routing protocol's AD).
+* The route will be inactive (not in the routing table) unless the route learned by the dynamic routing protocol is removed(for example, the remote router stops advertising it for some reason, or an interface failure causes an adjacency with a neighbor to be lost).
