@@ -54,7 +54,7 @@ BackboneFast allows switches to expire the Max Age timer on their interfaces. In
 * The **designated role** remains unchanged in RSTP.
 	* The port on a segment (collision domain) that sends the best BPDU is that segment's designated port (only one per segment).
 * The *non-designated* port role is split into two separate roles in RSTP:
-	* A **Alternate port** role is a discarding port that received a superior BPDU (lower Bridge ID) from another switch. The same logic as with blocking ports in classic STP.
+	* A **Alternate port** role is a discarding port that is decided with the same logic as blocking ports in classic STP.
 		* ==Function as a backup to the root port. If the root port fails, the switch can immediately move its best alternate port to forwarding==.
 	* A **Backup port** role is a discarding port that receives a superior BPDU from *another interface on the same switch*.
 		* ==Function as a backup for a designated port==. 
