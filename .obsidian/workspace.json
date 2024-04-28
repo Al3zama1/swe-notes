@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/20 - RIP & EIGRP.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 252.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/20 - RIP & EIGRP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/20 - RIP & EIGRP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md"
+                "file": "CCNA/20 - RIP & EIGRP.md"
               }
             }
           },
@@ -161,8 +162,8 @@
   },
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
-    "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
+    "CCNA/20 - RIP & EIGRP.md",
     "CCNA/21 - OSPF.md",
     "CCNA/12 - Subnetting.md",
     "CCNA/img2/ospv-vs-rip-path-selection.png",
