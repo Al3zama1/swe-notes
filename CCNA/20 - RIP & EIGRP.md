@@ -135,8 +135,10 @@ R1(config-router)#network 172.16.1.0 0.0.0.15
 	* `R1(config-router)#eigrp router-id <number>`
 * Router ID order of priority:
 	* Manual configuration
-	* Highest Ip address on a loopback interface.
-	* If there are no loopback interfaces configured, the highest IP address on any of the router's physical interfaces will become the router ID.
+	* Highest IP address on a loopback interface.
+	* If there are no loopback interfaces configured, the highest IP address on any of the router's physical interfaces will become the Router-ID.
+* **Maximum Path**: default maximum paths for ECMP load balancing.
+* **Routing for Networks**: networks entered using the `network` command.
 * **Distance**:EIGRP has two separate AD values. One for internal routes and the other for external routes.
 	* Internal routes are normal EIGRP routes.
 	* External routes are routes from outside EIGRP which are inserted into EIGRP. This is beyond the CCNA.
