@@ -19,7 +19,7 @@
 * Distance vector protocols operate by sending the following to their directly connected neighbors:
 	* Their know destination networks.
 	* Their metric to reach their known destination networks.
-* This method of sharing route information is often called 'routing by rumor'. This is because the router doesn't know abut the network beyond its neighbors. It only knows the information that its neighbors tell it.
+* This method of sharing route information is often called 'routing by rumor'. This is because the router doesn't know abut the networks beyond its neighbors. It only knows the information that its neighbors tell it.
 * It's called 'distance vector' because the routers only learn the 'distance' (metric) and 'vector' (direction, the next-hop router) of each route.
 ### Link State Routing Protocols
 * When using a **link state** routing protocol, every router creates a 'connectivity map' of the network.
@@ -35,14 +35,14 @@
 ### ECMP with Dynamic Routing Protocol
 ![ECMP with dynamic routing protocol](./img2/ECMP-dynamic-routing.png)
 * The routes were dynamically learned using the OSPF protocol as indicated in the picture.
-* **ECMP (Equal Cost Multi-Path)**: If a router learns two (or more) routes via the same routing protocol to the same destination (same network address, same subnet mast) with the same metric, all routes will be added to the routing table. Traffic will be load-balanced over all the routes that formed the tie.
+* **ECMP (Equal Cost Multi-Path)**: If a router learns two (or more) routes via the same routing protocol to the same destination (same network address, same subnet mask) with the same metric, all routes will be added to the routing table. Traffic will be load-balanced over all the routes that formed the tie.
 	* The first value of the square bracket is the administrative distance([110/]).
 	* The second value of the square brackets is the metric ([/3]).
-### ECMP with Dynamic Routing Protocol
+### ECMP with Static Routes
 ![ECMP static routes](./img2/ecmp-static-routes.png)
 * It's possible to have ECMP (Equal Cost Multi-Path) with static routes as well.
 * As shown above, there is a tie in the metric number for the two configured routes to the same destination network. Therefore, the traffic will be load balanced between them.
-	* Static routes don't really use the concept of metric so there will always be a value of 0, resulting in ties for multiple static routes to the same destination network.
+	* Static routes don't really use the concept of metric so there will always be the same value, resulting in ties for multiple static routes to the same destination network.
 ### IGP (Interior Gateway Protocol) Metrics
 ![dynamic routing metrics](./img2/dynamic-routing-metrics.png)
 
