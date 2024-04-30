@@ -65,19 +65,20 @@ Router(config)#ip route 10.0.0.0 255.0.0.0 10.0.13.2 ?
 ### Administrative Distance (AD) Chart
 The numbers below are the values used on Cisco devices. Other vendors might rank them differently.
 
-| **Route Protocol/Type** | **AD** |
-| :---------------------: | :----: |
-|   Directly connected    |   0    |
-|         Static          |   1    |
-|   External BGP (eBGP)   |   20   |
-|     Internal EIGRP      |   90   |
-|          IGRP           |  100   |
-|          OSPF           |  110   |
-|          IS-IS          |  115   |
-|           RIP           |  120   |
-|     External EIGRP      |  170   |
-|   Internal BGP (iBGP)   |  200   |
-|     Unstable route      |  225   |
+| Route Source                                       | Default AD |
+| -------------------------------------------------- | ---------- |
+| Directly Connected interface                       | 0          |
+| Static route                                       | 1          |
+| External Border Gateway Protocol (eBGP)            | 20         |
+| Internal EIGRP                                     | 90         |
+| IGRP                                               | 100        |
+| OSPF                                               | 110        |
+| Intermediate System-to-Intermediate System (IS-IS) | 115        |
+| Routing Information Protocol (RIP)                 | 120        |
+| External EIGRP                                     | 170        |
+| Internal BGP                                       | 200        |
+| Unstable Route (Unknown)                           | 255        |
+
 * **Unstable route**: If the administrative distance is 255, the router does not believe the source of that route and does not install the route in the routing table.
 ### Floating Static Routes
 * By changing the AD of a static route, you can make it less preferred than routes learned by a dynamic routing protocol to the same destination (make sure the static route's AD is higher than the routing protocol's AD).
