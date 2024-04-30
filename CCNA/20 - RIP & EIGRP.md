@@ -61,14 +61,14 @@ R1(config-router)#network 172.16.0.0
 * R1 advertises 172.16.1.0/28 (NOT 172.16.0.0/16) to its RIP neighbors (R2, R3 in this case).
 * Although there are no RIP neighbors connected to G2/0, R1 will continuously send RIP advertisements out of G2/0. This is unnecessary traffic, so G2/0 should be configured as a **passive interface**.
 	* `R1(config-router)#passive-interface g2/0`
-* EiGRP and OSPF both have the same passive interface functionality, using the same command.
+* EIGRP and OSPF both have the same passive interface functionality, using the same command.
 #### Advertise a default Route into RIP
 * R1 has been configured with a default gateway/route (203.0.113.0/30). RIP is then used to tell R2, R3, and R4 (in this case) about the default route so that they can reach the internet.
 	* R1 will advertise the route to R2 and R3. They will then advertise it to R4.
 
 R4 after receiving default route from both, R3 and R2.
 ![default information originate command](./img2/default-information-originate-command.png)
-* R4 has two ways to get to the default route. Through F2/0 and G0/0. Only one of them is listed as the gateway of last resort. However, because both routes have the same hop-count, R4 ill load-balance traffic over the two routes.
+* R4 has two ways to get to the default route. Through F2/0 and G0/0. Only one of them is listed as the gateway of last resort. However, because both routes have the same hop-count, R4 will load-balance traffic over the two routes.
 	* RIP uses hop count as its metric and they both make 2 hops. There is a tie between the two routes, therefore the traffic will be load balanced
 #### Show IP Protocols
 `R1#show ip protocols`
@@ -76,7 +76,7 @@ R4 after receiving default route from both, R3 and R2.
 	* Routing protocol being used.
 	* Version of the routing protocol being used.
 	* status on whether `sumarization` is being used.
-	* **Maximum path**: Refers to ECMP load balancing. By default, RIP will insert up to 4 paths to the same destination into the routing table if they have the same metric.
+	* **Maximum path**: Refers to ECMP (Equal Cost Multi-path) load balancing. By default, RIP will insert up to 4 paths to the same destination into the routing table if they have the same metric.
 		* It can be changed: `R1(config-router)#maximum-paths <1-32>`.
 		* It's the same command for EIGRP and OSPF.
 	* **Routing for networks**: Shows the networks entered using the `network` command.
