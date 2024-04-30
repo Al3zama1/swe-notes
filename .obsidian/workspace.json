@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/20 - RIP & EIGRP.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/20 - RIP & EIGRP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/20 - RIP & EIGRP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md"
+                "file": "CCNA/20 - RIP & EIGRP.md"
               }
             }
           },
@@ -161,8 +161,9 @@
   },
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
-    "CCNA/21 - OSPF.md",
+    "CCNA/19 - Dynamic Routing.md",
     "CCNA/20 - RIP & EIGRP.md",
+    "CCNA/21 - OSPF.md",
     "CCNA/Untitled.md",
     "CCNA/img2/eigrp-wildcard-mask-quiz.png",
     "CCNA/img2/show-ip-protocols.png",
@@ -171,7 +172,6 @@
     "CCNA/img2/eigrp-sample-network.png",
     "CCNA/img2/default-information-originate-command.png",
     "CCNA/img2/network-cmd-1.png",
-    "CCNA/19 - Dynamic Routing.md",
     "CCNA/12 - Subnetting.md",
     "CCNA/img2/ospv-vs-rip-path-selection.png",
     "CCNA/img2/dynamic-routing-metrics.png",

@@ -12,7 +12,6 @@
 	* **Response**: To send the local router's routing table to neighboring routers.
 * By default, RIP-enabled routers will share their routing table every 30 seconds.
 	* This can cause problems in networks with lots of routers, as these regular updates can clog up the network.
-
 ### RIPv1
 * Only advertises classful addresses (Class A, Class B, Class C). However, classful addresses are no longer used in modern networks. Don't use this version if you are going to use RIP.
 * Doesn't support VLSM and CIDR.
@@ -28,7 +27,6 @@
 * Messages are **multicast** to 224.0.0.9.
 	* **Broadcast**: Messages are delivered to all devices on the local network.
 	* **Multicast**: Messages are delivered only to devices that have joined that specific multicast group.
-
 ### RIP Configuration
 * RIP configuration is not on the CCNA. It is really simple to do and will serve as a good introduction to dynamic routing.
 ```
@@ -38,7 +36,7 @@ R1(config-router)#no auto-summary
 R1(config-router)#network 10.0.0.0
 R1(config-router)#network 172.16.0.0
 ```
-* `R1(config-router)#no auto-summary` disables auto-summary, which is on by default. auto-summary automatically converts the networks the router advertises to classful networks.
+* `R1(config-router)#no auto-summary` disables auto-summary, which is on by default. Auto-summary automatically converts the networks the router advertises to classful networks.
 	* For example, the 172.16.1.0/28 network attached to R1 is a class B network. Therefore, it would be advertised as 172.16.0.0/16.
 #### Network Command
 * The `network` command tells the router which interfaces to activate RIP on, and then the router will advertise the network prefix of those interfaces with its RIP neighbors.
