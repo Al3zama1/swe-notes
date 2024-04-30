@@ -103,6 +103,9 @@ R4 after receiving default route from both, R3 and R2.
 	* /28 subnet mask -> 255.255.255.240
 	* /28 wildcard mask -> 0.0.0.15
 * A shortcut is to subtract each octet of the subnet mask from 255.
+
+### Unequal Cost Load Balancing
+
 ### EIGRP Configuration
 ![EIGRP sample network](./img2/eigrp-sample-network.png)
 ```
@@ -116,3 +119,16 @@ R1(config-router)#network 172.16.1.0 0.0.0.15
 * The `network` command will assume a classful address if the mask is not specified.
 	* The network 172.16.1.0 0.0.0.15 activates EIGRP on the G2/0 interface.
 	* /28 prefix gives a subnet mask of 255.255.255.240. However, EIGRP uses a 'wildcard mask' .
+#### Show IP Protocols
+![show ip protocols](./img2/show-ip-protocols.png)
+* EIGRP uses interface bandwidth and delay by default as its metric. Those are the K1 and K3 values that are set to 1 in the Metric weight.
+* **Router-ID**: In EIGRP and OSPF, the router has a unique router ID which identifies it within the AS (autonomous system).
+* The Router ID is not an IP. It's just a 32-bit number formatted like a dotter-decimal IP address. It can be changed to any 32-bit number.
+	* `R1(config-router)#eigrp router-id <number>`
+* Router ID order of priority:
+	* Manual configuration
+	* Highest Ip address on a loopback interface.
+	* If there are no loopback interfaces configured, the highest IP address on any of the router's physical interfaces will become the router ID.
+* **Distance**:EIGRP has two separate AD values. One for internal routes and the other for external routes.
+	* Internal routes are normal EIGRP routes.
+	* External routes are routes from outside EIGRP which are inserted into EIGRP. This is beyond the CCNA.
