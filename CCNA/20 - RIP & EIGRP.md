@@ -40,4 +40,79 @@ R1(config-router)#network 172.16.0.0
 ```
 * `R1(config-router)#no auto-summary` disables auto-summary, which is on by default. auto-summary automatically converts the networks the router advertises to classful networks.
 	* For example, the 172.16.1.0/28 network attached to R1 is a class B network. Therefore, it would be advertised as 172.16.0.0/16.
+#### Network Command
+* The `network` command tells the router which interfaces to activate RIP on, and then the router will advertise the network prefix of those interfaces with its RIP neighbors.
+* The RIP `network` command is classful. It will automatically convert to classful networks.
+	* For example, the command, `network 10.0.12.0` will be converted to `network 10.0.0.0` (a class A network). This is because the provided IP falls in the class A IP range. Because of this behavior, there is no need to enter a network mask.
+* The `network` command tells the router to:
+	* look for interfaces with an IP address that is in the specified range and activate RIP on them.
+		* Routers send RIP advertisements out of their RIP enabled interfaces.
+		* An interface enabled as RIP that is not connected to a RIP neighbor should be configured as **passive** to prevent unnecessary traffic.
+	* Form adjacencies with connected RIP neighbors.
+	* Advertise the network prefix of RIP enabled interfaces (NOT the prefix in the network command.) with its RIP neighbors.
+* The OSPF and EIGRP `network` command operate in the same way.
+
+`R1(config-router)#network 10.0.0.0`
+![the network command](./img2/network-cmd-1.png)
+
+`R1(config-router)#network 172.16.0.0`
+* Because the `network` command is classful, 172.16.0.0 is assumed to be 172.16.0.0/16.
+* R1 will look for any interfaces with an IP address that matches 172.16.0.0/16.
+* 172.16.1.14 matches, therefore R1 will activate RIP on G2/0.
+* There are no RIP neighbors connected to G2/0, therefore no new adjacencies are formed.
+* R1 advertises 172.16.1.0/28 (NOT 172.16.0.0/16) to its RIP neighbors (R2, R3 in this case).
+* Although there are no RIP neighbors connected to G2/0, R1 will continuously send RIP advertisements out of G2/0. This is unnecessary traffic, so G2/0 should be configured as a **passive interface**.
+	* `R1(config-router)#passive-interface g2/0`
+* EiGRP and OSPF both have the same passive interface functionality, using the same command.
+#### Advertise a default Route into RIP
+* R1 has been configured with a default gateway/route (203.0.113.0/30). RIP is then used to tell R2, R3, and R4 (in this case) about the default route so that they can reach the internet.
+	* R1 will advertise the route to R2 and R3. They will then advertise it to R4.
+
+R4 after receiving default route from both, R3 and R2.
+![default information originate command](./img2/default-information-originate-command.png)
+* R4 has two ways to get to the default route. Through F2/0 and G0/0. Only one of them is listed as the gateway of last resort. However, because both routes have the same hop-count, R4 ill load-balance traffic over the two routes.
+	* RIP uses hop count as its metric and they both make 2 hops. There is a tie between the two routes, therefore the traffic will be load balanced
+#### Show IP Protocols
+`R1#show ip protocols`
+* This command can be used for RIP, EIGRP, and OSPF to check various statistics.
+	* Routing protocol being used.
+	* Version of the routing protocol being used.
+	* status on whether `sumarization` is being used.
+	* **Maximum path**: Refers to ECMP load balancing. By default, RIP will insert up to 4 paths to the same destination into the routing table if they have the same metric.
+		* It can be changed: `R1(config-router)#maximum-paths <1-32>`.
+		* It's the same command for EIGRP and OSPF.
+	* **Routing for networks**: Shows the networks entered using the `network` command.
+	* **Passive Interface(s)**: Lists interfaces set as passive.
+	* **Routing Information Sources**: Displays the router's RIP neighbors.
+	* **Distance**: The administrative distance of RIP.
+		* AD can be changed with: `R1(config-router)#distance <1-255>`.
 ## Enhanced Interior Gateway Routing Protocol (EIGRP)
+* It is an improved version of the older IGRP, Interior Gateway Routing Protocol.
+* Was Cisco proprietary, but Cisco has now published it openly so other vendors can implement it on their equipment.
+* Considered an 'advanced' / 'hybrid' distance vector routing protocol.
+* Much faster than RIP in reacting to changes in the network.
+* Does not have the 15 'hop-count' limit of RIP.
+* Sends messages using multicast addresses 224.0.0.10.
+* It  Is the only IGP that can perform **unequal**-cost  load-balancing (by default it perform ECMP load-balancing over 4 paths like RIP).
+* EIGRP is a great protocol, but because its use is mostly limited to Cisco devices, it's not used nearly as much as OSPF is.
+### Wildcard Masks
+![EIGRP wildcard](./img2/eigrp-wildcard.png)
+![EIGRP no match](./img2/eigrp-wildcard-no-match.png)
+* A wildcard mask is basically an 'inverted' subnet mask.
+* All 1s in the subnet mask are 0 in the equivalent wildcard mask. All 0s in the subnet mask are 1s in the equivalent wildcard mask.
+	* /28 subnet mask -> 255.255.255.240
+	* /28 wildcard mask -> 0.0.0.15
+* A shortcut is to subtract each octet of the subnet mask from 255.
+### EIGRP Configuration
+![EIGRP sample network](./img2/eigrp-sample-network.png)
+```
+R1(config)#router eigrp <AS number>
+R1(config-router)#no auto-summary
+R1(config-router)#passive-interface g2/0
+R1(config-router)#network 10.0.0.0
+R1(config-router)#network 172.16.1.0 0.0.0.15
+```
+* The AS (autonomous system) number must match between routers. Otherwise, they will not form an adjacency and share route information.
+* The `network` command will assume a classful address if the mask is not specified.
+	* The network 172.16.1.0 0.0.0.15 activates EIGRP on the G2/0 interface.
+	* /28 prefix gives a subnet mask of 255.255.255.240. However, EIGRP uses a 'wildcard mask' .
