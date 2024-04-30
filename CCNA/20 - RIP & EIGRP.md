@@ -93,19 +93,26 @@ R4 after receiving default route from both, R3 and R2.
 * Much faster than RIP in reacting to changes in the network.
 * Does not have the 15 'hop-count' limit of RIP.
 * Sends messages using multicast addresses 224.0.0.10.
-* It  Is the only IGP that can perform **unequal**-cost  load-balancing (by default it perform ECMP load-balancing over 4 paths like RIP).
+* It  Is the only IGP that can perform **unequal**-cost  load-balancing (by default it perform ECMP (Equal Cost Multi-path) load-balancing over 4 paths like RIP).
 * EIGRP is a great protocol, but because its use is mostly limited to Cisco devices, it's not used nearly as much as OSPF is.
 ### Wildcard Masks
-![EIGRP wildcard](./img2/eigrp-wildcard.png)
-![EIGRP no match](./img2/eigrp-wildcard-no-match.png)
 * A wildcard mask is basically an 'inverted' subnet mask.
 * All 1s in the subnet mask are 0 in the equivalent wildcard mask. All 0s in the subnet mask are 1s in the equivalent wildcard mask.
 	* /28 subnet mask -> 255.255.255.240
 	* /28 wildcard mask -> 0.0.0.15
 * A shortcut is to subtract each octet of the subnet mask from 255.
 
-### Unequal Cost Load Balancing
+![EIGRP wildcard](./img2/eigrp-wildcard.png)
+![EIGRP no match](./img2/eigrp-wildcard-no-match.png)
 
+#### Example
+R1's G1/0 interface has an IP address of 172.20.20.17 and its G2/0 interface has an IP address of 172.26.20.12. Which of the following `network` commands will activate EIGRP on both interfaces.
+* a) `R1(config-router)#network 128.0.0.0 127.255.255.255`
+* b) `R1(config-router)#network 172.16.0.0 0.0.255.255`
+* c) `R1(config-router)#network 172.20.0.0 0.0.127.255`
+* d) `R1(config-router)#network 172.20.0.0 0.3.255.255`
+![EIGRP wildcard mask](./img2/eigrp-wildcard-mask-quiz.png)
+### Unequal Cost Load Balancing
 ### EIGRP Configuration
 ![EIGRP sample network](./img2/eigrp-sample-network.png)
 ```
@@ -119,6 +126,9 @@ R1(config-router)#network 172.16.1.0 0.0.0.15
 * The `network` command will assume a classful address if the mask is not specified.
 	* The network 172.16.1.0 0.0.0.15 activates EIGRP on the G2/0 interface.
 	* /28 prefix gives a subnet mask of 255.255.255.240. However, EIGRP uses a 'wildcard mask' .
+	* It's possible to use a variety of wildcard mask lengths to activate EIGRP on interfaces. 
+		* For example, a /32 wildcard mask specifies the exact IP address on the interface (0.0.0.0) .
+	* However, usually the same prefix length as the interface itself is used like in this previous example (/28).
 #### Show IP Protocols
 ![show ip protocols](./img2/show-ip-protocols.png)
 * EIGRP uses interface bandwidth and delay by default as its metric. Those are the K1 and K3 values that are set to 1 in the Metric weight.
