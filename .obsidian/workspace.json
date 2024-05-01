@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 252.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -159,8 +160,11 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "5c97acdbaf886adf",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
+    "CCNA/img2/OSPF-network.png",
+    "CCNA/img2/OSPF-areas.png",
+    "CCNA/img2/LSA-flooding.png",
     "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
     "CCNA/21 - OSPF.md",
@@ -174,8 +178,6 @@
     "CCNA/img2/default-information-originate-command.png",
     "CCNA/img2/network-cmd-1.png",
     "CCNA/12 - Subnetting.md",
-    "CCNA/img2/ospv-vs-rip-path-selection.png",
-    "CCNA/img2/dynamic-routing-metrics.png",
     "Untitled.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
