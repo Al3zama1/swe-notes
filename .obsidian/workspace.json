@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/20 - RIP & EIGRP.md",
+                "file": "CCNA/21 - OSPF.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5,
-    "collapsed": true
+    "width": 252.5
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/20 - RIP & EIGRP.md",
+                "file": "CCNA/21 - OSPF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/20 - RIP & EIGRP.md",
+                "file": "CCNA/21 - OSPF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/20 - RIP & EIGRP.md"
+                "file": "CCNA/21 - OSPF.md"
               }
             }
           },
@@ -162,9 +161,10 @@
   },
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
-    "CCNA/19 - Dynamic Routing.md",
     "CCNA/20 - RIP & EIGRP.md",
+    "CCNA/19 - Dynamic Routing.md",
     "CCNA/21 - OSPF.md",
+    "CCNA/img2/eigrp-metric.png",
     "CCNA/Untitled.md",
     "CCNA/img2/eigrp-wildcard-mask-quiz.png",
     "CCNA/img2/show-ip-protocols.png",
@@ -176,7 +176,6 @@
     "CCNA/12 - Subnetting.md",
     "CCNA/img2/ospv-vs-rip-path-selection.png",
     "CCNA/img2/dynamic-routing-metrics.png",
-    "CCNA/img2/ecmp-static-routes.png",
     "Untitled.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
@@ -200,7 +199,6 @@
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Gradle/1. Introduction to Gradle.md",
-    "ipv4-address-classes-details.md",
     "CCNA/img/subnetting-5.jpeg.crdownload",
     "CCNA/img/subnetting-3.jpeg.crdownload",
     "CCNA/img/subnetting-2.jpeg.crdownload",

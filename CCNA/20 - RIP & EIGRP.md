@@ -110,7 +110,62 @@ R1's G1/0 interface has an IP address of 172.20.20.17 and its G2/0 interface has
 * c) `R1(config-router)#network 172.20.0.0 0.0.127.255`
 * d) `R1(config-router)#network 172.20.0.0 0.3.255.255`
 ![EIGRP wildcard mask](./img2/eigrp-wildcard-mask-quiz.png)
-### Unequal Cost Load Balancing
+### EIGRP Metric
+R1 wants to contact a host in the LAN connected to R4 (192.168.4.0/24). The route taken is through R2 dues to a lower metric value.
+![EIGRP Metric](./img2/eigrp-metric.png)
+* By default, EIGRP used **bandwidth** and **delay** to calculate *metric*.
+	* ([K1 * bandwidth + (K2 * bandwidth) / (256 - load) + K3 * delay] * [K5 / (reliability + K4)]) * 256
+* The formula is not needed for the CCNA. You can simplify the formula like this: metric = bandwidth + delay.
+	* Bandwidth of the slowest link + the delay of all links.
+	* Routers don't send PING messages to measure the delay of each link. The delay value is a default value given to router interfaces based their bandwidth.
+* The default 'K' values are k1 = 1, K2 = 0, K3 = 1, K4 = 0, K5 = 0
+### EIGRP Terminology
+* ***Feasible Distance**: This router's metric value to the router's destination.
+* ***Reported Distance (aka Advertised Distance)**: The neighbor's metric value to the route's destination.
+	* EIGRP uses the term 'distance', but this is the metric used to compare EIGRP routes.
+* **Successor**: The route with the lowest metric to the destination (the best route).
+	* There can be multiple successors if they have the same metric (feasible distance).
+* **Feasible Successor**: An alternate route to the destination (not the best route) *which meets the feasibility condition*. It is guaranteed to be loop-free.
+	* EIGRP has the system of feasible successors as a kind of loop-prevention mechanism.
+* **Feasibility Condition**: A route is considered a feasible successor if it's reported distance is lower than the successor route's feasible distance. 
+
+### EIGRP Unequal-Cost Load-Balancing
+* A unique feature of EIGRP because other routing protocols only perform load-balancing if each route's metric is equal. With the default settings EIGRP doesn't do unequal-cost load-balancing.
+* EIGRP will send more traffic through the faster routes when load-balancing over unequal-cost routes.
+* EIGRP will only perform unequal-cost load-balancing over feasible successor routes. If a route does't meet the feasibility requirement, it will NEVER be selected for load-balancing, regardless of **variance**.
+```
+R1#show ip protocols
+.
+.
+.
+EIGRP maximum metric variance 1
+```
+* **Variance 1**: only ECMP load-balancing will be performed.
+	* If another route's FD (feasible distance) is equal to the successor route's FD, that route is a successor too. There can be multiple successors
+#### UnEqual-Cost Load-Balancing Configuration
+```
+R1(config-router)#variance ?
+	<1-128> Metric variance Multiplier
+R1(config-router)#variance 2
+```
+* **Variance 2** = feasible successor routes with an FD (feasible distance) up to 2x the successor route's FD can be used to load-balance.
+### Show EIGRP Topology
+Show all the EIGRP routes received and not just the ones on the routing table
+```
+R1#show ip eigrp topology
+
+IP-EIGRP Topology Table for AS 100/ID(1.1.1.1)
+Codes: P - Passive, A - Active, U - Update, Q - Query, R - Reply,
+r - Reply status
+
+P 192.168.4.0/24, 1 successors, FD is 28672
+via 10.0.12.2 (28672/28416), GigabitEthernet0/0
+via 10.0.13.2 (30976/28416), FastEthernet1/0
+  
+```
+* To get to LAN 192.168.4.0/24 from R1 via 10.0.12.2 (G/0/):
+	* The Feasible Distance is 28672 (first number in the parenthesis).
+	* The Reported Distance is 28416 (second number in the parenthesis).
 ### EIGRP Configuration
 ![EIGRP sample network](./img2/eigrp-sample-network.png)
 ```
@@ -127,6 +182,9 @@ R1(config-router)#network 172.16.1.0 0.0.0.15
 	* It's possible to use a variety of wildcard mask lengths to activate EIGRP on interfaces. 
 		* For example, a /32 wildcard mask specifies the exact IP address on the interface (0.0.0.0) .
 	* However, usually the same prefix length as the interface itself is used like in this previous example (/28).
+
+### Show EIGRP Neighbors
+`R1#show ip eigrp neighbors`
 #### Show IP Protocols
 ![show ip protocols](./img2/show-ip-protocols.png)
 * EIGRP uses interface bandwidth and delay by default as its metric. Those are the K1 and K3 values that are set to 1 in the Metric weight.
