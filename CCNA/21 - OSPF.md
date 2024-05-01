@@ -50,7 +50,7 @@
 * All OSPF areas must have at least one ABR connected to the backbone area.
 * OSPF interfaces in the same subnet must be in the same area.
 	* They won't become OSPF neighbors and won't exchange information about the networks they know about if they are not in the same area.
-## Basic OSPF Configuration
+## OSPF Configuration
 ![OSPF network](./img2/OSPF-network.png)
 ### Basic OSPF Configuration
 It is assumed that R2, R3, and R4 have already been configured to reflect the diagram above.
@@ -85,3 +85,36 @@ An internet connection is added to R1 (203.0.113.0/30).
 R1(config)#ip route 0.0.0.0 0.0.0.0 203.0.113.0/30
 R1(config-router)#default-information originate
 ```
+* It will cause the router to create a new LSA and flood it.
+
+### Router-ID Configuration
+```
+R1(config-router)#router-id ?
+	A.B.C.D OSPF router-id in IP address format
+R1(config-router)#router-id 1.1.1.1
+% OSPF: Reload or use "clear ip ospf process" command, for this to take effect.
+
+R1#clear ip ospf process
+Reset ALL OSPF processes? [no]: yes
+```
+* This basically resets OSPF on the router.
+* This is a bad idea in a real network. The router will lose all of its OSPF routes for a short time and won't be able to forward traffic to those destinations.
+### Change Maximum Paths
+`R1(config-router)#maximum-paths ?`
+### Change Administrative Distance
+`R1(config-router)#distance <AD>`
+### Show IP Protocols
+![OSPF show IP protocols command](./img2/OSPF-show-ip-protocols.png)
+* OSPF also uses a Router-ID that is determine in the same way as in EIGRP.
+* Router-ID order of priority:
+	1. Manual configuration.
+	2. Highest IP address on a loopback interface.
+	3. Highest IP address on a physical interface.
+* An **autonomous system boundary router**  (ASBR) is an OSPF router that connects the OSPF network to an external network.
+	* R1 is connected to the Internet. By using the **default-information originate** command, R1 becomes an ASBR.
+* Number of areas in this router: indicates the areas that the router is in. In this case, only one because this is single-area OSPF.
+	* It's not necessary to know about the different types of areas for the CCNA.
+* Supports ECMP over a maximum of 4 paths by default.
+* Routing for Networks: shows the network commands used on the router.
+* Routing Information Sources: Current router's neighbors.
+* Distance: OSPF's AD (Administrative Distance).
