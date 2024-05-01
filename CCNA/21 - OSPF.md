@@ -41,6 +41,8 @@
 * **Internal router**: router with all interfaces on the same area.
 * **Area border router** (ABR): router with interfaces in multiple areas.
 	* ABRs maintain a separate LSDB for each area they are connected to. It is recommended that you connect an ABR to a maximum of 2 areas. Connecting an ABR to 3+ areas can overburden the router.
+* **Autonomous system boundary router**  (ASBR): an OSPF router that connects the OSPF network to an external network (like the internet).
+	* Setting `default-information originate` on a router makes it a ASBR.
 * **Backbone router**: router connected to the backbone area (area 0).
 * **Intra-area route**: a route to a destination inside the same OSPF area.
 	* For example, from a router in area 1 to a destination also in area 1.
