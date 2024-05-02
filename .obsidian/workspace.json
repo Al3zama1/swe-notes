@@ -160,8 +160,10 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "5c97acdbaf886adf",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
+    "CCNA/img2/dr-bdr-2.png",
+    "CCNA/img2/dr-bdr-1.png",
     "CCNA/22 - OSPF Part 2.md",
     "CCNA/23 - OSPF Part 3.md",
     "CCNA/img2/OSPF-states-overview.png",
@@ -174,7 +176,6 @@
     "CCNA/img2/OSPF-down-state.png",
     "CCNA/img2/OSPF-message-types.png",
     "CCNA/21 - OSPF.md",
-    "CCNA/img2/OSPF-show-ip-protocols.png",
     "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
     "CCNA/12 - Subnetting.md",
@@ -200,7 +201,6 @@
     "2024-04-15.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "Gradle/1. Introduction to Gradle.md",
     "CCNA/img/subnetting-5.jpeg.crdownload",
     "CCNA/img/subnetting-3.jpeg.crdownload",
     "CCNA/img/subnetting-2.jpeg.crdownload",
