@@ -160,8 +160,9 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
+    "CCNA/img2/OSPF-states-overview.png",
     "CCNA/img2/OSPF-full-state.png",
     "CCNA/img2/OSPF-loading-state.png",
     "CCNA/img2/OSPF-exchange-state.png",
@@ -174,7 +175,6 @@
     "CCNA/21 - OSPF.md",
     "CCNA/img2/OSPF-show-ip-protocols.png",
     "CCNA/img2/OSPF-network.png",
-    "CCNA/img2/OSPF-areas.png",
     "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
     "CCNA/12 - Subnetting.md",

@@ -38,6 +38,7 @@
 ### OSPF Message Types
 ![OSPF message types](./img2/OSPF-message-types.png)
 ### OSPF States
+![OSPF states overview](./img2/OSPF-states-overview.png)
 #### Down State
 It's assumed that OSPF has just been activated on R1's G0/0 interface
 ![OSPF down state](./img2/OSPF-down-state.png)
@@ -60,7 +61,7 @@ It's assumed that OSPF has just been activated on R1's G0/0 interface
 * Now both routers should be in the **2-way** state.
 	* The 2-way state is when a router has received a *hello* packet with its own RID in it.
 	* If both routers reach the 2-way state, it means that all of the conditions have been met for them to become OSPF neighbors. They are now ready to share LSAs to build a common LSDB.
-	* In some network types, a DR (Designated Router) and BDR (Backup Designated Router) will be elected at this point.
+	* In some network types, a **DR (Designated Router)** and **BDR (Backup Designated Router)** will be elected at this point.
 #### Exstart
 ![OSPF extart state](./img2/OSPF-extart-state.png)
 * The two routers will now prepare to exchange information about their LSDB. However, before that, they must choose which one will start the exchange of DBD messages in the next state (Exchange).
@@ -85,7 +86,44 @@ The image below, only shows the process R1 goes through to get LSAs it does not 
 * Every time a *hello* packet is received, the 'Dead' timer (40 seconds by default) is reset.
 	* If the 'Dead' time counts down to 0 and no *hello* message is received, the neighbor is removed.
 * The routers will continue to share LSAs as the network changes to make sure each router has a complete and accurate map of the network (LSDB).
+## OSPF Show Commands
+```
+R4#show ip ospf neighbor
 
+Neighbor ID Pri State    Dead Time Address Interface
+2.2.2.2     1   FULL/BDR 00:00:35  10.0.24.1 FastEthernet1/0
+3.3.3.3     1   FULL/BDR 00:00:33  10.0.34.1 FastEthernet2/0
+```
+
+```
+R4#show ip ospf interface f1/0
+
+FastEthernet1/0 is up, line protocol is up
+Internet address is 10.0.24.2/30, Area 0
+Process ID 1, Router ID 4.4.4.4, Network Type BROADCAST, Cost: 1
+Transmit Delay is 1 sec, State DR, Priority 1
+Designated Router (ID) 4.4.4.4, Interface address 10.0.24.2
+Backup Designated Router (ID) 2.2.2.2, Interface address 10.0.24.1
+Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+Hello due in 00:00:06
+Index 2/2, flood queue length 0
+Next 0x0(0)/0x0(0)
+Last flood scan length is 1, maximum is 1
+Last flood scan time is 0 msec, maximum is 0 msec
+Neighbor Count is 1, Adjacent neighbor count is 1
+Adjacent with neighbor 2.2.2.2 (Backup Designated Router)
+Suppress hello for 0 neighbor(s)
+```
+* You can see times such as Hello, Death, etc.
+* You can see DR (designated router) and BDR (backup designated router).
 ## More OSPF Configuration
-
-### OSPF Show Commands
+### Interface OSPF Activation Alternate Method
+* Activate OSPF directly on an interface:
+	* `R1(config-if)#ip ospf <process-id> area <are>`
+* If you active OSPF directly on the interfaces, you'll see slightly different outputs from the `show ip protocols` command.
+	* The 'Routing for Networks' section will be empty if the `network` command is not used to activate OSPF on interfaces.
+	* The interfaces for which OSPF was activated explicitly will show up under the 'Routing on Interfaces Configured Explicitly (Area <area #>)' section.
+### Passive Interface Alternate Method
+* Configure all interfaces as OSPF passive interfaces:
+	* `R1(config-router)#passive-interface default`
+	* Depending on the number of passive interfaces that need to be configured, this method might be faster, or perhaps the normal method is faster.
