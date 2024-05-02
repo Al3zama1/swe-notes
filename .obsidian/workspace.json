@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/22 - OSPf Part 2.md",
+                "file": "CCNA/23 - OSPF Part 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/22 - OSPf Part 2.md",
+                "file": "CCNA/23 - OSPF Part 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/22 - OSPf Part 2.md",
+                "file": "CCNA/23 - OSPF Part 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/22 - OSPf Part 2.md"
+                "file": "CCNA/23 - OSPF Part 3.md"
               }
             }
           },
@@ -162,6 +162,8 @@
   },
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
+    "CCNA/22 - OSPF Part 2.md",
+    "CCNA/23 - OSPF Part 3.md",
     "CCNA/img2/OSPF-states-overview.png",
     "CCNA/img2/OSPF-full-state.png",
     "CCNA/img2/OSPF-loading-state.png",
@@ -169,12 +171,10 @@
     "CCNA/img2/OSPF-extart-state.png",
     "CCNA/img2/OSPF-2-way-state.png",
     "CCNA/img2/OSPF-init-state.png",
-    "CCNA/22 - OSPf Part 2.md",
     "CCNA/img2/OSPF-down-state.png",
     "CCNA/img2/OSPF-message-types.png",
     "CCNA/21 - OSPF.md",
     "CCNA/img2/OSPF-show-ip-protocols.png",
-    "CCNA/img2/OSPF-network.png",
     "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
     "CCNA/12 - Subnetting.md",
