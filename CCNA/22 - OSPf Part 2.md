@@ -62,9 +62,19 @@ It's assumed that OSPF has just been activated on R1's G0/0 interface
 	* If both routers reach the 2-way state, it means that all of the conditions have been met for them to become OSPF neighbors. They are now ready to share LSAs to build a common LSDB.
 	* In some network types, a DR (Designated Router) and BDR (Backup Designated Router) will be elected at this point.
 #### Exstart
-* The two routers will now prepare to exchange information about their LSDB.
+![OSPF extart state](./img2/OSPF-extart-state.png)
+* The two routers will now prepare to exchange information about their LSDB. However, before that, they must choose which one will start the exchange.
+	* The router with the higher RID will become the **master** and initiate the exchange. The router with the lower RID will become the **slave**.
+* To decide the **master** and **slave**, routers exchange DBD (Database Description) packets.
+	* In this case R2 is the master because it has a higher RID (2.2.2.2) than R1 (1.1.1.1).
 #### Exchange
+![OSPF exchange state](./img2/OSPF-exchange-state.png)
+* In the **exchange** state, the routers exchange DBDs which contain a list of the LSAs in their LSDB.
+	* These DBDs do not include the actual LSAs, just basic information to inform each other of the LSAs they have.
+* The routers compare the information in the DBD they received to the information in their own LSDB to determine which LSAs they must receive from their neighbor.
 #### Loading
+
+
 #### Full
 
 ## More OSPF Configuration
