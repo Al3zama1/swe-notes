@@ -63,18 +63,29 @@ It's assumed that OSPF has just been activated on R1's G0/0 interface
 	* In some network types, a DR (Designated Router) and BDR (Backup Designated Router) will be elected at this point.
 #### Exstart
 ![OSPF extart state](./img2/OSPF-extart-state.png)
-* The two routers will now prepare to exchange information about their LSDB. However, before that, they must choose which one will start the exchange.
-	* The router with the higher RID will become the **master** and initiate the exchange. The router with the lower RID will become the **slave**.
+* The two routers will now prepare to exchange information about their LSDB. However, before that, they must choose which one will start the exchange of DBD messages in the next state (Exchange).
+	* The router with the higher RID will become the **master** and will initiate the exchange. The router with the lower RID will become the **slave**.
 * To decide the **master** and **slave**, routers exchange DBD (Database Description) packets.
-	* In this case R2 is the master because it has a higher RID (2.2.2.2) than R1 (1.1.1.1).
+	* In this case R2 is the master because it has a higher RID (2.2.2.2) than R1 (1.1.1.1). Therefore, R2 will start the DBD exchange in the next state.
 #### Exchange
 ![OSPF exchange state](./img2/OSPF-exchange-state.png)
 * In the **exchange** state, the routers exchange DBDs which contain a list of the LSAs in their LSDB.
 	* These DBDs do not include the actual LSAs, just basic information to inform each other of the LSAs they have.
 * The routers compare the information in the DBD they received to the information in their own LSDB to determine which LSAs they must receive from their neighbor.
 #### Loading
-
-
+The image below, only shows the process R1 goes through to get LSAs it does not have. R2 will perform the same process. Both routers should have the same LSDB by the end of this state.
+![OSPF loading state](./img2/OSPF-loading-state.png)
+* In the **loading** state, routers send Link State Request (LSR) messages to request that their neighbors send them any LSAs they don't have.
+* LSAs are sent in Link State Update (LSU) messages.
+* Routers send LSAck messages to acknowledge that they received the LSAs.
 #### Full
+![OSPF full state](./img2/OSPF-full-state.png)
+* In the **full** state, the routers have a full OSPF adjacency and identical LSDBs.
+* They continue to send and listen for *hello* packets (every 10 seconds by default) to maintain the neighbor adjacency.
+* Every time a *hello* packet is received, the 'Dead' timer (40 seconds by default) is reset.
+	* If the 'Dead' time counts down to 0 and no *hello* message is received, the neighbor is removed.
+* The routers will continue to share LSAs as the network changes to make sure each router has a complete and accurate map of the network (LSDB).
 
 ## More OSPF Configuration
+
+### OSPF Show Commands
