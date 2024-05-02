@@ -160,10 +160,14 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "5c97acdbaf886adf",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
-    "CCNA/21 - OSPF.md",
+    "CCNA/img2/OSPF-2-way-state.png",
+    "CCNA/img2/OSPF-init-state.png",
     "CCNA/22 - OSPf Part 2.md",
+    "CCNA/img2/OSPF-down-state.png",
+    "CCNA/img2/OSPF-message-types.png",
+    "CCNA/21 - OSPF.md",
     "CCNA/img2/OSPF-show-ip-protocols.png",
     "CCNA/img2/OSPF-network.png",
     "CCNA/img2/OSPF-areas.png",
@@ -173,9 +177,6 @@
     "CCNA/img2/eigrp-metric.png",
     "CCNA/img2/eigrp-wildcard-mask-quiz.png",
     "CCNA/img2/show-ip-protocols.png",
-    "CCNA/img2/eigrp-wildcard-no-match.png",
-    "CCNA/img2/eigrp-wildcard.png",
-    "CCNA/img2/eigrp-sample-network.png",
     "CCNA/12 - Subnetting.md",
     "Untitled.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
