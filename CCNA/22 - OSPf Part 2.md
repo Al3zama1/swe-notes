@@ -34,7 +34,6 @@
 * The default hello timer is 10 seconds for an Ethernet connection.
 * Hello messages are multicast to `224.0.0.5` (multicast address for all OSPF routers).
 * OSPF messages are encapsulated in an IP header with a value of 89 in the protocol field.
-
 ### OSPF Message Types
 ![OSPF message types](./img2/OSPF-message-types.png)
 ### OSPF States
@@ -61,7 +60,8 @@ It's assumed that OSPF has just been activated on R1's G0/0 interface
 * Now both routers should be in the **2-way** state.
 	* The 2-way state is when a router has received a *hello* packet with its own RID in it.
 	* If both routers reach the 2-way state, it means that all of the conditions have been met for them to become OSPF neighbors. They are now ready to share LSAs to build a common LSDB.
-	* In some network types, a **DR (Designated Router)** and **BDR (Backup Designated Router)** will be elected at this point.
+* In some network types, a **DR (Designated Router)** and **BDR (Backup Designated Router)** will be elected at this point.
+	* OSPF Broadcast network Type
 #### Exstart
 ![OSPF extart state](./img2/OSPF-extart-state.png)
 * The two routers will now prepare to exchange information about their LSDB. However, before that, they must choose which one will start the exchange of DBD messages in the next state (Exchange).

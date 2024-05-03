@@ -3,8 +3,8 @@
 * It is always up/up (unless you manually shutdown).
 * It is not dependent on a physical interface. 
 * It provides a consistent IP address that can be used to reach/identify the router.
-
 ## OSPF Network Types
+![OSPF network types comparison](./img2/ospf-network-types-comparison.png)
 * The OSPF 'network type' refers to the type of connection between OSPF neighbors (Ethernet, etc...).
 * There are three main OSPF network types:
 	* **Broadcast**: enabled by default on **Ethernet** and **FDDI** (Fiber Distributed Data Interfaces) interfaces.
@@ -14,9 +14,16 @@
 * Enabled on **Ethernet** and **FDDI** interfaces by default.
 * Routers dynamically discover neighbors by sending/listening for OSPF *Hello* messages using multicast address `224.0.0.5`.
 * A **DR** (designated router) and **BDR** (backup designated router) must be elected on each subnet (only DR if there are no OSPF neighbors, ie. R1's G1/0 interface).
+	* The DR and BDR will form a FULL adjacency with ALL routers in the subnet.
+	* When routers need to send messages to the DR and DBR, they use multicast address `224.0.0.6`. It is different than the 'all routers' multicast address of `224.0.0.5`.
 * Routers which aren't the DR or BDR become a **DROther**.
+	* DROthers will form a FULL adjacency only with the DR/BDR.
+	* DROthers don't form full adjacencies with other DROthers. They remain in the 2-way state.
+#### LSAs Sharing Between Routers
+Image below shows the sharing of LSAs in a subnet between routers.
+![LSAs sharing in a subnet](./img2/ospf-broadcast-network-type-lsa-sharing.png)
 * In the broadcast network type, routers only form a full OSPF adjacency with the DR and BDR of the segment/subnet.
-	* Therefore, routers only exchange LSAs with the DR and BDR. DROthers will not exchange LSAs with each other.
+* Therefore, routers only exchange LSAs with the DR and BDR. DROthers will not exchange LSAs with each other.
 	* All routers will still have the same LSDB, but this reduces the amount of LSAs flooding the network.
 #### Broadcast DR/BDR Election
 * The DR/BDR election order of priority:
@@ -44,14 +51,64 @@ R2(config-if)#ip ospf priority 255
 	* When the DR goes down, the BDR becomes the new DR even if it doesn't have the highest OSPF interface priority / RID . Then an election is held for the next BDR.
 * DROthers (R3 and R5 in the subnet) will only move to the Full state with the DR and BDR. The neighbor state with other DROthers will be 2-way.
 	* DROthers don't form full adjacencies with other DROthers. They remain in the 2-way state.
-
-
 ##### Reset OSPF Process
 `R5#clear ip ospf process`
+## Serial Interfaces
+Serial connections is an old technology which isn't very common anymore. They still exists, but Ethernet is much more dominant.
+Furthermore, they have been removed from the CCNA exam topics, except for the OSPF 'point-to-point' network type.
 
+* One side of a serial connection functions as DCE (Data Communications Equipment). The other side functions as DTE (Data Terminal Equipment).
+	* This is important because the DCE side needs to specify the clock rate (speed) of the connection.
+* On Cisco routers, the default encapsulation on a serial interface is cHDLC (Cisco HDLC).
+	* It displays as just HDLC in the CLI.
+### Serial Connection Clock Rate
+```
+R1(config)#interface s2/0
+R1(config-if)#clock rate <bits-per-second>
+R1(config-if)#clock rate 64000
+R1(config-if)#ip address 192.168.1.1 255.255.255.0
+R1(config-if)#no shutdown
+```
+* Serial interfaces use the `clock rate` command to set the speed.
+* **The speed is only set on the DCE side of the serial connection.**
+### Serial Connection PPP Encapsulation
+```
+R1(config)#interface s2/0
+R1(config-if)#encapsulation ppp
+```
+* If you change the encapsulation, it must match on both ends or the interface will go down.
+### Show DCE / DTE Configuration
+![](./img2/serial-connection-show-ontrollers.png)
+* As shown in the commands above, R1 is the DCE and R2 is the DTE.
+### Serial Interfaces Summary
+* The default encapsulation is DHLC.
+* You can configure PPP encapsulation with this command:
+	* `R1(config-if)#encapsulation ppp`
+* One side is DCE, the other is DTE.
+* Identify which side is DCE / DTE:
+	* `R1#show controllers <interface-id>`
+* You must configure the clock rate on the DCE side:
+	* `R1(config-if)#clock rate <bits-per-second>`
 ### OSPF Point-to-Point Network Type
+* Enabled on **serial** interfaces using the **PPP** and **HDLC** encapsulations by default.
+	* PPP and HDLC are both Layer 2 encapsulations, similar to Ethernet, except they are used on serial connections.
+* Routers dynamically discover neighbors by sending/listening for OSPF *Hello* messages using multicast address `224.0.0.5`.
+* A DR and BDR are NOT selected, compared to an OSPF broadcast network type.
+* These encapsulations are used for 'point-to-point' connections between two routers. There is no point in electing a DR and BDR.
+* The two routers will form a FULL adjacency with each other. 
+* Use the same default timers: Hello 10, Dead 40.
 
+![point-to-point network sample](./img2/p2p-network-sample.png)
+
+#### Configure the OSPF Network Type
+Why would you change the OSPF network type? For example, if two routers are directly connected with an Ethernet link, there is no need for a DR/BDR. You can configure the point-to-point network type in this case. Although you don't have to.
+
+* You can configure the OSPF network type on an interface with:
+	* `R1(config-if)#ip ospf network <type>`
+* NOTE: Not all network types work on all link types (for example, a serial link cannot use the broadcast network type).
+	* Serial links don't support layer 2 broadcast frames, which are necessary for the broadcast network type.
 ## OSPF Neighbor/Adjacency Requirements
+
 
 ## OSPF LSA Types
 
