@@ -160,8 +160,11 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "5c97acdbaf886adf",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
+    "CCNA/img2/fhrp-intro-3.png",
+    "CCNA/img2/fhrp-intro-2.png",
+    "CCNA/img2/fhrp-intro-1.png",
     "CCNA/23 - OSPF Part 3.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/img2/ospf-link-types-lsdb.png",
@@ -173,8 +176,6 @@
     "CCNA/img2/dr-bdr-2.png",
     "CCNA/img2/dr-bdr-1.png",
     "CCNA/img2/OSPF-states-overview.png",
-    "CCNA/img2/OSPF-full-state.png",
-    "CCNA/img2/OSPF-loading-state.png",
     "CCNA/21 - OSPF.md",
     "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
@@ -198,7 +199,6 @@
     "CCNA/2 - Interfaces and Cables.md",
     "CCNA/1 - Network Devices.md",
     "CCNA/img2",
-    "2024-04-15.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "CCNA/img/subnetting-5.jpeg.crdownload",
