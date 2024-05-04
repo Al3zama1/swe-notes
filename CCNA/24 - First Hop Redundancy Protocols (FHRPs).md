@@ -37,8 +37,87 @@ The name 'first-hop' redundancy protocol is used because the default gateway is 
 * If the old active router comes back online, it won't take back its role as the active router by default. It will become the standby router.
 * You can configure preemption, so that the old active router does take back its old role.
 ## HSRP (Host Standby Router Protocol)
-
+* Cisco Proprietary.
+* An **active** and **standby** router are elected.
+* There are two versions: **version 1** and **version 2**.
+	* Version 2 adds IPv6 support and increases the number of groups that can be configured.
+	* In situations with multiple subnets and VLANS, you'll need to configure a virtual IP address for each subnet because each subnet needs its own default gateway.
+* Routers send *hello* messages through IPv4 multicast addresses:
+	* v1: 224.0.0.2
+	* v2: 224.0.0.102
+* Virtual MAC addresses:
+	* v1: `0000.0c07.acxx` (XX = HSRP group number)
+	* v2: `0000.0c9f.fxxx`(xxx = HSRP group number)
+* In a situation with multiple subnets/VLANs, you can configure a different active router in each subnet/VLAN to load balance.
+	* Although it can't load balance within a single subnet, you can configure a different active router in each subnet so that traffic is load balanced between the routers.
 ## VRRP (Virtual Router Redundancy Protocol)
+* Open standard that can run on any network device that supports it.
+* It's similar in terms of functionality to HSRP.
+* A **master** and **backup** router are elected.
+* Multicast IPv4 address for router communication: 224.0.0.18.
+* Virtual MAC address: 0000.5e00.01XX (XX = VRRP group number).
+* In a situation with multiple subnets/VLANs, you can configure a different master router in each subnet/VLAN to load balance.
 ## GLBP (Gateway Load Balancing Protocol)
-
+* Cico proprietary.
+* It is a bit different than HSRP and VRRP.
+* Load balances among multiple routers within a single subnet.
+* An **AVG** (Active Virtual Gateway) is elected.
+* Up to four **AVF**s (Active Virtual Forwarders) are assigned by the AVG (the AVG itself can be an AVF, too).
+* Each AVF acts as the default gateway for a portion of the hosts in the subnet.
+* Multicast IPv4 address: 224.0.0.102.
+* Virtual MAC address: 0007.b400.XXYY (XX: GLBP group number, YY: AVF number).
+## FHRPs Comparison 
+![FHRPs Comparison](./img2/comparing-fhrps.png)
 ## Basic HSRP Configuration
+![FHRP configuration topology](./img2/FHRP-config-topology.png)
+**Change HSRP Version**
+`R1(config-if)#standby version 2`
+* Version 1 is default, but can be changed using the command above.
+* V1 has a range of 0 - 255 groups available.
+* V2 has a range of 0 4095 groups available.
+* HSRP versions 1 and 2 are not compatible. Routers in the same group must use the same version.
+
+```
+R1(config)#interface g0/0
+R1(config-if)#standby ?
+<0-4095> group number
+
+R1(config-if)#standby 1 ?
+ip       Enable HSRP and set the virtual IP address
+ipv6     Enable HSRP IPv6
+preempt  Overthrow lower priority Active routers
+priority Priority level
+timers   Hello and hold timers
+track    Priority Tracking
+
+```
+* This is a simple network with a single VLAN. It is a good idea to match the HSRP group number to the VLAN number used for the subnet. A group number of 1 was chosen in this case.
+	* The group number does have to match between the two routers.
+
+**Configure virtual IP for the Default Gateway**
+```
+R1(config-if)#standby 1 ip 172.16.0.254
+```
+
+**Configure Priority**
+```
+R1(config-if)#standby 1 priority ?
+	<0-255> Priority value
+
+R1(config-if)#standby 1 priority 200
+```
+* Priority is used to determine which router will be the active router.
+* Active router election order:
+	* Router with highest priority (default 100) in the group.
+	* Router with highest IP address.
+
+**Configure Preemption**
+```
+R1(config-if)#standby 1 peempt
+```
+* Preempt causes the router to take the role of active router, even if another router already has the role. 
+	* The preempting router must have a higher priority or IP address to take the active role.
+	* It's only necessary to configure preemption on the router that you want to become the active router. It is not necessary on the standby router.
+
+**Show HSRP Configuration**
+`R1# show standby`
