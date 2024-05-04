@@ -6,7 +6,7 @@ The name 'first-hop' redundancy protocol is used because the default gateway is 
 ## FHRP in Action
 ![FHRP Intro 1](./img2/fhrp-intro-1.png)
 * The two routers share a VIP (virtual IP) and a virtual MAC address is generated for the virtual IP.
-* R1 and R2 negotiate their roles with each other by sending multicast Hello messages to each other.
+* R1 and R2 negotiate their roles with each other by sending multicast *Hello* messages to each other.
 * In this case, R1 became the ACTIVE router and R2 the STANDBY router. R2 will start functioning and take the ACTIVE status only if R1 fails.
 	* The actual terms (active, standby, etc.) vary depending on which FHRP is being used.
 
