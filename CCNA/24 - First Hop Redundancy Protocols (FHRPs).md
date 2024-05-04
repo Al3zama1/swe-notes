@@ -46,8 +46,8 @@ The name 'first-hop' redundancy protocol is used because the default gateway is 
 	* v1: 224.0.0.2
 	* v2: 224.0.0.102
 * Virtual MAC addresses:
-	* v1: `0000.0c07.acxx` (XX = HSRP group number)
-	* v2: `0000.0c9f.fxxx`(xxx = HSRP group number)
+	* v1: 0000.0c07.acXX (XX = HSRP group number)
+	* v2: 0000.0c9f.fXXX(XXX = HSRP group number)
 * In a situation with multiple subnets/VLANs, you can configure a different active router in each subnet/VLAN to load balance.
 	* Although it can't load balance within a single subnet, you can configure a different active router in each subnet so that traffic is load balanced between the routers.
 ## VRRP (Virtual Router Redundancy Protocol)
