@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/23 - OSPF Part 3.md",
+                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/23 - OSPF Part 3.md",
+                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/23 - OSPF Part 3.md",
+                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/23 - OSPF Part 3.md"
+                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md"
               }
             }
           },
@@ -162,20 +162,19 @@
   },
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
-    "CCNA/25 - TCP & UDP.md",
+    "CCNA/23 - OSPF Part 3.md",
+    "CCNA/img2/comparing-fhrps.png",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/img2/FHRP-config-topology.png",
-    "CCNA/img2/FHRP-config-topology.png",
-    "CCNA/img2/comparing-fhrps.png",
+    "CCNA/22 - OSPF Part 2.md",
+    "CCNA/25 - TCP & UDP.md",
     "CCNA/img2/fhrp-intro-4.png",
     "CCNA/img2/fhrp-intro-3.png",
     "CCNA/img2/fhrp-intro-2.png",
     "CCNA/img2/fhrp-intro-1.png",
-    "CCNA/23 - OSPF Part 3.md",
     "CCNA/img2/ospf-link-types-lsdb.png",
     "CCNA/img2/ospf-network-types-comparison.png",
     "CCNA/img2/p2p-network-sample.png",
-    "CCNA/22 - OSPF Part 2.md",
     "CCNA/21 - OSPF.md",
     "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
@@ -197,7 +196,6 @@
     "CCNA/4 - CLI Introduction.md",
     "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/2 - Interfaces and Cables.md",
-    "CCNA/1 - Network Devices.md",
     "CCNA/img2",
     "Untitled 1.canvas",
     "Untitled.canvas",
