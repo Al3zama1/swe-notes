@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/25 - TCP & UDP.md",
+                "file": "CCNA/26 - IPv6.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/25 - TCP & UDP.md",
+                "file": "CCNA/26 - IPv6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/25 - TCP & UDP.md",
+                "file": "CCNA/26 - IPv6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/25 - TCP & UDP.md"
+                "file": "CCNA/26 - IPv6.md"
               }
             }
           },
@@ -160,8 +160,10 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
+    "CCNA/25 - TCP & UDP.md",
+    "CCNA/26 - IPv6.md",
     "CCNA/img2/port-numbers.png",
     "CCNA/img2/tcp-vs-udp.png",
     "CCNA/img2/udp-header.png",
@@ -174,9 +176,7 @@
     "CCNA/img2/comparing-fhrps.png",
     "CCNA/img2/FHRP-config-topology.png",
     "CCNA/22 - OSPF Part 2.md",
-    "CCNA/25 - TCP & UDP.md",
     "CCNA/img2/fhrp-intro-4.png",
-    "CCNA/img2/fhrp-intro-3.png",
     "CCNA/21 - OSPF.md",
     "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
