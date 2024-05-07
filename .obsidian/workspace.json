@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/27 - IPv6 Part 2.md",
+                "file": "CCNA/26 - IPv6.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/27 - IPv6 Part 2.md",
+                "file": "CCNA/26 - IPv6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/27 - IPv6 Part 2.md",
+                "file": "CCNA/26 - IPv6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/27 - IPv6 Part 2.md"
+                "file": "CCNA/26 - IPv6.md"
               }
             }
           },
@@ -162,8 +162,8 @@
   },
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
-    "CCNA/26 - IPv6.md",
     "CCNA/27 - IPv6 Part 2.md",
+    "CCNA/26 - IPv6.md",
     "CCNA/img2/ipv6-simple-config-network-topology.png",
     "CCNA/img2/ipv6-prefix-examples.png",
     "CCNA/img2/ipv6-global-unicast-address-breakdown.png",
