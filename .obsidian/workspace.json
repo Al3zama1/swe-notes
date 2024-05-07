@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/26 - IPv6.md",
+                "file": "CCNA/27 - IPv6 Part 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/26 - IPv6.md",
+                "file": "CCNA/27 - IPv6 Part 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/26 - IPv6.md",
+                "file": "CCNA/27 - IPv6 Part 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/26 - IPv6.md"
+                "file": "CCNA/27 - IPv6 Part 2.md"
               }
             }
           },
@@ -160,23 +160,23 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
+    "CCNA/26 - IPv6.md",
+    "CCNA/27 - IPv6 Part 2.md",
+    "CCNA/img2/ipv6-simple-config-network-topology.png",
+    "CCNA/img2/ipv6-prefix-examples.png",
     "CCNA/img2/ipv6-global-unicast-address-breakdown.png",
     "CCNA/img2/ipv6-expanding-examples.png",
     "CCNA/img2/ipv6-shortening-examples.png",
-    "CCNA/26 - IPv6.md",
     "CCNA/25 - TCP & UDP.md",
     "CCNA/img2/port-numbers.png",
     "CCNA/img2/tcp-vs-udp.png",
     "CCNA/img2/udp-header.png",
     "CCNA/img2/tcp-sequence&acknowledgment.png",
     "CCNA/img2/4-way-handshake.png",
-    "CCNA/img2/3-way-handshake.png",
-    "CCNA/img2/tcp-header.png",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/23 - OSPF Part 3.md",
-    "CCNA/img2/comparing-fhrps.png",
     "CCNA/22 - OSPF Part 2.md",
     "CCNA/21 - OSPF.md",
     "CCNA/20 - RIP & EIGRP.md",
