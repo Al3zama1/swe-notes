@@ -160,10 +160,13 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "5c97acdbaf886adf",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
-    "CCNA/25 - TCP & UDP.md",
+    "CCNA/img2/ipv6-global-unicast-address-breakdown.png",
+    "CCNA/img2/ipv6-expanding-examples.png",
+    "CCNA/img2/ipv6-shortening-examples.png",
     "CCNA/26 - IPv6.md",
+    "CCNA/25 - TCP & UDP.md",
     "CCNA/img2/port-numbers.png",
     "CCNA/img2/tcp-vs-udp.png",
     "CCNA/img2/udp-header.png",
@@ -174,9 +177,7 @@
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/23 - OSPF Part 3.md",
     "CCNA/img2/comparing-fhrps.png",
-    "CCNA/img2/FHRP-config-topology.png",
     "CCNA/22 - OSPF Part 2.md",
-    "CCNA/img2/fhrp-intro-4.png",
     "CCNA/21 - OSPF.md",
     "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
@@ -197,7 +198,6 @@
     "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/4 - CLI Introduction.md",
     "CCNA/3 - OSI Model & TCP-IP.md",
-    "CCNA/2 - Interfaces and Cables.md",
     "CCNA/img2",
     "Untitled 1.canvas",
     "Untitled.canvas",
