@@ -40,6 +40,7 @@
 	* 128 bits each.
 	* These fields contain the IPv6 addresses of the packet's source and the packet's intended destination.
 ## Solicited-Node Multicast Address
+* An IPv6 solicited-node multicast address is calculated from a unicast address.
 * 
 ## Neighbor Discovery Protocol (NDP)
 ## SLAAC
