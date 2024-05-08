@@ -37,6 +37,8 @@
 	* IPv6 uses range `FF00::/8` for multicast.
 		* `FF00::` to `FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF`.
 * IPv6 doesn't use broadcast (There is no 'broadcast address' in IPv6).
+* Routers join the `FF02::1` and `FF02:2` multicast groups by default.
+* Routers also join the Solicited-Node multicast group that is generated from the unicast address on the interface.
 #### Multicast Address Scopes
 ![Multicast address scopes](./img2/multicast-address-scopes.png)
 * IPv6 defines multiple multicast *scopes* which indicate how far the packet should be forwarded.

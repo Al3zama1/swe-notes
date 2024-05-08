@@ -41,7 +41,19 @@
 	* These fields contain the IPv6 addresses of the packet's source and the packet's intended destination.
 ## Solicited-Node Multicast Address
 * An IPv6 solicited-node multicast address is calculated from a unicast address.
-* 
+* The address begins with a fixed prefix. Then, add the last 6 hex digits of the unicast address for which this solicited-node address is being generated from.
+	* `ff02:0000:0000:0000:0000:0001:ff` + Last 6 hex digits of unicast address
+### Solicited-Node Multicast Address Example 1
+* Unicast address:
+	* `2001:0db8:0000:0001:0f2a:4fff:fea3:00b1`
+* Solicited-Node Multicast Address:
+	* `ff02:0000:0000:0000:0000:0001:ffa3:00b1`
+	* `ff02::1:ffa3:b1`
+### Solicited-Node Multicast Address Example 2
+* Unicast Address:
+	* `2001:db8:0:1:489:4eda:073a:12b8`
+* Solicited-Node Multicast Address:
+	* `ff02::1:ff3a:12b8`
 ## Neighbor Discovery Protocol (NDP)
 ## SLAAC
 ## IPv6 Static Routing
