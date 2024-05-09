@@ -102,8 +102,6 @@ R1(config-if)#ip access-group 1 out
 ### Standard Named ACLs
 * Standard ACLs match traffic based only on the source IP address of the packet.
 * Named ACLs are identified with a name (ie. Block_BOB).
-* Standard named ACLs are configured by entering 'standard named ACL config mode', and then configuring each entry within that config mode.
-
 #### Standard Named ACLs Configuration
 
 **Enter standard named ACL config mode**
@@ -111,4 +109,16 @@ R1(config-if)#ip access-group 1 out
 R1(config)#ip access-list standard acl-name
 
 R1(config-std-nacl)#[entry-number] {deny | permit} ip wildcard-mask
+```
+* Standard named ACLs are configured by entering 'standard named ACL config mode', and then configuring each entry within that config mode.
+* It's possible to specify an entry number for each entry to control the order of the entries, although it's not necessary.
+	* Each entry's number will be 10 more than the previous one if done automatically.
+```
+R1(config)#ip access-list standard BLOCK_BOB
+R1(config-std-nacl)#5 deny 1.1.1.1
+R1(config-std-nacl)#10 permit any
+R1(config-std-nacl)#remark remark-content
+
+R1(config-std-nacl)#interface g0/0
+R1(config-if)#ip access-group BLOCK_BOB in
 ```
