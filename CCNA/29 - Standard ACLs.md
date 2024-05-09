@@ -37,16 +37,78 @@
 	* Extended Named ACLs.
 ### Standard Numbered ACLs
 * Standard ACLs match traffic based only on the source IP address of the packet.
-* Numbered ACLs are identified with a number (ie. ACL 1, ACL 2, etc).
+* Numbered ACLs are identified with a number (ie. ACL 1, ACL 2, etc) that determine their order.
 * Different types of ACLs have a different range of numbers that can be used.
 	* Standard ACLs can use 1 - 99 and 1300 - 1999.
-* The basic command to configure a standard numbered ACL is: `R1(config)#access-list number {deny | permit} ip wildcard-mask`
-	* `R1(config)#access-list 1 deny 1.1.1.1 0.0.0.0` 
-		* Denies a single host (`1.1.1.1/32`).
-	* `R1(config)#access-list 1 deny 1.1.1.1` 
-		* When you specify a /32 mask in an ACL, the wildcard mask is not required.
-		* Can only be used to specify a single host (`/32`).
-	* `R1(config)#access-list 1 deny host 1.1.1.1`
-		* This is an old method of creating an ACL that still works in modern routers. It is equivalent as the two methods listed above.
-		* Can only be used to specify a single host (`/32`).
+#### Standard Numbered ACL Configuration
+```
+R1(config)#access-list number {deny | permit} ip wildcard-mask
+```
+* `R1(config)#access-list 1 deny 1.1.1.1 0.0.0.0` 
+	* Denies a single host (`1.1.1.1/32`).
+* `R1(config)#access-list 1 deny 1.1.1.1` 
+	* When you specify a /32 mask in an ACL, the wildcard mask is not required.
+	* Can only be used to specify a single host (`/32`).
+* `R1(config)#access-list 1 deny host 1.1.1.1`
+	* This is an old method of creating an ACL that still works in modern routers. It is equivalent as the two methods listed above.
+	* Can only be used to specify a single host (`/32`).
+
+**Avoid implicit blocking of all traffic**
+```
+R1(config)#access-list 1 permit any
+
+R1(config)#access-list 1 permit 0.0.0.0 255.255.255.255
+```
+* The two methods above, are equivalent.
+**ACL Remark**
+```
+R1(config)#access-list 1 remark <remark>
+```
+* The ACL remark sets a description hat helps you determine the purpose of the ACL when looking at it in the configuration.
+
+**Display ACLs**
+```
+// Display all kind of ACLs
+R1(enable)#show access-lists
+
+// Display only IP ACLs
+R1(enable)#show ip access-lists
+```
+
+**Apply ACL to an interface**
+```
+R1(config-if)#ip access-group <number> {in | out}
+```
+#### Standard Numbered ACLs Configuration Example
+![](./img2/standard-acls-topology.png)
+**Requirements**:
+* PC1 can access `192.168.2.0/24`.
+* Other PCs in the `192.168.1.0/24` can't access `192.168.2.0/24`.
+**ACL 1**:R1 g0/2 outbound
+* If source IP = `192.168.1.1/32`, then permit.
+* if source IP = `192.168.1.0/24`, then deny.
+* If source IP = any, then permit.
+```
+// it's a /32 so the wildcard-mask is not needed
+R1(config)#access-list 1 permit 192.168.1.1
+R1(config)#access-list 1 deny 192.168.1.0 0.0.0.255
+R1(config)#access-list 1 permit any
+
+R1(config)#interface g0/2
+R1(config-if)#ip access-group 1 out
+```
+* **Standard ACLs should be applied as close to the destination as possible**. If you don't do that, you might block more traffic than you intended.
+	* The destination in this case is the `192.168.2.0/24` network.
 ### Standard Named ACLs
+* Standard ACLs match traffic based only on the source IP address of the packet.
+* Named ACLs are identified with a name (ie. Block_BOB).
+* Standard named ACLs are configured by entering 'standard named ACL config mode', and then configuring each entry within that config mode.
+
+#### Standard Named ACLs Configuration
+
+**Enter standard named ACL config mode**
+```
+R1(config)#ip access-list standard acl-name
+
+R1(config-std-nacl)#[entry-number] {deny | permit} ip wildcard-mask
+```
