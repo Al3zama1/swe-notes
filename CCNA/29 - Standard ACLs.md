@@ -122,3 +122,57 @@ R1(config-std-nacl)#remark remark-content
 R1(config-std-nacl)#interface g0/0
 R1(config-if)#ip access-group BLOCK_BOB in
 ```
+
+**Display ACLs**
+```
+R1#show access-lists
+
+R1#show running-config | section access-list
+
+R1#show ip access-lists
+```
+#### Standard Named ACLs Configuration Example
+![](./img2/standard-acls-topology.png)
+**Requirements**:
+* PCs in `192.168.1.0/24` can't access `10.0.2.0/24`.
+* PC3 can't access `10.0.1.0/24`.
+* Other PCs in `192.168.2.0/24` can access `10.0.1.0/24`.
+* PC1 can access `10.0.1.0/24`.
+* Other PCs in the `192.168.1.0/24` can't access `10.0.1.0/24`.
+**ACL One**: R2 G0/2 Outbound
+* If source IP = `192.168.1.0/24`, then deny.
+* If source IP = any, then permit.
+**ACL One** :R2 G0/1 Outbound
+* if source IP = `192.168.2.1/32`, then deny.
+* if source IP = `192.168.2.0/24`, then permit.
+* if source IP = `192.168.1.1/32`, the permit.
+* if source IP = `192.168.1.0/24`, then deny.
+* 
+* If source IP = any, then permit.
+```
+R2(config)#ip access-list standard TO_10.0.2.0/24
+R2(config-std-nacl)#deny 192.168.1.0 0.0.0.255
+R2(config-std-nacl)#permit any
+R2(config-std-nacl)#interface g0/2
+R2(config-if)#ip access-group TO_10.0.2.0/24 out
+
+R2(config-if)#ip access-list standard TO_10.0.1.0/24
+R2(config-std-nacl)#deny 192.168.2.1
+R2(config-std-nacl)#permit 192.168.2.0 0.0.0.255
+R2(config-std-nacl)#permit 192.168.1.1
+R2(config-std-nacl)#deny 192.168.1.0 0.0.0.255
+R2(config-std-nacl)#permit any
+R2(config-std-nacl)#interface g0/1
+R2(config-if)#ip access-group TO_10.0.1.0/24 out
+```
+
+**Display IP  ACLs**
+```
+R2#show ip access-lists
+```
+![ACL entries reordered in router](./img2/ACLs-reordered-in-router.png)
+* The router may re-order the /32 ACE (access control entries) of an ACL.
+	* As shown above, the ACEs are not ordered in the order that they were created, indicated by the 'entry numbers' assigned to them (creation order: 10, 20, 30, 40, 50). 
+* This improves the efficiency of processing the ACL. However, it does not change the effect of the ACL.
+* This applies to both standard named and standard numbered ACLs.
+* Packet Tracer does not do this (It does not reorder them).
