@@ -12,15 +12,6 @@
 	* A maximum of one ACL can be applied to a single interface per direction. Applying a second ACL to an interface in the same direction, will replace the existing one.
 	* **Inbound**: Maximum one ACL.
 	* **Outbound**: Maximum one ACL.
-### ACL Requirement & Satisfaction Example
-![](./img2/standard-acls-topology.png)
-**Requirement**:
-* Hosts in `192.168.1.0/24` can access the `10.0.1.0/24` network.
-* Hosts in `192.168.2.0/24` cannot access the `10.0.1.0/24` network.
-**Requirement satisfaction**: ACL 1
-* If source IP = `192.168.1.0/24`, then permit.
-* If source IP = `192.168.2.0/24`, then deny.
-* If source IP = any, then permit.
 ### Router ACLs Check Process
 * When the router checks a packet agains the ACL, it processes the ACEs in order, from top to bottom.
 	* The order of the ACEs in an ACL matter.
@@ -139,15 +130,14 @@ R1#show ip access-lists
 * Other PCs in `192.168.2.0/24` can access `10.0.1.0/24`.
 * PC1 can access `10.0.1.0/24`.
 * Other PCs in the `192.168.1.0/24` can't access `10.0.1.0/24`.
-**ACL One**: R2 G0/2 Outbound
+**ACL TO_10.0.2.0/24**: R2 G0/2 Outbound
 * If source IP = `192.168.1.0/24`, then deny.
 * If source IP = any, then permit.
-**ACL One** :R2 G0/1 Outbound
+**ACL TO_10.0.1.0/24** :R2 G0/1 Outbound
 * if source IP = `192.168.2.1/32`, then deny.
 * if source IP = `192.168.2.0/24`, then permit.
 * if source IP = `192.168.1.1/32`, the permit.
 * if source IP = `192.168.1.0/24`, then deny.
-* 
 * If source IP = any, then permit.
 ```
 R2(config)#ip access-list standard TO_10.0.2.0/24
@@ -176,3 +166,4 @@ R2#show ip access-lists
 * This improves the efficiency of processing the ACL. However, it does not change the effect of the ACL.
 * This applies to both standard named and standard numbered ACLs.
 * Packet Tracer does not do this (It does not reorder them).
+

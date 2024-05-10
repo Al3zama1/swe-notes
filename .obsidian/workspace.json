@@ -163,9 +163,10 @@
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
     "CCNA/29 - Standard ACLs.md",
+    "CCNA/30 - Extended ACLs.md",
+    "Recording 20240509144112.webm",
     "CCNA/img2/ACLs-reordered-in-router.png",
     "CCNA/img2/standard-acls-topology.png",
-    "CCNA/30 - Extended ACLs.md",
     "CCNA/27 - IPv6 Part 2.md",
     "CCNA/28 - IPv6 Part 3.md",
     "CCNA/img2/ipv6-static-routing-network-topology.png",
@@ -207,7 +208,6 @@
     "img",
     "CCNA/img",
     "CCNA",
-    "redis/img",
-    "redis"
+    "redis/img"
   ]
 }
