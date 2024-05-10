@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/31 - CDP & LLDP.md",
+                "file": "CCNA/32 - NTP (Network Timer Protocol).md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/31 - CDP & LLDP.md",
+                "file": "CCNA/32 - NTP (Network Timer Protocol).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/31 - CDP & LLDP.md",
+                "file": "CCNA/32 - NTP (Network Timer Protocol).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/31 - CDP & LLDP.md"
+                "file": "CCNA/32 - NTP (Network Timer Protocol).md"
               }
             }
           },
@@ -162,9 +162,16 @@
   },
   "active": "5c97acdbaf886adf",
   "lastOpenFiles": [
+    "CCNA/31 - CDP & LLDP.md",
+    "CCNA/img2/lldp-wireshark-capture.png",
+    "CCNA/img2/cdp-wireshark-capture.png",
+    "CCNA/18 - EtherChannel.md",
+    "CCNA/15 - DTP & VTP.md",
+    "CCNA/32 - NTP (Network Timer Protocol).md",
+    "CCNA/img2/cdp-neighbor-detail-command.png",
+    "CCNA/img2/cdp-lldp-topology.png",
     "CCNA/img2/layer-2-discovery-protocols-interaction.png",
     "CCNA/30 - Extended ACLs.md",
-    "CCNA/31 - CDP & LLDP.md",
     "CCNA/29 - Standard ACLs.md",
     "Recording 20240509144112.webm",
     "CCNA/img2/ACLs-reordered-in-router.png",
@@ -175,11 +182,6 @@
     "CCNA/img2/slaac.png",
     "CCNA/26 - IPv6.md",
     "CCNA/img2/ipv6-neighbor-table.png",
-    "CCNA/img2/neighbor-advertisement.png",
-    "CCNA/img2/neighbor-solicitation.png",
-    "CCNA/img2/ipv6-header.png",
-    "CCNA/img2/multicast-address-scopes.png",
-    "CCNA/img2/important-ipv4-ipv6-broadcast-addresses.png",
     "CCNA/25 - TCP & UDP.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/23 - OSPF Part 3.md",
@@ -191,14 +193,11 @@
     "Untitled.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
-    "CCNA/18 - EtherChannel.md",
-    "CCNA/15 - DTP & VTP.md",
     "CCNA/14 - VLANs Part Two.md",
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
     "CCNA/11 - Life of a Packet.md",
     "CCNA/10 - Static Routing.md",
     "CCNA/9 - Routing Fundamentals.md",
-    "CCNA/8 - IPv4 Header.md",
     "CCNA/img2",
     "Untitled 1.canvas",
     "Untitled.canvas",
