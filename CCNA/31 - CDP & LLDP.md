@@ -81,7 +81,7 @@ R1# show cdp entry R2
 	* Specifies how often CDP messages are sent
 * Configure CDP holdtimer: `R1(config)#cdp holdtime seconds`
 * Enable/disable CDPv2:`R1(config)#[no] cdp advertise-v2`
-### Wireshark Capture
+### CDP Wireshark Capture
 ![CDP Wireshark capture](./img2/cdp-wireshark-capture.png)
 ## Link Layer Discovery Protocol (LLDP)
 * LLDP is an industry standard protocol (IEEE 802.1AB), so many different vendors implement it on their devices. 

@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
-                "mode": "source",
+                "file": "CCNA/19 - Dynamic Routing.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/19 - Dynamic Routing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/19 - Dynamic Routing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md"
+                "file": "CCNA/19 - Dynamic Routing.md"
               }
             }
           },
@@ -160,14 +160,14 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "5c97acdbaf886adf",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
     "CCNA/31 - CDP & LLDP.md",
+    "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/img2/lldp-wireshark-capture.png",
     "CCNA/img2/cdp-wireshark-capture.png",
     "CCNA/18 - EtherChannel.md",
     "CCNA/15 - DTP & VTP.md",
-    "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/img2/cdp-neighbor-detail-command.png",
     "CCNA/img2/cdp-lldp-topology.png",
     "CCNA/img2/layer-2-discovery-protocols-interaction.png",
