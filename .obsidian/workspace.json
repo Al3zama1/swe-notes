@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/32 - NTP (Network Timer Protocol).md",
+                "file": "CCNA/32 - NTP (Network Time Protocol).md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/32 - NTP (Network Timer Protocol).md",
+                "file": "CCNA/32 - NTP (Network Time Protocol).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/32 - NTP (Network Timer Protocol).md",
+                "file": "CCNA/32 - NTP (Network Time Protocol).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/32 - NTP (Network Timer Protocol).md"
+                "file": "CCNA/32 - NTP (Network Time Protocol).md"
               }
             }
           },
@@ -167,7 +167,7 @@
     "CCNA/img2/cdp-wireshark-capture.png",
     "CCNA/18 - EtherChannel.md",
     "CCNA/15 - DTP & VTP.md",
-    "CCNA/32 - NTP (Network Timer Protocol).md",
+    "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/img2/cdp-neighbor-detail-command.png",
     "CCNA/img2/cdp-lldp-topology.png",
     "CCNA/img2/layer-2-discovery-protocols-interaction.png",
