@@ -78,7 +78,6 @@ The numbers below are the values used on Cisco devices. Other vendors might rank
 | External EIGRP                                     | 170        |
 | Internal BGP                                       | 200        |
 | Unstable Route (Unknown)                           | 255        |
-
 * **Unstable route**: If the administrative distance is 255, the router does not believe the source of that route and does not install the route in the routing table.
 ### Floating Static Routes
 * By changing the AD of a static route, you can make it less preferred than routes learned by a dynamic routing protocol to the same destination (make sure the static route's AD is higher than the routing protocol's AD).

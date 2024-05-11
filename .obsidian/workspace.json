@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9dc3b34f6aa5e267",
+        "id": "0d366c5f61dde4f3",
         "type": "tabs",
         "children": [
           {
-            "id": "5c97acdbaf886adf",
+            "id": "f62b22be419f6658",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5,
-    "collapsed": true
+    "width": 252.5
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -160,10 +159,11 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "f62b22be419f6658",
   "lastOpenFiles": [
-    "CCNA/31 - CDP & LLDP.md",
     "CCNA/32 - NTP (Network Time Protocol).md",
+    "CCNA/19 - Dynamic Routing.md",
+    "CCNA/31 - CDP & LLDP.md",
     "CCNA/img2/lldp-wireshark-capture.png",
     "CCNA/img2/cdp-wireshark-capture.png",
     "CCNA/18 - EtherChannel.md",
@@ -188,7 +188,6 @@
     "CCNA/22 - OSPF Part 2.md",
     "CCNA/21 - OSPF.md",
     "CCNA/20 - RIP & EIGRP.md",
-    "CCNA/19 - Dynamic Routing.md",
     "CCNA/12 - Subnetting.md",
     "Untitled.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
