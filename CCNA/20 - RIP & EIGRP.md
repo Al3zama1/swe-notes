@@ -160,7 +160,7 @@ via 10.0.12.2 (28672/28416), GigabitEthernet0/0
 via 10.0.13.2 (30976/28416), FastEthernet1/0
   
 ```
-* To get to LAN 192.168.4.0/24 from R1 via 10.0.12.2 (G/0/):
+* To get to LAN 192.168.4.0/24 from R1 via 10.0.12.2 (G0/0):
 	* The Feasible Distance is 28672 (first number in the parenthesis).
 	* The Reported Distance is 28416 (second number in the parenthesis).
 ### EIGRP Configuration
