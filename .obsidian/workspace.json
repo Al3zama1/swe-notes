@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/20 - RIP & EIGRP.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/20 - RIP & EIGRP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md",
+                "file": "CCNA/20 - RIP & EIGRP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/19 - Dynamic Routing.md"
+                "file": "CCNA/20 - RIP & EIGRP.md"
               }
             }
           },
@@ -161,8 +161,8 @@
   },
   "active": "f62b22be419f6658",
   "lastOpenFiles": [
-    "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/19 - Dynamic Routing.md",
+    "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/31 - CDP & LLDP.md",
     "CCNA/img2/lldp-wireshark-capture.png",
     "CCNA/img2/cdp-wireshark-capture.png",
