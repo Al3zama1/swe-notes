@@ -120,19 +120,16 @@ R1 wants to contact a host in the LAN connected to R4 (192.168.4.0/24). The rout
 	* Routers don't send PING messages to measure the delay of each link. The delay value is a default value given to router interfaces based their bandwidth.
 * The default 'K' values are k1 = 1, K2 = 0, K3 = 1, K4 = 0, K5 = 0
 ### EIGRP Terminology
-* **Feasible Distance**: This router's metric value to the route's destination.
-* **Reported Distance (aka Advertised Distance)**: The neighbor's metric value to the route's destination.
-	* EIGRP uses the term 'distance', but this is the metric used to compare EIGRP routes.
-* **Successor**: The route with the lowest metric to the destination (the best route).
-	* There can be multiple successors if they have the same metric (feasible distance).
+* **Reported Distance (RD)**: This is the advertised metric (cost) to reach a particular network, as reported by a neighboring router.
+* **Feasible Distance**: The total cost to reach a network, which includes the cost to the next-hop router plus the metric (RD) advertised by that router.
+* **Successor Route**: The primary route selected for a network based on the lowest feasible distance.
 * **Feasible Successor**: An alternate route to the destination (not the best route) *which meets the feasibility condition*. It is guaranteed to be loop-free.
 	* EIGRP has the system of feasible successors as a kind of loop-prevention mechanism.
-* **Feasibility Condition**: A route is considered a feasible successor if it's reported distance is lower than the successor route's feasible distance. 
-
+* **Feasibility Condition Check**: When a neighboring router advertises a route (with its RD), the receiving router checks if the reported distance (RD) of this route is less than the feasible distance (FD) of the current successor route for the same destination. If the RD is less than the FD of the successor route, the neighboring route is deemed a feasible successor.
 ### EIGRP Unequal-Cost Load-Balancing
 * A unique feature of EIGRP because other routing protocols only perform load-balancing if each route's metric is equal. With the default settings EIGRP doesn't do unequal-cost load-balancing.
-* EIGRP will send more traffic through the faster routes when load-balancing over unequal-cost routes.
 * EIGRP will only perform unequal-cost load-balancing over feasible successor routes. If a route does't meet the feasibility requirement, it will NEVER be selected for load-balancing, regardless of **variance**.
+* EIGRP will send more traffic through the faster routes when load-balancing over unequal-cost routes.
 ```
 R1#show ip protocols
 .
