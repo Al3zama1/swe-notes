@@ -120,7 +120,7 @@ R1 wants to contact a host in the LAN connected to R4 (192.168.4.0/24). The rout
 	* Routers don't send PING messages to measure the delay of each link. The delay value is a default value given to router interfaces based their bandwidth.
 * The default 'K' values are k1 = 1, K2 = 0, K3 = 1, K4 = 0, K5 = 0
 ### EIGRP Terminology
-* **Feasible Distance**: This router's metric value to the router's destination.
+* **Feasible Distance**: This router's metric value to the route's destination.
 * **Reported Distance (aka Advertised Distance)**: The neighbor's metric value to the route's destination.
 	* EIGRP uses the term 'distance', but this is the metric used to compare EIGRP routes.
 * **Successor**: The route with the lowest metric to the destination (the best route).
