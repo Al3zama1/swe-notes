@@ -129,7 +129,7 @@ R1 wants to contact a host in the LAN connected to R4 (192.168.4.0/24). The rout
 ### EIGRP Unequal-Cost Load-Balancing
 * A unique feature of EIGRP because other routing protocols only perform load-balancing if each route's metric is equal. With the default settings EIGRP doesn't do unequal-cost load-balancing.
 * EIGRP will only perform unequal-cost load-balancing over feasible successor routes. If a route does't meet the feasibility requirement, it will NEVER be selected for load-balancing, regardless of **variance**.
-* EIGRP will send more traffic through the faster routes when load-balancing over unequal-cost routes.
+* EIGRP will send more traffic through the faster routes when performing load-balancing over unequal-cost routes.
 ```
 R1#show ip protocols
 .
