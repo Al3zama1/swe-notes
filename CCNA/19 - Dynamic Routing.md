@@ -1,5 +1,5 @@
 ## Introduction to Dynamic Routing Protocols
-* **Network Route***: A route to a network/subnet (mask length < /32).
+* **Network Route**: A route to a network/subnet (mask length < /32).
 * **Host Route**: A route to a specific host (/32 mask).
 ### Dynamic Routing
 * Routers can use dynamic routing protocols to advertise information about the routes they know to other routers.
