@@ -81,7 +81,7 @@ R1(config-if)#encapsulation ppp
 ![](./img2/serial-connection-show-ontrollers.png)
 * As shown in the commands above, R1 is the DCE and R2 is the DTE.
 ### Serial Interfaces Summary
-* The default encapsulation is DHLC.
+* The default encapsulation is HDLC.
 * You can configure PPP encapsulation with this command:
 	* `R1(config-if)#encapsulation ppp`
 * One side is DCE, the other is DTE.
