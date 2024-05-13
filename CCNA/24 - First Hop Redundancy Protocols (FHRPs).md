@@ -22,7 +22,7 @@ The name 'first-hop' redundancy protocol is used because the default gateway is 
 * R2 will make the switches update their MAC address tables by sending **gratuitous ARP** replies to them.
 	* Gratuitous ARP replies are sent without being requested. Their destination MAC address is the broadcast MAC address (FFFF.FFFF.FFFF.FFFF) and their source in this case is the virtual MAC address shared by the routers.
 	* When the switches receive the frames, they will update their MAC address table to associate the virtual MAC address with the new interface through which it can be reached.
-	* As a result, frames destined for the default gateway, will no be forwarded to R2.
+	* As a result, frames destined for the default gateway, will now be forwarded to R2.
 
 ![](./img2/fhrp-intro-4.png)
 * In the event that R1 comes back online, it will become the standby router and not the active one.

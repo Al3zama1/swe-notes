@@ -126,9 +126,9 @@ Why would you change the OSPF network type? For example, if two routers are dire
 	* `R(config-if)#ip mtu <MTU bytes>`
 	* Return default: `R(config-if)#no ip mtu`
 	* The default MTU is 1500 bytes, but it can be configured.
-	* Even if this setting doesn't match, routers can become neighbors. However, OSPF won't operate properly.
+	* If the MTU settings on the interfaces don't match, routers can become OSPF neighbors, but won't move to the full state. OSPF won't operate properly.
 * The OSPF Network Type must match.
-	* Even if this setting doesn't match, routers can become neighbors. However, OSPF won't operate properly.
+	* Even if this setting doesn't match, routers can become neighbors. However, OSPF won't operate properly and they won't learn OSPF routes.
 ## OSPF LSA Types
 * The OSPF LSDB is make up of LSAs.
 	* All routers in the same OSPF area share the same LSDB.

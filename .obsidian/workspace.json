@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/23 - OSPF Part 3.md",
+                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/23 - OSPF Part 3.md",
+                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/23 - OSPF Part 3.md",
+                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/23 - OSPF Part 3.md"
+                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md"
               }
             }
           },
@@ -161,8 +161,8 @@
   },
   "active": "f62b22be419f6658",
   "lastOpenFiles": [
-    "CCNA/22 - OSPF Part 2.md",
     "CCNA/23 - OSPF Part 3.md",
+    "CCNA/22 - OSPF Part 2.md",
     "CCNA/21 - OSPF.md",
     "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
