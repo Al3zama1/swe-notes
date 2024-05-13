@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/20 - RIP & EIGRP.md",
+                "file": "CCNA/22 - OSPF Part 2.md",
                 "mode": "preview",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5,
-    "collapsed": true
+    "width": 252.5
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/20 - RIP & EIGRP.md",
+                "file": "CCNA/22 - OSPF Part 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/20 - RIP & EIGRP.md",
+                "file": "CCNA/22 - OSPF Part 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/20 - RIP & EIGRP.md"
+                "file": "CCNA/22 - OSPF Part 2.md"
               }
             }
           },
@@ -162,7 +161,16 @@
   },
   "active": "f62b22be419f6658",
   "lastOpenFiles": [
+    "CCNA/21 - OSPF.md",
+    "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
+    "CCNA/1 - Network Devices.md",
+    "CCNA/2 - Interfaces and Cables.md",
+    "CCNA/3 - OSI Model & TCP-IP.md",
+    "CCNA/4 - CLI Introduction.md",
+    "CCNA/5 - Ethernet LAN Switching.md",
+    "CCNA/6 - IPv4 Addressing.md",
+    "CCNA/7 - Switch Interfaces.md",
     "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/31 - CDP & LLDP.md",
     "CCNA/img2/lldp-wireshark-capture.png",
@@ -187,17 +195,9 @@
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/23 - OSPF Part 3.md",
     "CCNA/22 - OSPF Part 2.md",
-    "CCNA/21 - OSPF.md",
-    "CCNA/20 - RIP & EIGRP.md",
     "CCNA/12 - Subnetting.md",
     "Untitled.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
-    "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
-    "CCNA/14 - VLANs Part Two.md",
-    "CCNA/13 - VLANs (Virtual Local Area Networks).md",
-    "CCNA/11 - Life of a Packet.md",
-    "CCNA/10 - Static Routing.md",
-    "CCNA/9 - Routing Fundamentals.md",
     "CCNA/img2",
     "Untitled 1.canvas",
     "Untitled.canvas",

@@ -100,7 +100,7 @@ R1#clear ip ospf process
 Reset ALL OSPF processes? [no]: yes
 ```
 * This basically resets OSPF on the router.
-* This is a bad idea in a real network. The router will lose all of its OSPF routes for a short time and won't be able to forward traffic to those destinations.
+* This is a bad idea in a real network. The router will lose all of its OSPF routes for a short period of time and won't be able to forward traffic to those destinations.
 ### Change Maximum Paths
 `R1(config-router)#maximum-paths ?`
 ### Change Administrative Distance
