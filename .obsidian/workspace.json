@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
+                "file": "CCNA/26 - IPv6.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
+                "file": "CCNA/26 - IPv6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
+                "file": "CCNA/26 - IPv6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md"
+                "file": "CCNA/26 - IPv6.md"
               }
             }
           },
@@ -161,6 +161,8 @@
   },
   "active": "f62b22be419f6658",
   "lastOpenFiles": [
+    "CCNA/25 - TCP & UDP.md",
+    "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/23 - OSPF Part 3.md",
     "CCNA/22 - OSPF Part 2.md",
     "CCNA/21 - OSPF.md",
@@ -193,8 +195,6 @@
     "CCNA/img2/slaac.png",
     "CCNA/26 - IPv6.md",
     "CCNA/img2/ipv6-neighbor-table.png",
-    "CCNA/25 - TCP & UDP.md",
-    "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/12 - Subnetting.md",
     "Untitled.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
