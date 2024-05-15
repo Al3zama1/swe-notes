@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/26 - IPv6.md",
+                "file": "CCNA/28 - IPv6 Part 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5,
-    "collapsed": true
+    "width": 252.5
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/26 - IPv6.md",
+                "file": "CCNA/28 - IPv6 Part 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/26 - IPv6.md",
+                "file": "CCNA/28 - IPv6 Part 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/26 - IPv6.md"
+                "file": "CCNA/28 - IPv6 Part 3.md"
               }
             }
           },
@@ -160,11 +159,12 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "f62b22be419f6658",
   "lastOpenFiles": [
-    "CCNA/img2/why-invert-7th-bit.png",
-    "CCNA/27 - IPv6 Part 2.md",
     "CCNA/26 - IPv6.md",
+    "CCNA/27 - IPv6 Part 2.md",
+    "CCNA/28 - IPv6 Part 3.md",
+    "CCNA/img2/why-invert-7th-bit.png",
     "CCNA/25 - TCP & UDP.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/23 - OSPF Part 3.md",
@@ -193,10 +193,8 @@
     "Recording 20240509144112.webm",
     "CCNA/img2/ACLs-reordered-in-router.png",
     "CCNA/img2/standard-acls-topology.png",
-    "CCNA/28 - IPv6 Part 3.md",
     "CCNA/img2/ipv6-static-routing-network-topology.png",
     "CCNA/img2/slaac.png",
-    "CCNA/img2/ipv6-neighbor-table.png",
     "CCNA/12 - Subnetting.md",
     "Untitled.md",
     "CCNA/img2",
