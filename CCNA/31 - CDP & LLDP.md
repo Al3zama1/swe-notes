@@ -15,7 +15,7 @@
 	* Only directly connected neighbors can become CDP neighbors.
 * When a device receives these CDP messages from a neighboring device, it adds an entry for the device in its CDP neighbor table.
 * By default, the CDP holdtime is 180 seconds. If a message isn't received from a neighbor for 180 seconds, the neighbor is removed from the CDP neighbor table.
-	* The holdtime is reset to 180 when a CDP message arrives.
+	* The holdtime is reset to 180 if it hasn't expired when a CDP message arrives.
 * CDPv2 messages are sent by default.
 	* CDPv1 is very old so it's not commonly used.
 ### CDP Show Commands

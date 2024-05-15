@@ -13,24 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/30 - Extended ACLs.md",
-                "mode": "source",
+                "file": "CCNA/31 - CDP & LLDP.md",
+                "mode": "preview",
                 "source": false
               }
             }
-          },
-          {
-            "id": "b5cbb4c1e1619cb5",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.12"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/30 - Extended ACLs.md",
+                "file": "CCNA/31 - CDP & LLDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/30 - Extended ACLs.md",
+                "file": "CCNA/31 - CDP & LLDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/30 - Extended ACLs.md"
+                "file": "CCNA/31 - CDP & LLDP.md"
               }
             }
           },
@@ -170,10 +159,10 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "b5cbb4c1e1619cb5",
+  "active": "f62b22be419f6658",
   "lastOpenFiles": [
-    "CCNA/31 - CDP & LLDP.md",
     "CCNA/30 - Extended ACLs.md",
+    "CCNA/31 - CDP & LLDP.md",
     "CCNA/29 - Standard ACLs.md",
     "CCNA/28 - IPv6 Part 3.md",
     "CCNA/26 - IPv6.md",
