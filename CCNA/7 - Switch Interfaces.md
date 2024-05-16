@@ -77,7 +77,7 @@ What if auto negotiation is disabled on the device connected to the switch?
 
 ![devices with auto negotiation disabled](./img/device-autonegotiation-disabled.png)
 The switch is using auto negotiation and the 3 PCs have manual fixed speed and duplex settings. It is assumed that the switch successfully detects the speeds that the 3 PCs are operating at.
-* For interface G03, the switch senses the speed of the PC to be 100 Mbps, therefore it will use half duplex. With auto-negotiation disabled, it cannot detect that the PC is using full duplex. The mismatch between the switch and PC duplex setting will cause collisions, resulting in poor performance. Because of this, all devices on the network should use auto negotiation by default.
+* For interface G0/3, the switch senses the speed of the PC to be 100 Mbps, therefore it will use half duplex. With auto-negotiation disabled, it cannot detect that the PC is using full duplex. The mismatch between the switch and PC duplex setting will cause collisions, resulting in poor performance. Because of this, all devices on the network should use auto negotiation by default.
 ## Interface Errors
 Errors that can show up on interfaces that otherwise seem to be working. These are not specific to switch interfaces. They can also be seen on router interfaces.
 ![interface erros](./img/interface-errors.png)
