@@ -104,7 +104,7 @@ This is called subnetting because we are only using a subset of the total availa
 #### Tokyo LAN A
 * Network Address: 192.168.1.0/25
 ```
-* Network Address: 192.168.1.0/25 because the available host are 7, which gives a total of 128 networks. Satisfying the requirement of 100 hosts.
+* Network Address: 192.168.1.0/25 because the available host bits are 7, which gives a total of 128 networks. Satisfying the requirement of 100 hosts.
 ```
 * Broadcast Address:192.168.1.127/25
 ```
