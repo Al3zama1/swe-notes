@@ -87,7 +87,7 @@ SW(config)#vtp mode server
 SW(config)#vtp mode transparent
 
 // change VTP domain
-vtp domain <domain-name>
+SW(config)#vtp domain <domain-name>
 
 ```
 
@@ -103,7 +103,7 @@ SW1(config)#vtp version 2
 ##### Danger of VTP
 * If you connect an old switch with a higher revision number to your network (and the VTP domain name matches), all switches in the domain will sync their VLAN database to that switch.
 	 * This could cause all hosts on your network to instantly lose connectivity because the switches could sync to a totally different VTP database, causing the VLANS you were using to disappear. 
-	 * This is one of there reasons why VTP is not used in modern networks.
+	 * This is one of the reasons why VTP is not used in modern networks.
  * When connecting an old switch to the network, its revision number should be reset to 0 to avoid issues.
 	 * Change VTP domain to an unused domain to reset revision number to 0.
 	 * Change VTP mode to transparent to reset revision number to 0.
