@@ -15,7 +15,7 @@ Let's say there are many end hosts connected to an access switch(ASW1) and they 
 * Traffic in the EtherChannel will be load balanced among the physical interfaces in the group. As a result, the bandwidth of all the interfaces in the EtherChannel can be taken advantage. It's as if the interfaces in the EtherChannel are combine to form a faster virtual interface.
 
 ![EtherChannel with broadcast frame](./img2/etherchanel-with-broadcast-frame.png)
-As shown above, when a PC sends a broadcast frame, ASW1 will send it out all interfaces except the one where it came in. However, the 4 links between ASW1 and DSW1 form a single virtual interface, therefore one instead of 4 frames are sent to DSW1. DSW1 also sees all four interfaces as a single virtual interface through which it received the broadcast frame, therefore it cannot send the frame back to ASW1. It can only send it out its interfaces on the right.
+As shown above, when a PC sends a broadcast frame, ASW1 will send it out all interfaces except the one where it came in. However, the 4 links between ASW1 and DSW1 form a single virtual interface, therefore 1 instead of 4 frames are sent to DSW1. DSW1 also sees all four interfaces as a single virtual interface through which it received the broadcast frame, therefore it cannot send the frame back to ASW1. It can only send it out its interfaces on the right.
 
 ## EtherChannel Load-Balancing
 * EtherChannel perform load balancing by using different physical interfaces in the EtherChannel for different flows.
