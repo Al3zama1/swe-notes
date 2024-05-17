@@ -168,9 +168,11 @@ In the image below, SW1's G0/0 interface goes down, therefore it cannot keep on 
 	* A forwarding interface can move directly into a blocking state. There is no worry about creating a loop by blocking an interface.
 ## STP BPDU
 ![STP BPDU Wireshark Analysis](./img/stp-bpdu-wireshark.png)
-* In the Ethernet header we have the destination MAC address for which Cisco's PVST+ uses the destination MAC address of 01:00:0c:cc:cc:cd.
-	* PVST: Only ISL trunk encapsulation.
-	* PVST+: Supports 802.1Q. When the term PVST is used, it refers to PVST+ because ISL is pretty much never used anymore.
+* In the Ethernet header we have the destination MAC address for which Cisco's PVST+ uses the destination MAC address of `01:00:0c:cc:cc:cd` for the default VLAN 1. 
+	* For example for VLAN 10, THE PVST+ destination MAC address would be `01:00:0c:cc:cc:cd + 000A(VLAN 10) = 01:00:0c:cc:cc:d7`. 
+	* The PVST+ destination MAC address is a multicast address that the STP process subscribes to in each VLAN. As shown above, the PVST+ destination MAC address that the STP process subscribes to depends on the VLAN where it is running.
+* PVST: Only ISL trunk encapsulation.
+* PVST+: Supports 802.1Q. When the term PVST is used, it refers to PVST+ because ISL is pretty much never used anymore.
 * Regular IEEE STP (not Cisco's PVST+) uses a destination MAC address of 01:80:c2:00:00:00.
 * **Protocol Identifier** is always 0x0000 for spanning Tree Protocol.
 * **Protocol Version Identifier** is set to 0 for the Classic Spanning Tree.
