@@ -7,7 +7,7 @@
 * MSTP (802.1s) is superior to Cisco's Rapid PVST.
 	* MSTP is much easier to configure and manage.
 		* PVST+/RPVST+ require you to configure primary and secondary root bridges in each VLAN.
-		* MSTP (202.1s) lets you group multiple VLANS into different STP instances. As a result, you only need to configure the primary and secondary root bridges for the STP instances being used.
+		* MSTP (802.1s) lets you group multiple VLANS into different STP instances. As a result, you only need to configure the primary and secondary root bridges for the STP instances being used.
 	* Cisco advices to simply run the industry standard MSTP (802.1s) if there is the need for it because Cisco does not have a proprietary version of it.
 	* For large networks, it's best to use MSTP. However, for small to medium networks without a huge number of VLANs, Cisco's RSTP+ is what you'll probably run on your switches.
 ## Rapid PVST+
