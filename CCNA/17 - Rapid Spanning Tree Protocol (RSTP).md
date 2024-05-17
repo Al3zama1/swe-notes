@@ -22,7 +22,7 @@ RSTP is not a timer-based spanning tree algorithm like 802.1D. Therefore, RSTP o
 #### PortFast
 allows a port to move immediately to the Forwarding state, bypassing Listening and Learning. It must be used only on ports connected to end hosts and not switches, which will cause Layer 2 loops.
 #### UPlinkFast
-* Classic STP optional features that allows switch interfaces to immediately move from blocking to forwarding state. It's built into RSTP, therefore it does not beed to be activated when using RSTP/Rapid PVST+.
+* Classic STP optional features that allows switch interfaces to immediately move from blocking to forwarding state. It's built into RSTP, therefore it does not need to be activated when using RSTP/Rapid PVST+.
 #### BackboneFast
 Lets assume SW2's root port is cut off, so it stops receiving BPDUs from the root bridge (SW1). It will then assume it is the root bridge, so it will send it's own BPDUs to SW3.
 SW3 is now receiving BPDUs from both SW1 and SW2, but SW2's  BPDU are inferior - they have a higher bridge ID. Without the BackboneFast functionality, SW3 would just ignore these BPDUs from SW2 until its non-designated port, in classic STP, finally changes to a forwarding state and forwards the superior BPDUs from SW1 to SW2. SW2 then accepts SW1 as its root bridge again.
@@ -81,8 +81,8 @@ Identify the root bridge and the RSTP port role of each switch interface in the 
 `SW1(config-if)#spanning-tree portfast`
 #### Point-to-Point Link Type
 * Point-to-point ports connect directly to another switch. 
-* A connection from a switch interface to an end host can also be considered point-to-point if the end host is using full-duplex.
 * They function in full-duplex.
+* A connection from a switch interface to an end host can also be considered point-to-point if the end host is using full-duplex.
 * It's not necessary to configure the interface as point-to-point (it should be detected).
 	* Manual configuration: `SW1(config-if)#spanning-tree link-type point-to-point`
 #### Shared Link Type
