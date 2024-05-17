@@ -24,7 +24,7 @@ allows a port to move immediately to the Forwarding state, bypassing Listening a
 #### UPlinkFast
 * Classic STP optional features that allows switch interfaces to immediately move from blocking to forwarding state. It's built into RSTP, therefore it does not beed to be activated when using RSTP/Rapid PVST+.
 #### BackboneFast
-Lets assume SW2's root port stops is cut off, so it stops receiving BPDUs from the root bridge (SW1). It will then assume it is the root bridge, so it will send it's own BPDUs to SW3.
+Lets assume SW2's root port is cut off, so it stops receiving BPDUs from the root bridge (SW1). It will then assume it is the root bridge, so it will send it's own BPDUs to SW3.
 SW3 is now receiving BPDUs from both SW1 and SW2, but SW2's  BPDU are inferior - they have a higher bridge ID. Without the BackboneFast functionality, SW3 would just ignore these BPDUs from SW2 until its non-designated port, in classic STP, finally changes to a forwarding state and forwards the superior BPDUs from SW1 to SW2. SW2 then accepts SW1 as its root bridge again.
 ![](./img/backbonefast-1.png)
 ![](./img/backbonefast-2.png)
@@ -37,8 +37,7 @@ BackboneFast allows switches to expire the Max Age timer on their interfaces. In
 ### STP and RSTP Differences
 #### BPDUs
 * In classic STP, only the root bridge creates BPDUs and the other switches just forward the BPDUs they receive. However, in Raping STP, all switches create and send their own BPDUs from their designated ports.
-* In classic STP, a switch waits 10 Hello intervals (20 seconds). In rapid STP, a switch considers a neighbor lost if it misses 3 BPDUs (6 seconds). It will then flush (clear) all MAC addresses learned on that interface.
-
+* In classic STP, a switch interface waits 10 Hello intervals (20 seconds) before making changes to the STP topology. In rapid STP, a switch considers a neighbor lost if it misses 3 BPDUs (6 seconds). It will then flush (clear) all MAC addresses learned on that interface.
 #### RSTP Interfaces Speed Outgoing Cost
 ![stp vs rstp port cost](./img/st-vs-rstp-port-cost.png)
 #### RSTP Port States
