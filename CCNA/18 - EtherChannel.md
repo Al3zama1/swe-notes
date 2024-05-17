@@ -33,7 +33,7 @@ As shown above, when a PC sends a broadcast frame, ASW1 will send it out all int
 * The load balance options available depend on the switch model being used.
 ### Show EtherChannel Load-Balancing Configuration
 ```
-Switch#show etherchannel load-balance
+Switch#show etherchanne l load-balance
 EtherChannel Load-Balancing Configuration:
 src-mac
 
