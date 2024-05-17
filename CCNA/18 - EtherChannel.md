@@ -68,7 +68,6 @@ src-mac Src Mac Addr
 		* This is usually avoided because you want the switches to dynamically maintain the EtherChannel.
 			* For example, you want the switch to remove an interface from the EtherChannel if there is a problem with it.
 * Up to 8 interfaces can be formed into a single EtherChannel (LACP allows up to 16, but only 8 will be active. The other 8 will be on standby mode, waiting for an active interface to fail).
-
 ### PAgP Configuration
 ```
 Switch(config-if-range)#channel-group 1 mode ?
@@ -142,7 +141,6 @@ Switch(config-if-range)#
 * The command manually configures the EtherChannel negotiation protocol that the member interfaces should use.
 * This actually isn't a very useful command because you don't need to configure it.
 	* If you configure `channel-group 1 mode desirable/auto` , the interface will automatically use PAgP. If you configure `channel-group 1 mode active/passive`, the interface will automatically use LACP.
-
 ### Port-Channel interface Configuration
 After configuring the EtherChanel, in whatever mode, PAgP, LACP, or static, the port-channel virtual interface itself has to be configured.
 ```
@@ -171,7 +169,6 @@ Po1 1
 	* Same switchport mode (access/trunk)
 	* Same allowed VLANs/native VLAN (for trunk interfaces)
 * If an interface's configurations do not match the others, it will be excluded from the EtherChannel.
-
 ### EtherChannel Verification
 ```
 Switch#show etherchannel summary
@@ -226,7 +223,6 @@ Time since last port bundled: 00d:02h:33m:36s Fa0/2
 * One important bit of information that you can't find in `show etherchannel summary`, but is displayed in `show etherchannel port-channel` is the channel-group mode.
 	* In this case it is using *desirable*
 * However, for EtherChannel, the most common command you're going to be using is definitely `show etherchannel summary`.
-
 ### EtherChannel Repercussions on STP
 ```
 Switch#show spanning-tree
@@ -268,7 +264,6 @@ Switch(config-if-range)#interface p01
 Switch(config-if)#ip address 10.0.0.1 255.255.255.252
 Switch(config-if)#
 ```
-
 ## Commands
 * Configure the EtherChannel load-balancing method on the switch
 	* `SW(config)#port-channel load-balance <mode>`
