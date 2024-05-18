@@ -15,7 +15,7 @@
 * Routers dynamically discover neighbors by sending/listening for OSPF *Hello* messages using multicast address `224.0.0.5`.
 * A **DR** (designated router) and **BDR** (backup designated router) must be elected on each subnet (only DR if there are no OSPF neighbors, ie. R1's G1/0 interface).
 	* The DR and BDR will form a FULL adjacency with ALL routers in the subnet.
-	* When routers need to send messages to the DR and DBR, they use multicast address `224.0.0.6`. It is different than the 'all routers' multicast address of `224.0.0.5`.
+	* When routers need to send messages to the DR and DBR, they use multicast address `224.0.0.6`. It is different than the 'all OSPF routers' multicast address of `224.0.0.5`.
 * Routers which aren't the DR or BDR become a **DROther**.
 	* DROthers will form a FULL adjacency only with the DR/BDR.
 	* DROthers don't form full adjacencies with other DROthers. They remain in the 2-way state.
