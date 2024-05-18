@@ -88,7 +88,6 @@ R1(config)#ip route 0.0.0.0 0.0.0.0 203.0.113.0/30
 R1(config-router)#default-information originate
 ```
 * It will cause the router to create a new LSA and flood it.
-
 ### Router-ID Configuration
 ```
 R1(config-router)#router-id ?
