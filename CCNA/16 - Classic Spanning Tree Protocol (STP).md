@@ -54,7 +54,7 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 * SW1 is selected as the root bridge since all switches have the same bridge priority and it has the lowest MAC address.
 
 ### Step 2
-* Each remaining switch will select one of its interfaces to be its **root port** (forwarding state). Ports across from the root port are always designated ports because the root port is the switch's path to the root bridge and other switches must not block it.
+* Each remaining switches will select one of its interfaces to be its **root port** (forwarding state). Ports across from 89the root port are always designated ports because the root port is the switch's path to the root bridge and other switches must not block it.
 * Root Port Selection:
 	1. Lowest Root cost
 		* **Root cost** is the total cost of the outgoing interfaces along the path to the root bridge. The cost of the receiving interface is not counted.
@@ -171,7 +171,7 @@ In the image below, SW1's G0/0 interface goes down, therefore it cannot keep on 
 * In the Ethernet header we have the destination MAC address for which Cisco's PVST+ uses the destination MAC address of `01:00:0c:cc:cc:cd` for the default VLAN 1. 
 	* For example, for VLAN 10, THE PVST+ destination MAC address would be `01:00:0c:cc:cc:cd + 000A(VLAN 10) = 01:00:0c:cc:cc:d7`. This ensures that BPDUs are delivered only to the devices participating in the same VLAN's STP instance, allowing each VLAN to maintain its own independent spanning tree topology within the network
 	* The PVST+ destination MAC address is a multicast address that STP processes subscribes to in each VLAN. As shown above, the PVST+ destination MAC address that STP processes subscribe to depends on the VLAN where it is running.
-* PVST: Only ISL trunk encapsulation.
+* PVST: Only supports ISL trunk encapsulation.
 * PVST+: Supports 802.1Q. When the term PVST is used, it refers to PVST+ because ISL is pretty much never used anymore.
 * Regular IEEE STP (not Cisco's PVST+) uses a destination MAC address of `01:80:c2:00:00:00`.
 * **Protocol Identifier** is always 0x0000 for spanning Tree Protocol.
