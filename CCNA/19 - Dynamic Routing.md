@@ -17,7 +17,7 @@
 * Distance vector protocols were invented before link state protocols.
 * Early examples are **RIPv1** and Cisco's proprietary protocol **IGRP** (which was updated to **EIGRP**).
 * Distance vector protocols operate by sending the following to their directly connected neighbors:
-	* Their know destination networks.
+	* Their known destination networks.
 	* Their metric to reach their known destination networks.
 * This method of sharing route information is often called 'routing by rumor'. This is because the router doesn't know abut the networks beyond its neighbors. It only knows the information that its neighbors tell it.
 * It's called 'distance vector' because the routers only learn the 'distance' (metric) and 'vector' (direction, the next-hop router) of each route.
