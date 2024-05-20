@@ -96,13 +96,13 @@ IPv6 doesn't use ARP, therefore there isn't an ARP table. Instead, the devices w
 * Duplicate Address Detection (DAD), which is another function of NDP, allows hosts to check if other devices on the local link are using the same IPv6 address.
 * Any time an IPv6-enabled interface initializes (`no shutdown` command), or an IPv6 address is configured on an interface (by any method: manual, SLAAC, etc.), it perform DAD.
 * DAD uses two messages: NS and NA.
-	* The host will send an NS to its own IPv6 address.  If it doesn't get a reply, it knows the address is unique.
+	* The host will send an NS to its own IPv6 address (solicited-node multicast address based on its own IPv6 address).  If it doesn't get a reply, it knows the address is unique.
 	* If it gets a reply (a NA message), it means another host on the network is already using the address.
 ## SLAAC
 * Stands for **Stateless Address Auto-configuration** and it is an IPv6 address configuration mechanism.
 * SLAC is a standard function of IPv6 and end hots like PCs can do this too, not just routers. Although hosts don't use Cisco IOS commands.
 * Hosts use the RS/RA messages to learn the IPv6 prefix of the local link (ie. `2001:db8::/64`), and then automatically generate an IPv6 address.
-* Using the `ipv6 address <prefix/prefix-length> eui-64` command, you need to manually enter the prefix.
+* Using the `ipv6 address <prefix/prefix-length> eui-64` command, you need to manually enter the  .
 * Using the `ipv6 addres autoconfig` command, you don't need to enter the prefix. The device uses NDP to learn the prefix used on the local link (local network).
 * The device will use EUI-64 to generate the interface ID, or it will be randomly generated (depending on the device/maker).
 
