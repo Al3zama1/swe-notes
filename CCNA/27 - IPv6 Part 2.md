@@ -20,7 +20,7 @@
 * The **global ID** should be unique so that addresses don't overlap when companies merge.
 	* To achieve this, the *global id* should be randomly generated.
 ### Link Local
-* ***Link-local** IPv6 addresses are automatically generated on IPv6-enabled interfaces.
+* **Link-local** IPv6 addresses are automatically generated on IPv6-enabled interfaces.
 	* Use command `R1(config-if)#ipv6 enable` on an interface to enable IPv6 on an interface.
 	* This will generate the Link-local address automatically even if an IP has not been configured on the interface yet.
 * Uses the address block `FE80::/10` (`FE80::` to `FEBF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF`).
