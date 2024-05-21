@@ -17,6 +17,7 @@
 ### Host File
 * In addition to a DNS cache, most devices have a 'hosts' file which is simply a list of hosts and IP addresses.
 * This isn't DNS, it is a simple alternative to DNS. This was used before DNS was invented.
+	* Entry structure(IP HostName)
 ## Configuring DNS in Cisco IOS
 ![DNS sample network topology](./img3/dns-sample-topology.png)
 * For hosts in a network to use DNS, you don't need to configure DNS on the routers. Routers will simply forward the DNS messages like any other packets.
@@ -43,11 +44,12 @@ R1(config)#ip name-server 8.8.8.8
 * Configured a DNS server that R1 will query if the requested record isn't in its host table.
 
 ```
+// this command is enabled by default
 R1(config)#ip domain lookup
 R1(config)#ip domain-lookup // old version of the command
 ```
 * Enable R1 to perform DNS queries (enabled by default).
-	* Without this command, R1 will not be able to query Google's DNS server
+	* Without this command, R1 will not be able to query the entered DNS server
 
 View the configured hosts, as well as the hosts learned and cached via DNS
 ```

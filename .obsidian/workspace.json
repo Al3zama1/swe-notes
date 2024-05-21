@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/33 - DNS (Domain Name System).md",
+                "file": "CCNA/34 - DHCP.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5,
-    "collapsed": true
+    "width": 252.5
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/33 - DNS (Domain Name System).md",
+                "file": "CCNA/34 - DHCP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/33 - DNS (Domain Name System).md",
+                "file": "CCNA/34 - DHCP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/33 - DNS (Domain Name System).md"
+                "file": "CCNA/34 - DHCP.md"
               }
             }
           },
@@ -162,6 +161,7 @@
   },
   "active": "f62b22be419f6658",
   "lastOpenFiles": [
+    "CCNA/35 - SNMP.md",
     "CCNA/34 - DHCP.md",
     "CCNA/33 - DNS (Domain Name System).md",
     "CCNA/img3/dns-sample-topology.png",
@@ -193,7 +193,6 @@
     "CCNA/15 - DTP & VTP.md",
     "CCNA/12 - Subnetting.md",
     "CCNA/11 - Life of a Packet.md",
-    "CCNA/10 - Static Routing.md",
     "CCNA/img2/why-invert-7th-bit.png",
     "CCNA/img2/lldp-wireshark-capture.png",
     "CCNA/img2/cdp-wireshark-capture.png",
