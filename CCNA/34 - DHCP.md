@@ -52,8 +52,73 @@ R1(config)#ip dhcp excluded-address 192.168.1.1 192.168.1.10
 
 ```
 R1(config)#ip dhcp pool LAB_POOL
-R1(dhcp-config)#network 192.168.1.0 ?
 ```
 * Create a DHCP pool, which is a subnet of addresses that can be assigned to DHCP clients, as well as other info such as DNS server and default gateway.
 * You should create a separate DHCP pool for each network the router is acting as a DHCP server for.
 	* In this case R1 is only acting as the DHCP server for `192.168.1.0/24`, so only one DHCP pool needed to be created.
+
+```
+R1(dhcp-config)#network 192.168.1.0 /24
+```
+* Specify the subnet of addresses to be assigned to clients (except the excluded addresses).
+
+```
+R1(dhcp-config)#dns-server 8.8.8.8
+```
+* Specify the DNS server that the DHCP clients should use.
+
+```
+R1(dhcp-config)#domain-name jeremysitlab.com
+```
+* You can also specify the domain name of the network.
+	* ie. PC1 = pc1.jeremysitlab.com
+
+```
+R1(dhcp-config)#default-router 192.168.1.1
+```
+* Specify the default gateway for the DHCP clients to use.
+
+```
+R1(dhcp-config)#lease 0 5 30
+```
+* Specify the lease time.
+	* `lease <days> <hours> <minutes>` or `lease infinite`
+
+#### Display DHCP Server Bindings
+```
+R1# show ip dhcp binding
+```
+* Can be used on DHCP servers to display all the DHCP clients that are currently assigned IP addresses.
+
+### Router DHCP Relay Agent Configuration
+![DHCP relay configuration](./img3/dhcp-realy-topology.png)
+
+```
+R1(config)#interface g0/1
+R1(config-if)ip helper-address 192.168.10.10
+```
+* Configure the interface connected to the subnet of the client devices.
+* Configure the IP address of the centralized DHCP server as the 'helper' address.
+	* The DHCP relay router must have a route to the DHCP server (static, dynamically learned).
+
+```
+R1#show ip interface g0/1
+```
+* The helper address configured will be displayed.
+
+### Router DHCP Client Configuration
+* A router can be a DHCP client, meaning it can use DHCP to configure the IP address of its interfaces.
+* This is rare since usually network devices will be configured with a fixed IP address.
+
+```
+R2(config)#interface g0/1
+R2(config-if)#ip address dhcp
+```
+* Tell the router to use DHCP to learn the IP address of the current interface (g0/1).
+* R2 will initiate the process (Discover, Offer, Request, Acknowledge) to obtain an IP address for its g0/1 interface with SRV1.
+* The automatic assignment of IP addresses will only happen for the specified router interfaces. R2's g0/0 interface is still manually configured. 
+#### Verify IP Assignment
+```
+R2#show ip interface g0/1
+```
+* It will state that the IP address given to the interface was determined by DHCP.
