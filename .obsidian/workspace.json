@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/27 - IPv6 Part 2.md",
+                "file": "CCNA/32 - NTP (Network Time Protocol).md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 252.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/27 - IPv6 Part 2.md",
+                "file": "CCNA/32 - NTP (Network Time Protocol).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/27 - IPv6 Part 2.md",
+                "file": "CCNA/32 - NTP (Network Time Protocol).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/27 - IPv6 Part 2.md"
+                "file": "CCNA/32 - NTP (Network Time Protocol).md"
               }
             }
           },
@@ -159,11 +160,20 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "f62b22be419f6658",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
-    "CCNA/26 - IPv6.md",
-    "CCNA/27 - IPv6 Part 2.md",
+    "CCNA/img3/ntp-sample-topology-2.png",
+    "CCNA/img3/ntp-sample-topology.png",
+    "CCNA/img3/maual-time-config.png",
+    "CCNA/img3",
+    "CCNA/31 - CDP & LLDP.md",
+    "CCNA/32 - NTP (Network Time Protocol).md",
+    "CCNA/18 - EtherChannel.md",
+    "CCNA/30 - Extended ACLs.md",
+    "CCNA/29 - Standard ACLs.md",
     "CCNA/28 - IPv6 Part 3.md",
+    "CCNA/27 - IPv6 Part 2.md",
+    "CCNA/26 - IPv6.md",
     "CCNA/25 - TCP & UDP.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/23 - OSPF Part 3.md",
@@ -171,22 +181,16 @@
     "CCNA/21 - OSPF.md",
     "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
-    "CCNA/18 - EtherChannel.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
     "CCNA/14 - VLANs Part Two.md",
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
-    "CCNA/32 - NTP (Network Time Protocol).md",
-    "CCNA/31 - CDP & LLDP.md",
-    "CCNA/30 - Extended ACLs.md",
-    "CCNA/29 - Standard ACLs.md",
     "CCNA/1 - Network Devices.md",
     "CCNA/15 - DTP & VTP.md",
     "CCNA/12 - Subnetting.md",
     "CCNA/11 - Life of a Packet.md",
     "CCNA/10 - Static Routing.md",
     "CCNA/9 - Routing Fundamentals.md",
-    "CCNA/8 - IPv4 Header.md",
     "CCNA/img2/why-invert-7th-bit.png",
     "CCNA/img2/lldp-wireshark-capture.png",
     "CCNA/img2/cdp-wireshark-capture.png",
@@ -196,8 +200,6 @@
     "Recording 20240509144112.webm",
     "CCNA/img2/ACLs-reordered-in-router.png",
     "CCNA/img2/standard-acls-topology.png",
-    "CCNA/img2/ipv6-static-routing-network-topology.png",
-    "CCNA/img2/slaac.png",
     "CCNA/img2",
     "Untitled 1.canvas",
     "Untitled.canvas",
@@ -207,7 +209,6 @@
     "CCNA/img/subentting-1.jpg.crdownload",
     "img",
     "CCNA/img",
-    "CCNA",
-    "redis/img"
+    "CCNA"
   ]
 }
