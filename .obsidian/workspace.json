@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/33 - DNS (Domain Name System).md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/33 - DNS (Domain Name System).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/33 - DNS (Domain Name System).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md"
+                "file": "CCNA/33 - DNS (Domain Name System).md"
               }
             }
           },
@@ -160,14 +160,16 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "f62b22be419f6658",
   "lastOpenFiles": [
+    "CCNA/32 - NTP (Network Time Protocol).md",
+    "CCNA/33 - DNS (Domain Name System).md",
+    "CCNA/img3/ntp-hierarchy.png",
     "CCNA/img3/ntp-sample-topology-2.png",
     "CCNA/img3/ntp-sample-topology.png",
     "CCNA/img3/maual-time-config.png",
     "CCNA/img3",
     "CCNA/31 - CDP & LLDP.md",
-    "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/18 - EtherChannel.md",
     "CCNA/30 - Extended ACLs.md",
     "CCNA/29 - Standard ACLs.md",
@@ -198,8 +200,6 @@
     "CCNA/img2/cdp-lldp-topology.png",
     "CCNA/img2/layer-2-discovery-protocols-interaction.png",
     "Recording 20240509144112.webm",
-    "CCNA/img2/ACLs-reordered-in-router.png",
-    "CCNA/img2/standard-acls-topology.png",
     "CCNA/img2",
     "Untitled 1.canvas",
     "Untitled.canvas",

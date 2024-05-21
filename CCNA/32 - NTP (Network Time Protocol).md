@@ -52,6 +52,7 @@ R2#clock read-calendar
 * Reference clocks are **stratum 0** within the NTP hierarchy.
 * NTP servers directly connected to reference clocks are **stratum 1**.
 ### NTP Hierarchy
+![ntp hierarchy](./img3/ntp-hierarchy.png)
 * Reference clocks are **stratum 0**.
 * **Stratum 1** NTP servers get their time from reference clocks.
 * **Stratum 2** NTP servers get their time from stratum 1 NTP servers.
@@ -74,12 +75,13 @@ R1(config)#ntp server 216.239.35.12
 * The order in which the servers are entered does not matter. R1 will ask all of them for the time and will select whichever give the best, quickest responses.
 * The NTP server selected might change if the responses start slowing down or it stops responding altogether.
 * It's best to select multiple NTP servers so that the device can always have a reliable source of time.
-* The NTP server `216.239.35.9` has been selected as the preferred server and the others will be backups.
+* The NTP server `216.239.35.9` has been selected as the preferred server and the others will be backups. This is optional.
 
 ```
 R1#show ntp associations
 ```
-* Displays all the NTP servers configured on the device.
+* Displays all the NTP servers configured on the device. They are under the 'address' field/column.
+* The 'ref clock' field indicates the reference clock of each NTP server.
 * * sys.peer: The NTP server the device is currently syncing to.
 * + candidate: Candidate NTP servers, but the device is not currently syncing it time to them.
 * ~ configured: It means that the NTP server was configured.
