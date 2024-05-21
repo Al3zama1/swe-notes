@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/34 - DHCP.md",
+                "file": "CCNA/35 - SNMP (Simple Network Management Protocol).md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/34 - DHCP.md",
+                "file": "CCNA/35 - SNMP (Simple Network Management Protocol).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/34 - DHCP.md",
+                "file": "CCNA/35 - SNMP (Simple Network Management Protocol).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/34 - DHCP.md"
+                "file": "CCNA/35 - SNMP (Simple Network Management Protocol).md"
               }
             }
           },
@@ -160,14 +160,15 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "f62b22be419f6658",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
+    "CCNA/img3/SNMP-operation-network-topology.png",
+    "CCNA/34 - DHCP.md",
     "CCNA/img3/dhcp-realy-topology.png",
     "CCNA/img3/router-dhcp-server-config.png",
     "CCNA/img3/dhcp-relay.png",
     "CCNA/img3/dhcp-message-types.png",
-    "CCNA/35 - SNMP.md",
-    "CCNA/34 - DHCP.md",
+    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
     "CCNA/33 - DNS (Domain Name System).md",
     "CCNA/img3/dns-sample-topology.png",
     "CCNA/32 - NTP (Network Time Protocol).md",
@@ -198,7 +199,6 @@
     "CCNA/15 - DTP & VTP.md",
     "CCNA/12 - Subnetting.md",
     "CCNA/img2/why-invert-7th-bit.png",
-    "CCNA/img2/lldp-wireshark-capture.png",
     "Recording 20240509144112.webm",
     "CCNA/img2",
     "Untitled 1.canvas",
