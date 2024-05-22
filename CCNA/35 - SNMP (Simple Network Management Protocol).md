@@ -56,6 +56,8 @@ The SNMP OID below is used by the NMS to retrieve the Hostname of a managed devi
 	* It makes sure that only the intended devices can read the SNMP messages. 
 	* Messages can't be intercepted and read by an attacker.
 * Whenever possible, this version should be used!
+* In SNMPv1 and SNMPv2c, there is no encryption. The community strings and message contents are sent in plain-text. This is not secure, as the packets can easily be captured and read.
+
 ## SNMP Messages
 ![SNMP messages](./img3/SNMP-messages.png)
 ### Read Message Class
@@ -64,8 +66,7 @@ The SNMP OID below is used by the NMS to retrieve the Hostname of a managed devi
 #### GetNext
 * A request sent from the manager to the agent to discover the available variables in the MIB (Management Information Base).
 #### GetBulk
-* A more efficient version of the **GetNext** message (introduced in SNMPv2).
-
+* A more efficient version of the **GetNext** message (introduced in SNMPv2) that allows mass-retrieval of information from managed devices (agent).
 ### Wire Message Class
 #### Set
 * A request sent from the manager to the agent to change the value of one or more variables. The agent will send a Response with the new value(s).
@@ -108,11 +109,13 @@ R1(config)#snmp-server community Jeremy2 rw
 ```
 R1(config)#snmp-server host 192.168.1.1 version 2c Jeremy1
 ```
-* Specify the NMS version and community string to use with this server.
-	* PC1 will be able to read information from R1, but it won't be able to use Set messages to make changes to R1.
+* Specify the NMS, version ,and community string to use with this server.
+* PC1 will be able to read information from R1, but it won't be able to use Set messages to make changes to R1 as determined by the community string used.
 
 ```
 R1(config)#snmp-server enable traps snmp linkdown linkup
 R1(config)#snmp-server enable traps config
 ```
 * Configure the Trap types to send to the NMS
+	* Will be triggered when an interface goes down or up.
+	* Will be triggered when R1's configuration is changed.
