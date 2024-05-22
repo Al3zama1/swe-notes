@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/36 - Syslog.md",
+                "file": "CCNA/37 - Secure Shell (SSH).md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/36 - Syslog.md",
+                "file": "CCNA/37 - Secure Shell (SSH).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/36 - Syslog.md",
+                "file": "CCNA/37 - Secure Shell (SSH).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/36 - Syslog.md"
+                "file": "CCNA/37 - Secure Shell (SSH).md"
               }
             }
           },
@@ -162,8 +162,13 @@
   },
   "active": "f62b22be419f6658",
   "lastOpenFiles": [
-    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
     "CCNA/36 - Syslog.md",
+    "CCNA/37 - Secure Shell (SSH).md",
+    "CCNA/img3/logging-synchronous-command.png",
+    "CCNA/img3/Syslog-config-commands.png",
+    "CCNA/img3/syslog-severity-levels.png",
+    "CCNA/img3/syslog-message-format.png",
+    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
     "CCNA/img3/SNMP-config-topology.png",
     "CCNA/img3/SNMP-messages.png",
     "CCNA/img3/SNMP-OIDs.png",
@@ -171,11 +176,7 @@
     "CCNA/img3/SNMP-operation-network-topology.png",
     "CCNA/34 - DHCP.md",
     "CCNA/img3/dhcp-realy-topology.png",
-    "CCNA/img3/router-dhcp-server-config.png",
-    "CCNA/img3/dhcp-relay.png",
-    "CCNA/img3/dhcp-message-types.png",
     "CCNA/33 - DNS (Domain Name System).md",
-    "CCNA/img3/dns-sample-topology.png",
     "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/img3",
     "CCNA/31 - CDP & LLDP.md",
@@ -198,7 +199,6 @@
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
     "CCNA/1 - Network Devices.md",
     "CCNA/15 - DTP & VTP.md",
-    "CCNA/12 - Subnetting.md",
     "Recording 20240509144112.webm",
     "CCNA/img2",
     "Untitled 1.canvas",
