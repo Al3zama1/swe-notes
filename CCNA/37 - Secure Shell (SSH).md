@@ -1,8 +1,10 @@
 ## Console Port Security
-### Login
 * By default, no password is needed to access the CLL of a Cisco IOS device via the console port.
 * You can configure a password on the console line.
 	* A user will have to enter a password to access the CLI via the console port.
+* There is only a single console line, so the number is always 0.
+	* This means that there can only be one console port connection at a time.
+### Login
 ```
 R1(config)#line console 0
 R1(config-line)#password ccna
@@ -23,8 +25,6 @@ Password:
 
 R1>
 ```
-* There is only a single console line, so the number is always 0.
-	* This means that there can only be one console port connection at a time.
 * Configured the console line's password
 * `login` tells the device to require a user to enter the configured password to access the CLI via the console port.
 ### Login Local
@@ -50,8 +50,7 @@ Password:
 
 R1>
 ```
-* `login local` tells the device to require a user to login using one of the configured username on the device.
-
+* `login local` tells the device to require a user to login using one of the configured usernames on the device.
 ### Automatic Logout
 ```
 R1(config-line)#exec-timeout 3 30
@@ -80,7 +79,6 @@ SW1(config)#ip default-gateway 192.168.1.254
 * Telnet was developed in 1969.
 * Telnet has been largely replaced by SSH, which is more secure.
 * Telnet sends data in plain text. No encryption!.
-
 ### Telnet Wireshark Capture
 ![Telnet Wireshark capture](./img3/telnet-wireshark-capture.png)
 ### Telnet Configuration
@@ -88,13 +86,16 @@ SW1(config)#ip default-gateway 192.168.1.254
 * `line vty 0 15` means you are configuring all lines, from 0 - 15. This is recommended, so all of the VTY lines have the same configuration.
 * `transport input ...` is how you to configure what kind of connections to the VTY lines are allowed.
 * These configurations only apply to VTY line connections to SW1.
+## Connecting via Telnet
+```
+telnet ip-address
+```
 ## Secure Shell (SSH)
 * SSH was developed in 1995 to replace less secure protocols like Telnet.
 	* A shell is a computer program which exposes an operating system's services to a human user or other program.
 * SSHv2, a major revision of SSHv1, was released in 2006.
 * If a device supports both version 1 and version 2, it is said to run 'version 1.99'.
 * Provides security features such as data encryption and authentication.
-
 ### SSH Configuration: Check SSH Support
 * Before configuring SSH, make sure that the version of IOS on your device supports it.
 
@@ -106,4 +107,44 @@ Copyright (c) 1986-2012 by Cisco Systems, Inc.
 Compiled Thurs 5-Jan-12 15:41 by pt_team
 ```
 * IOS images that support SSH will have 'K9' in their name.
+	* C2900-UNIVERSAL==K9==-M
 * Cisco exports NPE (No Payload Encryption) IOS images to countries that have restrictions on encryption technologies.
+
+```
+R1#show ip ssh
+SSH Disabled - version 1.99
+%Please create RSA keys (of atleast 768 bits size) to enable SSH v2.
+Authentication timeout: 120 secs; Authentication retries: 3
+```
+* This command also shows whether SSH is supported.
+	* In this case it is supported, but currently disabled.
+* The version number is '1.99', which means that it supports both SSH versions - v1 and v2.
+### SSH Configuration: RSA Keys
+* To enable and use SSH, you must generate an RSA public and private key pair.
+	* To generate RSA key pair you need to configure the hostname and the domain name first. This is because they are both used to name the RSA keys.
+* The keys are used for data encryption/decryption, authentication etc.
+![SSH RSA keys configuration](./img3/SSH-RSA-keys-config.png)
+### SSH Configuration: VTY Lines
+![SSH VTY lines configuration](./img3/SSH-config-VTY-lines.png)
+* A secret/password must be configured. Otherwise, you won't be able to access privileged exec mode when connecting via SSH.
+* For SSH, only `login local` works, which means that a username must be created.
+* Configured an ACL to limit which device can connect to the VTY lines.
+### SSH Configuration Summary
+1. Configure host name
+2. Configure DNS domain name
+3. Generate RSA key pair
+4. Configure enable PW, username/PW
+5. Enable SSHv2 (only)
+6. Configure VTY lines
+## Connecting via SSH
+```
+ssh -l username ip-address
+
+OR
+
+ssh username@ip-address
+```
+## NOTE
+* SSH and Telnet use a client-server model.
+	* The device being connected to is the server.
+	* The device using SSH or Telnet to connect is the client.

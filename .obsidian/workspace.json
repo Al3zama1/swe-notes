@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/37 - Secure Shell (SSH).md",
+                "file": "CCNA/38 - FTP & TFTP.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/37 - Secure Shell (SSH).md",
+                "file": "CCNA/38 - FTP & TFTP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/37 - Secure Shell (SSH).md",
+                "file": "CCNA/38 - FTP & TFTP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/37 - Secure Shell (SSH).md"
+                "file": "CCNA/38 - FTP & TFTP.md"
               }
             }
           },
@@ -161,8 +161,12 @@
   },
   "active": "f62b22be419f6658",
   "lastOpenFiles": [
-    "CCNA/29 - Standard ACLs.md",
     "CCNA/37 - Secure Shell (SSH).md",
+    "CCNA/38 - FTP & TFTP.md",
+    "CCNA/img3/SNMP-config-topology.png",
+    "CCNA/img3/SSH-config-VTY-lines.png",
+    "CCNA/img3/SSH-RSA-keys-config.png",
+    "CCNA/29 - Standard ACLs.md",
     "CCNA/img3/telnet-configuration.png",
     "CCNA/img3/telnet-wireshark-capture.png",
     "CCNA/img3/SNMP-components.png",
@@ -171,10 +175,7 @@
     "CCNA/img3/logging-synchronous-command.png",
     "CCNA/img3/Syslog-config-commands.png",
     "CCNA/img3/syslog-severity-levels.png",
-    "CCNA/img3/syslog-message-format.png",
     "CCNA/35 - SNMP (Simple Network Management Protocol).md",
-    "CCNA/img3/SNMP-config-topology.png",
-    "CCNA/img3/SNMP-messages.png",
     "CCNA/34 - DHCP.md",
     "CCNA/33 - DNS (Domain Name System).md",
     "CCNA/32 - NTP (Network Time Protocol).md",
