@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/41 - QoS.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/41 - QoS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/41 - QoS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md"
+                "file": "CCNA/41 - QoS.md"
               }
             }
           },
@@ -161,8 +161,8 @@
   },
   "active": "f62b22be419f6658",
   "lastOpenFiles": [
-    "CCNA/31 - CDP & LLDP.md",
     "CCNA/32 - NTP (Network Time Protocol).md",
+    "CCNA/31 - CDP & LLDP.md",
     "CCNA/40 - NAT Part 2.md",
     "CCNA/41 - QoS.md",
     "CCNA/img3/dynamic-PAT-interface-config.png",
