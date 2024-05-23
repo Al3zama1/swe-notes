@@ -15,6 +15,8 @@
 	* The IPS (Internet Service Provider) will drop traffic to or from private IP addresses.
 ## Intro to NAT (Network Address Translation)
 * Network Address Translation (NAT) is used to modify the source and/or destination IP address of packets.
-* There are vari
+* There are various reasons to use NAT, but the most common reason is to allow hosts with private IP addresses to communicate with other hosts over the internet.
+* For the CCNA you have to understand **source NAT** and how to configure it on Cisco routers.
+
 ## Static NAT
 ## Static NAT Configuration
