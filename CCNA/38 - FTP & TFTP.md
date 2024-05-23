@@ -40,6 +40,8 @@ This is beyond the scope of the CCNA
 ## FTP
 * FTP was first standardized in 1971.
 * FTP uses TCP ports 20 and 21.
+	* FTP data connections use TCP port 20.
+	* FTP control connections use TCP port 21.
 * Username and passwords are used for authentication, however there is no encryption.
 * For greater security, FTPS (FTP over SSL/TLS) can be used.
 	* An upgrade to FTP.
@@ -48,9 +50,61 @@ This is beyond the scope of the CCNA
 * FTP is more complex than FTP and allows not only file transfers, but clients can also navigate file directories, add and remove directories, list files, etc.
 * The client sends FTP commands to the server to perform these functions.
 ### FTP Control Connections
-
-## FTP/TFTP Functions & Differences
-
+![FTP Control Connections](./img3/FTP-control-connections.png)
+* FTP uses two types of connections:
+	* An **FTP control** connection (TCP 21) is established and used to send FTP commands and replies.
+	* When files or data are to be transferred, separate **FTP data** (TCP 20) connection are established and terminated as needed.
+### Active Mode FTP Data Connections
+![FTP active mode data connection](./img3/active-mode-FTP-data-connections.png)
+* The default method of establishing FTP data connections is **active mode**, in which the server initiates the data connection.
+	* The FTP control connection is maintained throughout this whole process. Therefore, there are two active connections.
+### Passive Mode FTP Data Connections
+![FTP passive mode data connection](./img3/FTP-passive-mode-data-connection.png)
+* In FTP **passive mode**, the client initiates the data connection. This is often necessary when the client is behind a firewall, which could block the incoming connection from the server.
+	* Firewalls usually don't permit 'outside' devices to initiate connections. In this case, FTP **passive mode** is used and the client (behind the firewall) initiates the TCP connection.
+### NOTE
+* Active and passive mode only apply to the FTP data connections because the client always initiates the control connection.
+## FTP vs TFTP
+![FTP vs TFTP](./img3/FTP-vs-TFTP.png)
 ## IOS File Systems
+* A file system is a way of controlling how data is stored and retrieved.
+* The `show file systems` command can be used to view the file system of a Cisco IOS device.
+* There are different types of file systems (not in CCNA topics):
+	* **disk**: Storage devices such as flash memory. 
+		* Usually where the Cisco IOS file itself is stored.
+		* When the device boots up, it copies the IOS file from flash into RAM.
+	* **opaque**: Used for internal functions.
+	* **nvram**: Internal NVRAM. 
+		* The startup-config file is stored here.
+	* **network**: Represents external file systems.
+		* For example, FTP/TFTP servers.
+## Upgrading Cisco IOS
+* You can view the current version of IOS with `show version`.
+* You can view the contents of flash with `show flash`.
+### Copying Files  (TFTP)
+![Copy IOS file from FTP server to R1](./img3/copy-ios-file-using-tftp.png)
+* The new IOS version is fetched from a TFTP  server (SRV1) to the local device (R1).
+* Specifying `tftp` as the source in the copy command specifies to use TFTP to retrieve the IOS file.
+* Specifying `fash` as the destination, states where to save the IOS file in the local device (R1) once it is fetched.
+* The name of the file on the TFTP server must be know in advance, as TFTP is not capable of finding what files are available.
+### Copying Files (FTP)
+![FTP copy file from FTP server](./img3/FTP-copy-file.png)
+* Configure the FTP username/password that the device will use when connecting to the FTP server.
+	* These credentials must be the same in the FTP server for the connection to occur.
+### Perform Upgrade
+It does not matter whether FTP or TFTP is used to obtain the IOS file. Once the file is in the local device, the method of performing the upgrade is the same.
 
+```
+R1(config)#boot system flash:c2900-universalk9-mz.SPA.155-3.M4a.bin
+R1#write memory
+R1#reload
+```
+* If the `boot system filepath` command is not used, the router will use the first IOS file it finds in flash.
+* Make sure to save the configuration before reloading the device. Otherwise, the configuration changes won't take effect.
+* Then simply restart the device for the change to take effect.
+
+```
+R1#delete filepath
+```
+* Finally, delete the old Cisco IOS version that is no longer needed.
 ## Using FTP/TFTP in IOS
