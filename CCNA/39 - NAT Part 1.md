@@ -16,12 +16,20 @@
 ## Intro to NAT (Network Address Translation)
 * Network Address Translation (NAT) is used to modify the source and/or destination IP address of packets.
 * There are various reasons to use NAT, but the most common reason is to allow hosts with private IP addresses to communicate with other hosts over the internet.
-* For the CCNA you have to understand **source NAT** and how to configure it on Cisco routers.
+### Cisco NAT Terminology
+![Cisco NAT terminology](./img3/cisco-NAT-terminology.png)
+
+## Source NAT
+For the CCNA you have to understand **source NAT** and how to configure it on Cisco routers.
+
 ![Source NAT](./img3/source-NAT.png)
-* Source NAT process.
-## Static NAT
+* It's called source NAT because it only translates the source IP address.
+## Static  NAT
 * **Static NAT** involves statically configuring one-to-one mappings of private IP addresses to public IP addresses.
 	* It doesn't have to be private to public. You can NAT any address to any other address.
+* This one-to-one mapping works in both directions.
+	* An external host can access an internal host via its inside global address.
+	* An internal host can access an external host via its outside local address.
 
 ![Static NAT](./img3/static-NAT.png)
 * On R1, PC1's private IP address `192.168.0.167` was mapped to the public IP address `100.0.0.1`.
@@ -34,3 +42,31 @@
 
 If each internal device needs its own public IP address anyway, you might as well just configure a public IP address on the device itself. Although, there are reasons to use static NAT, It's not the most useful for preserving IP addresses.
 ## Static NAT Configuration
+### Create NAT Entries
+![NAT entry creation](./img3/NAT-configuratoin.png)
+* If you try to create a NAT entry for an inside local IP that is already in use, the command will be rejected.
+	* There can only be one-to-one mappings of private IP addresses to public IP addresses
+### Display NAT Translation Table
+```
+R1#show ip nat translations
+```
+* The static NAT entries configured on the device will be permanently displayed on the NAT translations table.
+* Whenever NAT is actually performed (when the addresses are actually translated),  dynamic entries for those translations will also be added to the translations table.
+	* These dynamic NAT entries will time out and be removed when they stop being used.
+### Clear IP NAT Translations
+```
+R1#clear ip nat translations *
+```
+* This will only clear the dynamic NAT entries automatically generated when NAT is performed to translate addresses for packets.
+* The static NAT entries won't time out and can't be removed unless you remove the commands that created them.
+	* `ip nat inside source static ...`
+### Show NAT Statistics
+```
+R1#show ip nat statistics
+```
+* Displays total active translations (static, dynamic, extended).
+* Peak translations, which is the highest number of translations that have been in the current device (R1).
+* Displays 'inside' and 'outside' interfaces.
+### Example
+![Static NAT example](./img3/quiz-5.png)
+* **Outside Local** and **Outside Global** will always be the same unless **Destination NAT** is used, which is outside the scope of the CCNA.

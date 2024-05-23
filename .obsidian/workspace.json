@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/39 - NAT Part 1.md",
+                "file": "CCNA/40 - NAT Part 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 252.5,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/39 - NAT Part 1.md",
+                "file": "CCNA/40 - NAT Part 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/39 - NAT Part 1.md",
+                "file": "CCNA/40 - NAT Part 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/39 - NAT Part 1.md"
+                "file": "CCNA/40 - NAT Part 2.md"
               }
             }
           },
@@ -159,22 +160,21 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "f62b22be419f6658",
   "lastOpenFiles": [
+    "CCNA/39 - NAT Part 1.md",
+    "CCNA/40 - NAT Part 2.md",
+    "CCNA/img3/quiz-5.png",
+    "CCNA/img3/NAT-configuratoin.png",
+    "CCNA/img3/cisco-NAT-terminology.png",
     "CCNA/img3/static-NAT-sample2.png",
     "CCNA/img3/static-NAT.png",
     "CCNA/img3/source-NAT.png",
-    "CCNA/40 - NAT Part 2.md",
-    "CCNA/39 - NAT Part 1.md",
     "CCNA/38 - FTP & TFTP.md",
     "CCNA/img3/FTP-copy-file.png",
     "CCNA/img3/copy-ios-file-using-tftp.png",
     "CCNA/img3/FTP-vs-TFTP.png",
     "CCNA/img3/FTP-passive-mode-data-connection.png",
-    "CCNA/img3/active-mode-FTP-data-connections.png",
-    "CCNA/img3/FTP-control-connections.png",
-    "CCNA/img3/TFTP-TID.png",
-    "CCNA/img3/TFTP-connections.png",
     "CCNA/37 - Secure Shell (SSH).md",
     "CCNA/29 - Standard ACLs.md",
     "CCNA/36 - Syslog.md",
