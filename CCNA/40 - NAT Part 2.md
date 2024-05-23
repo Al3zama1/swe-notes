@@ -53,7 +53,6 @@ udp 100.0.0.1:59549 192.168.0.168:59549 8.8.8.8:53    8.8.8.8:53
 ```
 R1#show ip nat statistics
 ```
-
 ### Dynamic PAT Using Router Interface
 One more way to configure PAT, and probably the most common way, is to configure the router to use its own public IP address when translating the source IP of packets
 
