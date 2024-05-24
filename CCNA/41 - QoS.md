@@ -74,7 +74,7 @@ SW1#show power inline police g0/0
 	* **Loss**: 1% or less.
 ### QoS Queuing
 ![QoS queuing](./img3/QoS-queuing.png)
-* If a network device receives messages faster than it can forward them out of the appropriate interface, the messages are placed in a queue.
+* When a network device receives traffic at a faster rate than it can forward traffic out of the appropriate interface, packets are placed in that interface's queue as they wait to be forwarded.
 * By default, queued messages will be forwarded in a First in First Out (FIFO) manner.
 	* Messages will be sent in the order they are received.
 * If the queue is full, new packets will be dropped. This is called *tail drop*.

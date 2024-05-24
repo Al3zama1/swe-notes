@@ -104,5 +104,32 @@
 * If the markings are trusted, the device will forward the message without changing the markings.
 * If the markings aren't trusted, the device will change the markings according to the configured policy.
 
+![Not ideal QoS trust boundary](./img3/QoS-not-ideal-trus-boundary.png)
+* It is assumed that the trust boundary is located at SW1.
+* PH1 sends a message marked as EF (Layer 3 classification) and CoS5 (Layer 2 classification) to SW1.
+	* Note that CoS5 is referring to the PCP field in the dot1q header. It is also often referred to as PCP5.
+* SW1 doesn't trust the markings from PH1 because it's from outside of the trust boundary. So perhaps it changes the DSCP marking to DF and the CoS marking to 0, before forwarding it to R1, which forwards it to R2, with just the DF marking because there is no dot1q header.
+* This configuration isn't ideal. Usually it's best to trust the markings from an IP phone because we want its traffic to be high priority.
+
+![QoS better trust boundary for IP phone](./img3/QoS-trust-boundary-better.png)
+* If an IP phone is connected to the switch port, it is recommended to move the trust boundary to the IP phone.
+* This is done via configuration on the switch port connected to the IP phone, not directly on the phone itself.
+* Traffic sent from the phone itself will be trusted by the switch. However,  if a user marks their PC's traffic with a high priority to get faster service, the marking will be changed (not trusted).
 ## Queuing/Congestion Management
+
+![QoS single queue](./img3/QoS-single-queue.png)
+* When a network device receives traffic at a faster rate than it can forward traffic out of the appropriate interface, packets are placed in that interface's queue as they wait to be forwarded.
+* When the queue becomes full, packets that don't fit in the queue are dropped (tail drop).
+* RED and WRED drop packets early to avoid tail drop.
+
+![QoS multiple queues](./img3/QoS-multiple-queues.png)
+* An essential part of QoS is the use of multiple queues.
+	* This is where classification plays a role. The device can match traffic based on various factors (for example the DSCP marking in the IP header) and then place it in the appropriate queue.
+* However, the device is only able to forward one frame out of an interface at a time, so a *scheduler* is used to decide from which queue traffic is forwarded next.
+	* Prioritization allows the scheduler to give certain queues more priority than others.
+
+* A common scheduling method is weighted round-robin.
+	* **Round-robin**: packets are taken from each queue in order, cyclically.
+	* **Weighted round-robin**: more data is taken from high priority queues each time the scheduler
+
 ## Shaping/Policing
