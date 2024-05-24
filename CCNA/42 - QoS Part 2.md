@@ -14,6 +14,7 @@
 ### QoS Classification at Layer 2 (PCP/CoS)
 ![QoS classification at Layer 2](./img3/QoS-classification-layer2.png)
 * To **mark** (QoS term) traffic is to set the value in the PCP or DSCP fields. Then, network devices look at those markings and use them to classify the traffic as high/low priority. 
+* In your networks you don't have to follow this marking scheme, but this is standard practice.
 ### QoS Classification at Layer 3
 #### The IP ToS Byte
 ![The IP ToS byte](./img3/the-IP-ToS-byte.png)
@@ -115,6 +116,9 @@
 * If an IP phone is connected to the switch port, it is recommended to move the trust boundary to the IP phone.
 * This is done via configuration on the switch port connected to the IP phone, not directly on the phone itself.
 * Traffic sent from the phone itself will be trusted by the switch. However,  if a user marks their PC's traffic with a high priority to get faster service, the marking will be changed (not trusted).
+* Regarding QoS, it is bet practice to trust IP phone markings and don't trust PC markings.
+	* Traffic from data applications on PCs should be marked as low priority (DF) so that it does not fill up the high priority queues reserved for voice traffic.
+	* Apps like Zoom or WebEx used on a PC do need high priority service, but we can mark those packets at the switch or router.
 ## Queuing/Congestion Management
 Marking (EF, AF, etc.) packets doesn't do anything on its own. You have to configure tools like CBWFQ and LLQ to make the devices treat those packets as high priority.
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/42 - QoS Part 2.md",
+                "file": "CCNA/43 - Security Fundamentals.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/42 - QoS Part 2.md",
+                "file": "CCNA/43 - Security Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/42 - QoS Part 2.md",
+                "file": "CCNA/43 - Security Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/42 - QoS Part 2.md"
+                "file": "CCNA/43 - Security Fundamentals.md"
               }
             }
           },
@@ -159,15 +159,15 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "f62b22be419f6658",
   "lastOpenFiles": [
+    "CCNA/42 - QoS Part 2.md",
     "CCNA/img3/shapping-and-policing-example.png",
     "CCNA/img3/QoS-strick-priority-queue-scheduling.png",
     "CCNA/img3/QoS-round-robin-queue-scheduling.png",
     "CCNA/img3/QoS-multiple-queues.png",
     "CCNA/41 - QoS.md",
     "CCNA/40 - NAT Part 2.md",
-    "CCNA/42 - QoS Part 2.md",
     "CCNA/img3/QoS-single-queue.png",
     "CCNA/img3/QoS-trust-boundary-better.png",
     "CCNA/img3/QoS-not-ideal-trus-boundary.png",
@@ -181,7 +181,6 @@
     "CCNA/img3/CS-marking.png",
     "CCNA/img3/AF-summary-values.png",
     "CCNA/img3/DSCP-AF-marking.png",
-    "CCNA/img3/DSCP-DF-EF-markings.png",
     "CCNA/8 - IPv4 Header.md",
     "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/31 - CDP & LLDP.md",
