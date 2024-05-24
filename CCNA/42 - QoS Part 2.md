@@ -37,5 +37,72 @@
 ![DSCP AF marking](./img3/DSCP-AF-marking.png)
 * X is the decimal number of the class and Y is the decimal number of the Drop Precedence.
 * The last bit is always set to 0.
+###### AF Values
+![AF values](./img3/AF-summary-values.png)
+* There is 4 classes with 3 drop precedence values each, making it a total of 12 standard values.
+* Within AF, 43 is the highest value. There is no class 5, 6, or 7.
+* The formula to convert from AF value to decimal DSCP value: 8X + 2Y.
+###### AF Marking Example 1
+
+| (32) | (16) | (8) | (4) | (2) | (1) |     |     |
+| ---- | ---- | --- | --- | --- | --- | --- | --- |
+| 4    | 2    | 1   | 2   | 1   |     |     |     |
+| 0    | 0    | 1   | 0   | 1   | 0   |     |     |
+* Class = 1
+* Drop Precedence = 1
+* AF11 = DSCP 10
+###### AF Marking Example 2
+
+| (32) | (16) | (8) | (4) | (2) | (1) |     |     |
+| ---- | ---- | --- | --- | --- | --- | --- | --- |
+| 4    | 2    | 1   | 2   | 1   |     |     |     |
+| 0    | 0    | 1   | 1   | 0   | 0   |     |     |
+* Class = 1
+* Drop Precedence = 2
+* AF12 = DSCP 12
+###### AF Marking Example 3
+
+| (32) | (16) | (8) | (4) | (2) | (1) |     |     |
+| ---- | ---- | --- | --- | --- | --- | --- | --- |
+| 4    | 2    | 1   | 2   | 1   |     |     |     |
+| 0    | 1    | 0   | 1   | 1   | 0   |     |     |
+* Class = 2
+* Drop Precedence = 3
+* AF23 = DSCP 22
+###### AF Marking Example 4
+
+| (32) | (16) | (8) | (4) | (2) | (1) |     |     |
+| ---- | ---- | --- | --- | --- | --- | --- | --- |
+| 4    | 2    | 1   | 2   | 1   |     |     |     |
+| 0    | 1    | 1   | 1   | 0   | 0   |     |     |
+* Class = 3
+* Drop Precedence = 2
+* AF32 = DSCP 28
+###### AF Marking Example 5
+
+| (32) | (16) | (8) | (4) | (2) | (1) |     |     |
+| ---- | ---- | --- | --- | --- | --- | --- | --- |
+| 4    | 2    | 1   | 2   | 1   |     |     |     |
+| 1    | 0    | 0   | 1   | 1   | 0   |     |     |
+* Class = 4
+* Drop Precedence = 3
+* AF43 = DSCP 38
+##### CS Marking
+![DSCP DS Marking](./img3/CS-marking.png)
+* The formula to get the DSCP number from the CS number is 8 * CS
+##### RFC 4954
+* RFC 4954 was developed with the help of Cisco to bring all of these values together and standardize their use.
+* The RFC offers many specific recommendations, but here are a few key ones (for AF, x could be 1, 2, or 3 to represent the drop precedence):
+	* Voice traffic: EF
+	* Interactive video: AF4x
+	* Streaming video: AF3x
+	* High priority data: AF2x
+	* Best effort: DF
+* However, in the end it's up to the engineer designing the QoS policy of the network to decide which traffic will get which markings.
+## Trust Boundaries
+* The trust boundary of a network defines where devices trust/don't trust the QoS marking of received messages.
+* If the markings are trusted, the device will forward the message without changing the markings.
+* If the markings aren't trusted, the device will change the markings according to the configured policy.
+
 ## Queuing/Congestion Management
 ## Shaping/Policing
