@@ -14,5 +14,14 @@
 ### QoS Classification at Layer 2 (PCP/CoS)
 ![QoS classification at Layer 2](./img3/QoS-classification-layer2.png)
 * To **mark** (QoS term) traffic is to set the value in the PCP or DSCP fields. Then, network devices look at those markings and use them to classify the traffic as high/low priority. 
+### QoS Classification at Layer 3 (DSCP)
+* RFC 2474 (1998) defines the DSCP field, and other 'DiffServ' RFCs elaborate on its use.
+* With IPP updated to DSCP, new standard markings had to be decided upon.
+	* By having generally agreed upon standard markings for different kinds of traffic, QoS design & implementation is simplified, QoS works better between ISPs and enterprises, among other benefits.
+* You should be aware of the following standard markings:
+	* Default Forwarding (DF) - best effort traffic.
+	* Expedited Forwarding (EF) - low loss/latency/jitter traffic (usually voice).
+	* Assured Forwarding (AF) - set of 12 standard values.
+	* Class Selector (CS) - set of 8 standard values, provides backward compatibility with IPP.
 ## Queuing/Congestion Management
 ## Shaping/Policing
