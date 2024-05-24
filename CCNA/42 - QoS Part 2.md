@@ -142,3 +142,13 @@
 * However, it has the downside of potentially starving other queues if there is always traffic in the designated *strict priority* queue.
 	* *Policing* can control the amount of traffic allowed in the strict priority queue so that it can't take all of the link's bandwidth.
 ## Shaping/Policing
+* Traffic **shaping** and **policing** are both used to control the rate of traffic.
+* **Shaping** buffers traffic in a queue if the traffic rate goes over the configured rate.
+	* Instead of the actual capacity of the link being the limiting factor, it's the maximum traffic rate configured on the link.
+* **Policing** drops traffic if the traffic rate goes over the configured rate. Policing also has the option of re-marking the traffic instead of dropping it.
+	* 'Burst' traffic over the configured rate is allowed for a short period of time. This accommodates data applications which typically are 'bursty' in nature. Instead of a constant stream of data, they send data in bursts.
+		* The amount of burst traffic allowed is configurable.
+* In both cases, classification can be used to allow for different rates for different kinds of traffic.
+
+![Use case for shaping and policing](./img3/shapping-and-policing-example.png)
+* Why would you want to limit the rate traffic is sent/received ?
