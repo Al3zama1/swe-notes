@@ -33,5 +33,9 @@
 	* Class Selector (CS) - set of 8 standard values, provides backward compatibility with IPP.
 ##### DF & EF Markings
 ![DSCP DF and EF markings](./img3/DSCP-DF-EF-markings.png)
+##### AF Marking
+![DSCP AF marking](./img3/DSCP-AF-marking.png)
+* X is the decimal number of the class and Y is the decimal number of the Drop Precedence.
+* The last bit is always set to 0.
 ## Queuing/Congestion Management
 ## Shaping/Policing
