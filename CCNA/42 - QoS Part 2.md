@@ -152,3 +152,4 @@
 
 ![Use case for shaping and policing](./img3/shapping-and-policing-example.png)
 * Why would you want to limit the rate traffic is sent/received ?
+	* The connection between the customer router and ISP router is a 1GB connection, but the customer only has a plan of 300 Mbps.
