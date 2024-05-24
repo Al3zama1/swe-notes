@@ -116,6 +116,7 @@
 * This is done via configuration on the switch port connected to the IP phone, not directly on the phone itself.
 * Traffic sent from the phone itself will be trusted by the switch. However,  if a user marks their PC's traffic with a high priority to get faster service, the marking will be changed (not trusted).
 ## Queuing/Congestion Management
+Marking (EF, AF, etc.) packets doesn't do anything on its own. You have to configure tools like CBWFQ and LLQ to make the devices treat those packets as high priority.
 
 ![QoS single queue](./img3/QoS-single-queue.png)
 * When a network device receives traffic at a faster rate than it can forward traffic out of the appropriate interface, packets are placed in that interface's queue as they wait to be forwarded.
@@ -142,7 +143,7 @@
 * However, it has the downside of potentially starving other queues if there is always traffic in the designated *strict priority* queue.
 	* *Policing* can control the amount of traffic allowed in the strict priority queue so that it can't take all of the link's bandwidth.
 ## Shaping/Policing
-* Traffic **shaping** and **policing** are both used to control the rate of traffic.
+* Traffic **shaping** and **policing** are both used to control the rate of traffic (send/receive).
 * **Shaping** buffers traffic in a queue if the traffic rate goes over the configured rate.
 	* Instead of the actual capacity of the link being the limiting factor, it's the maximum traffic rate configured on the link.
 * **Policing** drops traffic if the traffic rate goes over the configured rate. Policing also has the option of re-marking the traffic instead of dropping it.
