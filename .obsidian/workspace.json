@@ -159,13 +159,14 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "f62b22be419f6658",
   "lastOpenFiles": [
+    "CCNA/43 - Security Fundamentals.md",
+    "CCNA/42 - QoS Part 2.md",
+    "CCNA/img3/DSCP-DF-EF-markings.png",
     "CCNA/img3/the-IP-ToS-byte.png",
     "CCNA/41 - QoS.md",
-    "CCNA/42 - QoS Part 2.md",
     "CCNA/img3/QoS-classification-layer2.png",
-    "CCNA/43 - Security Fundamentals.md",
     "CCNA/8 - IPv4 Header.md",
     "CCNA/img3/tcp-global-synchronization-problem.png",
     "CCNA/img3/QoS-queuing.png",
@@ -178,8 +179,6 @@
     "CCNA/img3/PAT-interface-walkthrough.png",
     "CCNA/39 - NAT Part 1.md",
     "CCNA/img3/PAT-pool-config.png",
-    "CCNA/img3/PAT-process-walkthrough.png",
-    "CCNA/img3/show-dynamic-nat-statistics.png",
     "CCNA/38 - FTP & TFTP.md",
     "CCNA/37 - Secure Shell (SSH).md",
     "CCNA/29 - Standard ACLs.md",

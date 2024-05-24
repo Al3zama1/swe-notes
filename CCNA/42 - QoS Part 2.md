@@ -32,8 +32,6 @@
 	* Assured Forwarding (AF) - set of 12 standard values.
 	* Class Selector (CS) - set of 8 standard values, provides backward compatibility with IPP.
 ##### DF & EF Markings
-
-
-
+![DSCP DF and EF markings](./img3/DSCP-DF-EF-markings.png)
 ## Queuing/Congestion Management
 ## Shaping/Policing
