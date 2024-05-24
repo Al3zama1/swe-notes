@@ -128,8 +128,17 @@
 * However, the device is only able to forward one frame out of an interface at a time, so a *scheduler* is used to decide from which queue traffic is forwarded next.
 	* Prioritization allows the scheduler to give certain queues more priority than others.
 
+![QoS round-robin queue scheduling](./img3/QoS-round-robin-queue-scheduling.png)
 * A common scheduling method is weighted round-robin.
 	* **Round-robin**: packets are taken from each queue in order, cyclically.
-	* **Weighted round-robin**: more data is taken from high priority queues each time the scheduler
+	* **Weighted round-robin**: more data is taken from high priority queues each time the scheduler reaches that queue.
+* **CBWFQ** (Class-Based Weighted Fair Queuing) is a popular method of scheduling, using a weighted round-robin scheduler while guaranteeing each queue a certain percentage of the interface's bandwidth during congestion.
+* Round-robin scheduling is not ideal for voice/video traffic. Even if the voice/video traffic receives a guaranteed minimum amount of bandwidth, round-robin can add delay and jitter because even the high priority queues have to wait their turn in the scheduler.
 
+![QoS strict priority queue scheduling](./img3/QoS-strick-priority-queue-scheduling.png)
+* **LLQ** (Low Latency Queuing) designates one (or more) queues as *strict priority queues*.
+	* This means that if there is traffic in the queue, the scheduler will always take the next packet from that queue until it is empty.
+* This is very effective for reducing the delay and jitter of voice/video traffic.
+* However, it has the downside of potentially starving other queues if there is always traffic in the designated *strict priority* queue.
+	* *Policing* can control the amount of traffic allowed in the strict priority queue so that it can't take all of the link's bandwidth.
 ## Shaping/Policing
