@@ -74,3 +74,5 @@ SW1(config-if)#ip dhcp snooping trust
 ```
 SW1#show ip dhcp snooping binding
 ```
+![Show ip dhcp snooping bindings](./img3/dhcp-snooping-bindings.png)
+* RELEASE/DECLINE messages will be checked to make sure their IP address/interface ID match the entry in their DHCP snooping table.
