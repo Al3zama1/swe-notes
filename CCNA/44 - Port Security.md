@@ -3,7 +3,7 @@
 * It allows you to control which source MAC address(es) are allowed to enter the switchport.
 * If an unauthorized source MAC address enters the port, an action will be taken.
 	* The default action is to place the interface in an 'err-disabled' state.
-* When you enable port security on an interface with the default settings, one MAC address is allowed.
+* When you enable port security on an interface with the default settings, only one MAC address is allowed.
 	* You can configure the allowed MAC address manually.
 	* If you don't configure it manually, the switch will allow the first source MAC address that enters the interface.
 
@@ -37,27 +37,66 @@ There are three different violation modes that determine what the switch will do
 	* It does not generate Syslog/SNMP messages for unauthorized traffic.
 	* It does not increment the violation counter.
 
+```
+SW1(config-if)#switchport port-security
+SW1(config-if)#switchport port-security violation restrict
+```
+* Enable 'restrict' violation mode.
+
+```
+SW1(config-if)#switchport port-security
+SW1(config-if)#switchport port-security violation protect
+```
+* Enable 'protect' violation mode.
 ## MAC Address Table
 * Secure MAC addresses will be added to the MAC address table like any other MAC address.
 	* Sticky and Static secure MAC addresses will have a type of STATIC.
 	* Dynamically-learned secure MAC addresses will have a type of DYNAMIC.
-	* `SW#show mac address-table secure` can be used to view all secure MAC addresses.
+
+```
+SW#show mac address-table secure
+```
+* View all secure MAC addresses.
 ## Secure MAC address aging
 * By default, secure MAC addresses will not 'age out' (Aging time : 0 mins). They are permanent. Unless you manually delete the learned MAC address or the port is disabled and then re-enabled.
 * There is two aging types:
 	* **Absolute** (default type): After the secure MAC address is learned, the aging timer starts and the MAC is removed after the timer expires, even if the switch continues receiving frames from that source MAC address.
 	* **Inactivity**:After the secure MAC address is learned, the aging timer starts, but is reset every time a frame from that source MAC address is received on the interface.
+
+```
+SW1(config-if)#switchport port-security aging time <minutes>
+```
+* Configure the secure MAC address aging timer.
+* The default aging type will be absolute.
+* By default, only dynamically learned secure MAC addresses age out.
+	* Static secure MAC addresses will not age out. The command will remain in the running-config and the MAC will remain in the MAC address table.
+
+```
+SW1(config-if)#switchport port-security aging type {absolute | inactivity}
+```
+* Configure secure MAC address aging type.
+
+```
+SW1(config-if)#switchport port-security aging static
+```
+* Make secure static MAC addresses age out.
+	* If the static secure MAC address ages out, the command will be removed from the running-config and the MAC will also be removed from the MAC address table.
 ## Sticky Secure MAC Addresses
 * Sticky MAC addresses are basically a way of configuring static secure MAC addresses, without actually having to manually configure them.
 * When enabled, dynamically-learned secure MAC addresses will be added to the running-config like this:
-	* `switchport port-security mac-address sticky mac-address`
+	* `switchport port-security mac-address sticky <mac-address>`
 * These 'sticky' secure mac addresses will never age out, even if you enable static secure MAC address aging.
 	* You need to save the running-config to the startup-config to make them truly permanent and not get lost if the switch restarts.
-* When you enable 'sticky' secure MAC addresses, all current dynamically-learned secure MAC addresses will be converted to sticky secure MAC addresses.
-	* `SW(config-if)#switchport port-security mac-address sticky`
-* When you disable 'sticky' secure MAC addresses, all current sticky secure MAC addresses will be converted to regular dynamically-learned secure MAC addresses.
-	* `SW(config-if)#no switchport port-security mac-address sticky`
 
+```
+SW(config-if)#switchport port-security mac-address sticky
+```
+* When you enable 'sticky' secure MAC addresses, all current dynamically-learned secure MAC addresses will be converted to sticky secure MAC addresses.
+
+```
+SW(config-if)#no switchport port-security mac-address sticky
+```
+* When you disable 'sticky' secure MAC addresses, all current sticky secure MAC addresses will be converted to regular dynamically-learned secure MAC addresses.
 ## Port Security Configuration
 ### Enabling Port Security
 * Port security can be enabled on access or trunk ports, but they must be statically configured as access or trunk.
@@ -67,7 +106,8 @@ There are three different violation modes that determine what the switch will do
 SW1(config)#interface g0/1
 SW1(config-if)#switchport port-security
 ```
-* Enable port security on the interface with dynamically learned secure MAC address enabled since no MAC address is specified.
+* Enable port security on the interface.
+* The allowed secure MAC address will be dynamically learned when the interface receives a frame since it was not specified in the command.
 
 ```
 SW1(config)#interface g0/1
@@ -84,40 +124,15 @@ SW1#show port-security
 ```
 SW1#show port-security interface g0/1
 ```
-* Port status of 'Secure-up' means that port security is enabled on the interface.
-* Port status of 'Secure-shutdown' means that an unauthorized MAC was received. The status of the interface will be 'err-disabled' with the default port security configuration.
+* Displays port status.
 * Displays the configured violation mode on the interface.
-* Trusted MAC addresses aging time.
+* Displays the trusted MAC addresses aging time.
 
-### Violation Mode Config
-* Shutdown violation mode is enabled by default when port security is enabled on an interface.
-#### Restrict Mode
+### Change Number of Secure MAC addresses
 ```
-SW1(config-if)#switchport port-security
-SW1(config-if)#switchport port-security mac-address 000a.000a.000a
-SW1(config-if)#switchport port-security violation restrict
+SW(config-if)#switchport port-security maximum <number>
 ```
-#### Protect Mode
-```
-SW1(config)#interface g0/1
-SW1(config-if)#switchport port-security
-SW1(config-if)#switchport port-security mac-address 000a.000a.000a
-SW1(config-if)#switchport port-security violation protect
-```
-
-### Secure MAC address aging
-
-```
-SW1(config-if)#switchport port-security aging type {absolute | inactivity}
-```
-* Configure secure MAC address aging type.
-* Absolute aging type is set by default.
-
-```
-SW1(config-if)#switchport port-security aging static
-```
-* By default, only dynamically learned secure MAC addresses age out.
-* The command above must be used to make secure static MAC addresses age out.
+* Change the number of allowed secure MAC addresses on the interface.
 ### Re-enable an Interface (manually)
 ```
 SW1(config)#interface g0/1
