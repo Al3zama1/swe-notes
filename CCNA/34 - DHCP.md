@@ -90,6 +90,10 @@ R1# show ip dhcp binding
 ```
 * Can be used on DHCP servers to display all the DHCP clients that are currently assigned IP addresses.
 
+```
+R1# show ip dhcp pool
+```
+
 ### Router DHCP Relay Agent Configuration
 ![DHCP relay configuration](./img3/dhcp-realy-topology.png)
 
