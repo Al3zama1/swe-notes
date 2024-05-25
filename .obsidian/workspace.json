@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP Inspection.md",
+                "file": "CCNA/45 - DHCP Snooping.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP Inspection.md",
+                "file": "CCNA/45 - DHCP Snooping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP Inspection.md",
+                "file": "CCNA/45 - DHCP Snooping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP Inspection.md"
+                "file": "CCNA/45 - DHCP Snooping.md"
               }
             }
           },
@@ -161,8 +161,11 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
-    "CCNA/44 - Port Security.md",
     "CCNA/46 - Dynamic ARP Inspection.md",
+    "CCNA/img3/ARP-show-arp-inspection.png",
+    "CCNA/img3/ARP-acl-config.png",
+    "CCNA/img3/sample-arp-reply-message.png",
+    "CCNA/44 - Port Security.md",
     "CCNA/img3/dai-config-topology.png",
     "CCNA/45 - DHCP Snooping.md",
     "CCNA/img3/dynamic-arp-inspection-trusted-untrusted-ports.png",
@@ -173,9 +176,6 @@
     "CCNA/img3/dhcp-snooping-topology.png",
     "CCNA/34 - DHCP.md",
     "CCNA/img3/DHCP-starvation.png",
-    "CCNA/img3/dhcp-snooping-invalid-message.png",
-    "CCNA/img3/valid-dhcp-traffic.png",
-    "CCNA/img3/dhcp-snooping-trusted-untrusted-ports.png",
     "CCNA/41 - QoS.md",
     "CCNA/42 - QoS Part 2.md",
     "CCNA/40 - NAT Part 2.md",

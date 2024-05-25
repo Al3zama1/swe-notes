@@ -51,13 +51,43 @@ SW1(config-if-range)#ip arp inspection limit rate 25 burst interval 2
 	* **dst-mac**: Enables validation of the destination MAC address in the Ethernet header against the target MAC address in the ARP body for ARP responses. The device classifies packets with different MAC addresses as invalid and drops them.
 	* **ip**: Enables validation of the ARP body for invalid and unexpected IP addresses. Addresses include `0.0.0.0`, `255.255.255.255`, and all IP multicast addresses. The device checks the sender IP addresses in all ARP requests and responses and checks the target IP addresses only in ARP responses.
 	* **src-mac**: Enables validation of the source MAC address in the Ethernet header against he sender MAC address in the ARP body for ARP requests and responses. The devices classifies packets with different MAC addresses as invalid and drops them.
+* These optional in depth DAI checks are done in addition to the standard DAI check (sender MAC/IP). If configured, an ARP message must pass all of the checks to be considered valid.
+
+Sample ARP reply message used to showcase the fields used in the optional DAI checks.
+![Sample ARP message](./img3/sample-arp-reply-message.png)
 
 ```
 SW1(config)#ip arp inspection validate ?
 	dst-mac Validatedestination MAC address
 	ip      Validate IP addresses
 	src-mac Validate source MAC address
+	
+SW1(config)#ip arp inspection validate ip
+SW1(config)#ip arp inspection validate src-mac
+
+// old commands are overriden
+SW1(config)#do show running-config | include validate
+ip arp inspection validate src-mac
+
+
+SW1(config)#ip arp inspection validate ip src-mac dest-mac
+SW1(config)#do show running-config | include validate
+ip arp inspection validate src-mac dst-mac ip
 ```
+* You must enter all validation checks you want in a single command. You can specify one, two, or all three and the order isn't significant.
+* If you specify the validation checks in different commands, the new command will override the previous command.
+
+## ARP ACLs
+* **ARP ACLs** can be manually configured to map IP addresses/MAC addresses for DAI to check.
+* Useful for hosts that don't use DHCP. If they don't use DHCP, they won't have an entry in the DHCP snooping table, so DAI will just drop all ARP messages they try to send.
+
+### ARP ACLs Configuration
+![ARP ACL configuration](./img3/ARP-acl-config.png)
+* SRV1 is using a static IP so it is not using DHCP to obtain its IP. Therefore, its  ARP request was originally blocked because there is not an entry for SRV1 in SW2's DHCP snooping binding table.
+* After an ACL was applied to SW2, SRV1's ARP request was allowed through SW2's G0/2 untrusted port.
+
+
+
 ## DAI Configuration
 ![DAI configuration topology](./img3/dai-config-topology.png)
 ```
@@ -80,3 +110,9 @@ Gi0/1      Untrusted   15          1
 Gi0/2      Untrusted   15          1
 Gi0/3      Untrusted   15          1
 ```
+
+```
+SW2#show ip arp inspection
+```
+![Show ip arp inspections output](./img3/ARP-show-arp-inspection.png)
+* Displays what optional DAI check are enabled. In this case all 3 are enabled.
