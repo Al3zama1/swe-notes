@@ -69,7 +69,7 @@ SW1#show ip dhcp snooping binding
 * Like with Port Security, the interface can be manually re-enabled, or automatically re-enabled with errdisable recover.
 
 ```
-SW1(config-if-range)ip dhcp snooping limit rate <messages-per-second>
+SW1(config-if-range)ip dhcp snooping limit rate <packers-per-second>
 ```
 * The interface(s) will be disabled if more DHCP messages than the configured rate are received.
 
@@ -82,7 +82,21 @@ SW1(config)#errdisable recovery cause dhcp-rate-limit
 * It provides additional information about which DHCP relay agent received the client's message, on which interface, in which VLAN, etc.
 * DHCP relay agents can add Option 82 to messages they forward to the remove DHCP server.
 * With DHCP snooping enabled, by default Cisco switches will add Option 82 to DHCP messages they receive from clients, even if the switch isn't acting as a DHCP relay agent.
-	* By default, Cisco switches will drop DHCP messages with Option 82 that are received on an untrusted port.
+	* The problem with this is that by default, Cisco switches will drop DHCP messages with Option 82 that are received on an untrusted port.
+
+![DHCP snooping option 82 drop frame](./img3/DHCP-snooping-option-82-drop.png)
+* PC1 sends a DISCOVER message, and SW1 forwards it to SW2, adding Option 82. However, since SW2 receives it on an untrusted port, it drops the message.
+* The default settings work well if the switch is a layer 3 switch acting as a DHCP relay agent, but in a network like this one it won't work.
+
+![DHCP snooping option 82 forward frame](./img3/dhcp-snooping-option-82-good-example.png)
+```
+SW1(config)#no ip dhcp snooping information optioin
+
+SW2(config)#no ip dhcp snooping information optioin
+```
+* The command also has to be specified in SW2 because otherwise it will add option 82 itself, which will cause R1 to drop it.
+* R1 will drop the message because it contains option 82, but it wasn't sent by a relay agent.
+	* `inconsistent relay information` error will be shown in the logs.
 
 ## DHCP Snooping Config
 ![DHCP snooping topology](./img3/dhcp-snooping-topology.png)
