@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP.md",
+                "file": "CCNA/46 - Dynamic ARP Inspection.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP.md",
+                "file": "CCNA/46 - Dynamic ARP Inspection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP.md",
+                "file": "CCNA/46 - Dynamic ARP Inspection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP.md"
+                "file": "CCNA/46 - Dynamic ARP Inspection.md"
               }
             }
           },
@@ -161,10 +161,12 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
-    "CCNA/45 - DHCP Snooping.md",
-    "CCNA/46 - Dynamic ARP.md",
-    "CCNA/43 - Security Fundamentals.md",
     "CCNA/44 - Port Security.md",
+    "CCNA/46 - Dynamic ARP Inspection.md",
+    "CCNA/img3/dai-config-topology.png",
+    "CCNA/45 - DHCP Snooping.md",
+    "CCNA/img3/dynamic-arp-inspection-trusted-untrusted-ports.png",
+    "CCNA/43 - Security Fundamentals.md",
     "CCNA/img3/dhcp-snooping-option-82-good-example.png",
     "CCNA/img3/DHCP-snooping-option-82-drop.png",
     "CCNA/img3/dhcp-snooping-bindings.png",
@@ -175,9 +177,7 @@
     "CCNA/img3/valid-dhcp-traffic.png",
     "CCNA/img3/dhcp-snooping-trusted-untrusted-ports.png",
     "CCNA/41 - QoS.md",
-    "CCNA/img3/port-security-showcase.png",
     "CCNA/42 - QoS Part 2.md",
-    "CCNA/img3/shapping-and-policing-example.png",
     "CCNA/40 - NAT Part 2.md",
     "Master Java/Concurrency/1. Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
     "Master Java/Concurrency/2. Basics Of Java Concurrency/7. Java Synchronized Blocks.md",

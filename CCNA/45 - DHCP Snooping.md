@@ -114,5 +114,5 @@ SW1(config)#no ip dhcp snooping information option
 SW1(config)#interface g0/0
 SW1(config-if)#ip dhcp snooping trust
 ```
-* DHCP must be enabled globally and in every VLAN needed.
+* DHCP must be enabled globally and in every VLAN that is needed.
 * Manually specify which ports to trust, since they all are disabled by default.
