@@ -2,6 +2,7 @@
 * DHCP snooping is a security feature of switches that is used to filter DHCP messages received on untrusted ports.
 * DHCP snooping only filters DHCP messages. Non-DHCP messages aren't affected.
 * DHCP snooping won't inspect any DHCP messages on trusted ports, the switch will simply forward them as normal.
+* DHCP snooping can limit the rate at which DHCP messages are allowed to enter an interface. 
 * All ports are untrusted by default.
 	* Usually, **uplink** ports are configured as trusted ports, and **downlink** ports remain untrusted.
 
