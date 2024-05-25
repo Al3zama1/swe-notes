@@ -12,7 +12,7 @@
 ipconfig /release
 ```
 * The device releases the assigned IP address (windows).
-* The device sends a DHCP release message to the DHCP server, setting it that the IP address isn't needed anymore.
+* The device sends a DHCP release message to the DHCP server, telling it that the IP address isn't needed anymore.
 	* The IP becomes available and can be assigned to another client.
 ### Get IP Address from DHCP Server
 ```
