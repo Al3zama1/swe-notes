@@ -36,6 +36,6 @@
 * This is not always the case, but usually the connections from the access layer switches to the distribution layer switches are Layer 2 connections, and the end hosts use the SVIs on the distribution layer switches as their default gateways.
 ### 2-Tier Campus Lan Design
 ![2-tier campus LAN design](./img3/two-tier-campus-lan-design.png)
-
+* The connections between distribution switches and access layer switches are Layer 2 and loops can occur.
 ## Spine-Leaf Architecture (Data Center)
 ## SOHO (Small Office/Home Office)
