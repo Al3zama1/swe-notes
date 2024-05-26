@@ -86,6 +86,6 @@
 * Like DSL, a cable modem is required to convert data into a format suitable to be sent over the CATV cables.
 	* Like a DSL modem, this can be a separate device or built into the 'home router'.
 
-### Redundant INternet Connections
+### Redundant Internet Connections
 
 ## Internet VPNs

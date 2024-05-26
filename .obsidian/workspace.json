@@ -11,11 +11,9 @@
             "id": "1676794986be6092",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "CCNA/48 - WAN Architecture.md",
-                "mode": "source",
-                "source": false
+                "file": "CCNA/img4/redundant-internet.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/48 - WAN Architecture.md",
+                "file": "CCNA/img4/redundant-internet.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/48 - WAN Architecture.md",
+                "file": "CCNA/img4/redundant-internet.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/48 - WAN Architecture.md"
+                "file": "CCNA/img4/redundant-internet.png"
               }
             }
           },
@@ -161,6 +159,8 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/48 - WAN Architecture.md",
+    "CCNA/img4/redundant-internet.png",
     "CCNA/img4/cable-internet-topology.png",
     "CCNA/img4/digital-subscriber-line.png",
     "CCNA/img4/MPLS-multiple-connectivity-technologies.png",
@@ -169,12 +169,9 @@
     "CCNA/img4/MPLS-router-topology.png",
     "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/47 - LAN Architectures.md",
-    "CCNA/48 - WAN Architecture.md",
     "CCNA/img4/leased-lines-standards.png",
     "CCNA/img4/WAN-over-VPN.png",
     "CCNA/img4/WAN-via-Ethernet.png",
-    "CCNA/img4/wan-hub-and-spoke-topology.png",
-    "CCNA/img4/WAN-ver-leaded-line.png",
     "CCNA/img4",
     "CCNA/45 - DHCP Snooping.md",
     "CCNA/44 - Port Security.md",
