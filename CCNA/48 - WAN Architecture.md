@@ -87,5 +87,8 @@
 	* Like a DSL modem, this can be a separate device or built into the 'home router'.
 
 ### Redundant Internet Connections
+* For a home user, having one connection to the internet isn't a problem. It's a bit annoying if you lose internet access, but it's not a disaster.
+* However, for many companies Internet access is essential to their operations. Therefore, it's be
+![](./img4/redundant-internet.png)
 
 ## Internet VPNs
