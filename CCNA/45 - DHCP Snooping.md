@@ -61,6 +61,7 @@ SW1#show ip dhcp snooping binding
 ![Show ip dhcp snooping bindings](./img3/dhcp-snooping-bindings.png)
 * RELEASE/DECLINE messages will be checked to make sure their IP address/interface ID match the entry in their DHCP snooping table.
 	* This prevents attackers form sending these messages on behalf of other devices in the network, causing the DHCP server to believe that they don't need their IP addresses anymore.
+* Note that when DHCP snooping is enabled, the DHCP snooping binding table is automatically built as host lease IP addresses form DHCP servers.
 ## DHCP Snooping Rate-Limiting
 * DHCP snooping can limit the rate at which DHCP messages are allowed to enter an interface. 
 * Rate-limiting can be very useful to protect agains DHCP exhaustion attacks.

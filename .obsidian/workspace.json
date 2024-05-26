@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/45 - DHCP Snooping.md",
+                "file": "CCNA/47 - LAN Architectures.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 320.51103591918945
+    "width": 320.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/45 - DHCP Snooping.md",
+                "file": "CCNA/47 - LAN Architectures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/45 - DHCP Snooping.md",
+                "file": "CCNA/47 - LAN Architectures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/45 - DHCP Snooping.md"
+                "file": "CCNA/47 - LAN Architectures.md"
               }
             }
           },
@@ -161,13 +162,14 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/45 - DHCP Snooping.md",
+    "CCNA/47 - LAN Architectures.md",
     "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/img3/ARP-show-arp-inspection.png",
     "CCNA/img3/ARP-acl-config.png",
     "CCNA/img3/sample-arp-reply-message.png",
     "CCNA/44 - Port Security.md",
     "CCNA/img3/dai-config-topology.png",
-    "CCNA/45 - DHCP Snooping.md",
     "CCNA/img3/dynamic-arp-inspection-trusted-untrusted-ports.png",
     "CCNA/43 - Security Fundamentals.md",
     "CCNA/img3/dhcp-snooping-option-82-good-example.png",
