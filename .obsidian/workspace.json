@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/47 - LAN Architectures.md",
+                "file": "CCNA/48 - WAN Architecture.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/47 - LAN Architectures.md",
+                "file": "CCNA/48 - WAN Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/47 - LAN Architectures.md",
+                "file": "CCNA/48 - WAN Architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/47 - LAN Architectures.md"
+                "file": "CCNA/48 - WAN Architecture.md"
               }
             }
           },
@@ -159,24 +159,25 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/47 - LAN Architectures.md",
+    "CCNA/48 - WAN Architecture.md",
+    "CCNA/img4",
+    "CCNA/img3/SOHO-topology.png",
+    "CCNA/img3/spine-leaf-architecture.png",
+    "CCNA/img3/north-south-east-west.png",
+    "CCNA/img3/three-tier-lan-design.png",
+    "CCNA/img3/distribution-layer-switches-with-core-layer.png",
+    "CCNA/img3/many-distribution-layer.png",
     "CCNA/img3/two-tier-campus-lan-design.png",
     "CCNA/img3/partial-mesh-topology.png",
     "CCNA/img3/full-mesh-topology.png",
     "CCNA/img3/star-topology.png",
     "CCNA/45 - DHCP Snooping.md",
-    "CCNA/47 - LAN Architectures.md",
     "CCNA/46 - Dynamic ARP Inspection.md",
-    "CCNA/img3/ARP-show-arp-inspection.png",
-    "CCNA/img3/ARP-acl-config.png",
-    "CCNA/img3/sample-arp-reply-message.png",
     "CCNA/44 - Port Security.md",
-    "CCNA/img3/dai-config-topology.png",
-    "CCNA/img3/dynamic-arp-inspection-trusted-untrusted-ports.png",
     "CCNA/43 - Security Fundamentals.md",
-    "CCNA/img3/dhcp-snooping-option-82-good-example.png",
-    "CCNA/img3/DHCP-snooping-option-82-drop.png",
     "CCNA/34 - DHCP.md",
     "CCNA/41 - QoS.md",
     "CCNA/42 - QoS Part 2.md",
@@ -207,7 +208,6 @@
     "CCNA/img/subnetting-2.jpeg.crdownload",
     "CCNA/img/subentting-1.jpg.crdownload",
     "img",
-    "CCNA/img",
-    "CCNA"
+    "CCNA/img"
   ]
 }
