@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
+                "file": "CCNA/52 - Wireless Fundamentals.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
+                "file": "CCNA/52 - Wireless Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
+                "file": "CCNA/52 - Wireless Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/51 - Virtual Routing & Forwarding (VRF).md"
+                "file": "CCNA/52 - Wireless Fundamentals.md"
               }
             }
           },
@@ -162,8 +162,14 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
-    "CCNA/50 - Virtualization - Containers.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
+    "CCNA/52 - Wireless Fundamentals.md",
+    "CCNA/img4/VRFs-routes.png",
+    "CCNA/img4/VRFs-routes.png",
+    "CCNA/img4/Router-divided-into-VRFs.png",
+    "CCNA/img4/VRF-configuratoin.png",
+    "CCNA/img4/VRF-network-diagram.png",
+    "CCNA/50 - Virtualization - Containers.md",
     "CCNA/img4/containers.png",
     "CCNA/49 - Virtualization & Cloud.md",
     "CCNA/48 - WAN Architecture.md",
@@ -173,12 +179,7 @@
     "Untitled 2.md",
     "CCNA/img4/connect-vms-to-the-network.png",
     "CCNA/img4/virtualization-benefits.png",
-    "CCNA/img4/type-2-hypervisor.png",
     "Untitled 1.md",
-    "CCNA/img4/type-1-hypervisor.png",
-    "CCNA/img4/server-before-virtualizatoin.png",
-    "CCNA/img4/site-to-site-vs-remote-access-vpn.png",
-    "CCNA/img4/remote-access-VPNs-overviews.png",
     "CCNA/3 - OSI Model & TCP-IP.md",
     "Untitled.md",
     "CCNA/46 - Dynamic ARP Inspection.md",
@@ -198,7 +199,6 @@
     "Master Java/Concurrency/2. Basics Of Java Concurrency/4. Thread Safety and Immutability.md",
     "Master Java/Concurrency/2. Basics Of Java Concurrency/3. Thread Safety and Resource Sharing.md",
     "CCNA/8 - IPv4 Header.md",
-    "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/img3",
     "Recording 20240509144112.webm",
     "CCNA/img2",
