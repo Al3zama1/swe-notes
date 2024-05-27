@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/48 - WAN Architecture.md",
+                "file": "CCNA/50 - Virtualization - Containers.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/48 - WAN Architecture.md",
+                "file": "CCNA/50 - Virtualization - Containers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/48 - WAN Architecture.md",
+                "file": "CCNA/50 - Virtualization - Containers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/48 - WAN Architecture.md"
+                "file": "CCNA/50 - Virtualization - Containers.md"
               }
             }
           },
@@ -161,20 +161,26 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
-    "Untitled.md",
+    "CCNA/49 - Virtualization & Cloud.md",
+    "CCNA/50 - Virtualization - Containers.md",
     "CCNA/48 - WAN Architecture.md",
-    "CCNA/img4/redundant-internet.png",
-    "CCNA/img4/cable-internet-topology.png",
-    "CCNA/img4/digital-subscriber-line.png",
-    "CCNA/img4/MPLS-multiple-connectivity-technologies.png",
-    "CCNA/img4/layer-2-mpls.png",
-    "CCNA/img4/layer-3-mpls-vpn.png",
-    "CCNA/img4/MPLS-router-topology.png",
+    "CCNA/img4/connecting-to-cloud-resources.png",
+    "Untitled 3.md",
+    "CCNA/img4/cloud-service-models.png",
+    "Untitled 2.md",
+    "CCNA/img4/connect-vms-to-the-network.png",
+    "CCNA/img4/virtualization-benefits.png",
+    "CCNA/img4/type-2-hypervisor.png",
+    "Untitled 1.md",
+    "CCNA/img4/type-1-hypervisor.png",
+    "CCNA/img4/server-before-virtualizatoin.png",
+    "CCNA/img4/site-to-site-vs-remote-access-vpn.png",
+    "CCNA/img4/remote-access-VPNs-overviews.png",
+    "CCNA/img4/DMVPN.png",
+    "CCNA/3 - OSI Model & TCP-IP.md",
+    "Untitled.md",
     "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/47 - LAN Architectures.md",
-    "CCNA/img4/leased-lines-standards.png",
-    "CCNA/img4/WAN-over-VPN.png",
-    "CCNA/img4/WAN-via-Ethernet.png",
     "CCNA/img4",
     "CCNA/45 - DHCP Snooping.md",
     "CCNA/44 - Port Security.md",
@@ -192,12 +198,6 @@
     "CCNA/8 - IPv4 Header.md",
     "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/31 - CDP & LLDP.md",
-    "CCNA/39 - NAT Part 1.md",
-    "CCNA/38 - FTP & TFTP.md",
-    "CCNA/37 - Secure Shell (SSH).md",
-    "CCNA/29 - Standard ACLs.md",
-    "CCNA/36 - Syslog.md",
-    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
     "CCNA/img3",
     "Recording 20240509144112.webm",
     "CCNA/img2",

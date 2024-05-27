@@ -32,13 +32,17 @@
 * Due to the higher cost, higher installation lead time, and slower speeds of leased lines, Ethernet WAN technologies are becoming more popular.
 ![Leased lines standards](./img4/leased-lines-standards.png)
 ## MPLS (Multi Protocol Label Switching)
-* MPLS is a technology that runs in the service provider's network.
-* Similar to the internet, service providers' MPLS networks are shared infrastructure because many customer enterprises connect to and share the same infrastructure to make WAN connections.
-* However, the label switching in the name of MPLS allows VPNs to be created over the MPLS infrastructure through the use of **labels**.
+* MPSL allows enterprises to form WANs over a service provider's MPLS infrastructure.
+	* MPLS is a technology that runs in the service provider's network.
+* Similar to the internet, service providers' MPLS networks are shared infrastructure because many customer enterprises connect to and share the same infrastructure to make their WAN connections.
+* Although the traffic of many different customers will be passing over this infrastructure, the label switching aspect of MPLS allows secure VPNs to be formed over the shared infrastructure.
+	* MPLS allows VPNs to be created over the MPLS infrastructure through the use of **labels**.
 * Some important terms:
 	* CE router = Customer Edge router.
 	* PE router = Provider Edge router.
 	* P router = Provider core router.
+
+![MPLS router topology](./img4/MPLS-router-topology.png)
 * MPLS uses labels to forward traffic, not IP addresses.
 *  When the PE routers receive frames from the CE routers, they add a label to the frame. 
 	* The label is placed in between the Layer 2 Ethernet header and the Layer 3 IP header. Therefore, MPLS is sometimes called a Layer 2.5 protocol.
@@ -47,8 +51,6 @@
 * The CE routers do not use MPLS, it is only used by the PE/P routers.
 	* The CE routers do not have to run MPLS or even be able to run MPLS.
 * There are a few kinds of VPNs that can be provided by MPLS.
-
-![MPLS router topology](./img4/MPLS-router-topology.png)
 ### Layer 3 MPLS VPN
 ![Layer 3 MPLS VPN](./img4/layer-3-mpls-vpn.png)
 * When using a Layer 3 MPLS VPN, the CE and PE routers peer using a dynamic routing protocol (OSPF etc.), for example, to share routing information.
@@ -96,3 +98,55 @@
 * **Dual Multihomed**: This provides the most redundancy.
 	* Depending on the company, this might not be necessary or worth the cost.
 ## Internet VPNs
+* Private WAN services such as leased lines and MPLS provide security because each customer's traffic is separated by using dedicated physical connections (leased line) or by MPLS tags.
+* When using the internet as a WAN to connect sites together, there is no built-in security by default.
+* To provide secure communications over the Internet, VPNs (Virtual Private Networks) are used.
+* We will cover two kinds of Internet VPNs:
+	* Site-to-Site VPNs using IPsec
+	* Remote-access VPNs using TLS
+### Site-to-Site VPNs (IPsec)
+* A 'site-to-site' VPN is a VPN between two devices and is used to connect two sites together over the Internet.
+* A VPN 'tunnel' is created between the two devices by encapsulating the original IP packet with a VPN header and  adding a new IP header.
+	* When using IPsec, the original packet is encrypted before being encapsulated with the new header.
+* In a site-to-site VPN, a tunnel is formed only between two tunnel endpoints (for example, the two routers connected to the Internet).
+* All other devices in each site don't need to create a VPN for themselves. They can send unencrypted data to their site's router, which will encrypt it and forward it in the tunnel.
+
+![VPN IPsec overview](./img4/vpn-ipsec.png)
+1. The sending device combines the original packet and session key (encryption key) and runs them through an encryption formula.
+2. The sending device encapsulates the encrypted packet with a VPN header and a new IP header.
+3. The sending device sends the new packet to the device on the other side of the tunnel.
+4. The receiving device decrypts the data to get the original packet, and then forwards the original packet to its destination.
+#### Site-to-Site VPNs (IPsec) Limitations
+* IPsec doesn't support broadcast and multicast messages , only unicast. This means that routing protocols such as OSPF can't be used over the tunnels, because they rely on multicast traffic.
+	* This can be solved with **GRE over IPsec**
+* Configuring a full mesh of tunnels between many sites is a labor-intensive task.
+	* This can be solved with Cisco's **DMVPN**.
+#### GRE over IPsec
+* **GRE** (Generic Routing Encapsulation) creates tunnels like IPsec, however it does not encrypt the original packet, so it is not secure.
+* However, it has the advantage of being able to encapsulate a wide variety of Layer 3 protocols as well as broadcast and multicast messages.
+
+![GRE](./img4/GRE.png)
+![GRE over IPsec](./img4/GRE-over-IPsec.png)
+* To get the flexibility of GRE with the security of IPsec, 'GRE over IPsec' can be used.
+* The original packet will be encapsulated by a GRE header and a new IP header, and then the GRE packet will be encrypted and encapsulated within an IPsec VPM header and new IP header.
+#### DMVPN
+* DMVPN (Dynamic Multipoint VPN) is a Cisco-developed solution that allows routers to dynamically create a full mesh of IPsec tunnels without having to manually configure every single tunnel.
+* DMVPN provides the configuration simplicity of hub-and-spoke (each spoke router only needs one tunnel configured) and the efficiency of direct spoke-to-spoke communication (spoke routers can communicate directly without traffic passing through the hub).
+	* Some companies might want all traffic to flow through the hub site so that a central firewall can control the traffic, but other companies might want the efficient direct spoke-to-spoke communication that a full mesh provides.
+
+![DMVPN](./img4/DMVPN.png)
+### Remote-Access VPNs
+* Whereas site-to-site VPNs are used to make point-to-point connections between two sites over the internet, remove-access VPNs are used to allows end devices (PCs, mobile phones) to access the company's internal resources securely over the Internet.
+* Remote-access VPNs typically use TLS (Transport Layer Security) as opposed to Site-to-Site VPNs which typically use IPsec.
+	* TLS is also what provides security for HTTPS (HTTP secure).
+	* TLS was formerly know as SSL (Secure Socket Layer) and developed by Netscape, but it was renamed to TLS when it was standardized by IETF.
+* VPN client software (for example, Cisco AnyConnect) is installed on end devices (for example, company-provided laptops that employees use to work from home).
+* These end devices then form secure tunnels to one of the company's routers/firewalls acting as a TLS server.
+* This allows the end users to securely access resources on the company's internal network without being directly connected to the company network.
+
+![Remote-Access VPNs overview](./img4/remote-access-VPNs-overviews.png)
+* All hosts have Cisco's AnyConned installed, and it is also configured on the firewall at the data center.
+* Each device forms a TLS VPN tunnel to the firewall, and then they are able to securely communicate with the company's internal servers through the tunnel.
+* Just like IPsec, TLS involves encrypting packets and adding additional headers.
+### Site-to-Site vs Remote-Access VPN
+![Site-to-Site-vs-Remote-Access-VPNs](./img4/site-to-site-vs-remote-access-vpn.png)
