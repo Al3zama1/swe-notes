@@ -68,7 +68,6 @@
 	* Five essential characteristics.
 	* Three service models.
 	* Four deployment models.
-
 ### The Five Essential Characteristics of Cloud
 * **On-demand self-service**: A customer can unilaterally provision computing capabilities, such as server time and network storage, as needed automatically without requiring human interaction with each service provider.
 	* The customer is able to user the service (or stop using the service) freely (via a web portal) without direct communication to the service provider.
@@ -90,7 +89,7 @@
 
 ![The cloud service models](./img4/cloud-service-models.png)
 
-* ***Software as a Service** (SaaS): The capability provided to the consumer is to use the provider's applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based emails), or a program interface. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user-specific application configuration settings.
+* **Software as a Service** (SaaS): The capability provided to the consumer is to use the provider's applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based emails), or a program interface. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user-specific application configuration settings.
 	* Microsoft Office 365 is a popular example of SaaS.
 
 * **Platform as a Service** (PaaS): The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages, libraries, services, and tools supported by the provider. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment.
@@ -141,7 +140,6 @@ The cloud is not always the best option. Most companies these days use a combina
 	* Cloud services remove the need for may time-consuming tasks such as procuring physical servers, racking them, cabling, installing and updating operating systems, etc.
 * **Reliability**:
 	* Backups in the cloud are very easy to perform. Data can be mirrored at multiple sites in different geographic locations to support disaster recovery.
-
 ## Connecting to Cloud Resources
 ![Connecting to cloud resources](./img4/connecting-to-cloud-resources.png)
 * The image above showcases the multiple ways a company can connect to its resources hosted on a public cloud.
