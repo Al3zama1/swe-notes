@@ -106,6 +106,8 @@
 ## Wi-Fi Standards
 ![802.11 standards](./img4/802.11-standards.png)
 * 802.11 enabled devices might support one of these standards, some of them, or all of them.
+* 802.11n is also known as High Throughput (HT) Wi-Fi.
+* 802.11ac is also known as Very High Throughput (VHT) Wi-Fi.
 ## Service Sets
 * 802.11 defines different kinds of **service sets** which are groups of wireless network devices.
 * There are three main types:
