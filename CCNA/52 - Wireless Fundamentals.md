@@ -115,4 +115,74 @@
 * All devices in a service set share the same **SSID** (Service Set Identifier).
 	* The SSID is a human-readable name which identifies the service set.
 	* The SSID does not have to be unique, although it's best to configure unique SSIDs since that's what you'll be looking at when you select which network to connect to.
-## Wireless LAN Fundamentals
+### Independent Basic Service Set (IBSS)
+![Service Set IBSS](./img4/service-set-IBSS.png)
+* An **IBSS** is a wireless network which two or more wireless devices connect directly without using an AP (Access Point).
+* Also called **ad hoc** networks.
+* Not scalable beyond a few devices.
+* Are used for limited purposes, such as quick file transfers (ie. AirDrop).
+### Basic Service Set (BSS)
+![Service Set BSS](./img4/service-set-BSS.png)
+* A BSS is a kind of infrastructure Service Set in which clients connect to each other via an AP (Access Point), but not directly to each other.
+* The **BSSID** (Basic Service Set ID) of an AP is a unique identifier used to distinguish between different wireless networks (SSID) broadcasted by the AP. 
+	* It is derived from the MAC address of the AP's radio interface but can be modified or generated uniquely for each SSID that the AP broadcasts.
+	* Other APs can have the same SSID, but no the same BSSID.
+* Wireless devices request to associate with the BSS.
+* Wireless devices that have associated with the BSS are called 'clients' or 'stations'.
+* The area around an AP where its signal is usable is called a **BSA** (Basic Service Area).
+* Clients must communicate via the AP, not directly with each other.
+### Extended Service Set (ESS)
+![Service sets ESS](./img4/service-sets-ESS.png)
+* To create larger wireless LANs beyond the range of a single AP, we use an **ESS** (Extended Service Set)
+	* This is an infrastructure service set.
+* APs with their own BSS are connected by a wired network.
+	* Each BSS uses the same SSID.
+	* Each BSS has a unique BSSID.
+	* Each BSS uses a different channel to avoid interference.
+* Clients can pass between APs without having to reconnect, providing a seamless Wi-Fi experience when moving between APs.
+	* This is called **roaming**, when you move between two APs in an ESS.
+* The BSAs should overlap about 10 - 15%, or else the connectivity can be lost when moving between APs.
+### Mesh Basic Service Set (MBSS)
+![Service Set MBSS](./img4/service-set-MBSS.png)
+* An **MBSS** can be used in situations where it's difficult to run an Ethernet connection to every AP.
+* Mesh APs use two radios:
+	* One provides a BSS to wireless clients.
+	* The other forms a 'backhaul network' which is used to bridge traffic from AP to AP.
+* At least one AP is connected to the wired network, and it is called the **RAP** (Root Access Point).
+* The other APs are called **MAP**s (Mesh Access Points).
+* A protocol is used to determine the best path through the mesh (similar to dynamic routing protocols are used to determine the best path to a destination).
+## Distribution System
+* Most wireless networks aren't standalone networks. They are a way for wireless clients to connect to the wired network infrastructure.
+	* APs function is to translate between the tow mediums (wireless, wired).
+* In 802.11, the upstream wired network is called the **DS** (Distribution System).
+
+![Wireless network connection to Wired network](./img4/AP-connection-to-distribution-system.png)
+* Each wireless BSS or ESS is mapped to a VLAN in the wired network.
+
+![AP with multiple WLANs connect to wired network](./img4/AP-connection-to-distribution-system-multiple-VLANs.png)
+* It's possible for an AP to provide multiple wireless LANs, each with a unique SSID.
+	* This is the same as how a switch can divide a single physical wired network into multiple VLANs.
+* Each WLAN is mapped to a separate VLAN and connected to the wired network via a trunk.
+* Each WLAN uses a unique BSSID, usually by incrementing the last digit of the BSSID by one.
+## Additional AP Operational Modes
+### Repeater
+![AP operating as a repeater](./img4/AP-as-a-repeater.png)
+* An AP in **repeater** mode can be used to extend the range of a BSS.
+* The repeater will simply retransmit any signal it receives from the AP.
+* A repeater with a single radio must operate on the same channel as the AP. However,  this can drastically reduce the overall throughput on the channel because the repeater will be repeating the AP's signals back to it using the same channel, keeping the channel busy. This cuts the effective throughput of the channel by 50%.
+* A repeater with two radios can receive on one channel, and then retransmit on another channel.
+### Workgroup Bridge (WGB)
+* An AP in **workgroup bride** (WGB) mode operates as a wireless client of another AP, and can be used to connect wired devices to the wireless network.
+	* It's a solution which allows clients that don't support wireless connections to connect to the wireless network via an AP operating as a workgroup bridge.
+* There are two kinds of WGBs:
+	* **Universal WGB** (uWGB): an 802.11 standard that allows one device to be bridged to the wireless network.
+	* **WGB**: a Cisco-proprietary version of the 802.11 standard that allows multiple wired clients to be bridged to the wireless network.
+
+![AP operating as a workgroup bridge](./img4/AP-as-a-workgroup-bridge.png)
+* PC1 does not have wireless capabilities, and also does not have access to a wired connection to SW1.
+* PC1 has a wired connection to the SWB, which has a wireless connection to the AP.
+### Outdoor Bridge
+![AP in outdoor bridge mode](./img4/AP-as-outdoor-bridge-mode.png)
+* An AP in **outdoor bridge** mode can be used to connect networks over long distances without a physical cable connecting them.
+* The APs will use specialized antennas that focus most of the signal power in one direction, which allows the wireless connection to be made over longer distances than normally possible.
+* The connection can be point-to-point as in the diagram above or point-to-multipoint in which multiple sites connect to one central site (forming a Hub and Spoke topology).
