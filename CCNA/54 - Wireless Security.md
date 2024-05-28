@@ -100,6 +100,10 @@ The original 802.11 standard included two options for authentication:
 * Because the client and server authenticate each other with digital certificates, there is no need to authenticate the client within the TLS tunnel.
 * The TLS tunnel is still used to exchange encryption key information.
 ## Wireless Encryption Methods
+
+### WEP
+* Already covered above.
+* WEP is used for both, authentication and also encryption.
 ### TKIP (Temporal Key Integrity Protocol)
 * WEP was found to be vulnerable, but wireless hardware at the time was built to use WEP.
 * A temporary solution (TKIP) was needed until a new standard was created and new hardware was built.
@@ -113,5 +117,51 @@ The original 802.11 standard included two options for authentication:
 
 It's probably not necessary to memorize all of the above factors. Just know that TKIP was developed as a more secure temporary solution after WEP was found to be vulnerable. Also know that TKIP is used in WPA (WiFi Protected Access) version 1.
 ### CCMP (Counter/CBC-MAC protocol)
-
+* CCMP was developed after TKIP and is more secure.
+* It is sued in WPA2.
+* To use CCMP, it must be supported by the device's hardware. Old hardware built only to use WEP/TKIP cannot use CCMP.
+* CCMP consists of two different algorithms to provide encryption and MIC (Message Integrity Check).
+	* **AES (Advanced Encryption Standard) counter mode** encryption.
+		* AES is the most secure encryption protocol currently available. It is widely used all over the world.
+		* There are multiple modes of operation for AES. CCMP uses 'counter mode'.
+	* **CBC-MAC (Cipher Block Chaining Message Authentication Code)** is used as a MIC to ensure the integrity of the message.
+### GCMP (Galois/Counter Mode Protocol)
+* GCMP is more secure and efficient than CCMP.
+* Its increased efficiency allows higher data throughput than CCMP.
+* If your hardware supports it, it is recommended to use GCMP whenever possible.
+* It is used in WPA3.
+* GCMP consists of two algorithms to provide encryption and MIC:
+	* **AES counter mode** encryption.
+	* **GMAC (Galois Message Authentication Code)** is used as a MIC to ensure the integrity of messages.
 ## Wi-Fi Protected Acces (WPA)
+* The Wi-Fi alliance has developed three WPA certifications for wireless devices:
+	* WPA
+	* WPA2
+	* WPA3
+* To be WPA-certified, equipment must be tested in authorized testing labs.
+* All of the above support two authentication modes:
+	* **Personal mode**: A pre-shared key (PSK) is used for authentication. 
+		* When you connect to a home Wi-Fi network, enter the password and are authenticated, that is personal mode. 
+		* This mode is common in small networks. 
+		* For security reasons, the PSK itself is not sent over the Air. A four-way handshake is used for authentication, and the PSK is used to generate encryption keys. 
+		* If the devices use the same PSK to generate the encryption keys, they will be able to decrypt each other's traffic, meaning that they will know that the other device is using the same PSK.
+	* **Enterprise mode**: 802.1X is used with an authentication server (RADIUS server).
+		* No specific EAP method is specified, so all EAP methods are supported (PEAP, EAP-TLS, etc).
+### WPA
+* The **WPA** certification was developed after WEP was proven to be vulnerable and includes the following protocols:
+	* TKIP (based on WEP) provides encryption /MIC.
+	* 802.1X authentication (Enterprise mode) or PSK (Personal mode).
+* WPA didn't last long. After more secure protocols and hardware were developed, WPA2 was released.
+### WPA 2
+* **WPA 2** was released in 2004 and includes the following protocols:
+	* CCMP provides encryption/MIC.
+	* 802.1X authentication (Enterprise mode) or PSK (Personal mode).
+### WPA 3
+* **WPA 3** was released in 2018 and includes the following protocols:
+	* GCMP provides encryption /MIC.
+	* 802.1X authentication (Enterprise mode) or PSK (personal mode).
+* WPA 3 also provides several additional security features:
+	* **PMF (Protected Management Frames)** is used to protect 802.11 management frames from eavesdropping/forging.
+		* Optional feature in WPA 2, but mandatory in WPA 3.
+	* **SAE (Simultaneous Authentication of Equals)** protects the four-way handshake when using personal mode authentication.
+	* **Forward secrecy** prevents data from being decrypted after it has been transmitted over the air. So, an attacker can't capture wireless frames and then try to decrypt them later.

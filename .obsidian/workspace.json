@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md",
+                "file": "CCNA/55 - Wireless Configuration.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 320.51103591918945
+    "width": 320.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md",
+                "file": "CCNA/55 - Wireless Configuration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md",
+                "file": "CCNA/55 - Wireless Configuration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md"
+                "file": "CCNA/55 - Wireless Configuration.md"
               }
             }
           },
@@ -159,12 +160,15 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/56 - Network Automation.md",
+    "CCNA/18 - EtherChannel.md",
+    "CCNA/55 - Wireless Configuration.md",
+    "CCNA/54 - Wireless Security.md",
     "CCNA/img4/PEAP.png",
     "CCNA/img4/EAP-FAST.png",
     "CCNA/53 - Wireless Architectures.md",
-    "CCNA/54 - Wireless Security.md",
     "CCNA/img4/802-1X.png",
     "CCNA/img4/message-integrity-check-process-MIC.png",
     "CCNA/52 - Wireless Fundamentals.md",
@@ -175,7 +179,6 @@
     "CCNA/img4/meraki-cloud-diagram.png",
     "CCNA/img4/cloud-based-AP-architecture.png",
     "CCNA/47 - LAN Architectures.md",
-    "CCNA/img4/lightweight-AP-vs-autonomous-ap-traffic-path.png",
     "Untitled 1.md",
     "Untitled.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
@@ -196,8 +199,6 @@
     "CCNA/40 - NAT Part 2.md",
     "Master Java/Concurrency/1. Concurrency And Multithreading Theory/1.  Java Concurrency And Multithreading.md",
     "Master Java/Concurrency/2. Basics Of Java Concurrency/7. Java Synchronized Blocks.md",
-    "Master Java/Concurrency/2. Basics Of Java Concurrency/6. Java Happens Before Guarantee.md",
-    "Master Java/Concurrency/2. Basics Of Java Concurrency/5. Java Memory Model.md",
     "CCNA/img3",
     "Recording 20240509144112.webm",
     "CCNA/img2",
