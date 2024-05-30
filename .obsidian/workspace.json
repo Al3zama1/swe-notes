@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/55 - Wireless Configuration.md",
+                "file": "CCNA/56 - Network Automation.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/55 - Wireless Configuration.md",
+                "file": "CCNA/56 - Network Automation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/55 - Wireless Configuration.md",
+                "file": "CCNA/56 - Network Automation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/55 - Wireless Configuration.md"
+                "file": "CCNA/56 - Network Automation.md"
               }
             }
           },
@@ -160,13 +160,13 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/55 - Wireless Configuration.md",
     "CCNA/img5/apply-WLC-ACL.png",
     "CCNA/img5/WLC-ACL-rules.png",
     "CCNA/img5/WLC-management-settings.png",
     "CCNA/53 - Wireless Architectures.md",
-    "CCNA/55 - Wireless Configuration.md",
     "CCNA/54 - Wireless Security.md",
     "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/47 - LAN Architectures.md",
@@ -179,7 +179,6 @@
     "CCNA/img5/WLC-dyanmic-interface-config.png",
     "CCNA/img5",
     "CCNA/56 - Network Automation.md",
-    "CCNA/img4/CLC-ports.png",
     "CCNA/18 - EtherChannel.md",
     "Untitled 1.md",
     "Untitled.md",
