@@ -125,10 +125,74 @@ SW1(config)#ntp master
 	* **Service port interface**: If the service port is used, this interface is bound to it and used for out-of-band management instead of the regular management interface.
 	* **Dynamic interface**: These interfaces are used to map a WLAN to a VLAN. For example, traffic from the 'internal' WLAN will be sent to the wired network from the WLC's 'internal' dynamic interface.
 ## WLAN Configuration
-### WLC Interface Configuration
+### Interface Configuration
 ![WLC dynamic interface configuration](./img5/WLC-dyanmic-interface-config.png)
-* Navigate to the controller view to view and create new interfaces.
-* Create a dynamic Interface per WLAN, which is mapped to a specific VLAN.
-	* One interface for the internal WLAN, which is mapped to VLAN 100.
+* Navigate to the controller tab to view and create new interfaces.
+* Create a dynamic Interface per VLAN. These interfaces will latter be mapped to their respective WLAN.
+	* An interface named 'Internal', which is mapped to VLAN 100.
+	* An interface named 'Guest', which is mapped to VLAN 200.
+* The information configured per interface is the IP address, netmask, gateway, and DHCP server address.
+### WLAN Configuration
+* Navigate to the WLAN tab to view the configured WLANs on the WLC and to create new ones.
 
-## Additional WLC Features
+#### Internal WLAN 
+* One WLAN named 'Internal' will already exist because it was configured during the WLC initial setup. However, some changes need to be made to it.
+![Map Internal WLAN to the correct Interface](./img5/Internal-WLAN-mapped-to-internal-interface.png)
+* By default, the Internal WLAN is mapped to the management interface. However, it has to be changed so that it is mapped to the Internal dynamic interface configured earlier.
+
+![Internal WLAN Layer 2 security configuration](./img5/Internal-WLAN-security-config.png)
+* The security policy is configured to use 802.1X authentication (enterprise mode), but for the CCNA we have to configure PSK authentication (personal mode).
+* In the Security tab > Layer 2 we can select things like WEP, 802.1X, different versions of WPA, etc.
+	* For the CCNA, we are supposed to use WPA2.
+	* The 'Authentication Key Management' needs to be set to PSK to use personal mode instead of enterprise. The format of the PSK can be set to ASCII to be able to enter the password using regular letters, numbers, etc.
+		* The PSI needs to be in the range  of 8 to 63 chars to make sure it is secure and not easy to crack.
+
+![Internal WLAN Layer 3 security config](./img5/Internal-WLAN-layer3-security.png)
+* Layer 3 security does not need to be configured. Just showcasing its purpose.
+* For the **Web Authentication** and **Web Passthrough** modes, the Layer 3 authentication can just be open. This is mode is common for public WiFi.
+
+![WLAN QoS Settings](./img5/WLAN-QoS-Settings.png)
+* There is also a AAA server tab, but since we are using PSK authentication only, there is no need to set up anything like a RADIUS server.
+* In the QoS tab, the thing to be aware of is the QoS setting, which allows you to control what quality of service is provided to the wireless clients.
+	* **Platinum** is for voice traffic (WiFi IP phones etc.).
+	* **Gold** is for video traffic.
+	* **Silver** is for best effort (default mode).
+	* **Bronze** is given the lowest priority, for what's called background traffic.
+#### Guest WLAN 
+![Guest WLAN initial parameters](./img5/Guest-WLAN-initial-parameters.png)
+* The guest WLAN is going to be created from scratch.
+* Since we are creating a new WLAN, we have to specify the profile name, SSID, and ID first.
+	* The profile name is used to identify the WLAN in the WLC. Usually, you will just make it the same as the SSID.
+		* The SSID and Profile Name do not have to match.
+	* The ID is a unique number that identifies the WLAN. The internal WLAn was 1, so this one will be set to 2.
+* The rest of the configuration will be the same as in the Internal WLAN.
+	* Just need to change the status of the WLAN to enabled.
+	* Mare sure the WLAN is associated with the Guest interface previously configured.
+	* Make sure the authentication mode is set to PSK (personal mode).
+### Connecting Clients
+![Clients associated with the APs](./img5/clients-associated-with-APs.png)
+* At this point, the SSIDs of the WLANs configured should appear when scanning for WiFi networks.
+* The 'Clients' tab on the left menu will provide a list of the clients that have connected to the configured WLANs.
+### APs Connected to the WLC
+* The WIRELESS tab will display the list of APs that have joined the WLC.
+	* Their IP addresses, model numbers, MAC addresses, etc can be seen.
+### Management Tab
+![WLC management settings](./img5/WLC-management-settings.png)
+* Displays a summary of the management setting
+* Telnet is disabled and should remain that way since it is not a secure protocol.
+* Management via Wireless is disabled, which means that a wireless client won't be able to connect to the WLC and manage it. Only a device connected to the wired network can manage the WLC.
+	* This setting can be changed in the 'Mgmt Via Wireless' tab on the left menu.
+
+### Security Tab
+* In the SECURITY tab, you can click on the 'Access Control List' tab on the left menu to limit the management traffic allowed to access WLC.
+
+![WLC ACL rules configuration](./img5/WLC-ACL-rules.png)
+* You will first need to assign the ACL a name and specify its type (IPv4 or IPv6) and create it.
+* After the ACL is created, rules need to be added to it to actually specify what traffic can access the WLC.
+
+![Apply ACL to the WLC](./img5/apply-WLC-ACL.png)
+* Go to 'CPU Access Control Lists' tab on the left menu to apply the ACL created.
+* The option 'Enable CPU ACL' must be checked.
+	* CPU ALCs are used to limit access to the CPU of the WLC. This limits which devices will be able to connect to the WLC via Telnet/SSH, HTTP/HTTPS, retrieve SNMP information from the WLC, etc.
+	* This doesn't affect traffic passing through the WLC, only traffic destined directly for the WLC.
+* Then select the the ACL you want to use from the list and click apply.

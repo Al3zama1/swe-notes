@@ -109,7 +109,7 @@
 #### Lightweight APs vs Autonomous APs Traffic Path
 ![Lightweight APs vs Autonomous APs traffic Path](./img4/lightweight-AP-vs-autonomous-ap-traffic-path.png)
 #### Lightweight AP Operational Modes
-* **Local**: this is the default mode where the AP offers a BSSD (more multiple BSSs) for clients to associate with.
+* **Local**: this is the default mode where the AP offers a BSS (or multiple BSSs) for clients to associate with.
 * **FlexConnect**: Like a lightweight AP in Local mode, it offers one or more BSSs for clients to associate with. However, FlexConnect allows the AP to locally switch traffic between the wired and wireless networks if the tunnels to the WLC go down.
 * **Sniffer**: The AP does not offer a BSS for clients. It is dedicated to capturing 802.11 frames and sending them to a device running software such as WireShark.
 * **Monitor**: The AP doe snot offer a BSS for clients. It is dedicated to receiving 802.11 frames to detect rogue devices. If a client is found to be a rogue device, an AP can send de-authentication messages to disassociate the rogue device from the AP.
@@ -132,7 +132,6 @@
 ## Wireless LAN Controller (WLC) Deployments
 * This applies to split-MAC architectures only, not autonomous AP or cloud-based AP architectures.
 * In a split-MAC architecture, there are four main WLC deployment models
-
 ### Unified WLC Deployment
 ![Unified WLC](./img4/unified-wlc.png)
 * The WLC is a hardware appliance in a central location of the network.
