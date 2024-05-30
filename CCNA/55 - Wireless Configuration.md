@@ -105,8 +105,30 @@ SW1(config)#ntp master
 * Now that the WLC's initial setup is complete, it has an IP address in the management VLAN (VLAN 10).
 * Instead of connecting a PC to the WLC's console port or accessing it remotely (Telnet, SSH), the PC is connected to the switch (f0/6 interface, which was previously configured).
 	* Once connected to the switch, HTTP or HTTPS can be used to access the WLC's GUI in a web browser.
-
-### WLC Ports/Interfaces
-* 
+### WLC Ports
+![WLC ports](./img4/CLC-ports.png)
+* WLC ports are the physical ports that cables connect to.
+* WLC has a few different kinds of ports:
+	* **Service ports**: A dedicated management port. Used for out-of-band management. Must connect to a switch access port because it only supports one VLAN. This port can be used to connect to the device while it is booting, perform system recovery, etc.
+		* A dedicated management port means keeping management traffic totally separate from regular data traffic, not using the same physical interface.
+	* **Distribution system port**: These are the standard network ports that connect to the 'distribution system' (wired network) and are used for data traffic.These ports usually connect to switch trunk ports, and if multiple distribution ports are used they can form a LAG.
+		* Distribution system is the 802.11 term for the wired network.
+	* **Console port**: This is a standard console port, either RJ45, USB, or both.
+	* **Redundancy port**: This port is used to connect to another WLC to form a high availability (HA) pair.
+		* If one WLC fails, the other one can continue to support the network.
+### WLC Interfaces
+* WLC interfaces are the logical interfaces within the WLC (ie. SVIs on a switch).
+* WLCs have a few different kinds of interfaces:
+	* **Management interface**: Used for management traffic such as Telnet, SSH, HTTP, HTTPS, RADIUS authentication, NTP, Syslog, etc. CAPWAP tunnels are also formed to/from the WLC's management interfaces.
+	* **Redundancy management interface**: When two WLCs are connected by their redundancy ports, one WLC is 'active' and the other is 'standby'. This interface can be used to connect to and manage the 'standby' WLC.
+	* **Virtual Interface**: This interface is used when communicating with wireless clients to relay DHCP requests, perform client web authentication etc.
+	* **Service port interface**: If the service port is used, this interface is bound to it and used for out-of-band management instead of the regular management interface.
+	* **Dynamic interface**: These interfaces are used to map a WLAN to a VLAN. For example, traffic from the 'internal' WLAN will be sent to the wired network from the WLC's 'internal' dynamic interface.
 ## WLAN Configuration
+### WLC Interface Configuration
+![WLC dynamic interface configuration](./img5/WLC-dyanmic-interface-config.png)
+* Navigate to the controller view to view and create new interfaces.
+* Create a dynamic Interface per WLAN, which is mapped to a specific VLAN.
+	* One interface for the internal WLAN, which is mapped to VLAN 100.
+
 ## Additional WLC Features
