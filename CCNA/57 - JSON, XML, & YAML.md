@@ -8,15 +8,15 @@
 	* REST APIs often use JSON.
 * *Whitespace* is insignificant.
 * JSON can represent four primitive types:
-	* string
-		* A text value surrounded by double quotes.
-	* number
-		* A numeric value. It is not surrounded by quotes.
-	* boolean 
-		* true/false
-	* null
-		* Represents the intentional absence of nay object value.
+	* string: A text value surrounded by double quotes.
+	* number: A numeric value. It is not surrounded by quotes.
+	* boolean: true/false
+	* null: Represents the intentional absence of nay object value.
 * JSON also has two data structures:
-	* object
-		* An unordered list of key-value pairs (variables).
+	* object: An unordered list of key-value pairs (variables).
+		* Objects are surrounded by curly brackets {}.
+		* They key is a string.
+		* The value is any valid JSON data type (string, number, boolean, null, object, array).
+		* They key and value are separated by colon : .
+		* If there are multiple key-value pairs, each pair is separated by a comma.
 	* array
