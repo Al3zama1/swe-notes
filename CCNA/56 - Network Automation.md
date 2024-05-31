@@ -57,9 +57,59 @@
 	* The ASIC feeds the destination MAC address of the frame into the TCAM, which returns the matching MAC address table entry.
 	* The frame is then forwarded out of the appropriate interface.
 * Modern routers also use a similar hardware data plane: an ASIC designed for forwarding logic, and tables stored in TCAm.
+
 * In summary:
 	* When a device receives control/management traffic (destined for itself), it will be processed in the CPU.
 	* When a device receives data traffic which should pass through the device, it is processed by the ASIC for maximum speed.
 ## Software-Defined Networking (SDN)
-## APIs
-## Data Serialization
+* **Software-Defined Networking (SDN)** is an approach to networking that centralizes the control plane into an application called a controller.
+* SND is also called **Software-Defined Architecture (SDA)** or **Controller-Based Networking**.
+* In traditional networking, the data plane and control plane are both distributed. Each device has its own data plane and its own control plane. The planes are distributed throughout the network.
+* A SDN controller centralizes control plane functions like calculating routes.
+	* This is just an example, and how much the control plane is centralized varies greatly.
+* The controller can interact programmatically with the network devices using APIs.
+
+![Software-Defined networking architecture](SDN-SBI.png)
+* The communication between the devices and the controller is done via what's called the southbound interface (SBI).
+* Even though this diagram shows a totally centralized control plane, in reality there are many different solutions.
+	* Some solutions centralize the entire control plane, and some of them only centralize some functions of the control plane.
+### Southbound Interfaces (SBI)
+* The SBI is used to communicate between the controller and the network device it controls.
+	* It's called southbound because in diagrams we usually draw the controller on top and the network devices on the bottom (the south).
+* The SBI is not a physical interface, it's a software interface that allows the controller and network devices to communicate.
+* It typically consists of a communication protocol and API.
+* APIs facilitate data exchanges between programs.
+	* Data is exchanged between the controller and the network devices.
+	* An API on the network devices allows the controller to access information on the devices, control their data plane tables, etc.
+* Some examples of SBIs:
+	* OpneFlow
+	* Cisco OpenFlex
+	* Cisco onePK (Open Network Environment Platform Kit)
+	* NETCONF
+### Northbound Interface (NBI)
+![NBI diagram](SDN-NBI.png)
+* Using the SBI, the controller communicates with the managed devices and gathers information about them:
+	* The devices in the network
+	* The topology (how the devices are connected together)
+	* The available interfaces on each device
+	* Their configurations
+* The **Northbound Interface (NBI)** is what allows us to interact with the controller, access the data it gathers about the network, program it, and make changes in the network via the SBI.
+	* It's called northbound because in diagrams we usually draw the controller in the middle and the 'App' on top (the north).
+* The NBI is not a physical interface, it's a software interface that allows the controller and apps to communicate.
+* A REST API is used on the controller as an interface for apps to interact with it.
+	* REST = Representational State Transfer.
+* Data is sent in a structured (serialized) format such as JSON, XML.
+	* It makes it much easier for programs to use the data because it's stored in a standard format that is easy to interact with.
+## Automation in Traditional Networks vs SDN
+* Networking tasks can be automated in traditional networks:
+	* Scripts can be written (ie. using python) to push commands to many devices at once.
+	* Python with good use of Regular Expressions can parse through `show` commands to gather information about the network devices.
+* However, the robust and centralized data collected by SDN controllers greatly facilitates these functions.
+	* The controller collects information about all devices in the network.
+	* Northbound APIs allow apps to access information in a format that is easy for programs to understand (ie. JSON, XML).
+		* No need to write scripts to parse though specific `show` commands to get the information you want.
+	* The centralized data facilitates network-wide analytics.
+* SDN tools provide the benefits of automation without the requirement of third-party scripts & apps. 
+	* You don't need experience in automation to make use SDN tools.
+	* However, APIs allow third-party applications to interact with the controller, which can be very powerful if you're able to create your own app.s
+* Although SDN and automation aren't the same thing, the SDN architecture greatly facilitates the automation of various tasks in the network via the SDN controller and APIs.

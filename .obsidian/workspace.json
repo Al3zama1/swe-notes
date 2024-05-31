@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/56 - Network Automation.md",
+                "file": "CCNA/57 - JSON, XML, & YAML.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/56 - Network Automation.md",
+                "file": "CCNA/57 - JSON, XML, & YAML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/56 - Network Automation.md",
+                "file": "CCNA/57 - JSON, XML, & YAML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/56 - Network Automation.md"
+                "file": "CCNA/57 - JSON, XML, & YAML.md"
               }
             }
           },
@@ -162,6 +162,10 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/56 - Network Automation.md",
+    "CCNA/57 - JSON, XML, & YAML.md",
+    "CCNA/img5/SDN-NBI.png",
+    "CCNA/img5/SDN-SBI.png",
     "CCNA/55 - Wireless Configuration.md",
     "CCNA/img5/apply-WLC-ACL.png",
     "CCNA/img5/WLC-ACL-rules.png",
@@ -175,10 +179,7 @@
     "CCNA/img5/WLAN-QoS-Settings.png",
     "CCNA/img5/Internal-WLAN-layer3-security.png",
     "CCNA/img5/Internal-WLAN-security-config.png",
-    "CCNA/img5/Internal-WLAN-mapped-to-internal-interface.png",
-    "CCNA/img5/WLC-dyanmic-interface-config.png",
     "CCNA/img5",
-    "CCNA/56 - Network Automation.md",
     "CCNA/18 - EtherChannel.md",
     "Untitled 1.md",
     "Untitled.md",
