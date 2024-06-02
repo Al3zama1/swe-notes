@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/59 - Software-Defined Networking.md",
+                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/59 - Software-Defined Networking.md",
+                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/59 - Software-Defined Networking.md",
+                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/59 - Software-Defined Networking.md"
+                "file": "CCNA/60 - Ansible, Puppet, & Chef.md"
               }
             }
           },
@@ -160,8 +160,10 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/59 - Software-Defined Networking.md",
+    "CCNA/56 - Network Automation.md",
     "CCNA/img5/sd-access-underlay.png",
     "CCNA/img5/traditional-LAN.png",
     "CCNA/img5/traditional-LAN.png",
@@ -170,15 +172,12 @@
     "CCNA/img5/underlay.png",
     "CCNA/img5/SD-Access-architecture.png",
     "CCNA/img5/sdn-architecture.png",
-    "CCNA/59 - Software-Defined Networking.md",
     "CCNA/60 - Ansible, Puppet, & Chef.md",
     "CCNA/58 - REST APIs.md",
-    "CCNA/56 - Network Automation.md",
     "CCNA/57 - JSON, XML, & YAML.md",
     "CCNA/img5/SDN-NBI.png",
     "CCNA/img5/SDN-SBI.png",
     "CCNA/55 - Wireless Configuration.md",
-    "CCNA/img5/apply-WLC-ACL.png",
     "CCNA/53 - Wireless Architectures.md",
     "CCNA/54 - Wireless Security.md",
     "CCNA/52 - Wireless Fundamentals.md",

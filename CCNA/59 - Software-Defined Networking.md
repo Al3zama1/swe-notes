@@ -66,3 +66,16 @@
 	* The intent of entries is forgotten with time and as engineers leave and new engineers take over.
 	* Configuring and applying the ACLs correctly across a network is cumbersome and leaves room for error.
 * DNA Center allows the engineer to specify the intent of the policy (this group of users can't communicate with this group, this group can access this server but not that server, etc.) and DNA Center will take care of the exact details of implementing the policy.
+## DNA Center VS Traditional Management
+* Traditional network management:
+	* Devices are configured one-by-one via SSH or console connection.
+	* Devices are manually configured via console connections before being deployed.
+	* Configurations and policies are managed per-device (distributed).
+	* New network deployments can take a long time due to the manual labor required.
+	* Errors and failures are more likely due to increased manual effort.
+* DNA Center-based management:
+	* Devices are centrally managed and monitored from the DNA Center GUI or other applications using its REST API.
+	* The administrator communicates their intended network behavior to DNA Center, which changes those intentions into configurations on the managed network devices.
+	* Configurations and policies are centrally managed.
+	* Software versions are also centrally managed. DNA Center can monitor cloud servers for new versions and then update the managed devices.
+	* New network deployments are much quicker. New devices can automatically receive their configurations from DNA Center without manual configuration.
