@@ -4,3 +4,20 @@
 * In SDN architecture, APIs are used to communicate between apps and the SDN controller (via the NBI), and between the SDN controller and the network device (via the SBI).
 * The NBI typically uses REST APIs.
 * NETCONF and RESTCONFT are popular southbound APIs.
+## REST
+* REST stands for Representational State Transfer.
+* REST APIs are also know as REST-based APIs or RESTful APIS.
+	* REST isn't a specific API. Instead, it describes a set of rules about how the API should work.
+* The six constraints of RESTful architecture are:
+	* Uniform interface.
+	* Client-server.
+	* Stateless.
+	* Cacheable or non-cacheable.
+	* Layered system.
+	* Code-on-demand(optional).
+## Cisco DevNet
+* Cisco DevNet is Cisco's developer program to help developers and IT professionals who want to write applications and develop integrations with Cisco products, platforms, and APIs.
+* DevNet offers lots of free resources such as courses, tutorials, labs, sandboxes, documentation, etc. to learn about automation and develop your skills.
+* There is also a DevNet certification track that you can pursue if you're interested in automation.
+* We will use their Cisco **DNA Center** Sandbox to send a REST API call using Postman.
+	* DNA Center is one of Cisco's SDN controllers.
