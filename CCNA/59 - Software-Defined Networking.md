@@ -23,7 +23,7 @@
 ## SD-Access Underlay
 * The underlay's purpose is to support the VXLAN tunnels of the overlay.
 * There are three different roles of switches in the SD-Access:
-	* **Edge nodes**: Connect to tend hosts.
+	* **Edge nodes**: Connect to end hosts.
 	* **Border nodes**: Connect to devices outside of the SD-Access domain, ie. WAN routers.
 	* **Control nodes**: Uses LISP (Locator ID Separation Protocol) to perform various control plane functions.
 * You can add SD-Access on top of an existing network (brownfield deployment) if your network hardware and software supports it.
@@ -34,3 +34,35 @@
 	* All switches are Layer 3 and use IS-IS as their routing protocol.
 	* All links between switches are routed ports. This means STP is not needed.
 	* Edge nodes (access switches) act as the default gateway of end hosts (routed access layer).
+
+![Traditional LAN](./img5/traditional-LAN.png)
+* STP is used to avoid Layer 2 loops and an FHRP is used by the distribution layer switches to provide a redundant default gateway for the end hosts.
+
+![SD-access underlay](./img5/sd-access-underlay.png)
+* In an SD-access underlay, all connections between switches are Layer 3 and IS-IS is used to exchange routing information.
+* The access Layer switches are the default gateways of the end hosts.
+	* A routed access layer is created.
+	* STP and a FHRP are no longer needed.
+## SD-Access Overlay
+* LISP provides the control plane of SD-Access.
+	* A list of mappings of EIDs (endpoint identifiers) to RLOCs (routing locators) is kept.
+	* EIDs identify end hosts connected to edge switches, and RLOCs identify the edge switch which can be used to reach the end hosts.
+	* There is a LOT more detail to cover about LISP, but I think you can see how it differs from the traditional control plane.
+		* Instead of a routing table to locate destination hosts, a DNS-like system of mappings is used.
+* Cisco TrustSec (CTS) provides policy control (QoS, security policy, etc).
+* VXLAN provides the data plane of SD-Access.
+## Cisco DNA Center
+* Cisco DNA Center has two main roles:
+	* The SDN controller is SD-Access.
+	* A network manager in a traditional network (non-SD-Access)
+		* Although it doesn't provide SD-Access functions, it still acts as a central point to monitor, analyze, and configure the network.
+* DNA Center is an application installed on Cisco UCS server hardware.
+* It has a REST API which can be used to interact with DNA center.
+* The SBI supports protocols such as NETCONF and RESTCONF (as well as traditional protocols like Telnet, SSH, SNMP).
+* DNA Center enables Intent-Based Networking (IBN).
+	* The goal is to allow the engineer to communicate their intent for network behavior to DNA Center, and then DNA Center will take care of the details of the actual configurations and policies on devices.
+* Traditional security policies using ACLs can become very cumbersome.
+	* ACLs can have thousands of entries.
+	* The intent of entries is forgotten with time and as engineers leave and new engineers take over.
+	* Configuring and applying the ACLs correctly across a network is cumbersome and leaves room for error.
+* DNA Center allows the engineer to specify the intent of the policy (this group of users can't communicate with this group, this group can access this server but not that server, etc.) and DNA Center will take care of the exact details of implementing the policy.
