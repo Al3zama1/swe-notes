@@ -26,8 +26,11 @@
 	* **Edge nodes**: Connect to tend hosts.
 	* **Border nodes**: Connect to devices outside of the SD-Access domain, ie. WAN routers.
 	* **Control nodes**: Uses LISP (Locator ID Separation Protocol) to perform various control plane functions.
-* You can add AD-Access on top of an existing network (brownfield deployment) if your network hardware and software supports it.
+* You can add SD-Access on top of an existing network (brownfield deployment) if your network hardware and software supports it.
 	* Google 'Cisco SD-Access compatibility matrix' if you'r curious.
-	* In this case DNA Center won't configure the underlay.
+	* In this case DNA Center won't configure the underlay because this could be a major risk to the current working production network.
+		* Ideally you will be using a greenfield deployment, which is a totally new network built for the purpose of SD-Access.
 * A new deployment  (greenfield deployment) will be configured by DNA Center to use the optimal SD-Access underlay:
-	* 
+	* All switches are Layer 3 and use IS-IS as their routing protocol.
+	* All links between switches are routed ports. This means STP is not needed.
+	* Edge nodes (access switches) act as the default gateway of end hosts (routed access layer).
