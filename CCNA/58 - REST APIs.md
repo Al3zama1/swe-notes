@@ -11,8 +11,11 @@
 * The six constraints of RESTful architecture are:
 	* Uniform interface.
 	* Client-server.
+		* The separation between the client and server means they can both change and evolve independently of each other.
+		* When the client application changes or the server application changes, the interface between them must not break.
 	* Stateless.
 	* Cacheable or non-cacheable.
+		* Not all resources have to be cacheable, but cacheable resources MUST be declared as cacheable.
 	* Layered system.
 	* Code-on-demand(optional).
 ## Cisco DevNet
