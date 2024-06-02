@@ -159,8 +159,12 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "1676794986be6092",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
+    "CCNA/img5/fabric.png",
+    "CCNA/img5/overlay.png",
+    "CCNA/img5/underlay.png",
+    "CCNA/img5/SD-Access-architecture.png",
     "CCNA/img5/sdn-architecture.png",
     "CCNA/59 - Software-Defined Networking.md",
     "CCNA/60 - Ansible, Puppet, & Chef.md",
@@ -178,9 +182,6 @@
     "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/47 - LAN Architectures.md",
     "CCNA/img5/clients-associated-with-APs.png",
-    "CCNA/img5/Guest-WLAN-initial-parameters.png",
-    "CCNA/img5/WLAN-QoS-Settings.png",
-    "CCNA/img5/Internal-WLAN-layer3-security.png",
     "CCNA/img5",
     "CCNA/18 - EtherChannel.md",
     "Untitled 1.md",
