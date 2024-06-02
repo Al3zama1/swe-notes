@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/58 - REST APIs.md",
+                "file": "CCNA/59 - Software-Defined Networking.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 320.51103591918945,
-    "collapsed": true
+    "width": 320.51103591918945
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/58 - REST APIs.md",
+                "file": "CCNA/59 - Software-Defined Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/58 - REST APIs.md",
+                "file": "CCNA/59 - Software-Defined Networking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/58 - REST APIs.md"
+                "file": "CCNA/59 - Software-Defined Networking.md"
               }
             }
           },
@@ -162,8 +161,11 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
-    "CCNA/56 - Network Automation.md",
+    "CCNA/img5/sdn-architecture.png",
+    "CCNA/59 - Software-Defined Networking.md",
+    "CCNA/60 - Ansible, Puppet, & Chef.md",
     "CCNA/58 - REST APIs.md",
+    "CCNA/56 - Network Automation.md",
     "CCNA/57 - JSON, XML, & YAML.md",
     "CCNA/img5/SDN-NBI.png",
     "CCNA/img5/SDN-SBI.png",
@@ -179,7 +181,6 @@
     "CCNA/img5/Guest-WLAN-initial-parameters.png",
     "CCNA/img5/WLAN-QoS-Settings.png",
     "CCNA/img5/Internal-WLAN-layer3-security.png",
-    "CCNA/img5/Internal-WLAN-security-config.png",
     "CCNA/img5",
     "CCNA/18 - EtherChannel.md",
     "Untitled 1.md",
@@ -197,9 +198,6 @@
     "CCNA/44 - Port Security.md",
     "CCNA/43 - Security Fundamentals.md",
     "CCNA/34 - DHCP.md",
-    "CCNA/41 - QoS.md",
-    "CCNA/42 - QoS Part 2.md",
-    "CCNA/40 - NAT Part 2.md",
     "CCNA/img3",
     "Recording 20240509144112.webm",
     "CCNA/img2",
