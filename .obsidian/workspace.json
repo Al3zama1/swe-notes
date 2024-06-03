@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
+                "file": "CCNA/1 - Network Devices.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
+                "file": "CCNA/1 - Network Devices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
+                "file": "CCNA/1 - Network Devices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/60 - Ansible, Puppet, & Chef.md"
+                "file": "CCNA/1 - Network Devices.md"
               }
             }
           },
@@ -160,8 +160,9 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/60 - Ansible, Puppet, & Chef.md",
     "CCNA/img5/config-management-tools-comparison.png",
     "CCNA/img5/chef.png",
     "CCNA/img5/puppet.png",
@@ -174,8 +175,6 @@
     "CCNA/img5/traditional-LAN.png",
     "CCNA/img5/fabric.png",
     "CCNA/img5/overlay.png",
-    "CCNA/img5/underlay.png",
-    "CCNA/60 - Ansible, Puppet, & Chef.md",
     "CCNA/58 - REST APIs.md",
     "CCNA/57 - JSON, XML, & YAML.md",
     "CCNA/55 - Wireless Configuration.md",
