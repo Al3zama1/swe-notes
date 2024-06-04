@@ -1,16 +1,13 @@
 ## RJ-45 (RJ = Registered Jack)
 The RJ-45 connector is used at the end of a copper ethernet cable.
-
 ## Network Speed
 Speed is measured in bits per second (Kbps, Mbps, Gbps, etc), not bytes per second. Data reaches destination device one bit at a time.
 * 1 kilobit (Kb) = 1 thousand bits
 * 1 megabit (Mb) = 1 million bits
 * 1 gigabit (Gb) = 1 billion bits
 * 1 terabit (Tb) = 1 trillion bits
-
 ## Ethernet
 Ethernet is a collection of network protocols/standards. Network protocols specify a common language for multiple devices to communicate with each other.
-
 #### Ethernet Standards
 * Ethernet standards are defined in the IEEE 802.3 standard in 1983.
 * IEEE = Institute of Electrical and Electronics Engineers.
@@ -26,7 +23,6 @@ UTP stands for unshielded twisted pair. This type of cable is vulnerable to elec
 
 ![rj-45 cables](./img/rj-45-wires.png)
 
-
 #### Full Duplex Connection
 Full-Duplex allows devices to send and receive data at the same time without problems like collisions. This is due to the fact that they use separate cables to transmit and receive data.
 ![](./img/rj-45-two-pairs.png)
@@ -34,7 +30,6 @@ Full-Duplex allows devices to send and receive data at the same time without pro
 #### Straight-through Connection
 Straight-through cable connect to the same pins on both ends of the connection between two devices. This type of cable is used for communication between two devices that transmit and receive data on different pins.
 ![rj-45 straight through cable](./img/rj-45-straight-through-cable.png)
-
 
 #### Crossover Cable Connection 
 Crossover cable is used for communication between two devices that send and receive data on the same pins.
@@ -49,7 +44,6 @@ Crossover cable is used for communication between two devices that send and rece
 
 ## Auto MDI-X
 Most modern networking devices have evolved beyond having to worry about straight-through and crossover cables. Auto MDI-X allows networking devices to automatically pick which pins will be used for transmitting and receiving data based on the pins being used by the neighbor connected device.
-
 
 ## Fiber-Optic Connections
 #### Structure of Fiber Cable
