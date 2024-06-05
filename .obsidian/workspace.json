@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/2 - Interfaces and Cables.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/2 - Interfaces and Cables.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/2 - Interfaces and Cables.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/2 - Interfaces and Cables.md"
+                "file": "CCNA/5 - Ethernet LAN Switching.md"
               }
             }
           },
@@ -161,6 +161,9 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/4 - CLI Introduction.md",
+    "CCNA/3 - OSI Model & TCP-IP.md",
+    "CCNA/2 - Interfaces and Cables.md",
     "CCNA/1 - Network Devices.md",
     "CCNA/60 - Ansible, Puppet, & Chef.md",
     "CCNA/img5/config-management-tools-comparison.png",
@@ -192,13 +195,10 @@
     "CCNA/48 - WAN Architecture.md",
     "Untitled 3.md",
     "Untitled 2.md",
-    "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/img4",
     "CCNA/45 - DHCP Snooping.md",
     "CCNA/44 - Port Security.md",
-    "CCNA/43 - Security Fundamentals.md",
-    "CCNA/34 - DHCP.md",
     "CCNA/img3",
     "Recording 20240509144112.webm",
     "CCNA/img2",

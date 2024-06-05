@@ -78,7 +78,7 @@ When looking to initiate communication with another host, we often only know the
 ## Switch MAC Address Table Commands
 #### Display MAC Address From Switch
 `SW1#show mac address-table` 
-* Indicates the Vlan.
+* Indicates the VLAN.
 * Indicates the MAC Address.
 * Indicates the Type.
 * Indicates the Ports/Interfaces associated with the given MAC address.
