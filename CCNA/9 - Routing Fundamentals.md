@@ -42,7 +42,7 @@ L      192.168.1.1/32 is directly connected, GigabitEthernet0/2
 * The route to 192.168.1.1/32 includes only 1 IP address (192.168.1.1)
 * **Most specific** matching route is the **matching route** with the **longest prefix length**.
 	* When R1 receives a packet destined for 192.168.1.1, it will select the route to 192.168.1.1/32 (local route). It will keep the packet for itself, rather than forward it out of G0/2 (its connected route).
-	* This is different than switches, which look for an exact match int he MAC address table to forward frames.
+	* This is different than switches, which look for an exact match in he MAC address table to forward frames.
 
 #### What Does The Following Mean ?
 `192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks`
