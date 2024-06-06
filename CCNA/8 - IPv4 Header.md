@@ -23,9 +23,9 @@ The header is read left to right, top to bottom. Top left being the first bit an
 	* Measured in bytes.
 	* Minimum value of 20 bytes (IPv4 header with no encapsulated data).
 	* Maximum value of 65,535 bytes (maximum 16-bit value).
-* **Identification**: If a packet is fragmented due to being too large, this field is used to identify which packet the frame belongs to.
+* **Identification**: If a packet is fragmented due to being too large, this field is used to identify which packet the fragment belongs to.
 	* Length of 16 bits.
-	* All frames of the same packet will have their own IPv4 header with the same value in this field.
+	* All fragments of the same packet will have their own IPv4 header with the same value in this field.
 	* Packets are fragmented if larger than the MTU (Maximum Transmission Unit), which is 1500 bytes.
 	* Fragments are reassembled by the receiving host.
 * **Flags**: Used to control and identify fragments.

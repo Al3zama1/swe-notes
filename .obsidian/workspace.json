@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/5 - Ethernet LAN Switching.md",
+                "file": "CCNA/9 - Routing Fundamentals.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/5 - Ethernet LAN Switching.md",
+                "file": "CCNA/9 - Routing Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/5 - Ethernet LAN Switching.md",
+                "file": "CCNA/9 - Routing Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/5 - Ethernet LAN Switching.md"
+                "file": "CCNA/9 - Routing Fundamentals.md"
               }
             }
           },
@@ -161,6 +161,10 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/8 - IPv4 Header.md",
+    "CCNA/7 - Switch Interfaces.md",
+    "CCNA/6 - IPv4 Addressing.md",
+    "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/4 - CLI Introduction.md",
     "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/2 - Interfaces and Cables.md",
@@ -194,11 +198,7 @@
     "CCNA/49 - Virtualization & Cloud.md",
     "CCNA/48 - WAN Architecture.md",
     "Untitled 3.md",
-    "Untitled 2.md",
-    "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/img4",
-    "CCNA/45 - DHCP Snooping.md",
-    "CCNA/44 - Port Security.md",
     "CCNA/img3",
     "Recording 20240509144112.webm",
     "CCNA/img2",
