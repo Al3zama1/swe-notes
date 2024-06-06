@@ -45,7 +45,7 @@ How many usable addresses are there in each network?
 	* Subnet mask = 255.255.255.224
 * 203.0.113.0/28
 	* 4 host bits = 14 total addresses.
-	* (2^4) - 2 = 14 usable addresses..
+	* (2^4) - 2 = 14 usable addresses.
 	* 4 borrowed host bit makes 16 subnets possible.
 	* Subnet mask = 255.255.255.240
 * 203.0.113.0/29
