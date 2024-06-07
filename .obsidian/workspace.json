@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/12 - Subnetting.md",
+                "file": "CCNA/14 - VLANs Part Two.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/12 - Subnetting.md",
+                "file": "CCNA/14 - VLANs Part Two.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/12 - Subnetting.md",
+                "file": "CCNA/14 - VLANs Part Two.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/12 - Subnetting.md"
+                "file": "CCNA/14 - VLANs Part Two.md"
               }
             }
           },
@@ -161,6 +161,8 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+    "CCNA/12 - Subnetting.md",
     "CCNA/11 - Life of a Packet.md",
     "CCNA/10 - Static Routing.md",
     "CCNA/9 - Routing Fundamentals.md",
@@ -196,8 +198,6 @@
     "CCNA/18 - EtherChannel.md",
     "Untitled 1.md",
     "Untitled.md",
-    "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
-    "CCNA/50 - Virtualization - Containers.md",
     "CCNA/img4",
     "CCNA/img3",
     "Recording 20240509144112.webm",
