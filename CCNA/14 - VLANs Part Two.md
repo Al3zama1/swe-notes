@@ -37,7 +37,7 @@ R1(config)#ip address 192.168.1.194 255.255.255.252
 
 
 SW2(config)#default interface g0/1 // reset interface config
-SW2(config)#ip routing
+SW2(config)#ip routing // allow the switch to build a routing table
 SW2(config)#interface g0/1
 SW2(config-if)#no switchport
 SW2(config-if)#ip address 192.168.1.193 255.255.255.252
@@ -45,7 +45,7 @@ SW2(config-if)#exit
 SW2(config)#ip route 0.0.0.0 0.0.0.0 192.168.1.194
 
 ```
-* `ip routing` enables Layer 3 routing on the switch
+* `ip routing` enables Layer 3 routing on the switch and allows the creation of a routing table.
 * `no switchport`
 	* Configures the interface as a Layer 3 port, not a Layer 2 switchport.
 #### Switch Virtual Interface Configuration
