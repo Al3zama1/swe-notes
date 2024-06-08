@@ -54,7 +54,7 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 * SW1 is selected as the root bridge since all switches have the same bridge priority and it has the lowest MAC address.
 
 ### Step 2
-* Each remaining switches will select one of its interfaces to be its **root port** (forwarding state). Ports across from 89the root port are always designated ports because the root port is the switch's path to the root bridge and other switches must not block it.
+* Each remaining switches will select one of its interfaces to be its **root port** (forwarding state). Ports across from the root port are always designated ports because the root port is the switch's path to the root bridge and other switches must not block it.
 * Root Port Selection:
 	1. Lowest Root cost
 		* **Root cost** is the total cost of the outgoing interfaces along the path to the root bridge. The cost of the receiving interface is not counted.
