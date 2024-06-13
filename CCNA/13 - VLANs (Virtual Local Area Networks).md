@@ -26,7 +26,7 @@ The 3 departments have been separated into 3 different subnets to provide Layer 
 The switch interfaces are configures to be in a specific VLAN to provide Layer 2 separation.
 ![layer 2 segmentation](./img/vlan-layer2-segmenting.png)
 * The end hosts belong to the VLAN configured on the Switch interface that they are connected to.
-* A switch will not forward traffic between VLANs, including **broadcast/unknown unicast*** traffic.
+* A switch will not forward traffic between VLANs, including **broadcast/unknown unicast** traffic.
 * The switch does not perform **inter-VALN Routing**. It must send the traffic through the router to change VLAN.
 * **NOTE**: Same subnet communication between two hosts is not possible if they are connected to interfaces that are configured with different VLANs.
 #### VLAN Configuration
