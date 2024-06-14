@@ -61,7 +61,7 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 	1. Lowest neighbor bridge ID.
 		*  When a switch has multiple interfaces with the same root cost, the interface connected to the neighbor switch with the lowest Bridge ID will be selected as the root port.
 	1. Lowest neighbor port ID.
-		* What if two switches have two connections between them and the root cost and Bridge ID are the same ? The interface connected to the interface on the neighbor switch with the lowest **STP Port ID** will become the root port. The neighbor switch's port ID is used to break the tie, no the local switch's ID.
+		* What if two switches have two connections between them and the root cost and Bridge ID are the same ? The interface connected to the interface on the neighbor switch with the lowest **STP Port ID** will become the root port. The neighbor switch's port ID is used to break the tie, not the local switch's ID.
 #### Switch Interfaces STP Cost
 ![switch interface root cost](./img/stp-root-cost.png)
 #### Root Bridge & Root Port Selection
