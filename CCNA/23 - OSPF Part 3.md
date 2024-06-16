@@ -130,7 +130,7 @@ Why would you change the OSPF network type? For example, if two routers are dire
 * The OSPF Network Type must match.
 	* Even if this setting doesn't match, routers can become neighbors. However, OSPF won't operate properly and they won't learn OSPF routes.
 ## OSPF LSA Types
-* The OSPF LSDB is make up of LSAs.
+* The OSPF LSDB is made up of LSAs.
 	* All routers in the same OSPF area share the same LSDB.
 * There are 11 types of LSA, but there are only 3 you should be aware of for the CCNS:
 	* Type 1 (Router LSA)
