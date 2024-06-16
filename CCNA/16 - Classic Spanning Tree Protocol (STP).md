@@ -98,7 +98,7 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 	* When switches are used, each link is a separate collision domain. They are shown in the picture with the colored rectangles.
 ## Commands
 ### Display spanning Tree Information
-`SW1(confgi)#show-spanning-tree`
+`SW1(confgi)#show spanning-tree`
 ![show spanning-tree command](./img/show-spanning-tree.png)
 * "Spanning tree enabled protocol ieee": means that Cisco's version of classic STP is being used (PVST).
 * All the way at the bottom in the interfaces, the Cost field refers to the outgoing interface cost and not the total root cost.
@@ -112,10 +112,10 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 	* Bridge ID:
 		* Displays information about the switch in which the information is being shown such as its Priority and MAC address.
 
-`SW1(confgi)#show-spanning-tree detail`
+`SW1(confgi)#show spanning-tree detail`
 * show similar information to `show spanning-tree`, but with more detail.
 
-`SW1(confgi)#show-spanning-tree summary`
+`SW1(confgi)#show spanning-tree summary`
 * Lists each VLAN, and shows how many interfaces are in each STP state.
 	* Blocking
 	* Listenning
