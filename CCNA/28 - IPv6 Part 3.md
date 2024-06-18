@@ -1,15 +1,3 @@
-## Correction (IPv6 Address Representation)
-* RFC 5952 is '**A Recommendation for IPv6 Address Text Representation**'.
-* Before this RFC, IPv6 address representation was more flexible.
-	* You could remove leaning 0s, or leave them.
-	* You could replace all-0 quartets with ::, or leave them.
-	* You could use upper-case 0xA, B, C, D, E, F or lower-case 0xa, b, c, d, e, f.
-* RFC 5952 suggests standardizing IPv6 address representation.
-	* Leading 0s must be removed.
-	* `::` must be used to shorten the longest string of all-0 quartets. 
-		* Don't use `::` if there is only one all-0 quartet.
-		* If there are two equal-length choices for the `::`, use it to shorten the one on the left.
-	* Hexadecimal character a, b, c, d, e, and f must be written using lower-case.
 ## IPv6 Header
 ![IPv6 header](./img2/ipv6-header.png)
 * The IPv6 header has a fixed size of 40 bytes compared to the IPv4 header (20 - 60 bytes).
