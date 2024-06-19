@@ -61,7 +61,7 @@
 			* Sent to multicast address `ff02::1` (all nodes). All hosts on the local link (local network) receive this message.
 			* The router announces its presence, as well as other information about the link (local network).
 			* These messages are sent in response to RS messages.
-			* They are also sent periodically, even if the router hasn't received an RS.
+			* They are also sent periodically, even if the router hasn't received a RS.
 ### Neighbor Solicitation (NS)
 ![NDP neighbor solicitation message](./img2/neighbor-solicitation.png)
 ### Neighbor Advertisement (NA)

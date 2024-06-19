@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/26 - IPv6.md",
-                "mode": "preview",
+                "file": "CCNA/28 - IPv6 Part 3.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/26 - IPv6.md",
+                "file": "CCNA/28 - IPv6 Part 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/26 - IPv6.md",
+                "file": "CCNA/28 - IPv6 Part 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/26 - IPv6.md"
+                "file": "CCNA/28 - IPv6 Part 3.md"
               }
             }
           },
@@ -161,9 +161,13 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
-    "CCNA/28 - IPv6 Part 3.md",
-    "CCNA/26 - IPv6.md",
     "CCNA/27 - IPv6 Part 2.md",
+    "CCNA/28 - IPv6 Part 3.md",
+    "CCNA/36 - Syslog.md",
+    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
+    "CCNA/34 - DHCP.md",
+    "CCNA/33 - DNS (Domain Name System).md",
+    "CCNA/26 - IPv6.md",
     "CCNA/22 - OSPF Part 2.md",
     "CCNA/25 - TCP & UDP.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
@@ -183,10 +187,6 @@
     "CCNA/9 - Routing Fundamentals.md",
     "CCNA/8 - IPv4 Header.md",
     "CCNA/7 - Switch Interfaces.md",
-    "CCNA/6 - IPv4 Addressing.md",
-    "CCNA/5 - Ethernet LAN Switching.md",
-    "CCNA/4 - CLI Introduction.md",
-    "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/img5/config-management-tools-comparison.png",
     "CCNA/img5/chef.png",
     "CCNA/img5/puppet.png",
