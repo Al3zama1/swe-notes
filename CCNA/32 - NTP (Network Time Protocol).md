@@ -21,7 +21,7 @@ R2#calendar set hh:mm:ss {day|month} {month|day} year
 // sync calendar to the clock's time
 R2#clock update-calendar
 
-// sync clock the calendar's time
+// sync clock with the calendar's time
 R2#clock read-calendar
 ```
 * Typically you will want to synchronize the 'clock'  and 'calendar'.
