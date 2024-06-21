@@ -42,7 +42,7 @@ R2#clock read-calendar
 	* **Server mode**
 	* **Client mode**
 	* **Symmetric active mode**
-* NTP allows accuracy of time within ~1 millisecond if the nTP server is in the same LAN, or within ~50 milliseconds if connecting to the NTP server over a WAN/the internet.
+* NTP allows accuracy of time within ~1 millisecond if the NTP server is in the same LAN, or within ~50 milliseconds if connecting to the NTP server over a WAN/the internet.
 * Some NTP servers are better than others. The distance of an NTP server from the original **reference clock** is called **stratum**.
 	* The further away from the reference clock, the higher the stratum.
 	* If the stratum level of a server is high, it is considered less accurate.
@@ -83,7 +83,7 @@ R1#show ntp associations
 * Displays all the NTP servers configured on the device. They are under the 'address' field/column.
 * The 'ref clock' field indicates the reference clock of each NTP server.
 * * sys.peer: The NTP server the device is currently syncing to.
-* + candidate: Candidate NTP servers, but the device is not currently syncing it time to them.
+* + candidate: Candidate NTP servers, but the device is not currently syncing its time to them.
 * ~ configured: It means that the NTP server was configured.
 * NTP servers marked as an 'outlayer' or 'falseticker' will not be used by the device to sync its time to.
 
@@ -96,7 +96,7 @@ R1#show ntp status
 ```
 R1(config)#ntp update-calendar
 ```
-* Configure the router to update the hardware clock (calendar) with the time leaned via NTP.
+* Configure the router to update the hardware clock (calendar) with the time learned via NTP.
 * Why sync the hardware clock ? The hardware clock tracks the date and time on the device even if it restarts, power is lost, etc, When the system is restarted, the hardware clock is used to initialize the software clock.
 * NTP does not update the hardware calendar automatically. 
 
@@ -146,7 +146,7 @@ R2(config)#ntp peer 10.0.23.2
 
 R2(config)#ntp peer 10.0.23.1
 ```
-* They can become peers and help each other sync their time, and also act as backups in case the lose contact with R1.
+* They can become peers and help each other sync their time, and also act as backups in case they lose contact with R1.
 	* Devices do not need to have the same stratum level to become peers.
 ## Configuring NTP Authentication
 * NTP authentication can be configured, although it is optional.
