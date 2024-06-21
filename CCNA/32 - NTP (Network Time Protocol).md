@@ -137,8 +137,9 @@ R1(config)#ntp master [stratum-number]
 ```
 * The default stratum of the `ntp master` command is 8.
 * The source of the time will be set to a loopback IP address on the local device (127.0.0.0/8). Basically, R1 is using itself as its reference clock.
-	* Loopback interfaces are virtual interfaces in the router and their addresses can be advertised to other devices using OSPF etc.
-	* Loopback addresses are totally internal to the local device and can't be reached by other devices.
+	* Loopback interfaces and loopback addresses are totally different concepts:
+		* Loopback interfaces are virtual interfaces in the router and their addresses can be advertised to other devices using OSPF etc.
+		* Loopback addresses are totally internal to the local device and can't be reached by other devices.
 ### Configuring NTP Symmetric Active Mode
 Both R2 and R3 are syncing their time directly from R1, so they both have a stratum value of 9.  They are equals in terms of NTP.
 ```
