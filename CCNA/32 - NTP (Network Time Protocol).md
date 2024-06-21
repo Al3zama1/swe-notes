@@ -2,6 +2,7 @@
 * All devices have an internal clock (routers, switches, your PC, etc).
 * In Cisco IOS, you can view the time with the `show clock` command.
 * The default time zone is UTC (Coordinated Universal Time).
+	* NTP uses only the UTC time zone.
 * If you use the `show clock detail` command, you can view the time source of the device.
 	* The hardware calendar is the default time source. It is the internal built-in internal clock of the device.
 * The `*` before the device clock indicates that the time is not considered authoritative. The device is not confident that the time is accurate.
