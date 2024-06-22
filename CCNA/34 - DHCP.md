@@ -38,7 +38,7 @@ ipconfig /renew
 * However, large enterprises often choose to use a centralized DHCP server.
 * If the server is centralized, it won't receive the DHCP clients' broadcast DHCP messages (broadcast messages don't leave the local subnet).
 * To fix this, you can configure a router to act as a **DHCP relay agent**.
-* The router will then forward the client's broadcast DHCP messages to the remove DHCP server as unicast messages.
+* The router will then forward the client's broadcast DHCP messages to the remote DHCP server as unicast messages.
 ## Configuring DHCP in Cisco IOS
 
 ### Router DHCP Server Configuration

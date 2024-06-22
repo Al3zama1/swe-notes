@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/34 - DHCP.md",
                 "mode": "preview",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 320.51103591918945,
-    "collapsed": true
+    "width": 320.51103591918945
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/34 - DHCP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/34 - DHCP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md"
+                "file": "CCNA/34 - DHCP.md"
               }
             }
           },
