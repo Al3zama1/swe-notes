@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/34 - DHCP.md",
+                "file": "CCNA/36 - Syslog.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/34 - DHCP.md",
+                "file": "CCNA/36 - Syslog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/34 - DHCP.md",
+                "file": "CCNA/36 - Syslog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/34 - DHCP.md"
+                "file": "CCNA/36 - Syslog.md"
               }
             }
           },
@@ -161,6 +161,14 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/40 - NAT Part 2.md",
+    "CCNA/39 - NAT Part 1.md",
+    "CCNA/38 - FTP & TFTP.md",
+    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
+    "CCNA/36 - Syslog.md",
+    "CCNA/37 - Secure Shell (SSH).md",
+    "CCNA/25 - TCP & UDP.md",
+    "CCNA/34 - DHCP.md",
     "CCNA/33 - DNS (Domain Name System).md",
     "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/31 - CDP & LLDP.md",
@@ -169,12 +177,8 @@
     "CCNA/29 - Standard ACLs.md",
     "CCNA/28 - IPv6 Part 3.md",
     "CCNA/27 - IPv6 Part 2.md",
-    "CCNA/36 - Syslog.md",
-    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
-    "CCNA/34 - DHCP.md",
     "CCNA/26 - IPv6.md",
     "CCNA/22 - OSPF Part 2.md",
-    "CCNA/25 - TCP & UDP.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/23 - OSPF Part 3.md",
     "CCNA/21 - OSPF.md",
@@ -183,10 +187,6 @@
     "CCNA/18 - EtherChannel.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CCNA/15 - DTP & VTP.md",
-    "CCNA/14 - VLANs Part Two.md",
-    "CCNA/13 - VLANs (Virtual Local Area Networks).md",
-    "CCNA/12 - Subnetting.md",
-    "CCNA/11 - Life of a Packet.md",
     "CCNA/img5/config-management-tools-comparison.png",
     "CCNA/img5/chef.png",
     "CCNA/img5/puppet.png",

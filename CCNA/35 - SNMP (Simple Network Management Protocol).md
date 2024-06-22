@@ -99,9 +99,9 @@ R1(config)#snmp-server community Jeremy2 rw
 ```
 * Configure the SNMP community strings (passwords).
 * `ro` = read only = no Set messages.
-	* An NMS using this password can only read information from R1.
+	* A NMS using this password can only read information from R1.
 * `rw` = read/write = can use Set messages.
-	* An NMS using this password can read using Get messages and write using Set messages.
+	* A NMS using this password can read using Get messages and write using Set messages.
 * There are default community strings that will be used if none are specified. However, it's best to configure the community strings and not use the defaults, as they are less secure.
 	* ro = public
 	* rw = private
