@@ -33,6 +33,7 @@ R2#clock read-calendar
 	* Weekday
 	* Month
 	* Time
+* Always set up timezone and summer time. Not doing this can make the clock incorrect, even with an NTP server.
 ## NTP Basics
 * Manually configuring the time on devices is not scalable.
 * The manually configured clocks will drift, resulting in inaccurate time.
