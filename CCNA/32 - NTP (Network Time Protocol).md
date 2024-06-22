@@ -33,7 +33,19 @@ R2#clock read-calendar
 	* Weekday
 	* Month
 	* Time
+### Timezone Configuration
 * Always set up timezone and summer time. Not doing this can make the clock incorrect, even with an NTP server.
+```
+R1(config)#clock timezone <timezone> <hours-offset> [minutes-offset]
+```
+* `name` is the name of the time zone.
+* `offset` is the time difference from UTC in hours and optionally in minutes
+### Summer Time Configuration
+* Configure the system clock to automatically adjust for daylight saving time.
+```
+R1(config)#clock summer-time recurring <timezone> <start> <end> [offset]
+```
+* The command specifies the start and end dates for daylight saving time and the amount of time to adjust the clock.
 ## NTP Basics
 * Manually configuring the time on devices is not scalable.
 * The manually configured clocks will drift, resulting in inaccurate time.
