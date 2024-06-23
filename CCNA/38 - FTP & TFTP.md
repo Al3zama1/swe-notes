@@ -47,13 +47,13 @@ This is beyond the scope of the CCNA
 	* An upgrade to FTP.
 * SSH File Transfer Protocol (SFTP) can also be used for grater security.
 	* An entirely new protocol.
-* FTP is more complex than FTP and allows not only file transfers, but clients can also navigate file directories, add and remove directories, list files, etc.
+* FTP is more complex than TFTP and allows not only file transfers, but clients can also navigate file directories, remove directories, list files, etc.
 * The client sends FTP commands to the server to perform these functions.
 ### FTP Control Connections
 ![FTP Control Connections](./img3/FTP-control-connections.png)
 * FTP uses two types of connections:
-	* An **FTP control** connection (TCP 21) is established and used to send FTP commands and replies.
-	* When files or data are to be transferred, separate **FTP data** (TCP 20) connection are established and terminated as needed.
+	* A **FTP control** connection (TCP 21) is established and used to send FTP commands and replies.
+	* When files or data are to be transferred, separate **FTP data** (TCP 20) connections are established and terminated as needed.
 ### Active Mode FTP Data Connections
 ![FTP active mode data connection](./img3/active-mode-FTP-data-connections.png)
 * The default method of establishing FTP data connections is **active mode**, in which the server initiates the data connection.
