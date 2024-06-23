@@ -133,9 +133,14 @@ Authentication timeout: 120 secs; Authentication retries: 3
 1. Configure host name
 2. Configure DNS domain name
 3. Generate RSA key pair
-4. Configure enable PW, username/PW
-5. Enable SSHv2 (only)
-6. Configure VTY lines
+4. enable secret
+5. create username with secret
+6. configure SSH version to 2
+7. configure VTY lines
+	1. set login local
+	2. set timeout timer
+	3. set transport to SSH
+	4. apply access-list if needed.
 ## Connecting via SSH
 ```
 ssh -l username ip-address
