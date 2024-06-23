@@ -18,7 +18,7 @@
 ## Syslog Severity Levels
 ![Syslog severity levels](./img3/syslog-severity-levels.png)
 * Each vendor may interpret each level differently.
-* **E**very **A**wesome **C**isco **E**ngineer **W**ill **N**eed **I**ce cream **D**aily.
+* **E**very **A**wesome **C**isco **E**ngineer **W**ill **N**eed **I**ce **D**aily.
 ## Syslog Logging Locations (facilities)
 * **Console line**: Syslog messages will be displayed in the CLI when connected to the device via the console port. By default, all messages (level 0 - level 7) are displayed.
 * **VTY lines**: Syslog messages will be displayed in the CLI when connected to the device via Telnet/SSH. Disabled by default.
