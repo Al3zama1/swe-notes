@@ -3,7 +3,7 @@
 * They both use a client-server model.
 	* Clients can use FTP or TFTP to copy files from a server.
 	* Clients can use FTP or TFTP to copy files to a server.
-* AS a network engineer, the most common use of FTP/TFTP is in the process of upgrading the operating system of a network device.
+* As a network engineer, the most common use of FTP/TFTP is in the process of upgrading the operating system of a network device.
 * You can use FTP/TFTP to download the newer version of IOS from a server, and then reboot the device with the new IOS image.
 ## TFTP
 * TFTP was first standardized in 1981.
