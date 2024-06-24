@@ -20,7 +20,7 @@
 An example of session multiplexing is a web browser. Each browser tab starts a new session with the external service/server. Different tabs originate their request with a random selected source port that is used by the service/server to know where to reply to. Thus, maintain separate independent sessions per tab.
 ## TCP (Transmission Control Protocol)
 * TCP is connection-oriented.
-	* Before actually sending data to the destination host, the tow hosts communicate to establish a connection. One the connection is established, the data exchange begins.
+	* Before actually sending data to the destination host, the two hosts communicate to establish a connection. Once the connection is established, the data exchange begins.
 * TCP provides reliable communication.
 	* The destination host must acknowledge that it received each TCP segment.
 	* If a segment isn't acknowledged, it is sent again.
