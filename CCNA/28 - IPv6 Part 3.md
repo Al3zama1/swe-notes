@@ -84,7 +84,8 @@ IPv6 doesn't use ARP, therefore there isn't an ARP table. Instead, the devices w
 * Duplicate Address Detection (DAD), which is another function of NDP, allows hosts to check if other devices on the local link are using the same IPv6 address.
 * Any time an IPv6-enabled interface initializes (`no shutdown` command), or an IPv6 address is configured on an interface (by any method: manual, SLAAC, etc.), it perform DAD.
 * DAD uses two messages: NS and NA.
-	* The host will send an NS to its own IPv6 address (solicited-node multicast address based on its own IPv6 address).  If it doesn't get a reply, it knows the address is unique.
+	* The host will send an NS to the solicited-node multicast address joined based on the configured IPv6 address on the interface.
+	* If it doesn't get a reply, it knows the address is unique.
 	* If it gets a reply (a NA message), it means another host on the network is already using the address.
 ## SLAAC
 * Stands for **Stateless Address Auto-configuration** and it is an IPv6 address configuration mechanism.

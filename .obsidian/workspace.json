@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/26 - IPv6.md",
-                "mode": "preview",
+                "file": "CCNA/28 - IPv6 Part 3.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/26 - IPv6.md",
+                "file": "CCNA/28 - IPv6 Part 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/26 - IPv6.md",
+                "file": "CCNA/28 - IPv6 Part 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/26 - IPv6.md"
+                "file": "CCNA/28 - IPv6 Part 3.md"
               }
             }
           },
@@ -162,6 +162,7 @@
   "active": "1676794986be6092",
   "lastOpenFiles": [
     "CCNA/27 - IPv6 Part 2.md",
+    "CCNA/28 - IPv6 Part 3.md",
     "CCNA/26 - IPv6.md",
     "CCNA/25 - TCP & UDP.md",
     "CCNA/39 - NAT Part 1.md",
@@ -177,7 +178,6 @@
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
     "CCNA/30 - Extended ACLs.md",
     "CCNA/29 - Standard ACLs.md",
-    "CCNA/28 - IPv6 Part 3.md",
     "CCNA/22 - OSPF Part 2.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/23 - OSPF Part 3.md",
