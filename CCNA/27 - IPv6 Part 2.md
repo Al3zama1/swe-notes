@@ -50,7 +50,7 @@
 		* It's up to the network engineers to configure the boundaries of the scope.
 	* **Global** (FF0E): No boundaries. Possible to be routed over the internet.
 		* No boundaries doesn't mean that global multicast messages will be sent to every destination over the internet.
-#### Important IPv4 & IPv6 Broadcast Addresses
+#### Important IPv4 & IPv6 Multicast Addresses
 ![Important IPv4 & IPv6 broadcast addresses](./img2/important-ipv4-ipv6-broadcast-addresses.png)
 * All these IPv6 multicast addresses use the link-local scope (FF02), which stays in the local subnet.
 	* Note that this is a different concept than an IPv6 Link-local address, which begins with FE80.
