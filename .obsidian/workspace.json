@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/28 - IPv6 Part 3.md",
-                "mode": "source",
+                "file": "CCNA/30 - Extended ACLs.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/28 - IPv6 Part 3.md",
+                "file": "CCNA/30 - Extended ACLs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/28 - IPv6 Part 3.md",
+                "file": "CCNA/30 - Extended ACLs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/28 - IPv6 Part 3.md"
+                "file": "CCNA/30 - Extended ACLs.md"
               }
             }
           },
@@ -161,6 +161,8 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/29 - Standard ACLs.md",
+    "CCNA/30 - Extended ACLs.md",
     "CCNA/27 - IPv6 Part 2.md",
     "CCNA/28 - IPv6 Part 3.md",
     "CCNA/26 - IPv6.md",
@@ -176,8 +178,6 @@
     "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/31 - CDP & LLDP.md",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
-    "CCNA/30 - Extended ACLs.md",
-    "CCNA/29 - Standard ACLs.md",
     "CCNA/22 - OSPF Part 2.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/23 - OSPF Part 3.md",
