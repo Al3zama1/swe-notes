@@ -159,7 +159,7 @@ Both R2 and R3 are syncing their time directly from R1, so they both have a stra
 ```
 R2(config)#ntp peer 10.0.23.2
 
-R2(config)#ntp peer 10.0.23.1
+R3(config)#ntp peer 10.0.23.1
 ```
 * They can become peers and help each other sync their time, and also act as backups in case they lose contact with R1.
 	* Devices do not need to have the same stratum level to become peers.
