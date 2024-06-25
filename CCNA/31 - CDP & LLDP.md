@@ -106,7 +106,7 @@ R1# show cdp entry R2
 	* Enables the interface to receive LLDP messages.
 * Configure LLDP timer: `R1(config)#lldp timer seconds`
 	* Specifies how often LLDP messages are sent.
-* Configure LLDP timer: `R1(config)#lldp holdtime seconds`
+* Configure LLDP hold timer: `R1(config)#lldp holdtime seconds`
 * Configure LLDP reinit timer: `R1(config)#lldp reinit seconds`.
 ### LLDP Show Commands
 ![](./img2/cdp-lldp-topology.png)
