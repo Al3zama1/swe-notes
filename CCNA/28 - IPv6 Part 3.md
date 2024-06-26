@@ -125,9 +125,8 @@ When using a Link-Local address as the next hop, a *fully specified* route is re
 * Since there are probably plenty of other PCs in the these networks, we wouldn't normally use host routes in a situation like this. It's best to just configure two network routes on R2.
 **Default Route**: 
 * `R3(config)#ipv6 route ::/0 2001:db8:0:23::1`
-**Floating Static**:
-* By raising the AD (administrative distance), we can make static backup routes, called **floating static routes**.
-	* Always set the AD to higher than the main route.
-	* If the main route to the destination was learned via OSPF, for example, you'll need to set the static route's AD to higher than 110, because OSPF's AD is 110.
+**Floating Static Route**: By raising the AD (administrative distance), we can make static backup routes, called **floating static routes**.
+* Always set the AD to higher than the main route.
+* If the main route to the destination was learned via OSPF, for example, you'll need to set the static route's AD to higher than 110, because OSPF's AD is 110.
 
 
