@@ -74,7 +74,7 @@ Standard IP access list 1
 * The way the entries in the ACL are configured with their sequence numbers, makes it impossible to insert an entry in between the other entries.
 
 ```
-R1(config)#ip access-list 1 resequence 1 10 10
+R1(config)#ip access-list resequence 1 10 10
 
 R1(config)#do show access-lists
 Standard IP access list 1
@@ -106,7 +106,7 @@ R1(config)#access-list number [permit | deny] protocol src-ip dest-ip
 #### Configure Extended Named ACLs
 ```
 R1(config)#ip access-list extended {name | number}
-R1(config-ext-nacl)#[sequence-num] [permit | deny] protocol src-ip dest-ip
+R1(config-ext-nacl)#[sequence-num] {permit | deny} protocol src-ip dest-ip
 ```
 
 ### Extended ACL Match Based on Protocol
