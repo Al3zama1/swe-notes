@@ -68,7 +68,7 @@
 * The unspecified IPv6 address.
 * Can be used when a device doesn't yet know its IPv6 address.
 * IPv6 default routes (default gateway) are configured to `::/0`.
-* IPv4 equivalent: `0.0.0.0`.
+* IPv4 equivalent: `0.0.0.0 0.0.0.0`.
 #### ::1
 * The loopback address.
 * Used to test the protocol stack on the local device.
