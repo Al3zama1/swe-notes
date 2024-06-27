@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/33 - DNS (Domain Name System).md",
-                "mode": "preview",
+                "file": "CCNA/36 - Syslog.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/33 - DNS (Domain Name System).md",
+                "file": "CCNA/36 - Syslog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/33 - DNS (Domain Name System).md",
+                "file": "CCNA/36 - Syslog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/33 - DNS (Domain Name System).md"
+                "file": "CCNA/36 - Syslog.md"
               }
             }
           },
@@ -161,6 +161,9 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
+    "CCNA/34 - DHCP.md",
+    "CCNA/33 - DNS (Domain Name System).md",
     "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/31 - CDP & LLDP.md",
     "CCNA/30 - Extended ACLs.md",
@@ -172,10 +175,7 @@
     "CCNA/39 - NAT Part 1.md",
     "CCNA/38 - FTP & TFTP.md",
     "CCNA/37 - Secure Shell (SSH).md",
-    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
     "CCNA/36 - Syslog.md",
-    "CCNA/34 - DHCP.md",
-    "CCNA/33 - DNS (Domain Name System).md",
     "CCNA/25 - TCP & UDP.md",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
     "CCNA/22 - OSPF Part 2.md",

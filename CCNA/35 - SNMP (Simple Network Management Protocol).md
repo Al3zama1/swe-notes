@@ -94,8 +94,8 @@ R1(config)#snmp-server location Jeremy's House
 * Configure optional contact information and location of the device.
 
 ```
-R1(config)#snmp-server community Jeremy1 ro
-R1(config)#snmp-server community Jeremy2 rw
+R1(config)#snmp-server community <password> ro
+R1(config)#snmp-server community <password> rw
 ```
 * Configure the SNMP community strings (passwords).
 * `ro` = read only = no Set messages.
