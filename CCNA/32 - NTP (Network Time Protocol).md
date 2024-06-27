@@ -189,6 +189,6 @@ R3(config)#ntp authenticate
 R3(config)#ntp authentication-key 1 md5 ccna
 R3(config)#ntp trusted-key 1
 R3(config)#ntp server 10.0.12.1 key 1
-R(config)#ntp peer 10.0.23.1 key 1
+R3(config)#ntp peer 10.0.23.1 key 1
 ```
 * The `ntp authenticate` command is not needed to enable NTP authentication.
