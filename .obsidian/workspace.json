@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/42 - QoS Part 2.md",
-                "mode": "source",
+                "file": "CCNA/43 - Security Fundamentals.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 320.51103591918945,
-    "collapsed": true
+    "width": 320.51103591918945
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/42 - QoS Part 2.md",
+                "file": "CCNA/43 - Security Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/42 - QoS Part 2.md",
+                "file": "CCNA/43 - Security Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/42 - QoS Part 2.md"
+                "file": "CCNA/43 - Security Fundamentals.md"
               }
             }
           },
@@ -163,8 +162,8 @@
   "active": "1676794986be6092",
   "lastOpenFiles": [
     "CCNA/41 - QoS.md",
-    "CCNA/42 - QoS Part 2.md",
     "CCNA/43 - Security Fundamentals.md",
+    "CCNA/42 - QoS Part 2.md",
     "CCNA/40 - NAT Part 2.md",
     "CCNA/39 - NAT Part 1.md",
     "CCNA/38 - FTP & TFTP.md",

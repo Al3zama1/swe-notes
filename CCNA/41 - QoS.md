@@ -1,6 +1,6 @@
 ## IP Phones/Voice VLANs
 * Traditional phones operate over the *public switched telephone network* (PSTN).
-* Sometimes this is called POTS (Plain Old Telephone Service).
+	* Sometimes this is called POTS (Plain Old Telephone Service).
 * IP phones use VoIP (Voice over IP) technologies to enable phone calls over an IP network, such as the internet.
 * IP phones are connected to a switch just like any other end host.
 * IP phones have an internal 3-port switch.
