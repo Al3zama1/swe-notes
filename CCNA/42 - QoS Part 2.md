@@ -120,12 +120,12 @@
 	* Traffic from data applications on PCs should be marked as low priority (DF) so that it does not fill up the high priority queues reserved for voice traffic.
 	* Apps like Zoom or WebEx used on a PC do need high priority service, but we can mark those packets at the switch or router.
 ## Queuing/Congestion Management
-Marking (EF, AF, etc.) packets doesn't do anything on its own. You have to configure tools like CBWFQ and LLQ to make the devices treat those packets as high priority.
+**Marking (EF, AF, etc.) packets doesn't do anything on its own. You have to configure tools like CBWFQ and LLQ to make the devices treat those packets as high priority.**
 
 ![QoS single queue](./img3/QoS-single-queue.png)
 * When a network device receives traffic at a faster rate than it can forward traffic out of the appropriate interface, packets are placed in that interface's queue as they wait to be forwarded.
 * When the queue becomes full, packets that don't fit in the queue are dropped (tail drop).
-* RED and WRED drop packets early to avoid tail drop.
+	* RED and WRED drop packets early to avoid tail drop.
 
 ![QoS multiple queues](./img3/QoS-multiple-queues.png)
 * An essential part of QoS is the use of multiple queues.
