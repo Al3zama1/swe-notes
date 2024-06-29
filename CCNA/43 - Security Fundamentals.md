@@ -71,7 +71,7 @@ Systems can be more secure or less secure, but there are no guarantees in securi
 * They involve psychological manipulation to make the target reveal confidential information or perform some action.
 * **Phishing** typically involves fraudulent emails that appear to come from a legitimate business (Amazon, bank, credit card company, etc) and contain links to a fraudulent website that seems legitimate.
 	* **Spear phishing** is a more targeted form of phishing, ie. aimed at employees of a certain company.
-	* **Whaling** is phasing targeted at high-profile individuals, ie. a company president.
+	* **Whaling** is phishing targeted at high-profile individuals, ie. a company president.
 * **Vishing** (voice phishing) is phishing performed over the phone.
 * **Smishing** (SMS phishing) is phishing using SMS text messages.
 
