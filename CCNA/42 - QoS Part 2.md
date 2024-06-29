@@ -41,7 +41,7 @@
 ###### AF Values
 ![AF values](./img3/AF-summary-values.png)
 * There is 4 classes with 3 drop precedence values each, making it a total of 12 standard values.
-* Within AF, 43 is the highest value. There is no class 5, 6, or 7.
+* Within AF - 43 is the highest value. There is no class 5, 6, or 7.
 * The formula to convert from AF value to decimal DSCP value: 8X + 2Y.
 ###### AF Marking Example 1
 
