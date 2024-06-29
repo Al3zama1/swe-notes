@@ -14,7 +14,7 @@
 * Port security allows network admins to control which devices are allowed to access the network.
 * However, MAC address spoofing is a simple task.
 	* It's easy to configure a device to send frames with a different source MAC address.
-* Rather than manually specifying the MAC addresses allowed on each port, port security's ability to limit the number of MAC addresses allowed on an interface is more useful.
+* **Rather than manually specifying the MAC addresses allowed on each port, port security's ability to limit the number of MAC addresses allowed on an interface is more useful.**
 * Think back to the DHCP starvation attack carried out in the security fundamental notes.
 	* The attacker spoofed thousands of fake MAC addresses.
 	* The DHCP server assigned IP addresses to these fake MAC addresses, exhausting the DHCP pool.
