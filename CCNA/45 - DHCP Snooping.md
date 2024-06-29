@@ -61,7 +61,7 @@ SW1#show ip dhcp snooping binding
 ![Show ip dhcp snooping bindings](./img3/dhcp-snooping-bindings.png)
 * RELEASE/DECLINE messages will be checked to make sure their IP address/interface ID match the entry in their DHCP snooping table.
 	* This prevents attackers form sending these messages on behalf of other devices in the network, causing the DHCP server to believe that they don't need their IP addresses anymore.
-* Note that when DHCP snooping is enabled, the DHCP snooping binding table is automatically built as host lease IP addresses form DHCP servers.
+* Note that when DHCP snooping is enabled, the DHCP snooping binding table is automatically built as hosts lease IP addresses from DHCP servers.
 ## DHCP Snooping Rate-Limiting
 * DHCP snooping can limit the rate at which DHCP messages are allowed to enter an interface. 
 * Rate-limiting can be very useful to protect agains DHCP exhaustion attacks.
@@ -92,9 +92,9 @@ SW1(config)#errdisable recovery cause dhcp-rate-limit
 
 ![DHCP snooping option 82 forward frame](./img3/dhcp-snooping-option-82-good-example.png)
 ```
-SW1(config)#no ip dhcp snooping information optioin
+SW1(config)#no ip dhcp snooping information option
 
-SW2(config)#no ip dhcp snooping information optioin
+SW2(config)#no ip dhcp snooping information option
 ```
 * The command also has to be specified in SW2 because otherwise it will add option 82 itself, which will cause R1 to drop it.
 * R1 will drop the message because it contains option 82, but it wasn't sent by a relay agent.
@@ -115,5 +115,5 @@ SW1(config)#no ip dhcp snooping information option
 SW1(config)#interface g0/0
 SW1(config-if)#ip dhcp snooping trust
 ```
-* DHCP must be enabled globally and in every VLAN that is needed.
+* DHCP snooping must be enabled globally and in every VLAN that is needed.
 * Manually specify which ports to trust, since they all are disabled by default.
