@@ -42,7 +42,7 @@
 SW1(config)#interface range g0/1 - 2
 SW1(config-if-range)#ip arp inspection limit rate 25 burst interval 2
 ```
-* Applied a rate limit rate of 25 frames per 2 seconds.
+* Applies a rate limit rate of 25 frames per 2 seconds.
 * The burst interval is optional. I you don't specify it, the default is 1 second.
 
 ## DAI Optional  Checks
