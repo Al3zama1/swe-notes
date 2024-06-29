@@ -93,11 +93,11 @@
 * The formula to get the DSCP number from the CS number is 8 * CS
 ##### RFC 4954
 * RFC 4954 was developed with the help of Cisco to bring all of these values together and standardize their use.
-* The RFC offers many specific recommendations, but here are a few key ones (for AF, x could be 1, 2, or 3 to represent the drop precedence):
+* The RFC offers many specific recommendations, but here are a few key ones (for AF, y could be 1, 2, or 3 to represent the drop precedence):
 	* Voice traffic: EF
-	* Interactive video: AF4x
-	* Streaming video: AF3x
-	* High priority data: AF2x
+	* Interactive video: AF4y
+	* Streaming video: AF3y
+	* High priority data: AF2y
 	* Best effort: DF
 * However, in the end it's up to the engineer designing the QoS policy of the network to decide which traffic will get which markings.
 ## Trust Boundaries
