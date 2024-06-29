@@ -96,7 +96,7 @@ SW2(config)#interface range g0/0 - 1
 SW2(config-if-range)#ip arp inspection trust
 
 SW1(config)#ip arp inspection vlan 1
-SW1(config)#interface range g0/0 - 1
+SW1(config)#interface range g0/0
 SW1(config-if-range)#ip arp inspection trust
 ```
 * DAI has to be enabled in all VLANs where dynamic ARP inspection is needed.
