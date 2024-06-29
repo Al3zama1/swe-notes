@@ -63,7 +63,7 @@ SW1#show power inline police g0/0
 		* **One-way delay**: The amount of time it takes traffic to go from source to destination.
 		* **Two-way delay**: The amount of time it takes traffic to go from source to destination and return.
 	* **Jitter**:
-		* The variation in one-way delay between packets send by the same application. For example, if some packets arrive in 10 ms, but others arrive in 100 ms, that's a lot of jitter.
+		* The variation in one-way delay between packets sent by the same application. For example, if some packets arrive in 10 ms, but others arrive in 100 ms, that's a lot of jitter.
 		* Jitter will negatively affect the audio quality of phone calls, so IP phones have a 'jitter buffer' to provide a fixed delay to audio packets. However, if the Jitter is too high, it will overrun the buffer and the audio quality will suffer.
 	* **Loss**:
 		* The % of packets sent that do not reach their destination.
@@ -82,7 +82,7 @@ SW1#show power inline police g0/0
 #### TCP Global Synchronization Problem
 * **Tail drop** is harmful because it can lead to **TCP global synchronization**.
 * Review of the **TCP sliding window**:
-	* Hosts using TCP use the 'sliding window' increase/decrease the rate at which they send traffic as needed.
+	* Hosts using TCP use the 'sliding window' to increase/decrease the rate at which they send traffic as needed.
 	* When a packet is dropped, it will be re-transmitted.
 	* When a drop occurs, the sender will reduce the rate at which it send traffic.
 	* It will then gradually increase the rate again.
@@ -96,5 +96,5 @@ SW1#show power inline police g0/0
 #### Random Early Detection (RED)
 * When the amount of traffic in the queue reaches a certain threshold, the device will start randomly dropping packets from select TCP flows.
 * Those TCP flows that dropped packets will reduce the rate at which traffic is sent, but you will avoid global TCP synchronization, in which all TCP flows reduce and then increase the rate of transmission at the same time in waves.
-* In standard RED, all dings of traffic are treated the same.
+* In standard RED, all kinds of traffic are treated the same.
 * An improved version, **Weighted Random Early Detection (WRED)**, allows you to control which packets are dropped depending on the traffic class.
