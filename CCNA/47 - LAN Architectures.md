@@ -41,7 +41,7 @@
 * Notice that each Distribution Layer switch is connected to each other Distribution Layer switch.
 
 ![many distribution layer](./img3/many-distribution-layer.png)
-* In large LAN networks with many Distribution Layer switches (for example in separate buildings), the number of connections required between Distribution Layer switches grows rapidly
+* In large LAN networks with many Distribution Layer switches (for example, in separate buildings), the number of connections required between Distribution Layer switches grows rapidly
 * This makes it much more difficult and complicated to scale the network, to make it bigger.
 
 ![Distribution Layer switches with a Core Layer](./img3/distribution-layer-switches-with-core-layer.png)
