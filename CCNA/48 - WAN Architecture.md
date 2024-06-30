@@ -50,13 +50,13 @@
 	* In regular IP routing, the router checks the destination IP and compares it to its routing table to decide where to forward the packet. This is not the case in MPLS. MPLS routers use the MPLS label to decide where to forward the packet within the service provider network.
 * The CE routers do not use MPLS, it is only used by the PE/P routers.
 	* The CE routers do not have to run MPLS or even be able to run MPLS.
-* There are a few kinds of VPNs that can be provided by MPLS.
+* There are a few kind of VPNs that can be provided by MPLS.
 ### Layer 3 MPLS VPN
 ![Layer 3 MPLS VPN](./img4/layer-3-mpls-vpn.png)
 * When using a Layer 3 MPLS VPN, the CE and PE routers peer using a dynamic routing protocol (OSPF etc.), for example, to share routing information.
 	* The customer could also just write static routes, using the PE routers as the next hop.
 * For example, in the diagram above Office A's CE will peer with one PE, and Office B's CE will peer with the other PE.
-* Office A's CE will learn about Office B's routes via this OSPF peering, and Office B's CE will learn about Office A's routes too.
+	* Office A's CE will learn about Office B's routes via this OSPF peering, and Office B's CE will learn about Office A's routes too.
 ### Layer 2 MPLS VPN
 ![Layer 2 MPLS](./img4/layer-2-mpls.png)
 * When using a Layer 2 MPLS VPN, the CE and PE routers do not form peerings.
