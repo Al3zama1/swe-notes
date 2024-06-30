@@ -68,7 +68,7 @@
 * Data centers are dedicated spaces/buildings used to store computer systems such as servers and network devices.
 * Traditional data center designs used a three-tier architecture (Access-Distribution-Core).
 * This worked well when most traffic in the data center was North-South.
-* Withe the precedence of virtual servers, applications are often deployed in a distributed manner (across multiple physical servers), which increases the amount of East-West traffic in the data center.
+* With the precedence of virtual servers, applications are often deployed in a distributed manner (across multiple physical servers), which increases the amount of East-West traffic in the data center.
 * The traditional three-tier architecture led to bottlenecks in bandwidth as well as variability in the server-to-server latency depending on the path the traffic takes.
 * To solve this, Spine-Leaf architecture (also called Clos architecture) has become prominent in data centers.
 
