@@ -128,7 +128,7 @@
 ![GRE](./img4/GRE.png)
 ![GRE over IPsec](./img4/GRE-over-IPsec.png)
 * To get the flexibility of GRE with the security of IPsec, 'GRE over IPsec' can be used.
-* The original packet will be encapsulated by a GRE header and a new IP header, and then the GRE packet will be encrypted and encapsulated within an IPsec VPM header and new IP header.
+* The original packet will be encapsulated by a GRE header and a new IP header, and then the GRE packet will be encrypted and encapsulated within an IPsec VPN header and new IP header.
 #### DMVPN
 * DMVPN (Dynamic Multipoint VPN) is a Cisco-developed solution that allows routers to dynamically create a full mesh of IPsec tunnels without having to manually configure every single tunnel.
 * DMVPN provides the configuration simplicity of hub-and-spoke (each spoke router only needs one tunnel configured) and the efficiency of direct spoke-to-spoke communication (spoke routers can communicate directly without traffic passing through the hub).
