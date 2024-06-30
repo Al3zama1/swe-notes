@@ -8,7 +8,7 @@
 ### Star Topology
 ![Star topology diagram](./img3/star-topology.png)
 * When several devices all connect to one central device, we can draw them in a 'star' like shape. Therefore, this is often called a 'star topology'.
-* Note that in network diagrams the devices might be drawn in the shape of a star. But if many devices are connected to one central device, we can call it a star topology, regardless of how the diagram is drawn.
+* Note that in network diagrams the devices might not be drawn in the shape of a star. But if many devices are connected to one central device, we can call it a star topology, regardless of how the diagram is drawn.
 ### Full Mesh
 ![Full Mesh topology](./img3/full-mesh-topology.png)
 * A **Full Mesh** topology is formed when each device is connected to each other device.
