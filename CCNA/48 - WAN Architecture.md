@@ -90,7 +90,7 @@
 
 ### Redundant Internet Connections
 * For a home user, having one connection to the internet isn't a problem. It's a bit annoying if you lose internet access, but it's not a disaster.
-* However, for many companies Internet access is essential to their operations. Therefore, it's be to have redundant Internet connections.
+* However, for many companies Internet access is essential to their operations. Therefore, it's best to have redundant Internet connections.
 ![](./img4/redundant-internet.png)
 * **Single Homed**: Its like a standard home Internet connection. Not ideal for an enterprise because there is no redundancy.
 * **Dual Homed**: Provides some redundancy, but still not ideal. Internet connection is lost if something happens with the single ISP being used.
