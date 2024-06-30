@@ -49,8 +49,8 @@ SW1(config-if-range)#ip arp inspection limit rate 25 burst interval 2
 * By default, DAI only checks the sender MAC and IP address, to see if there is a matching entry in the DHCP snooping binding table or not.
 * DAI available check options are:
 	* **dst-mac**: Enables validation of the destination MAC address in the Ethernet header against the target MAC address in the ARP body for ARP responses. The device classifies packets with different MAC addresses as invalid and drops them.
-	* **ip**: Enables validation of the ARP body for invalid and unexpected IP addresses. Addresses include `0.0.0.0`, `255.255.255.255`, and all IP multicast addresses. The device checks the sender IP addresses in all ARP requests and responses and checks the target IP addresses only in ARP responses.
 	* **src-mac**: Enables validation of the source MAC address in the Ethernet header against he sender MAC address in the ARP body for ARP requests and responses. The devices classifies packets with different MAC addresses as invalid and drops them.
+	* **ip**: Enables validation of the ARP body for invalid and unexpected IP addresses. Addresses include `0.0.0.0`, `255.255.255.255`, and all IP multicast addresses. The device checks the sender IP addresses in all ARP requests and responses and checks the target IP addresses only in ARP responses.
 * These optional in depth DAI checks are done in addition to the standard DAI check (sender MAC/IP). If configured, an ARP message must pass all of the checks to be considered valid.
 
 Sample ARP reply message used to showcase the fields used in the optional DAI checks.
