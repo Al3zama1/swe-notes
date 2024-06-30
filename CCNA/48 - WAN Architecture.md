@@ -32,7 +32,7 @@
 * Due to the higher cost, higher installation lead time, and slower speeds of leased lines, Ethernet WAN technologies are becoming more popular.
 ![Leased lines standards](./img4/leased-lines-standards.png)
 ## MPLS (Multi Protocol Label Switching)
-* MPSL allows enterprises to form WANs over a service provider's MPLS infrastructure.
+* MPLS allows enterprises to form WANs over a service provider's MPLS infrastructure.
 	* MPLS is a technology that runs in the service provider's network.
 * Similar to the internet, service providers' MPLS networks are shared infrastructure because many customer enterprises connect to and share the same infrastructure to make their WAN connections.
 * Although the traffic of many different customers will be passing over this infrastructure, the label switching aspect of MPLS allows secure VPNs to be formed over the shared infrastructure.
