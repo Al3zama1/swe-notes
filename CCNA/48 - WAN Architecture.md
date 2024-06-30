@@ -14,8 +14,8 @@
 * This diagram is actually not exactly an accurate representation of leased lines.
 
 ![WAN over leaded line](./img4/WAN-ver-leaded-line.png)
-* Rather than a single physical cable directly connecting each site, each site connect to a service provider, which connects the sites together.
-* These connection use serial cables.
+* Rather than a single physical cable directly connecting each site, each site connects to a service provider, which connects the sites together.
+* These connections use serial cables.
 * However, these days WAN connections via Ethernet are more and more common.
 
 ### WAN Connection Via Ethernet (Fiber)

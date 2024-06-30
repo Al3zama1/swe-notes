@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/47 - LAN Architectures.md",
+                "file": "CCNA/48 - WAN Architecture.md",
                 "mode": "preview",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 320.51103591918945,
-    "collapsed": true
+    "width": 320.51103591918945
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/47 - LAN Architectures.md",
+                "file": "CCNA/48 - WAN Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/47 - LAN Architectures.md",
+                "file": "CCNA/48 - WAN Architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/47 - LAN Architectures.md"
+                "file": "CCNA/48 - WAN Architecture.md"
               }
             }
           },
@@ -162,13 +161,14 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
-    "CCNA/46 - Dynamic ARP Inspection.md",
-    "CCNA/47 - LAN Architectures.md",
-    "CCNA/45 - DHCP Snooping.md",
-    "CCNA/44 - Port Security.md",
-    "CCNA/48 - WAN Architecture.md",
     "CCNA/49 - Virtualization & Cloud.md",
     "CCNA/50 - Virtualization - Containers.md",
+    "CCNA/48 - WAN Architecture.md",
+    "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
+    "CCNA/47 - LAN Architectures.md",
+    "CCNA/46 - Dynamic ARP Inspection.md",
+    "CCNA/45 - DHCP Snooping.md",
+    "CCNA/44 - Port Security.md",
     "CCNA/43 - Security Fundamentals.md",
     "CCNA/41 - QoS.md",
     "CCNA/42 - QoS Part 2.md",
@@ -187,7 +187,6 @@
     "CCNA/28 - IPv6 Part 3.md",
     "CCNA/27 - IPv6 Part 2.md",
     "CCNA/26 - IPv6.md",
-    "CCNA/25 - TCP & UDP.md",
     "CCNA/img5/config-management-tools-comparison.png",
     "CCNA/img5/chef.png",
     "CCNA/img5/puppet.png",
