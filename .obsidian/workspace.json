@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/48 - WAN Architecture.md",
+                "file": "CCNA/49 - Virtualization & Cloud.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/48 - WAN Architecture.md",
+                "file": "CCNA/49 - Virtualization & Cloud.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/48 - WAN Architecture.md",
+                "file": "CCNA/49 - Virtualization & Cloud.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/48 - WAN Architecture.md"
+                "file": "CCNA/49 - Virtualization & Cloud.md"
               }
             }
           },
@@ -161,9 +161,9 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/48 - WAN Architecture.md",
     "CCNA/49 - Virtualization & Cloud.md",
     "CCNA/50 - Virtualization - Containers.md",
-    "CCNA/48 - WAN Architecture.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
     "CCNA/47 - LAN Architectures.md",
     "CCNA/46 - Dynamic ARP Inspection.md",

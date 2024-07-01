@@ -137,13 +137,13 @@ The cloud is not always the best option. Most companies these days use a combina
 * **Speed/Agility**: 
 	* Services are provisioned on demand, and vast amounts of resources can be provisioned within minutes.
 * **Productivity**:
-	* Cloud services remove the need for may time-consuming tasks such as procuring physical servers, racking them, cabling, installing and updating operating systems, etc.
+	* Cloud services remove the need for many time-consuming tasks such as procuring physical servers, racking them, cabling, installing and updating operating systems, etc.
 * **Reliability**:
 	* Backups in the cloud are very easy to perform. Data can be mirrored at multiple sites in different geographic locations to support disaster recovery.
 ## Connecting to Cloud Resources
 ![Connecting to cloud resources](./img4/connecting-to-cloud-resources.png)
 * The image above showcases the multiple ways a company can connect to its resources hosted on a public cloud.
-	* A private WAN such as an MPLS VPN.
+	* A private WAN connection through a leased line, Ethernet Fiber, MPLS.
 	* Simply connect via the internet. This is very cheap, flexible, and easy, but of course connecting through the internet is not as secure as a private WAN connection.
 	* A VPN can be used to provide a secure connection over the internet to the resources on the cloud.
 * Since the cloud resources are not on the enterprise premises, it's not enough to just set up the apps and servers. You also have to think about how to securely connect to them.
