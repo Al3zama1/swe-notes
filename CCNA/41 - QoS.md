@@ -84,7 +84,7 @@ SW1#show power inline police g0/0
 * Review of the **TCP sliding window**:
 	* Hosts using TCP use the 'sliding window' to increase/decrease the rate at which they send traffic as needed.
 	* When a packet is dropped, it will be re-transmitted.
-	* When a drop occurs, the sender will reduce the rate at which it send traffic.
+	* When a drop occurs, the sender will reduce the rate at which it sends traffic.
 	* It will then gradually increase the rate again.
 * When the queue fills up and **tail drop** occurs, all TCP hosts sending traffic will slow down the rate at which they send traffic.
 * They will then increase the rate at which they send traffic, which rapidly leads to more congestion, dropped packets, and the process repeats again.
