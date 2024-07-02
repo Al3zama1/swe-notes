@@ -4,7 +4,7 @@
 * Classification is fundamental to QoS. To give priority to certain types of traffic, you have to identify which type of traffic to give priority to.
 * There are many methods of classifying traffic.
 	* An ACL. Traffic which is permitted by the ACL will be given certain treatment, other traffic will not.
-	* **NBAR (Network Based Application Recognition)** performs a deep packet inspection, looking beyond the Layer 3 and Layer 4 information up Layer 7 to identify the specific kind of traffic.
+	* **NBAR (Network Based Application Recognition)** performs a deep packet inspection, looking beyond the Layer 3 and Layer 4 information up to Layer 7 to identify the specific kind of traffic.
 	* In the Layer 2 and Layer 3 headers, there are specific fields used for this purpose.
 * The **PCP (Priority Code Point)** field of the 802.1Q tag (in the Ethernet header) can be used to identify high/low priority traffic.
 	* Can only be used when there is a dot1q tag! 
