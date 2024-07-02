@@ -17,8 +17,7 @@
 * A **thread** is the potential of a **vulnerability** to be **exploited**.
 	* A hacker **exploiting** a **vulnerability** in your system is a **thread**.
 * A **mitigation technique** is something that can protect agains threads.
-	* Should be implemented everywhere a vulnerability can be exploited: client devices,
-	* servers, switches, routers, firewalls, etc.
+	* Should be implemented everywhere a vulnerability can be exploited: client devices, servers, switches, routers, firewalls, etc.
 ### No System is Perfectly Secure
 Systems can be more secure or less secure, but there are no guarantees in security.
 ## Common Attacks
