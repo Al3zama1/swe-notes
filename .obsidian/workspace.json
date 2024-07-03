@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP Inspection.md",
-                "mode": "preview",
+                "file": "CCNA/47 - LAN Architectures.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 320.51103591918945
+    "width": 320.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP Inspection.md",
+                "file": "CCNA/47 - LAN Architectures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP Inspection.md",
+                "file": "CCNA/47 - LAN Architectures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP Inspection.md"
+                "file": "CCNA/47 - LAN Architectures.md"
               }
             }
           },
@@ -161,10 +162,10 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
-    "CCNA/45 - DHCP Snooping.md",
     "CCNA/46 - Dynamic ARP Inspection.md",
-    "CCNA/44 - Port Security.md",
     "CCNA/47 - LAN Architectures.md",
+    "CCNA/44 - Port Security.md",
+    "CCNA/45 - DHCP Snooping.md",
     "CCNA/43 - Security Fundamentals.md",
     "CCNA/41 - QoS.md",
     "CCNA/42 - QoS Part 2.md",

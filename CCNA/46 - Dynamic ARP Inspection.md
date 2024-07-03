@@ -116,3 +116,6 @@ SW2#show ip arp inspection
 ```
 ![Show ip arp inspections output](./img3/ARP-show-arp-inspection.png)
 * Displays what optional DAI check are enabled. In this case all 3 are enabled.
+* If static ACL is set to yes, the implicit deny at the end of the ARP ACL will take effect, just like regular IP ACLs. If the static setting isn't enabled, the implicit deny will be ignored.
+	* In this example, it wasn't configured as a static ACL, therefore the implicit deny is ignored.
+	* Usually, this setting is set to 'No'.
