@@ -108,30 +108,49 @@
 * 802.11 enabled devices might support one of these standards, some of them, or all of them.
 * 802.11n is also known as High Throughput (HT) Wi-Fi.
 * 802.11ac is also known as Very High Throughput (VHT) Wi-Fi.
-## Service Sets
-* 802.11 defines different kinds of **service sets** which are groups of wireless network devices.
-* There are three main types:
-	* Independent
-	* Infrastructure
-	* Mesh
-* All devices in a service set share the same **SSID** (Service Set Identifier).
-	* The SSID is a human-readable name which identifies the service set.
-	* The SSID does not have to be unique, although it's best to configure unique SSIDs since that's what you'll be looking at when you select which network to connect to.
-### Independent Basic Service Set (IBSS)
+
+## 802.11 Service Sets
+* In the context of the IEEE 802.11 standard for wireless local area networks (WLANs), service sets are network configurations that define how devices communicate within a wireless network. 
+* There are two main service sets:
+	* Basic Service Set (BSS)
+	* Extended Service Set (ESS)
+### Basic Service Set (BSS)
+* One of the key components of the 802.11 standard is the Basic Service Set (BSS), which the fundamental building block of WANs.
+* There are three main types of BSS:
+	* Independent Basic Service Set (IBSS)
+	* Infrastructure Basic Service Set (Infrastructure BSS)
+	* Mesh Basic Service Set (MBSS)
+#### Independent Basic Service Set (IBSS)
 ![Service Set IBSS](./img4/service-set-IBSS.png)
 * An **IBSS** is a wireless network which two or more wireless devices connect directly without using an AP (Access Point).
 * Also called **ad hoc** networks.
 * Not scalable beyond a few devices.
-* Are used for limited purposes, such as quick file transfers (ie. AirDrop).
-### Basic Service Set (BSS)
+* This type of network is typically used for temporary setups or small networks where infrastructure is unnecessary.
+	* Quick file transfers (ie. AirDrop).
+#### Infrastructure Basic Service Set (Infrastructure BSS)
 ![Service Set BSS](./img4/service-set-BSS.png)
-* A BSS is a kind of infrastructure Service Set in which clients connect to each other via an AP (Access Point), but not directly to each other.
+
+* A BSS is a kind of IBSS.
+* Clients connect to each other via an AP (Access Point), but not directly to each other.
+* The AP acts a a hub for communication, managing the wireless network and providing connectivity to a distribution system (DS), which could be a wired network or another wireless network.
 * The **BSSID** (Basic Service Set ID) of an AP is a unique identifier used to distinguish between different wireless networks (SSID) broadcasted by the AP. 
 	* It is derived from the MAC address of the AP's radio interface but can be modified or generated uniquely for each SSID that the AP broadcasts.
 	* Other APs can have the same SSID, but no the same BSSID.
+* The **SSID** is the public name that users can select to join a specific wireless network, which may correspond to a BSS or be part of an ESS.
+	* The SSID does not have to be unique, although it's best to configure unique SSIDs since that's what you'll be looking at when you select which network to connect to.
 * Wireless devices request to associate with the BSS.
 * Wireless devices that have associated with the BSS are called 'clients' or 'stations'.
 * The area around an AP where its signal is usable is called a **BSA** (Basic Service Area).
+* This setup is commonly used in homes, offices, and publish Wi-Fi networks.
+#### Mesh Basic Service Set (MBSS)
+![Service Set MBSS](./img4/service-set-MBSS.png)
+* A **MBSS** can be used in situations where it's difficult to run an Ethernet connection to every AP.
+* Mesh APs use two radios:
+	* One provides a BSS to wireless clients.
+	* The other forms a 'backhaul network' which is used to bridge traffic from AP to AP.
+* At least one AP is connected to the wired network, and it is called the **RAP** (Root Access Point).
+* The other APs are called **MAP**s (Mesh Access Points).
+* A protocol is used to determine the best path through the mesh (similar to dynamic routing protocols are used to determine the best path to a destination).
 ### Extended Service Set (ESS)
 ![Service sets ESS](./img4/service-sets-ESS.png)
 * To create larger wireless LANs beyond the range of a single AP, we use an **ESS** (Extended Service Set)
@@ -143,15 +162,6 @@
 * Clients can pass between APs without having to reconnect, providing a seamless Wi-Fi experience when moving between APs.
 	* This is called **roaming**, when you move between two APs in an ESS.
 * The BSAs should overlap about 10 - 15%, or else the connectivity can be lost when moving between APs.
-### Mesh Basic Service Set (MBSS)
-![Service Set MBSS](./img4/service-set-MBSS.png)
-* A **MBSS** can be used in situations where it's difficult to run an Ethernet connection to every AP.
-* Mesh APs use two radios:
-	* One provides a BSS to wireless clients.
-	* The other forms a 'backhaul network' which is used to bridge traffic from AP to AP.
-* At least one AP is connected to the wired network, and it is called the **RAP** (Root Access Point).
-* The other APs are called **MAP**s (Mesh Access Points).
-* A protocol is used to determine the best path through the mesh (similar to dynamic routing protocols are used to determine the best path to a destination).
 ## Distribution System
 * Most wireless networks aren't standalone networks. They are a way for wireless clients to connect to the wired network infrastructure.
 	* APs function is to translate between the tow mediums (wireless, wired).
