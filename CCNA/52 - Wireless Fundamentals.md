@@ -131,7 +131,7 @@
 ![Service Set BSS](./img4/service-set-BSS.png)
 
 * A BSS is a kind of IBSS.
-* Clients connect to each other via an AP (Access Point), but not directly to each other.
+* Clients connect to each other via a central AP (Access Point), but not directly to each other.
 * The AP acts a a hub for communication, managing the wireless network and providing connectivity to a distribution system (DS), which could be a wired network or another wireless network.
 * The **BSSID** (Basic Service Set ID) of an AP is a unique identifier used to distinguish between different wireless networks (SSID) broadcasted by the AP. 
 	* It is derived from the MAC address of the AP's radio interface but can be modified or generated uniquely for each SSID that the AP broadcasts.
