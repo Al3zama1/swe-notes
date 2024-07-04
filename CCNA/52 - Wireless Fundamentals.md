@@ -164,7 +164,7 @@
 * The BSAs should overlap about 10 - 15%, or else the connectivity can be lost when moving between APs.
 ## Distribution System
 * Most wireless networks aren't standalone networks. They are a way for wireless clients to connect to the wired network infrastructure.
-	* APs function is to translate between the tow mediums (wireless, wired).
+	* APs function is to translate between the two mediums (wireless, wired).
 * In 802.11, the upstream wired network is called the **DS** (Distribution System).
 
 ![Wireless network connection to Wired network](./img4/AP-connection-to-distribution-system.png)
