@@ -74,7 +74,7 @@
 * The radio frequency range is from 30 Hz to 300 GHz and is used for many purposes.
 * Wi-Fi uses two main bands (frequency ranges).
 	* **2.4 GHz** band which ranges from 2.400 GHz to 2.4835 GHz
-	* **5 GHz** band which ranges from 5.150 GHz to 5,825 GHz. The range is divided into four smaller bands.
+	* **5 GHz** band which ranges from 5.150 GHz to 5.825 GHz. The range is divided into four smaller bands.
 * The 2.4 GHz band typically provides further reach in open space and better penetration of obstacles such as walls.
 	* However, more devices tend to use the 2.4 GHz band so interference can be a bigger problem compared to the 5GHz band.
 * **Wi-Fi 6** (802.11ax) has expanded the spectrum range to include a band in the **6 GHz** range.
