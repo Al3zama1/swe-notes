@@ -8,7 +8,7 @@
 * **Frame Control**: Provides information such as the message type and subtype.
 * **Duration/ID**: Depending on the message type, this field can indicate:
 	* The time (in microseconds) the channel will be dedicated for transmission of the frame.
-	* An identifier for the association, the connection between the wireless client and AP.
+	* An identifier for the association of the connection between the wireless client and AP.
 * **Addresses**: Up to four addresses can be present in an 802.11 frame. Which addresses are present, and their order, depends on the message type.
 	* Destination Address (DA): Final recipient of the frame.
 	* Source Address (SA): Original sender of the frame.
