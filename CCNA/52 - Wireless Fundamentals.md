@@ -99,7 +99,7 @@
 
 ![](./img4/2.4-frequency-APs-positioning-pattern.png)
 * Using the 1, 6, and 11 pattern you can place APs in a 'honeycomb' pattern to provide complete coverage of an area without interference between channels.
-* The coverage area of each AP overlaps to provide complete coverage of the area, but the frequencies don't overlap, which helps avoid interference between the APs.
+* **The coverage area of each AP overlaps to provide complete coverage of the area, but the frequencies don't overlap, which helps avoid interference between the APs.**
 * When you have to provide wireless coverage over a large space, you should arrange your APs like this.
 #### 5 GHz Frequency Band Channels
 * The 5 GHz band consists of non-overlapping channels, so it is much easier to avoid interference between adjacent APs.
