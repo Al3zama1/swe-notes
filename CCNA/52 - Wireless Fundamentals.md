@@ -132,7 +132,6 @@
 * Wireless devices request to associate with the BSS.
 * Wireless devices that have associated with the BSS are called 'clients' or 'stations'.
 * The area around an AP where its signal is usable is called a **BSA** (Basic Service Area).
-* Clients must communicate via the AP, not directly with each other.
 ### Extended Service Set (ESS)
 ![Service sets ESS](./img4/service-sets-ESS.png)
 * To create larger wireless LANs beyond the range of a single AP, we use an **ESS** (Extended Service Set)
@@ -146,7 +145,7 @@
 * The BSAs should overlap about 10 - 15%, or else the connectivity can be lost when moving between APs.
 ### Mesh Basic Service Set (MBSS)
 ![Service Set MBSS](./img4/service-set-MBSS.png)
-* An **MBSS** can be used in situations where it's difficult to run an Ethernet connection to every AP.
+* A **MBSS** can be used in situations where it's difficult to run an Ethernet connection to every AP.
 * Mesh APs use two radios:
 	* One provides a BSS to wireless clients.
 	* The other forms a 'backhaul network' which is used to bridge traffic from AP to AP.
@@ -182,7 +181,7 @@
 
 ![AP operating as a workgroup bridge](./img4/AP-as-a-workgroup-bridge.png)
 * PC1 does not have wireless capabilities, and also does not have access to a wired connection to SW1.
-* PC1 has a wired connection to the SWB, which has a wireless connection to the AP.
+* PC1 has a wired connection to the WGB, which has a wireless connection to the AP.
 ### Outdoor Bridge
 ![AP in outdoor bridge mode](./img4/AP-as-outdoor-bridge-mode.png)
 * An AP in **outdoor bridge** mode can be used to connect networks over long distances without a physical cable connecting them.
