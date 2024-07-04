@@ -38,10 +38,10 @@
 **Absorption** happens when a wireless signal passes through a material and is converted into heat, weakening the original signal.
 ##### Signal Reflection
 ![Wireless reflection](./img4/wireless-reflection.png)
-**Reflection** happens when a signal bounces off a metal, for example metal. This is why Wi-Fi reception is usually poor in elevators. The signal bounces off the metal and very little penetrates into the elevator.
+**Reflection** happens when a signal bounces off a material, for example metal. This is why Wi-Fi reception is usually poor in elevators. The signal bounces off the metal and very little penetrates into the elevator.
 ##### Signal Refraction
 ![Wireless refraction](./img4/wireless-refraction.png)
-**Refraction** happens when a wave is bent when entering a medium where the signal travels at a different speed. For example, glass and ware can refract waves.
+**Refraction** happens when a wave is bent when entering a medium where the signal travels at a different speed. For example, glass and water can refract waves.
 ##### Signal Diffraction
 ![Wireless diffraction](./img4/wireless-diffraction.png)
 **Diffraction** happens when a wave encounters an obstacle and travels around it to some degree. This can result in blind spots behind the obstacle where the devices don't receive sufficient signal from the access point.

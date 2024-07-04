@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
-                "mode": "source",
+                "file": "CCNA/52 - Wireless Fundamentals.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
+                "file": "CCNA/52 - Wireless Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
+                "file": "CCNA/52 - Wireless Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/51 - Virtual Routing & Forwarding (VRF).md"
+                "file": "CCNA/52 - Wireless Fundamentals.md"
               }
             }
           },
@@ -161,6 +161,8 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/7 - Switch Interfaces.md",
+    "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
     "CCNA/39 - NAT Part 1.md",
@@ -185,8 +187,6 @@
     "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/44 - Port Security.md",
     "CCNA/45 - DHCP Snooping.md",
-    "CCNA/41 - QoS.md",
-    "CCNA/42 - QoS Part 2.md",
     "CCNA/img5/config-management-tools-comparison.png",
     "CCNA/img5/chef.png",
     "CCNA/img5/puppet.png",
