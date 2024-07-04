@@ -127,7 +127,7 @@ Success rate is 0 percent (0/0)
 * Doesn't work because in customer 1 VRF's routing table, there is no route to the destination `192.168.12.2`.
 
 ```
-Pings C2R1
+// Pings C2R1
 SPR1#ping vrf CUSTOMER2 192.168.12.2
 ...
 Success rate is 100 percent (5/5)
