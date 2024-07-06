@@ -41,12 +41,12 @@
 ## 802.11 Message Types
 * There are three 802.11 message types:
 	* **Management**: used to manage the BSS.
-		* Beacon
+		* Beacon messages
 		* Probe request, probe response
-		* Authentication 
+		* Authentication request, authentication response
 		* Association request, association response
 	* **Control**: Used to control access to the medium (radio frequency). Assists with delivery of management and data frames.
-		* TRS (Request to Send).
+		* RTS (Request to Send).
 		* CTS (Clear to Send).
 		* ACK
 	* **Data**: Used to send actual data packets.
