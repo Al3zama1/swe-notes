@@ -131,7 +131,7 @@ SW1(config)#ntp master
 ### WLC Interfaces
 * WLC interfaces are the logical interfaces within the WLC (ie. SVIs on a switch).
 * WLCs have a few different kinds of interfaces:
-	* **Management interface**: Used for management traffic such as Telnet, SSH, HTTP, HTTPS, RADIUS authentication, NTP, Syslog, etc. CAPWAP tunnels are also formed to/from the WLC's management interfaces.
+	* **Management interface**: Used for management traffic, such as Telnet, SSH, HTTP, HTTPS, RADIUS authentication, NTP, Syslog, etc. CAPWAP tunnels are also formed to/from the WLC's management interfaces.
 	* **Redundancy management interface**: When two WLCs are connected by their redundancy ports, one WLC is 'active' and the other is 'standby'. This interface can be used to connect to and manage the 'standby' WLC.
 	* **Virtual Interface**: This interface is used when communicating with wireless clients to relay DHCP requests, perform client web authentication etc.
 	* **Service port interface**: If the service port is used, this interface is bound to it and used for out-of-band management instead of the regular management interface.
