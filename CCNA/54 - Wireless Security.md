@@ -83,7 +83,7 @@ The original 802.11 standard included two options for authentication:
 #### EAP-FAST (EAP Flexible Authentication via Secure Tunneling)
 * EAP-FAST was also developed by Cisco.
 * Consists of three phases:
-	* A PAC (Protection Access Credentials) is generated and passed from the server to the client. The PAC is like a shared key and is used in the next phase to establish a secure TLS tunnel between the client and authentication server.
+	* A PAC (Protection Access Credential) is generated and passed from the server to the client. The PAC is like a shared key and is used in the next phase to establish a secure TLS tunnel between the client and authentication server.
 	* A secure TSL tunnel is established between the client and authentication server.
 	* Inside of the secure (encrypted) TSL tunnel, the client and server communicate further to authenticate/authorize the client.
 ![EAP-FAST](./img4/EAP-FAST.png)
