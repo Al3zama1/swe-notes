@@ -112,7 +112,8 @@ The original 802.11 standard included two options for authentication:
 	* A Key mixing algorithm is used to crate a unique WEP key for every frame, instead of each frame using the same key.
 	* The initialization vector is doubled in length from 24 bits to 48 bits, making brute-force attacks much more difficult.
 	* The MIC includes the sender MAC address to identify the frame's sender.
-	* A timestamp is added to the MiC to prevent replay attacks. Replay attacks involve re-resending a frame that has already been transmitted.
+	* A timestamp is added to the MIC to prevent replay attacks. 
+		* Replay attacks involve re-resending a frame that has already been transmitted.
 	* A **TKIP** sequence number is used to keep track of frames sent from each source MAC address. This also protects agains replay attacks because the frame will be dropped if the sequence counter is incorrect.
 
 It's probably not necessary to memorize all of the above factors. Just know that TKIP was developed as a more secure temporary solution after WEP was found to be vulnerable. Also know that TKIP is used in WPA (WiFi Protected Access) version 1.
