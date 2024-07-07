@@ -61,7 +61,7 @@ The original 802.11 standard included two options for authentication:
 	* **Authenticator**: The device that provides access to the network.
 	* **Authentication Server (AS)**: The device that receives client credentials and permits/denies access.
 
-802.11 wireless LAN topology to that showcases 802.1X integrated with EAP
+802.11 wireless LAN topology that showcases 802.1X integrated with EAP
 ![802.1X](./img4/802-1X.png)
 * The authenticator is the device that provides access to the network, the access point. 
 	* In a split-MAC architecture, the WLC manages the authentication, not the AP itself.
