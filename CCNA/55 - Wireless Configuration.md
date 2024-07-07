@@ -93,7 +93,7 @@ SW1(config)#ntp master
 	* However, in the context of WLCs, ports means physical ports and interfaces means logical interfaces within the device.
 
 ![WLC initial setup continued](./img4/WLC-initial-config-2.png)
-* The *Virtual Gateway IP Address* is an IP address used when then WLC is communicating directly with wireless clients, such as when relaying DHCP requests.
+* The *Virtual Gateway IP Address* is an IP address used when the WLC is communicating directly with wireless clients, such as when relaying DHCP requests.
 * The *Multicast IP Address* is used when forwarding traffic to its APs.
 	* Note that an IP address in the class D range was used, which is reserved for multicast IP addresses.
 * The *Mobility/RF Group Name* is used when you have multiple WLCs and you want them to work together.
