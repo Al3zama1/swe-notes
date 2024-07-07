@@ -3,6 +3,7 @@
 * LAG (Link Aggregation Group) is just another name for EtherChannel. But in the context of WLCs (Wireless LAN Controllers), the term LAG is used.
 	* It's not necessary to connect the WLC to the switch using a LAG, but it's a good idea to provide additional throughput and redundancy.
 * VLAN 100 and VLAN 200 will be mapped to a wireless LAN and advertised by the APs.
+	* In a real deployment, you could limit the Guest SSID to Internet access only, whereas clients associated with the Internal SSID could access all internal company resources.
 * VLAN 10 will be used  to connect to the network devices (WLC, switch, APs, etc) to manage them (via SSH, etc).
 * SW1 has an SVI in each VLAN.
 * WLC1 has an IP in each VLAN.
@@ -10,6 +11,17 @@
 	* The WLC could be configured as the DHCP server, but the switch will server as both, the the DHCP server and NTP server for this network.
 * A split-MAC architecture is being used, therefore the interfaces connected to the APs are access ports. Only the WLC needs to connect via a trunk port with all of the necessary VLANs.
 * The APs will form a CAPWAP tunnel to the WLC.
+### Split-MAC Deployment Traffic Path Review
+![](./img5/split-mac-topology-client-communication-default-gateway.png)
+* A client associated with the Internal WLAN wants to communicate with its default gateway, which is SW1's VLAN 100 SVI.
+* The traffic passes though the CAPWAP tunnel  to the WLC.
+* On the WLC, the Internal WLAN is mapped to VLAN 100, so it will forward the traffic in VLAN 100 to SW1.
+* SW1 then sends traffic back to the client via the same path.
+
+![](./img5/split-mac-deployment-client-to-client-traffic-path.png)
+* A client associated with the Internal WLAN wants to communicate with a client associated with the Guest WLAN.
+* Traffic will be sent to its default gateway following the same path as  before.
+* SW1 then routes traffic to VLAN 200 and sends it to the WLC, which will then send it to the destination client via the CAPWAP tunnel and the AP.
 ## Switch Configuration
 ### VLAN Creation and Assignment
 ```

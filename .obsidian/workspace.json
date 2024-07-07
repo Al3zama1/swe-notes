@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md",
+                "file": "CCNA/55 - Wireless Configuration.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md",
+                "file": "CCNA/55 - Wireless Configuration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md",
+                "file": "CCNA/55 - Wireless Configuration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md"
+                "file": "CCNA/55 - Wireless Configuration.md"
               }
             }
           },
@@ -159,10 +159,12 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "1676794986be6092",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
-    "CCNA/53 - Wireless Architectures.md",
+    "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
+    "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
     "CCNA/54 - Wireless Security.md",
+    "CCNA/53 - Wireless Architectures.md",
     "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/7 - Switch Interfaces.md",
     "CCNA/5 - Ethernet LAN Switching.md",
@@ -186,7 +188,6 @@
     "CCNA/47 - LAN Architectures.md",
     "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/44 - Port Security.md",
-    "CCNA/45 - DHCP Snooping.md",
     "CCNA/img5/config-management-tools-comparison.png",
     "CCNA/img5/chef.png",
     "CCNA/img5/puppet.png",
@@ -196,7 +197,6 @@
     "CCNA/img5/traditional-LAN.png",
     "CCNA/img5/traditional-LAN.png",
     "CCNA/img5/fabric.png",
-    "CCNA/img5/overlay.png",
     "CCNA/img5",
     "CCNA/img4",
     "CCNA/img3",
