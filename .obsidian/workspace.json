@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/53 - Wireless Architectures.md",
-                "mode": "preview",
+                "file": "CCNA/54 - Wireless Security.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/53 - Wireless Architectures.md",
+                "file": "CCNA/54 - Wireless Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/53 - Wireless Architectures.md",
+                "file": "CCNA/54 - Wireless Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/53 - Wireless Architectures.md"
+                "file": "CCNA/54 - Wireless Security.md"
               }
             }
           },
@@ -161,8 +161,8 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
-    "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/53 - Wireless Architectures.md",
+    "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/7 - Switch Interfaces.md",
     "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
