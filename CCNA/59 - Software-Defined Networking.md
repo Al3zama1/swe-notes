@@ -4,8 +4,8 @@
 ## SD-ACCESS
 ![SD-Access Infrastructure](./img5/SD-Access-architecture.png)
 * Cisco **SD-Access** is Cisco's SDN solution for automating campus LANs.
-	* ACI (Application Centric Infrastructure) is their SDN solution for automating data center networks.
-	* SD-WAN is their SDN solution for automating WANs.
+	* **ACI** (Application Centric Infrastructure) is their SDN solution for automating data center networks.
+	* **SD-WAN** is their SDN solution for automating WANs.
 * Cisco **DNA (Digital Network Architecture) Center** is the controller at the center of SD-Access.
 
 ![SDN underlay](./img5/underlay.png)
@@ -25,7 +25,7 @@
 * There are three different roles of switches in the SD-Access:
 	* **Edge nodes**: Connect to end hosts.
 	* **Border nodes**: Connect to devices outside of the SD-Access domain, ie. WAN routers.
-	* **Control nodes**: Uses LISP (Locator ID Separation Protocol) to perform various control plane functions.
+	* **Control nodes**: Uses **LISP** (Locator ID Separation Protocol) to perform various control plane functions.
 * You can add SD-Access on top of an existing network (brownfield deployment) if your network hardware and software supports it.
 	* Google 'Cisco SD-Access compatibility matrix' if you'r curious.
 	* In this case DNA Center won't configure the underlay because this could be a major risk to the current working production network.
