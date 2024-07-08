@@ -53,7 +53,7 @@
 * VXLAN provides the data plane of SD-Access.
 ## Cisco DNA Center
 * Cisco DNA Center has two main roles:
-	* The SDN controller is SD-Access.
+	* The SDN controller in SD-Access.
 	* A network manager in a traditional network (non-SD-Access)
 		* Although it doesn't provide SD-Access functions, it still acts as a central point to monitor, analyze, and configure the network.
 * DNA Center is an application installed on Cisco UCS server hardware.
