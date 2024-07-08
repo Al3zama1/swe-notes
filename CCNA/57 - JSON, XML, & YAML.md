@@ -22,6 +22,40 @@
 	* array: a series of values separated by commas.
 		* Not key-value pairs.
 		* The values don't have to be the same data types.
+
+```
+{
+  "name": "Alice",
+  "age": 30,
+  "isEmployee": true,
+  "salary": null,
+  "contactNumbers": [
+    "123-456-7890",
+    "098-765-4321"
+  ],
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "postalCode": "12345"
+  },
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "Advanced"
+    },
+    {
+      "name": "Data Analysis",
+      "level": "Intermediate"
+    },
+    {
+      "name": "Project Management",
+      "level": "Beginner"
+    }
+  ]
+}
+
+```
 ## XML
 * **XML** (Extensible Markup Language) was developed as a markup language, but is now used as a general data serialization language.
 	* Markup languages (ie, HTML) are used to format text (font, size, color, headings, etc).
@@ -36,5 +70,28 @@
 * Whitespace is significant (unlike JSON and XML).
 	* Indentation is very important.
 * YAML files start with ---.
+	* The `---` indicates the start of a new YAML document. This allows multiple documents to be included in a single file. When parsing the YAML, each document is treated as a separate entity. If there is only one document in the file, the `---` is optional but can be used for clarity.
 * - is used to indicate a list.
 * Keys and values are presented as `key:value`
+
+```
+# Example YAML with a list
+shopping_list:
+  - apples
+  - bananas
+  - oranges
+  - grapes
+  - strawberries
+
+# Another example with a list of dictionaries
+employees:
+  - name: John Doe
+    age: 30
+    department: Sales
+  - name: Jane Smith
+    age: 25
+    department: Marketing
+  - name: Emily Johnson
+    age: 28
+    department: Development
+```
