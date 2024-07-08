@@ -61,6 +61,7 @@
 * Puppet uses a pull model (clients pull configuration from the Puppet master).
 	* Clients use TCP 8140 to communicate with the Puppet master.
 * Instead of YAML, it uses a proprietary language for files.
+	* Puppet DSL
 * Text files required on the Puppet master include:
 	* **Manifest**: This file defines the desired configuration state of a network device.
 	* **Templates**: Similar to Ansible templates. Used to generate Manifests.
