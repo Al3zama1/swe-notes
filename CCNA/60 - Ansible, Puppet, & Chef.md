@@ -1,7 +1,7 @@
 ## Configuration Drift
 * *Configuration drift* is when individual changes made over time cause a device's configuration to deviate from the standard/correct configurations as defined by the company.
 	* Although each device will have unique parts of its configuration (IP addresses, host name, etc),
-	* most of device's configuration is usually defined in standard templates designed by the network architects/engineers of the company.
+	* Most of the device's configuration is usually defined in standard templates designed by the network architects/engineers of the company.
 	* As individual engineers make changes to devices (for example to troubleshoot and fix network issues, test configurations, etc.), the configuration on a device can drift away from the standard.
 	* Records of these individual changes and their reasons aren't kept, which can lead to future issues.
 * Even without configuration tools, it is best to have standard *configuration management* practices.
