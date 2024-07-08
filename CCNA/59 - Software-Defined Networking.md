@@ -4,9 +4,9 @@
 ## SD-ACCESS
 ![SD-Access Infrastructure](./img5/SD-Access-architecture.png)
 * Cisco **SD-Access** is Cisco's SDN solution for automating campus LANs.
-	* **ACI** (Application Centric Infrastructure) is their SDN solution for automating data center networks.
-	* **SD-WAN** is their SDN solution for automating WANs.
-* Cisco **DNA (Digital Network Architecture) Center** is the controller at the center of SD-Access.
+	* Cisco **DNA (Digital Network Architecture) Center** is the controller at the center of SD-Access.
+* **ACI** (Application Centric Infrastructure) is their SDN solution for automating data center networks.
+* **SD-WAN** is their SDN solution for automating WANs.
 
 ![SDN underlay](./img5/underlay.png)
 * The **underlay** is the underlying physical network of devices and connections (including wired and wireless) which provides IP connectivity (ie. using IS-IS).
