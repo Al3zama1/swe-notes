@@ -24,7 +24,7 @@
 * The Data plane is the reason we buy routers and switches (and network infrastructure in general), to forward messages. However, the Control plane and Management plane are both necessary to enable the data plane to do its job. 
 ### Data Plane
 * All tasks involved in forwarding user data/traffic from one interface to another are part of the **data plane**.
-* A router receives a message, looks for the most specific matching route in the routing table, and forwards it out of the appropriate interface to the next hop. It also de-encapsulates the original Layer 2 header, and re-encapsulates with a new header destined for the next hop's MAC address.
+* A router receives a message, looks for the most specific matching route in the routing table, and forwards it out of the appropriate interface to the next hop. It also de-encapsulates the original Layer 2 header, and re-encapsulates it with a new header destined for the next hop's MAC address.
 * A switch receives a message, looks at the destination MAC address, and forwards it out of the appropriate interface (or floods it). This includes functions like adding or removing 802.1q VLAN tags.
 * NAT (changing the src/dst addresses before forwarding ) is part of the data plane.
 * Deciding to forward or discard messages due to ACLs, port security, etc, is part of the data plane.
@@ -49,14 +49,14 @@
 ### Data Plane Message Forwarding Optimizations
 * The operations of the Management plane and Control plane are usually managed by the CPU. 
 * However, this is not desirable for data plane operations because CPU processing is slow (relatively speaking).
-* Instead, a specialized hardware ASIC (Application-Specific Integrated Circuit) is used. ASICs are chips built for specific purposes (such as forwarding frames in a switch).
+* Instead, a specialized hardware **ASIC** (Application-Specific Integrated Circuit) is used. ASICs are chips built for specific purposes (such as forwarding frames in a switch).
 * Using a switch as an example:
 	* When a frame is received, the ASIC (not the CPU) is responsible for the switching logic.
-	* The MAC address table is stored in a kind of memory called TCAM (Ternary Content-Addressable memory).
+	* The MAC address table is stored in a kind of memory called **TCAM** (Ternary Content-Addressable memory).
 		* Another common name for the MAC address table is CAM table.
 	* The ASIC feeds the destination MAC address of the frame into the TCAM, which returns the matching MAC address table entry.
 	* The frame is then forwarded out of the appropriate interface.
-* Modern routers also use a similar hardware data plane: an ASIC designed for forwarding logic, and tables stored in TCAm.
+* Modern routers also use a similar hardware data plane: an ASIC designed for forwarding logic, and tables stored in TCAM.
 
 * In summary:
 	* When a device receives control/management traffic (destined for itself), it will be processed in the CPU.
@@ -111,5 +111,5 @@
 	* The centralized data facilitates network-wide analytics.
 * SDN tools provide the benefits of automation without the requirement of third-party scripts & apps. 
 	* You don't need experience in automation to make use SDN tools.
-	* However, APIs allow third-party applications to interact with the controller, which can be very powerful if you're able to create your own app.s
+	* However, APIs allow third-party applications to interact with the controller, which can be very powerful if you're able to create your own apps.
 * Although SDN and automation aren't the same thing, the SDN architecture greatly facilitates the automation of various tasks in the network via the SDN controller and APIs.
