@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/3 - OSI Model & TCP-IP.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/3 - OSI Model & TCP-IP.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/3 - OSI Model & TCP-IP.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/3 - OSI Model & TCP-IP.md"
+                "file": "CCNA/5 - Ethernet LAN Switching.md"
               }
             }
           },
@@ -161,6 +161,8 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/4 - CLI Introduction.md",
+    "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/2 - Interfaces and Cables.md",
     "CCNA/1 - Network Devices.md",
     "CCNA/60 - Ansible, Puppet, & Chef.md",
@@ -187,8 +189,6 @@
     "CCNA/50 - Virtualization - Containers.md",
     "CCNA/49 - Virtualization & Cloud.md",
     "CCNA/43 - Security Fundamentals.md",
-    "CCNA/48 - WAN Architecture.md",
-    "CCNA/47 - LAN Architectures.md",
     "CCNA/img5/config-management-tools-comparison.png",
     "CCNA/img5/chef.png",
     "CCNA/img5/puppet.png",

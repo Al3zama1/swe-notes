@@ -5,7 +5,6 @@
 * Interacts with software applications. 
 * It identifies communication partners.
 * It synchronizes communication.
-* provides process-to-process communication
 #### Presentation
 * Data in the application layer is in 'application format'. It needs to be translated to a different format to be sent over the network.
 * The presentations layers's job is to translate between application and network formats.
@@ -18,6 +17,7 @@
 * Segments and resembles data for communication between end hosts.
 * Breaks large pieces of data into smaller segments which can be more easily sent over the network and are less likely to cause transmission problems if errors occur.
 * Provides host-to-host communication.
+* provides process-to-process communication
 #### Network
 * Provides connectivity between hosts on different networks.
 * Proves logical addressing (IP addresses).
