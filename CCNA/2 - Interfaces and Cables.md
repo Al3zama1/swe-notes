@@ -28,7 +28,7 @@ Full-Duplex allows devices to send and receive data at the same time without pro
 ![](./img/rj-45-two-pairs.png)
 
 #### Straight-through Connection
-Straight-through cable connect to the same pins on both ends of the connection between two devices. This type of cable is used for communication between two devices that transmit and receive data on different pins.
+A straight-through cable connects to the same pins on both ends of the connection between two devices. This type of cable is used for communication between two devices that transmit and receive data on different pins.
 ![rj-45 straight through cable](./img/rj-45-straight-through-cable.png)
 
 #### Crossover Cable Connection 

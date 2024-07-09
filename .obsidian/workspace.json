@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
-                "mode": "source",
+                "file": "CCNA/3 - OSI Model & TCP-IP.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
+                "file": "CCNA/3 - OSI Model & TCP-IP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
+                "file": "CCNA/3 - OSI Model & TCP-IP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/60 - Ansible, Puppet, & Chef.md"
+                "file": "CCNA/3 - OSI Model & TCP-IP.md"
               }
             }
           },
@@ -161,6 +161,9 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/2 - Interfaces and Cables.md",
+    "CCNA/1 - Network Devices.md",
+    "CCNA/60 - Ansible, Puppet, & Chef.md",
     "CCNA/59 - Software-Defined Networking.md",
     "CCNA/58 - REST APIs.md",
     "CCNA/56 - Network Automation.md",
@@ -186,8 +189,6 @@
     "CCNA/43 - Security Fundamentals.md",
     "CCNA/48 - WAN Architecture.md",
     "CCNA/47 - LAN Architectures.md",
-    "CCNA/46 - Dynamic ARP Inspection.md",
-    "CCNA/44 - Port Security.md",
     "CCNA/img5/config-management-tools-comparison.png",
     "CCNA/img5/chef.png",
     "CCNA/img5/puppet.png",
