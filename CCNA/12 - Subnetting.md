@@ -44,7 +44,7 @@ How many usable addresses are there in each network?
 	* 3 borrowed host bit makes 8 subnets possible.
 	* Subnet mask = 255.255.255.224
 * 203.0.113.0/28
-	* 4 host bits = 14 total addresses.
+	* 4 host bits = 16 total addresses.
 	* (2^4) - 2 = 14 usable addresses.
 	* 4 borrowed host bit makes 16 subnets possible.
 	* Subnet mask = 255.255.255.240
@@ -63,7 +63,7 @@ How many usable addresses are there in each network?
 	* (2^1) - 2 = 0 usable addresses.
 	* 7 borrowed host bit makes 128 subnets possible.
 	* Subnet mask = 255.255.255.254
-	* For a point-to-point connection like the one shown above it is possible to use  a /31 mask and it is recommended. However, don't use it for the CCNA like that.
+	* For a point-to-point connection like the one shown above, it is possible to use  a /31 mask and it is recommended. However, don't use it for the CCNA like that.
 		* Normally it would not be possible because there would leave no addresses for the network and broadcast addresses.
 		* However, for a dedicated point-to-point connection, there is really no need for the network and broadcast addresses.
 		* Routers will give the following warning when using /31 mask: `Warning: use /31 mask on non point-to-point interfaces cautiously`.
@@ -73,7 +73,7 @@ How many usable addresses are there in each network?
 	* 8 borrowed host bit makes 256 subnets possible.
 	* Subnet mask = 255.255.255.255
 	* Will probably never use a /32 mask to configure an actual interface. However, there are some uses for a /32 mask.
-	* a /32 mask can be used when you want to create a static route not a network, but just to one specific host.
+	* a /32 mask can be used when you want to create a static route not to a network, but just to one specific host.
 
 This is called subnetting because we are only using a subset of the total available addresses in the address class that we are working on. In this case we are creating subnets for a class C network.
 ![subnet class C network](./img/CIDR-Notation-24.png)
