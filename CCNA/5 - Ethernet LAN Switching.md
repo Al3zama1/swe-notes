@@ -68,7 +68,7 @@ When looking to initiate communication with another host, we often only know the
 		* Source IP address
 		* Destination IP address
 		* Source MAC address (information that was needed)
-		* Destination MAC address.
+		* Destination MAC address (MAC of device that initiated the ARP request).
 	* Upon Arrival to the destination, the MAC address + IP address information from the target host will be used to populate an entry in the ARP table.
 #### ARP Record Types
 * **Type static**
