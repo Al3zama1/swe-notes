@@ -17,7 +17,7 @@ The header is read left to right, top to bottom. Top left being the first bit an
 * **ECN (Explicit Congestion Notification)**: Provides end-to-end (between two points) notifications of network congestion without dropping packets.
 	* Length of 2 bits.
 	* Without ECN, congestion in a network is usually signaled by dropping packets.
-	* Its an optional feature that requires both endpoints, as well as the underlying network infrastructure to support it.
+	* It's an optional feature that requires both endpoints, as well as the underlying network infrastructure to support it.
 * **Total Length**: Indicates the total length of the packet (L3 header + L4 segment).
 	* Length of 16 bits.
 	* Measured in bytes.
