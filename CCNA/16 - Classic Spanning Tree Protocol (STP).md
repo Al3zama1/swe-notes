@@ -48,6 +48,7 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 * The root bridge has a **designated port** in each collision domain it is connected to.
 * When a switch is powered on, it assumes it is the root bridge. It will only give up its position if it receives a superior BPDU (lower Bridge ID).
 * Once the topology has converged and all switches agree on the root bridge, only the root bridge sends BPDUs. Other switches in the network will forward these BPDUs, but will not generate their own original BPDUs.
+	* **Switches will only send/forward BPDUs on their Designated ports**.
 * All other switches in the topology must have a path to reach the root bridge.
 ![rood bridge with updated bridge id](./img/updated-topology-for-root-bridge.png)
 * **The Bridge Priority is compared first. If they tie, the MAC address is then compared to break the tie.**
@@ -164,7 +165,7 @@ In the image below, SW1's G0/0 interface goes down, therefore it cannot keep on 
 ![stp max age timer](./img/stp-max-age-timer.png)
 * If another BPDU is receive before the max age timer counts down to 0, the timer will reset to 20 seconds and no change will occur.
 * If another BPDU is not received, the max age timer counts down to 0 and the switch will reevaluate its STP choices, including root bridge, local root, designated, and non-designated ports.
-* If a non-designated port is selected to become a designated or root port, it will transition from the blocking state to the listening state (15 seconds), learning state (15 seconds), and then finally the forwarding state. Therefore, it can take a total of 50 seconds for a blocking interface to transition to forwarding.
+* If a non-designated port is selected to become a designated or root port, it will transition from the blocking state to the listening state (15 seconds), learning state (15 seconds), and then finally the forwarding state. Therefore, it can take a total of 50 seconds for a blocking state interface to transition to forwarding state.
 	* A forwarding interface can move directly into a blocking state. There is no worry about creating a loop by blocking an interface.
 ## STP BPDU
 ![STP BPDU Wireshark Analysis](./img/stp-bpdu-wireshark.png)
