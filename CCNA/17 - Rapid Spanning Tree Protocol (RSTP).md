@@ -22,7 +22,8 @@ RSTP is not a timer-based spanning tree algorithm like 802.1D. Therefore, RSTP o
 #### PortFast
 allows a port to move immediately to the Forwarding state, bypassing Listening and Learning. It must be used only on ports connected to end hosts and not switches, which will cause Layer 2 loops.
 #### UPlinkFast
-* Classic STP optional features that allows switch interfaces to immediately move from blocking to forwarding state. It's built into RSTP, therefore it does not need to be activated when using RSTP/Rapid PVST+.
+* Designed to improve the convergence time in a redundant network topology by quickly switching to a backup link if the primary link fails without the need to go through transitional states.
+* The immediate move to forwarding state functions like a classic STP optional feature called UplinkFast. It's built into RSTP, therefore it does not have to be activated.
 #### BackboneFast
 Lets assume SW2's root port is cut off, so it stops receiving BPDUs from the root bridge (SW1). It will then assume it is the root bridge, so it will send it's own BPDUs to SW3.
 SW3 is now receiving BPDUs from both SW1 and SW2, but SW2's  BPDU are inferior - they have a higher bridge ID. Without the BackboneFast functionality, SW3 would just ignore these BPDUs from SW2 until its non-designated port, in classic STP, finally changes to a forwarding state and forwards the superior BPDUs from SW1 to SW2. SW2 then accepts SW1 as its root bridge again.
@@ -47,13 +48,12 @@ BackboneFast allows switches to expire the Max Age timer on their interfaces. In
 * If a port is administratively disabled (`shutdown` command) = discarding state.
 * If a port is enabled but blocking traffic to prevent Layer 2 loops = discarding state.
 #### RSTP Port Roles
-* The **root port** role remains unchanged in RSTP.
-	* The port that has the lowest root cost becomes the root port for the switch.
+* The **root port** role selection remains the same as in RSTP.
 	* The root bridge is the only switch that doesn't have a root port.
-* The **designated role** remains unchanged in RSTP.
-	* The port on a segment (collision domain) that sends the best BPDU is that segment's designated port (only one per segment).
+* The **designated role** selection remains unchanged in RSTP.
+	* Only one per segment (collision domain).
 * The *non-designated* port role is split into two separate roles in RSTP:
-	* A **Alternate port** role is a discarding port that is decided with the same logic as blocking ports in classic STP.
+	* A **Alternate port** role is a discarding port that is decided with the same logic as non-designated (blocking state) ports in classic STP.
 		* ==Function as a backup to the root port. If the root port fails, the switch can immediately move its best alternate port to forwarding==.
 	* A **Backup port** role is a discarding port that receives a superior BPDU from *another interface on the same switch*.
 		* ==Function as a backup for a designated port==. 
