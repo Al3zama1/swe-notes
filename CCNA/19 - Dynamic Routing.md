@@ -42,7 +42,7 @@
 ![ECMP static routes](./img2/ecmp-static-routes.png)
 * It's possible to have ECMP (Equal Cost Multi-Path) with static routes as well.
 * As shown above, there is a tie in the metric number for the two configured routes to the same destination network. Therefore, the traffic will be load balanced between them.
-	* Static routes don't really use the concept of metric so there will always be the same value, resulting in ties for multiple static routes to the same destination network.
+	* Static routes don't really use the concept of metric so there will always be a value of 0, resulting in ties for multiple static routes to the same destination network.
 ### IGP (Interior Gateway Protocol) Metrics
 ![dynamic routing metrics](./img2/dynamic-routing-metrics.png)
 
@@ -57,11 +57,15 @@ The example below demonstrates the differences between the RIP and OSPF dynamic 
 * For example, an OSPF route to 192.168.4.0/24 might have a metric of 30, while an EIGRP route to the same destination might have a metric of 33280. Which route is better? Which route should the router put in the route table?
 * The **administrative distance (AD)** is used to determine which routing protocol is preferred. A lower AD is preferred and indicates that the routing protocol is considered more trustworthy (more likely to select good routes).
 	* The AD of a routing protocol and static route can be changed.
+### Floating Static Routes
+* By changing the AD of a static route, you can make it less preferred than routes learned by a dynamic routing protocol to the same destination (make sure the static route's AD is higher than the routing protocol's AD).
+* The route will be inactive (not in the routing table) unless the route learned by the dynamic routing protocol is removed(for example, the remote router stops advertising it for some reason, or an interface failure causes an adjacency with a neighbor to be lost).
+
 ```
 Router(config)#ip route 10.0.0.0 255.0.0.0 10.0.13.2 ?
 <1-255> Distance metric for this route
 ```
-* Above, the 'Distance metric for this route' refers to the administrative distance (AD) and not the metric.
+* Distance refers to the route's AD and not metric.
 ### Administrative Distance (AD) Chart
 The numbers below are the values used on Cisco devices. Other vendors might rank them differently.
 
@@ -79,6 +83,3 @@ The numbers below are the values used on Cisco devices. Other vendors might rank
 | Internal BGP                                       | 200        |
 | Unstable Route (Unknown)                           | 255        |
 * **Unstable route**: If the administrative distance is 255, the router does not believe the source of that route and does not install the route in the routing table.
-### Floating Static Routes
-* By changing the AD of a static route, you can make it less preferred than routes learned by a dynamic routing protocol to the same destination (make sure the static route's AD is higher than the routing protocol's AD).
-* The route will be inactive (not in the routing table) unless the route learned by the dynamic routing protocol is removed(for example, the remote router stops advertising it for some reason, or an interface failure causes an adjacency with a neighbor to be lost).
