@@ -78,7 +78,7 @@ Identify the root bridge and the RSTP port role of each switch interface in the 
 * There is no risk of creating loops when connected to end hosts, therefore they can move straight to the forwarding state without the negotiation process.
 * They function like a Classic STP port with PortFast enabled. The PortFast functionality is built into RSTP by default.
 * You configure an edge port by enabling PortFast on the interface.
-`SW1(config-if)#spanning-tree portfast`
+	* `SW1(config-if)#spanning-tree portfast`
 #### Point-to-Point Link Type
 * Point-to-point ports connect directly to another switch. 
 * They function in full-duplex.
