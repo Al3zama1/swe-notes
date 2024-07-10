@@ -176,7 +176,7 @@ SW1(config-if)#switchport mode trunk
 
 ```
 * Many modern switches do not support Cisco's ISL at all. They only support 802.1Q (dot1q).
-* However, switches that do support both (like the one in the example above) have a trunk encapsulation of `Auto`by default.
+* However, switches that do support both (like the one in the example above) have a trunk encapsulation of `negotiate`by default.
 * To manually configure the interface as a trunk port, you must first set the encapsulation to 802.1Q or ISL. This is not necessary on switches that only support 802.1Q.
 * After you set the encapsulation type, you can then configure the interface as a trunk.
 ##### View Trunk Interfaces
