@@ -23,7 +23,7 @@
 ### RIPv2
 * Supports VLSM and CIDIR.
 * Use this version if you are going to use RIP.
-* Includes subnet mast information in advertisements (Response messages).
+* Includes subnet mask information in advertisements (Response messages).
 * Messages are **multicast** to 224.0.0.9.
 	* **Broadcast**: Messages are delivered to all devices on the local network.
 	* **Multicast**: Messages are delivered only to devices that have joined that specific multicast group.
