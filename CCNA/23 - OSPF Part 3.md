@@ -132,7 +132,7 @@ Why would you change the OSPF network type? For example, if two routers are dire
 ## OSPF LSA Types
 * The OSPF LSDB is made up of LSAs.
 	* All routers in the same OSPF area share the same LSDB.
-* There are 11 types of LSA, but there are only 3 you should be aware of for the CCNS:
+* There are 11 types of LSA, but there are only 3 you should be aware of for the CCNA:
 	* Type 1 (Router LSA)
 	* Type 2 (Network LSA)
 	* Type 5 (AS External LSA)
