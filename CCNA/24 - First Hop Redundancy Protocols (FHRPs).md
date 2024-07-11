@@ -11,7 +11,7 @@ The name 'first-hop' redundancy protocol is used because the default gateway is 
 	* The actual terms (active, standby, etc.) vary depending on which FHRP is being used.
 
 ![](./img2/fhrp-intro-2.png)
-* If an end host needs to send traffic outside the network, it will need to contact the default gateway with the VIP of 12.16.0.252/24.
+* If an end host needs to send traffic outside the network, it will need to contact the default gateway with the VIP of 172.16.0.252/24.
 	* In the case that the end host does not know the MAC address of the the default gateway, it will use ARP to obtain it.
 	* The STANDBY and ACTIVE routers share the same VIP, but only the ACTIVE one will reply  with a virtual MAC because traffic is supposed to flow through the ACTIVE router.
 	* Each FHRP uses a different Virtual MAC address.
