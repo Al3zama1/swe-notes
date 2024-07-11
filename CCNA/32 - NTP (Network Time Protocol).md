@@ -89,7 +89,7 @@ R1(config)#ntp server 216.239.35.12
 * The order in which the servers are entered does not matter. R1 will ask all of them for the time and will select whichever give the best, quickest responses.
 * The NTP server selected might change if the responses start slowing down or it stops responding altogether.
 * It's best to select multiple NTP servers so that the device can always have a reliable source of time.
-* The NTP server `216.239.35.9` has been selected as the preferred server and the others will be backups. This is optional.
+* The NTP server `216.239.25.0` has been selected as the preferred server and the others will be backups. This is optional.
 
 ```
 R1#show ntp associations
