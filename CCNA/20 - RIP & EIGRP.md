@@ -126,6 +126,7 @@ R1 wants to contact a host in the LAN connected to R4 (192.168.4.0/24). The rout
 * **Feasible Successor**: An alternate route to the destination (not the best route) *which meets the feasibility condition*. It is guaranteed to be loop-free.
 	* EIGRP has the system of feasible successors as a kind of loop-prevention mechanism.
 * **Feasibility Condition Check**: When a neighboring router advertises a route (with its RD), the receiving router checks if the reported distance (RD) of this route is less than the feasible distance (FD) of the current successor route for the same destination. If the RD is less than the FD of the successor route, the neighboring route is deemed a feasible successor.
+	* The RD of a route must be less than the successor route's feasible distance to be considered a feasible successor.
 ### EIGRP Unequal-Cost Load-Balancing
 * A unique feature of EIGRP because other routing protocols only perform load-balancing if each route's metric is equal. With the default settings EIGRP doesn't do unequal-cost load-balancing.
 * EIGRP will only perform unequal-cost load-balancing over feasible successor routes. If a route does't meet the feasibility requirement, it will NEVER be selected for load-balancing, regardless of **variance**.
