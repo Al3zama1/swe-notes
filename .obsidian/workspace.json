@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/43 - Security Fundamentals.md",
+                "file": "CCNA/44 - Port Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/43 - Security Fundamentals.md",
+                "file": "CCNA/44 - Port Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/43 - Security Fundamentals.md",
+                "file": "CCNA/44 - Port Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/43 - Security Fundamentals.md"
+                "file": "CCNA/44 - Port Security.md"
               }
             }
           },
@@ -161,6 +161,7 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/43 - Security Fundamentals.md",
     "CCNA/42 - QoS Part 2.md",
     "CCNA/41 - QoS.md",
     "CCNA/37 - Secure Shell (SSH).md",
@@ -186,7 +187,6 @@
     "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
     "CCNA/18 - EtherChannel.md",
-    "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
     "CCNA/img5/config-management-tools-comparison.png",

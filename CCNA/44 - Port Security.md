@@ -23,7 +23,7 @@
 ## Violation Modes
 There are three different violation modes that determine what the switch will do if an unauthorized frame enters an interface configured with port security.
 * **Shutdown** (default mode)
-	* Effectively shut down the port by placing it in an err-disabled state.
+	* Effectively shuts down the port by placing it in an err-disabled state.
 	* Generates a Syslog and/or SNMP message when the interface is disabled.
 	* The violation counter is set to 1 when the interface is disabled. Although, it will be reset to 0 when the interface is re-enabled.
 * **Restrict**
