@@ -174,6 +174,8 @@ R3(config)#ntp peer 10.0.23.1
 	* Specify trusted key(s): `ntp trusted-key key-number`
 	* Specify which key to use for the server: `ntp server ip-address key key-number`.
 		* This command isn't needed on the server itself (R1 in this case).
+
+![ntp sample network topology](./img3/ntp-sample-topology-2.png)
 ```
 R1(config)#ntp authenticate
 R1(config)#ntp authentication-key 1 md5 ccna
