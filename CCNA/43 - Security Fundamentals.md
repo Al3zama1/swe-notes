@@ -73,7 +73,6 @@ Systems can be more secure or less secure, but there are no guarantees in securi
 	* **Whaling** is phishing targeted at high-profile individuals, ie. a company president.
 * **Vishing** (voice phishing) is phishing performed over the phone.
 * **Smishing** (SMS phishing) is phishing using SMS text messages.
-
 * **Watering hole** attacks compromise sites that the target victim frequently visits. If a malicious link is placed on a website the target trusts, they might not hesitate to click it.
 * **Tailgating** attacks involve entering restricted, secured areas by simply walking in behind an authorized person as they enter. Often, the target will hold the door open for the attacker to be polite, assuming the attacker is also authorized to enter.
 ### Password-related Attacks
@@ -85,8 +84,8 @@ Systems can be more secure or less secure, but there are no guarantees in securi
 	* **Brute force attack**: A program tries every possible combination of letters, numbers, and special characters to find the target's password.
 * String passwords should contains:
 	* At least 8 characters.
-	* A mixture of uppercase and lowercase letters.
 	* A mixture of letters and numbers.
+	* A mixture of uppercase and lowercase letters.
 	* One or more special characters.
 	* Should be changed regularly.
 ## Passwords/Multi-Factor Authentication (MFA)
