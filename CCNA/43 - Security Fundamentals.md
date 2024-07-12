@@ -123,4 +123,4 @@ For the CCNA, know the difference between Authentication, Authorization, and Acc
 * **Physical access control** protects equipment and data from potential attackers by only allowing authorized users into protected areas such as network closets or data center floors.
 	* Multi-factor locks can protect access to restricted areas.
 		* ie. a door that requires users to swipe a badge and scan their fingerprints to enter.
-		* Permissions of the bade can easily be change. For example, permissions can be removed when an employee leaves the company.
+		* Permissions of the bade can easily be changed. For example, permissions can be removed when an employee leaves the company.
