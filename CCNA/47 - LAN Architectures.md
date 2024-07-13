@@ -46,7 +46,7 @@
 
 ![Distribution Layer switches with a Core Layer](./img3/distribution-layer-switches-with-core-layer.png)
 * To help scale large LAN networks, you can add a Core Layer.
-* Cisco recommends adding a Core Layer if there are more than three Distribution Layers in a single location.
+* Cisco recommends adding a Core Layer if there are more than 3 Distribution Layers in a single location.
 * Each Distribution Layer connects to the Core Layer so there is no need for a full mesh of direct connections between the Distribution Layer switches.
 * When we add a Core Layer, we obtain a three-tier LAN architecture.
 ## 3-Tier LAN Architecture
