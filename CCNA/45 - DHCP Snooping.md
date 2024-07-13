@@ -25,7 +25,7 @@
 
 ![DHCP starvation walkthrough](./img3/DHCP-starvation.png)
 * DHCP uses a field in the DHCP message, written as **CHADDR**, which stands for **Client Hardware Address**. It is used to indicate the MAC address of the client that originated the DHCP message.
-	* The field is needed because in the event that a DHCP relay is being used to send the DHCP message over the internet, the source MAC address will not be the one from the original client once it reaches the DHCP server. Therefore, the DHCP server cannot use it as a way of referencing the client that sent the message. The CHADDR field maintains the client's source MAC address regardless of the number of hops.
+	* The field is needed because in the event that a DHCP relay agent is being used to send the DHCP message over the internet, the source MAC address will not be the one from the original client once it reaches the DHCP server. Therefore, the DHCP server cannot use it as a way of referencing the client that sent the message. The CHADDR field maintains the client's source MAC address regardless of the number of hops.
 ### DHCP Poisoning (Man-in-the-Middle)
 * Similar to ARP poisoning, DHCP Poisoning can be used to perform a Man-in-the-Middle attack.
 * A *spurious* (illegitimate) DHCP server replied to clients DHCP Discovery messages and assigns them IP addresses, but makes the clients use the spurious server's IP as the default gateway.
