@@ -53,7 +53,7 @@
 	* If it is a **DHCP Client** message, perform the following:
 		* DISCOVER/REQUEST messages: Check if the frame's source MAC address and the DHCP message's CHADDR fields match. Match = forward, mismatch = discard.
 		* RELEASE/DECLINE messages: Check if the packet's source IP address and the receiving interface match the entry in the DHCP Snooping Binding Table. Match = forward, mismatch = discard.
-* When a client successfully leases an IP address from a server, create a new entry in the DHCP Snooping Binding Table.
+* When a client successfully leases an IP address from a DHCP server, it create a new entry in the DHCP Snooping Binding Table.
 
 ```
 SW1#show ip dhcp snooping binding
@@ -92,8 +92,6 @@ SW1(config)#errdisable recovery cause dhcp-rate-limit
 
 ![DHCP snooping option 82 forward frame](./img3/dhcp-snooping-option-82-good-example.png)
 ```
-SW1(config)#no ip dhcp snooping information option
-
 SW2(config)#no ip dhcp snooping information option
 ```
 * The command also has to be specified in SW2 because otherwise it will add option 82 itself, which will cause R1 to drop it.

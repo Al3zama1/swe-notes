@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/45 - DHCP Snooping.md",
-                "mode": "source",
+                "file": "CCNA/46 - Dynamic ARP Inspection.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/45 - DHCP Snooping.md",
+                "file": "CCNA/46 - Dynamic ARP Inspection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/45 - DHCP Snooping.md",
+                "file": "CCNA/46 - Dynamic ARP Inspection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/45 - DHCP Snooping.md"
+                "file": "CCNA/46 - Dynamic ARP Inspection.md"
               }
             }
           },
@@ -161,6 +161,7 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/45 - DHCP Snooping.md",
     "CCNA/44 - Port Security.md",
     "CCNA/43 - Security Fundamentals.md",
     "CCNA/42 - QoS Part 2.md",
@@ -186,7 +187,6 @@
     "CCNA/22 - OSPF Part 2.md",
     "CCNA/21 - OSPF.md",
     "CCNA/20 - RIP & EIGRP.md",
-    "CCNA/19 - Dynamic Routing.md",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
     "CCNA/img5/config-management-tools-comparison.png",
