@@ -5,7 +5,7 @@
 	* It's efficient in terms of interfaces because only 1 is used.
 	* However, in a busy network, all of the traffic going to the router and back to the switch in a single interface can cause network congestion.
 	* Therefore, in large networks, a multilayer switch is the preferred method of inter-VLAN routing.
-* Multilayer Switch can also be used to perform inter-VLAN routing without the need to go to the router.
+* A multilayer Switch can also be used to perform inter-VLAN routing without the need to go to the router.
 ## Layer 3 (Multilayer) Switches
 * A multilayer switch is capable of both switching and routing.
 * It is Layer 3 aware.
@@ -15,13 +15,13 @@
 #### Switch Virtual Interfaces (SVI)
 * Switch Virtual Interfaces (SVI) can be created for each VLAN to allow for inter-VLAN communication. Each SVI is given an IP address that helps establish a link between a subnet and a VLAN.
 * SVIs are set up as the default gateway for all the clients in their respective VLANs, instead of the router. This avoids sending frames to the router for inter-VLAN routing.
-* When a frames arrives, it will send it to the VLAN that is associated with the subnet where the destination IP belongs.
+* When a frames arrives, it will forward it to the VLAN that is associated with the subnet where the destination IP belongs.
 
 The example below shows the process of communication between two PCs in different VLANS when a Layer 3 switch is used.
 ![multilayer switch inter vlan routing](./img/multilayer-switch-inter-vlan-routing.png)
 * PC in VLAN 20 sees that its target is in a different subnet, therefore it will communicate with its default gateway.
 	* The default gateway for VLAN 20 is SVI with IP 192.168.1.126.
-* SW2 will see t     hat the destination IP belongs in the subnet associated with VLAN 10, therefore forward the frame to VLAN 10. Effectively carrying out inter-VLAN routing.
+* SW2 will see that the destination IP belongs in the subnet associated with VLAN 10, therefore it will forward the frame to VLAN 10. Effectively carrying out inter-VLAN routing.
 * It is assumed that SW2 already has the mac address from the destination PC in its mac address table. Otherwise, the switch would have flooded VLAN 10 to find it.
 #### Communication Outside the LAN
 The example below shows the process of communication between two devices that are not in the same LAN.

@@ -61,7 +61,7 @@ VLAN Name           Status         Ports
 1005 trnet-default active
 ```
 * All Switch interfaces are in VLAN 1 by default.
-* VLANS 1002, 1003, 1004, 1004, 1005 are for old technologies that are not needed for the CCNA.
+* VLANS 1002, 1003, 1004, 1005 are for old technologies that are not needed for the CCNA.
 * VLANs 1, 1002 - 1005 exist by default and **cannot be deleted**.
 
 ##### Set VLANs
@@ -121,7 +121,7 @@ Using Trunk ports, the number of connections between Switch to Switch and Switch
 
 ![IEEE 803.1Q tag format](./img/801-1Q-tag-format.png)
 
-* ***TPID (Tag Protocol Identifier)**:
+* **TPID (Tag Protocol Identifier)**:
 	* 16 bits (2 bytes) in length.
 	* Identifies the protocol used to create the frame VLAN tag.
 	* Always set to a value of 0x8100 that indicates that the frame is 802.1Q tagged.
@@ -275,7 +275,7 @@ There are 2 methods of configuring the native VLAN on a router:
 METHOD 1:
 R1(config)#interface g0/0.10
 R1(config-subif)#encapsulation dot1q 10 native
-R1(config-subif)#
+R1(config-subif)#ip address 192.168.1.62 255.255.255.192
 
 METHOD 2:
 R1(config)#interface g0/0
