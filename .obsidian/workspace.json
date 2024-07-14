@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/21 - OSPF.md",
-                "mode": "preview",
+                "file": "CCNA/23 - OSPF Part 3.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/21 - OSPF.md",
+                "file": "CCNA/23 - OSPF Part 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/21 - OSPF.md",
+                "file": "CCNA/23 - OSPF Part 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/21 - OSPF.md"
+                "file": "CCNA/23 - OSPF Part 3.md"
               }
             }
           },
@@ -161,6 +161,8 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/22 - OSPF Part 2.md",
+    "CCNA/21 - OSPF.md",
     "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
     "CCNA/18 - EtherChannel.md",
@@ -185,8 +187,6 @@
     "CCNA/45 - DHCP Snooping.md",
     "CCNA/50 - Virtualization - Containers.md",
     "CCNA/49 - Virtualization & Cloud.md",
-    "CCNA/48 - WAN Architecture.md",
-    "CCNA/47 - LAN Architectures.md",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
     "CCNA/img5/config-management-tools-comparison.png",

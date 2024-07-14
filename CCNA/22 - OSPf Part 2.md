@@ -58,7 +58,7 @@ It's assumed that OSPF has just been activated on R1's G0/0 interface
 * R1 will insert R2 into its OSPF neighbor table upon arrival of the reply.
 * R1 will send another *hello* message, this time containing R2's RID.
 * Now both routers should be in the **2-way** state.
-	* The 2-way state is when a router has received a *hello* packet with its own RID in it.
+	* The 2-way state is reached when a router has received a *hello* packet with its own RID in it.
 	* If both routers reach the 2-way state, it means that all of the conditions have been met for them to become OSPF neighbors. They are now ready to share LSAs to build a common LSDB.
 * In some network types, a **DR (Designated Router)** and **BDR (Backup Designated Router)** will be elected at this point.
 	* OSPF Broadcast network Type
