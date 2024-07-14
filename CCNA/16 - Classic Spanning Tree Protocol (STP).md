@@ -163,7 +163,7 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 ###  Max Age Timer
 In the image below, SW1's G0/0 interface goes down, therefore it cannot keep on sending BPDUs to SW2's G0/1 interface. As a result, SW2's G0/1 interface will eventually reach its Max Age Timer, triggering a change in the STP topology.
 ![stp max age timer](./img/stp-max-age-timer.png)
-* If another BPDU is receive before the max age timer counts down to 0, the timer will reset to 20 seconds and no change will occur.
+* If another BPDU is received before the max age timer counts down to 0, the timer will reset to 20 seconds and no change will occur.
 * If another BPDU is not received, the max age timer counts down to 0 and the switch will reevaluate its STP choices, including root bridge, local root, designated, and non-designated ports.
 * If a non-designated port is selected to become a designated or root port, it will transition from the blocking state to the listening state (15 seconds), learning state (15 seconds), and then finally the forwarding state. Therefore, it can take a total of 50 seconds for a blocking state interface to transition to forwarding state.
 	* A forwarding interface can move directly into a blocking state. There is no worry about creating a loop by blocking an interface.
