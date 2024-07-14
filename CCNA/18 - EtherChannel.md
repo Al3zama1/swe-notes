@@ -245,7 +245,7 @@ Po1              Desg FWD 12   128.27    Shr
 Modern network designs often leans toward using Layer 3 connections between switches because that way Spanning Tree won't be an issue anywhere in the network.
 
 ![EtherChannel loops](./img2/etherchannel-loops.png)
-Even if we are using EtherChannel, Layer 2 loops can still occur if multiple switches are connected together in a loop as shown in the above picture. Therefore Spanning Tree will block one of these *port-channel* interfaces.
+Even if we are using EtherChannel, Layer 2 loops can still occur if multiple switches are connected together in a loop as shown in the picture above. Therefore, Spanning Tree will block one of these *port-channel* interfaces.
 
 ![Layer 3 EtherChannel](./img2/layer3-etherchannel.png)
 However, if all of these connections between switches were made using routed ports instead of Layer 2 switchports, there would be no need to run Spanning Tree at all. Routed ports don't forward Layer 2 broadcasts, so no Layer 2 loops can be formed.
