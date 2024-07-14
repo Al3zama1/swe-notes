@@ -48,7 +48,7 @@ R2(config-if)#ip ospf priority 255
 ```
 ![DR/BDR election](./img2/dr-bdr-2.png)
 * R4 became the DR, not R2. R2 became the BDR.
-	* When the DR goes down, the BDR becomes the new DR even if it doesn't have the highest OSPF interface priority / RID . Then an election is held for the next BDR.
+	* When the DR goes down, the BDR becomes the new DR even if it doesn't have the highest OSPF interface priority / RID anymore. Then, an election is held for the next BDR.
 * DROthers (R3 and R5 in the subnet) will only move to the Full state with the DR and BDR. The neighbor state with other DROthers will be 2-way.
 	* DROthers don't form full adjacencies with other DROthers. They remain in the 2-way state.
 ##### Reset OSPF Process
@@ -90,7 +90,7 @@ R1(config-if)#encapsulation ppp
 * You must configure the clock rate on the DCE side:
 	* `R1(config-if)#clock rate <bits-per-second>`
 ### OSPF Point-to-Point Network Type
-* Enabled on **serial** interfaces using the **PPP** and **HDLC** encapsulations by default.
+* Enabled on **serial** interfaces using the **PPP** or **HDLC** encapsulations by default.
 	* PPP and HDLC are both Layer 2 encapsulations, similar to Ethernet, except they are used on serial connections.
 * Routers dynamically discover neighbors by sending/listening for OSPF *Hello* messages using multicast address `224.0.0.5`.
 * A DR and BDR are NOT selected, compared to an OSPF broadcast network type.
