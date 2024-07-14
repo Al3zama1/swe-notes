@@ -111,7 +111,7 @@ R1's G1/0 interface has an IP address of 172.20.20.17 and its G2/0 interface has
 * d) `R1(config-router)#network 172.20.0.0 0.3.255.255`
 ![EIGRP wildcard mask](./img2/eigrp-wildcard-mask-quiz.png)
 ### EIGRP Metric
-R1 wants to contact a host in the LAN connected to R4 (192.168.4.0/24). The route taken is through R2 dues to a lower metric value.
+R1 wants to contact a host in the LAN connected to R4 (192.168.4.0/24). The route taken is through R2 due to a lower metric value.
 ![EIGRP Metric](./img2/eigrp-metric.png)
 * By default, EIGRP used **bandwidth** and **delay** to calculate *metric*.
 	* ([K1 * bandwidth + (K2 * bandwidth) / (256 - load) + K3 * delay] * [K5 / (reliability + K4)]) * 256
@@ -146,7 +146,7 @@ R1(config-router)#variance ?
 	<1-128> Metric variance Multiplier
 R1(config-router)#variance 2
 ```
-* **Variance 2** = feasible successor routes with an FD (feasible distance) up to 2x the successor route's FD can be used to load-balance.
+* **Variance 2** = feasible successor routes with a FD (feasible distance) up to 2x the successor route's FD can be used to load-balance.
 ### Show EIGRP Topology
 Show all the EIGRP routes received and not just the ones on the routing table
 ```
