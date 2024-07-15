@@ -13,7 +13,7 @@
 	* **Inbound**: Maximum one ACL.
 	* **Outbound**: Maximum one ACL.
 ### Router ACLs Check Process
-* When the router checks a packet agains the ACL, it processes the ACEs in order, from top to bottom.
+* When the router checks a packet against the ACL, it processes the ACEs in order, from top to bottom.
 	* The order of the ACEs in an ACL matter.
 * If the packet matches one of the ACEs in the ACL, the router takes the action and stops processing the ACL. All entries below the matching entry will be ignored.
 ### Implicit Deny
