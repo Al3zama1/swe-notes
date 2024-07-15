@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/31 - CDP & LLDP.md",
+                "file": "CCNA/32 - NTP (Network Time Protocol).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/31 - CDP & LLDP.md",
+                "file": "CCNA/32 - NTP (Network Time Protocol).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/31 - CDP & LLDP.md",
+                "file": "CCNA/32 - NTP (Network Time Protocol).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/31 - CDP & LLDP.md"
+                "file": "CCNA/32 - NTP (Network Time Protocol).md"
               }
             }
           },
@@ -161,6 +161,7 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/31 - CDP & LLDP.md",
     "CCNA/30 - Extended ACLs.md",
     "CCNA/29 - Standard ACLs.md",
     "CCNA/28 - IPv6 Part 3.md",
@@ -186,7 +187,6 @@
     "CCNA/8 - IPv4 Header.md",
     "CCNA/7 - Switch Interfaces.md",
     "CCNA/6 - IPv4 Addressing.md",
-    "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
     "CCNA/img5/config-management-tools-comparison.png",
