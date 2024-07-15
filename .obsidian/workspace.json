@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/1 - Network Devices.md",
+                "file": "CCNA/3 - OSI Model & TCP-IP.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/61 - Commands By Topic.md",
+                "file": "CCNA/3 - OSI Model & TCP-IP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/61 - Commands By Topic.md",
+                "file": "CCNA/3 - OSI Model & TCP-IP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/61 - Commands By Topic.md"
+                "file": "CCNA/3 - OSI Model & TCP-IP.md"
               }
             }
           },
@@ -177,10 +177,12 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "136e61473c4a3e9e",
+  "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/2 - Interfaces and Cables.md",
     "CCNA/1 - Network Devices.md",
     "CCNA/61 - Commands By Topic.md",
+    "CCNA/img6",
     "CCNA/47 - LAN Architectures.md",
     "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/45 - DHCP Snooping.md",
@@ -204,7 +206,6 @@
     "CCNA/27 - IPv6 Part 2.md",
     "CCNA/26 - IPv6.md",
     "CCNA/25 - TCP & UDP.md",
-    "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
     "CCNA/img5/config-management-tools-comparison.png",
@@ -225,7 +226,6 @@
     "CCNA/img/subnetting-5.jpeg.crdownload",
     "CCNA/img/subnetting-3.jpeg.crdownload",
     "CCNA/img/subnetting-2.jpeg.crdownload",
-    "CCNA/img/subentting-1.jpg.crdownload",
-    "img"
+    "CCNA/img/subentting-1.jpg.crdownload"
   ]
 }
