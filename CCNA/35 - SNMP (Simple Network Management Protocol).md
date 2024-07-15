@@ -17,7 +17,7 @@
 ![SNMP network topology for example](./img3/SNMP-operation-network-topology.png)
 * There are 3 main operations used in SNMP
 	* Managed devices can notify the NMS of events.
-		* Inform of an interface going doing, etc.
+		* Inform of an interface going down, etc.
 	* The NMS can ask the managed devices for information about their current status.
 		* Ask about the current CPU utilization, etc.
 	* The NMS can tell the managed devices to change aspects of their configuration.

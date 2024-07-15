@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
-                "mode": "source",
+                "file": "CCNA/36 - Syslog.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/36 - Syslog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/36 - Syslog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md"
+                "file": "CCNA/36 - Syslog.md"
               }
             }
           },
@@ -161,6 +161,10 @@
   },
   "active": "1676794986be6092",
   "lastOpenFiles": [
+    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
+    "CCNA/34 - DHCP.md",
+    "CCNA/33 - DNS (Domain Name System).md",
+    "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/31 - CDP & LLDP.md",
     "CCNA/30 - Extended ACLs.md",
     "CCNA/29 - Standard ACLs.md",
@@ -183,10 +187,6 @@
     "CCNA/12 - Subnetting.md",
     "CCNA/11 - Life of a Packet.md",
     "CCNA/10 - Static Routing.md",
-    "CCNA/9 - Routing Fundamentals.md",
-    "CCNA/8 - IPv4 Header.md",
-    "CCNA/7 - Switch Interfaces.md",
-    "CCNA/6 - IPv4 Addressing.md",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
     "CCNA/img5/config-management-tools-comparison.png",
