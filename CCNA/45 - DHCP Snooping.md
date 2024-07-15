@@ -64,7 +64,7 @@ SW1#show ip dhcp snooping binding
 * Note that when DHCP snooping is enabled, the DHCP snooping binding table is automatically built as hosts lease IP addresses from DHCP servers.
 ## DHCP Snooping Rate-Limiting
 * DHCP snooping can limit the rate at which DHCP messages are allowed to enter an interface. 
-* Rate-limiting can be very useful to protect agains DHCP exhaustion attacks.
+* Rate-limiting can be very useful to protect against DHCP exhaustion attacks.
 	* Attackers can spoof both the frame's source MAC address and the DHCP message's CHADDR (Client Hardware Address) field to bypass the DHCP snooping filtering of DISCOVER and REQUEST messages.
 	* With rate limiting, we can prevent them from exhausting the DHCP server with tons of illegitimate DHCP DISCOVER messages.
 * If the rate of DHCP messages crosses the configured limit, the interface is err-disabled.
