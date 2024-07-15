@@ -163,7 +163,7 @@ R1(config-ext-nacl)#deny tcp src-ip <matcher> src-port-num dest-ip <matcher> dst
 	* lt: less than.
 	* neq: not equal to.
 	* range: between the ports specified.
-* The most common choice is EQ, to match traffic for a specific port number.
+* The most common choice is `eq`, to match traffic for a specific port number.
 * After the destination IP address and/or destination port numbers, there are many more options you can use to match (not necessary for the CCNA).
 	* ack: match the TCP ACK flag.
 	* fin: match the TCP FIN flag.
