@@ -32,7 +32,6 @@
 #### Physical
 * Defines physical characteristics of the medium used to transfer data between devices.
 * Digital bits are converted into electrical (for wired connections) or radio (for wireless connections) signals.
-
 #### OSI Model PDUs
 ![osi model pdus](./img/osi-pdus.png)
 
