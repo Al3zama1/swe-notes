@@ -233,4 +233,10 @@ Y: AVF
 access-list 1 permit|deny ip wildcard-mask
 clock summer-time
 
+
+ntp authenticate
+ntp authentication-key 1 md5 <key>
+
+ntp peer 343 key ldkjfldj
+ntp server 234534 key sjfljslfrjw
 ```
