@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/7 - Switch Interfaces.md",
+                "file": "CCNA/12 - Subnetting.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/7 - Switch Interfaces.md",
+                "file": "CCNA/12 - Subnetting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/7 - Switch Interfaces.md",
+                "file": "CCNA/12 - Subnetting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/7 - Switch Interfaces.md"
+                "file": "CCNA/12 - Subnetting.md"
               }
             }
           },
@@ -179,8 +179,12 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
-    "CCNA/61 - Commands By Topic.md",
+    "CCNA/11 - Life of a Packet.md",
+    "CCNA/10 - Static Routing.md",
+    "CCNA/9 - Routing Fundamentals.md",
+    "CCNA/8 - IPv4 Header.md",
     "CCNA/7 - Switch Interfaces.md",
+    "CCNA/61 - Commands By Topic.md",
     "CCNA/6 - IPv4 Addressing.md",
     "Untitled 1.md",
     "CCNA/5 - Ethernet LAN Switching.md",
@@ -202,10 +206,6 @@
     "CCNA/38 - FTP & TFTP.md",
     "CCNA/37 - Secure Shell (SSH).md",
     "CCNA/36 - Syslog.md",
-    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
-    "CCNA/34 - DHCP.md",
-    "CCNA/33 - DNS (Domain Name System).md",
-    "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
     "CCNA/img5/config-management-tools-comparison.png",

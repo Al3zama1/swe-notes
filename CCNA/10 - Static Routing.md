@@ -25,5 +25,5 @@ Use whatever static configuration method is preferred.
 	* The default route is the least specific route possible, because it includes all IP addresses. Any packet that does not match any more specific address will be sent here.
 ![router default route](./img/router-default-route.png)
 * `Gateway of last resort` is the router's default route.
-* `R1(config)#ip route 0.0.0.0 0.0.0.0 203.0.113.2` is used to configure the default route for R1 (ip address, netmask, next-hop).
+* `R1(config)#ip route 0.0.0.0 0.0.0.0 203.0.113.2` is used to configure the default route for R1 (ip-address, netmask, next-hop).
 * **\***:   Indicate a candidate default route for the router. It's possible for routers to have multiple candidates for the default address.
