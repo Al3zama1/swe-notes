@@ -20,7 +20,7 @@ RSTP is not a timer-based spanning tree algorithm like 802.1D. Therefore, RSTP o
 * These features are built into RSTP and operate by default, therefore they do not have to be configured.
 * The purpose of these features is to help blocking/discarding ports move rapidly to forwarding.
 #### PortFast
-allows a port to move immediately to the Forwarding state, bypassing Listening and Learning. It must be used only on ports connected to end hosts and not switches, which will cause Layer 2 loops.
+Allows a port to move immediately to the Forwarding state, bypassing Listening and Learning. It must be used only on ports connected to end hosts and not switches, which will cause Layer 2 loops.
 #### UPlinkFast
 * Designed to improve the convergence time in a redundant network topology by quickly switching to a backup link if the primary link fails without the need to go through transitional states.
 * The immediate move to forwarding state functions like a classic STP optional feature called UplinkFast. It's built into RSTP, therefore it does not have to be activated.
@@ -45,8 +45,8 @@ BackboneFast allows switches to expire the Max Age timer on their interfaces. In
 ![rstp port states](./img/rstp-port-states.png)
 * The listening state is gone.
 * The Blocking and disabled states have become the Discarding state.
-* If a port is administratively disabled (`shutdown` command) = discarding state.
-* If a port is enabled but blocking traffic to prevent Layer 2 loops = discarding state.
+	* If a port is administratively disabled (`shutdown` command) = discarding state.
+	* If a port is enabled but blocking traffic to prevent Layer 2 loops = discarding state.
 #### RSTP Port Roles
 * The **root port** role selection remains the same as in RSTP.
 	* The root bridge is the only switch that doesn't have a root port.

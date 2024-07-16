@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
+                "file": "CCNA/18 - EtherChannel.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
+                "file": "CCNA/18 - EtherChannel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
+                "file": "CCNA/18 - EtherChannel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md"
+                "file": "CCNA/18 - EtherChannel.md"
               }
             }
           },
@@ -180,6 +180,8 @@
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
     "CCNA/61 - Commands By Topic.md",
+    "CCNA/18 - EtherChannel.md",
+    "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
     "CCNA/15 - DTP & VTP.md",
     "CCNA/14 - VLANs Part Two.md",
@@ -204,8 +206,6 @@
     "CCNA/45 - DHCP Snooping.md",
     "CCNA/44 - Port Security.md",
     "CCNA/43 - Security Fundamentals.md",
-    "CCNA/42 - QoS Part 2.md",
-    "CCNA/41 - QoS.md",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
     "CCNA/img5/config-management-tools-comparison.png",

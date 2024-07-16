@@ -193,7 +193,7 @@ In the image below, SW1's G0/0 interface goes down, therefore it cannot keep on 
 * It solves one problem of Spanning Tree.
 * Portfast can be enabled on interfaces which are connected to end hosts. These interfaces are Designated ports.
 * When they are first turned on or first connected to the PCs, they must go through the Listening and Learning stages before they can start forwarding traffic. This takes a total of 30 seconds (15 seconds each stage as discussed previously).
-	* When you first connect an end host to a switch interface, its light will be orange because it is not in the forwarding sate yet. Its interface light will turn green after 30 seconds once it is done going through the Listening and Learning stages.
+	* When you first connect an end host to a switch interface, its light will be orange because it is not in the forwarding state yet. Its interface light will turn green after 30 seconds once it is done going through the Listening and Learning stages.
 	* Spanning Tree goes through this process before putting a port in the forwarding state because Layer 2 loops are so dangerous for a network. The switch wants to be absolutely sure no loop will be formed before forwarding out of any given interface.
 * However, only interfaces connected to another switch can form a Layer 2 loop. There is no risk of forming a loop with an end host. Therefore, there is no need to wait 30 seconds on interfaces connected to end hosts. 
 * **Portfast** allows a port to move immediately to the Forwarding state, bypassing Listening and Learning. If used, it must be enabled only on ports connected to end hosts. If enabled on a port connected to another switch, it could cause a Layer 2 loop.

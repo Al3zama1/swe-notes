@@ -144,6 +144,43 @@ Router#
 
 
 ```
+0100.0ccc.cccd
+0180.c200.0000
 
+10 mbps 2,000,000
+100 mbps 200,000
+1 gb 20,000
+10 gb 2,000
+100 gb 200
+1 tb 20
+
+// show etherchannel load balancing options
+SW#show etherchannel load-balance
+
+// set load balancing settings
+SW(config)#port-channel load-balance 
+
+PAgP (Port Aggregation Protocol) (desiriable, auto)
+LACP 802.3ad (Link Aggregation Control Protoco) (active, passive)
+Static mode (on)
+
+// assign interfaces to a group. The protocol used for the port-channel will be atuomatically picked based on the option picked (desirable, auto, active, passive).
+SW(config-if)#channel-group <number> mode active
+
+// manually specify the protocol to use for the port-channel
+SW(config-if)#channel-protocol PAgP/LACP
+
+
+
+// Configure the port-channel created
+SW(config)#interface port-channel <port-channle-number>
+
+matching speed, 
+matching duplex setting,
+matching switchport mode (access, trunk)
+if trunk, all interfaces in the port-channel must allow the same vlans and have the same native vlan
+
+SW#show etherchannel summary
+SW#show etherchannel port-channel
 
 ```
