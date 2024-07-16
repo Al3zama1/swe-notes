@@ -84,7 +84,7 @@ SW1(config-vlan)#name ENGINEERING // change default VLAN name.
 ## Trunk Ports
 * There is a link between SW1 and SW2 in VLAN10 to allow for communication between all hosts in VLAN10. Furthermore, the link is needed for hosts in VLAN10 connected to SW1 to be able to reach the router and travel to the other VLANs.
 * VLAN30 is connected to SW1, therefore there must be a link for that VLAN between SW1 and SW2 to be able to reach the router and travel to the other VLANs.
-* There is not a link between SW1 and SW2 for VLAN20 because there is no hosts in that VLAN connected to to SW1. Hosts in VLAN20 can contact hosts in the other VLANs by simply going through SW2 to R1 for inter-VLAN communication.
+* There is not a link between SW1 and SW2 for VLAN20 because there are no hosts in that VLAN connected to to SW1. Hosts in VLAN20 can reach hosts in the other VLANs by simply going through SW2 to R1 for inter-VLAN communication.
 
 ![network topology with VLAN connected to different switches](./img/multiple-switch-topology-vlan.png)
 * In a small network with few VLANs, it is possible to use a separate interface for each VLAN when connecting switches to switches, and switches to routers.
