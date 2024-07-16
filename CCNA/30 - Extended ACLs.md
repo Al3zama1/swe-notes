@@ -61,7 +61,6 @@ R1(config)#ip access-list resequence acl-id starting-seq-num increment
 * `acl-id` can be a number or name depending on whether a named or numbered ACL was used.
 * The command works for all ACLs.
 
-
 ```
 R1(config)#do show access-lists
 Standard IP access list 1
@@ -192,7 +191,6 @@ R1(config-ext-nacl)#deny UDP any range 20000 30000 host 3.3.3.3
 ```
 R1(config-ext-nacl)#permit TCP 172.16.1.0 0.0.0.255 gt 9999 host 4.4.4.4 neq 23
 ```
-
 ### ACLs Configuration Based on Network Topology
 ![](./img2/standard-acls-topology.png)
 **Requirements**:
