@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
+                "file": "CCNA/27 - IPv6 Part 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -87,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.51103591918945
+    "width": 330.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
+                "file": "CCNA/27 - IPv6 Part 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
+                "file": "CCNA/27 - IPv6 Part 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md"
+                "file": "CCNA/27 - IPv6 Part 2.md"
               }
             }
           },
@@ -179,7 +180,9 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/26 - IPv6.md",
     "CCNA/61 - Commands By Topic.md",
+    "CCNA/25 - TCP & UDP.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/23 - OSPF Part 3.md",
     "CCNA/21 - OSPF.md",
@@ -203,8 +206,6 @@
     "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/4 - CLI Introduction.md",
     "Untitled.md",
-    "CCNA/3 - OSI Model & TCP-IP.md",
-    "CCNA/2 - Interfaces and Cables.md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",

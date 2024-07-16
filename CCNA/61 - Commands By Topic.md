@@ -196,7 +196,16 @@ if ip ospf authentication-key lol, ip osf authentication is enabled, it must mat
 the mtu must match
 
 the network type must also match
+11 --> 1011 --> 1000 = 8
 
+1234:5678:90AB
+
+1234:56ff:fe78:90AB
+
+2 --> 0010 --> 0000 ==0
+1034:56ff:fe78:90AB
+
+ipv6 address 2001:db8::/64 eui-64
 ```
 
 
