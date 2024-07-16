@@ -141,3 +141,13 @@ Received 0 broadcasts, 0 runts, 0 giants, 0 throttles
 
 Router#
 ```
+
+
+```
+// assign ip to a switch interface 
+SW(config-if)#no switchport, ip address 
+
+// enable IP routing for default route
+SW(config)#ip routing
+SW(config)#ip route
+```

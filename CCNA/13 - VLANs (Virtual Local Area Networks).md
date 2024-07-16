@@ -267,8 +267,8 @@ R1(config-subif)#ip address 192.168.1.190 255.255.255.192
 	* The 802.1Q header field is not included for frames in the native VLAN.
 #### Native VLAN Configuration on a Router
 There are 2 methods of configuring the native VLAN on a router:
-* **Method 1:** Use the command `encapsulation dot1q vlan-id native ` on the router.
-* **Method 2:** Configure the IP address for the native VLAN on the router's physical interface (the `encapsulation dot1q vlan-id` command is not necessary)
+* **Method 1:** Use the command `encapsulation dot1q vlan-id native ` on the router subinterface.
+* **Method 2:** Configure the IP address for the native VLAN on the router's actual physical interface (the `encapsulation dot1q vlan-id` command is not necessary)
 	* This method does not use a subinterface at all.
 	
 ```

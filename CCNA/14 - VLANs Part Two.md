@@ -27,7 +27,7 @@ The example below shows the process of communication between two PCs in differen
 The example below shows the process of communication between two devices that are not in the same LAN.
 ![Multilayer switch communication outside of LAN](./img/multilayer-switch-connect-to-internet.png)
 * PC in VLAN 20 sees that its target is in a different subnet, therefore it will communicate with its default gateway.
-* The switch will see that the destination IP address is not in any of the subnets associated with the SVIs. Therefore, it will communicate with its configured default route.
+* The switch will see that the destination IP address is not in any of the subnets associated with its SVIs. Therefore, it will communicate with its configured default route.
 	* For its default route, interface G0/1 was configured as a router interface and assigned an IP address. Communication will go that way to the Router for outside the LAN communication.
 #### Multilayer Switch to Router Configuration
 ```
