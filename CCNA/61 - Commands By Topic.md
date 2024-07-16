@@ -231,6 +231,6 @@ Y: AVF
 
 ```
 access-list 1 permit|deny ip wildcard-mask
-
+clock summer-time
 
 ```
