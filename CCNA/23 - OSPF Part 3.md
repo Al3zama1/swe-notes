@@ -110,6 +110,7 @@ Why would you change the OSPF network type? For example, if two routers are dire
 ## OSPF Neighbor/Adjacency Requirements
 * Area number must match for two routers to become OSPF neighbors.
 * The interfaces must be in the same subnet to become OSPF neighbors.
+	* Interfaces in the same subnet must be in the same area.
 * The OSPF process must not be shutdown.
 	* It's possible to shutdown the OSPF process on the router. It disables OSPF operations, without removing the OSPF configurations.
 	* `Router(config-router)#shutdown`

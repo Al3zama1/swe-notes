@@ -183,4 +183,37 @@ if trunk, all interfaces in the port-channel must allow the same vlans and have 
 SW#show etherchannel summary
 SW#show etherchannel port-channel
 
+in order for two routers to become ospf neighbors, they must be in the same OSP area. Furthermore, interfaces must be in the same subnet for them to be in the same area.
+
+the ospf process must not be shutdown
+
+the router-id must be unique.
+
+the hello and deat-timer must match
+
+if ip ospf authentication-key lol, ip osf authentication is enabled, it must match between communicating interfaces.
+
+the mtu must match
+
+the network type must also match
+
+```
+
+
+
+```
+FHRR
+
+HSRP (Active, Standby)
+v1: Multicast IP (224.0.0.2), MAC (0000.0c07.acXX)
+v2: Multicast IP (224.0.0.102), MAC (0000.0c9f.fXXX)
+X: HSRP group number
+
+VRRP (Master, Backup)
+Multicast IP (224.0.0.18) MAC (0000.5e00.01XX)
+
+GLBP (AVG, AVF)
+Multicast IP (224.0.0.102) MAC (0007.b400.XXYY)
+X: GLBP group number
+Y: AVF
 ```
