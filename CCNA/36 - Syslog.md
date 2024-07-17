@@ -22,6 +22,7 @@
 ## Syslog Logging Locations (facilities)
 * **Console line**: Syslog messages will be displayed in the CLI when connected to the device via the console port. By default, all messages (level 0 - level 7) are displayed.
 * **VTY lines**: Syslog messages will be displayed in the CLI when connected to the device via Telnet/SSH. Disabled by default.
+	* `R1#terminal monitor` to display logs
 * **Buffer**: Syslog messages will be saved to RAM. By default, all messages (level 0 - level 7) are displayed.
 	* `show logging`: view messages stored in the logging buffer - in the memory of the device.
 * **External server**: You can configure the device to send Syslog messages to an external server.
@@ -61,4 +62,4 @@ R1(config)#service sequence-numbers
 	* Messages are sent from the device to the Syslog server. The Syslog server can't actively pull information from the devices (like SNMP **Get**) or modify variables (like SNMP **Set**).
 * **SNMP** is used to retrieve and organize information about the SNMP managed devices.
 	* Can retrieve IP addresses, current interface status, temperature, CPU usage, etc.
-	* SNMP servers can use **Get** to query the clients and **Set** to modify variables on the clients.
+	* SNMP servers can use **Get** to query the clients and **Set** to modify variables on the clients.1234:56ff:fe78:90AB

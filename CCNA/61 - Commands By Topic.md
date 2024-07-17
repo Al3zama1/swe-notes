@@ -267,7 +267,81 @@ network address
 dns-server
 
 
+Emergency
+Alert 
+Critical
+Error 
+Warning
+Notice
+Informational 
+Debugging
+
+Sequ:timestamp: %facility-severity-MNEMONIC:description
+
+service timestamp log
+service sequence-number
+
+logging console severity
+logginc monitory severity (must use terminal monitor for each session to view logs when connecting though vty)
+logging buffered size severity
+logging ip-address/ logging host ip-address (log logs to an external server)
+logging trap severity (set severity for logs logged to external locatoin)
+
+specified severity and all other severities higher than the one specified will be logged.
+
+logs are logged to the console and buffer by default
+
+show logging to view logs logged to ram
+
+line console 0
+
+logging synchronous
 
 
+line console 0
 
+password dfjlsfje
+login
+
+R1(config)#username user secret secret
+line console 0
+login local
+
+exec-timeout
+
+interface vlan 20
+ip address
+
+ip defautlt-gateway 
+
+transport input telnet/ssh
+
+
+R1(config)#enable secret
+R1(config)#username ccna secret lol
+access-list 1 permit host 192.168.1.1 
+line vty 0 15
+login local
+exec-timeout min sec
+transport input telnet
+access-class 1 in
+
+
+R#show version
+R#show ip ssh
+R1(config)#hostname
+R1(config)#ip domain name abranlezama.com
+R1(config)#crypto key generate rsa modulus 2048
+R1(config)#access-list 1 permit host 192.168.1.1
+ip ssh version 2
+line vty 0 15
+login local
+exec-timeout min sec
+access-class 1 in
+transport input ssh
+
+telnet ip-address
+
+ssh -l username ip-address
+ssh username@ip-address
 ```
