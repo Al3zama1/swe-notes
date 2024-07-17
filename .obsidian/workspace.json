@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/45 - DHCP Snooping.md",
+                "file": "CCNA/48 - WAN Architecture.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/45 - DHCP Snooping.md",
+                "file": "CCNA/48 - WAN Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/45 - DHCP Snooping.md",
+                "file": "CCNA/48 - WAN Architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/45 - DHCP Snooping.md"
+                "file": "CCNA/48 - WAN Architecture.md"
               }
             }
           },
@@ -179,7 +179,11 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/47 - LAN Architectures.md",
+    "CCNA/46 - Dynamic ARP Inspection.md",
+    "CCNA/45 - DHCP Snooping.md",
     "CCNA/44 - Port Security.md",
+    "CCNA/23 - OSPF Part 3.md",
     "CCNA/61 - Commands By Topic.md",
     "CCNA/43 - Security Fundamentals.md",
     "CCNA/42 - QoS Part 2.md",
@@ -201,10 +205,6 @@
     "CCNA/26 - IPv6.md",
     "CCNA/25 - TCP & UDP.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
-    "CCNA/23 - OSPF Part 3.md",
-    "CCNA/21 - OSPF.md",
-    "CCNA/22 - OSPF Part 2.md",
-    "CCNA/20 - RIP & EIGRP.md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",

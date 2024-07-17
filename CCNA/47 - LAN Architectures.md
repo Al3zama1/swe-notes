@@ -39,6 +39,7 @@
 * D1 and D2 are multilayer switches, and end hosts use the SVIs on them as their default gateways. They will probably use a FHRP such as HSRP or VRRP to provide a redundant virtual IP address for hosts to use as their default gateway.
 * The Distribution Layer is used to connect to services such as the internet or the WAN, as well as other parts of the LAN.
 * Notice that each Distribution Layer switch is connected to each other Distribution Layer switch.
+	* Distribution layer switches form a full mesh.
 
 ![many distribution layer](./img3/many-distribution-layer.png)
 * In large LAN networks with many Distribution Layer switches (for example, in separate buildings), the number of connections required between Distribution Layer switches grows rapidly
