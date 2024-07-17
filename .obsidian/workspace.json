@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/42 - QoS Part 2.md",
+                "file": "CCNA/45 - DHCP Snooping.md",
                 "mode": "source",
                 "source": false
               }
@@ -87,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.51103591918945,
-    "collapsed": true
+    "width": 330.51103591918945
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -104,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/61 - Commands By Topic.md",
+                "file": "CCNA/45 - DHCP Snooping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/61 - Commands By Topic.md",
+                "file": "CCNA/45 - DHCP Snooping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/61 - Commands By Topic.md"
+                "file": "CCNA/45 - DHCP Snooping.md"
               }
             }
           },
@@ -178,11 +177,13 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "136e61473c4a3e9e",
+  "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/44 - Port Security.md",
+    "CCNA/61 - Commands By Topic.md",
+    "CCNA/43 - Security Fundamentals.md",
     "CCNA/42 - QoS Part 2.md",
     "CCNA/41 - QoS.md",
-    "CCNA/61 - Commands By Topic.md",
     "CCNA/40 - NAT Part 2.md",
     "CCNA/39 - NAT Part 1.md",
     "CCNA/38 - FTP & TFTP.md",
@@ -204,8 +205,6 @@
     "CCNA/21 - OSPF.md",
     "CCNA/22 - OSPF Part 2.md",
     "CCNA/20 - RIP & EIGRP.md",
-    "CCNA/19 - Dynamic Routing.md",
-    "CCNA/18 - EtherChannel.md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",

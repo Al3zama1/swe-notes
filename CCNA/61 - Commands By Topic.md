@@ -414,4 +414,44 @@ AF2y high priority data
 DF - best effort
 EF - voice traffic
 
+minimum 8 characters
+combination of numbers and letters
+upper case and lower case letters
+use special symbils
+change password frequently
+
+
+MFA
+something you know
+somethign you have
+something you are
+
+CSR, CA
+
+Radius udp 1812, udp 1813
+Tacacs+ TCP 49
+
+violation modes 
+
+switchport port-security violation shutdown|restrict|protect
+
+shutdown 
+	puts the interface in an err-disabled state
+	sends syslog and/or snmp message
+	increments violation counter to 1, but will be reset to 0 when the interface is reenabled.
+
+Restrict
+	The traffic is dropped
+	sends syslog and/or snmp message
+	interface is not disabled
+	increments violation counter
+Protect
+	the traffic is dropped
+	does not send syslog and/or snmp message
+	interface is not disabled
+	does not increment violation counter.
+
+
+show mac address-table secure
+	
 ```

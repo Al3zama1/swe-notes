@@ -61,7 +61,7 @@ Systems can be more secure or less secure, but there are no guarantees in securi
 * or a WHOIS query to learn email address, phone numbers, physical addresses, etc.
 ### Malware
 * **Malware** (malicious software) refers to a variety of harmful programs that can infect a computer.
-* **viruses** infect other software (a 'host program). The virus spreads as the software is shared by users. Typically they corrupt or modify files on the target computer.
+* **viruses** infect other software (a 'host program'). The virus spreads as the software is shared by users. Typically, they corrupt or modify files on the target computer.
 * **Worms** do not require a hot program. They are standalone malware and they are able to spread on their own, without user interaction. The spread of worms can congest the network, but the 'payload' of a worm can cause additional harm to target devices.
 * **Trojan Horses** are harmful software that is disguised as legitimate software. They are spread through user interactions such as opening email attachments, or downloading a file from the internet.
 * The above malware types can exploit various vulnerabilities to threaten any of the CIA of the target device. There are many types of malware!

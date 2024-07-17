@@ -9,7 +9,7 @@
 
 ![Port security showcase](./img3/port-security-showcase.png)
 * You can change the maximum number of MAC addresses allowed and how they are learned (manually configured, dynamically learned, or a mix of both)
-	* A switchport that is connected to an IP phone will most likely require two MAC addresses to be allowed - one for the IP phone an another for the PC connected to the switch through it.
+	* A switchport that is connected to an IP phone will most likely require two MAC addresses to be allowed - one for the IP phone and another for the PC connected to the switch through it.
 ## Why Use Port Security?
 * Port security allows network admins to control which devices are allowed to access the network.
 * However, MAC address spoofing is a simple task.
