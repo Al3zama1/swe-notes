@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
+                "file": "CCNA/61 - Commands By Topic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
+                "file": "CCNA/61 - Commands By Topic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/51 - Virtual Routing & Forwarding (VRF).md"
+                "file": "CCNA/61 - Commands By Topic.md"
               }
             }
           },
@@ -177,8 +177,10 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "36a29b8b83c57eae",
+  "active": "136e61473c4a3e9e",
   "lastOpenFiles": [
+    "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
+    "CCNA/61 - Commands By Topic.md",
     "CCNA/50 - Virtualization - Containers.md",
     "CCNA/49 - Virtualization & Cloud.md",
     "CCNA/48 - WAN Architecture.md",
@@ -187,7 +189,6 @@
     "CCNA/45 - DHCP Snooping.md",
     "CCNA/44 - Port Security.md",
     "CCNA/23 - OSPF Part 3.md",
-    "CCNA/61 - Commands By Topic.md",
     "CCNA/43 - Security Fundamentals.md",
     "CCNA/42 - QoS Part 2.md",
     "CCNA/41 - QoS.md",
@@ -204,7 +205,6 @@
     "CCNA/30 - Extended ACLs.md",
     "CCNA/29 - Standard ACLs.md",
     "CCNA/28 - IPv6 Part 3.md",
-    "CCNA/27 - IPv6 Part 2.md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",

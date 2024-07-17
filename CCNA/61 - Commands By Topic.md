@@ -453,5 +453,36 @@ Protect
 
 
 show mac address-table secure
-	
+
+// create the VRFs
+R(config)#ip vrf name
+R(config-if)#ip vrf forwarding name
+ip address 192.168.
+
+#show ip vrf
+#show ip route
+#show ip route vrf name
+
+ping vrf name ip
+
+
+
+
+// create vrf
+R(config)#ip vrf name
+
+// assign router interface to vrf created
+R(config-if)#ip vrf forwarding name
+R(config-if)#ip address 192.168.1.1
+
+// show vrf
+R#show ip vrf
+
+// show ip route
+R#show ip route vrf name
+
+// ping an address located inside of a vrf
+R#ping vrf name ip
+
+
 ```
