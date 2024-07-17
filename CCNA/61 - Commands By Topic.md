@@ -367,4 +367,51 @@ R#show ip nat translations
 R#clear ip nat translations
 R1#show ip nat statistics
 
+SW(config-if)#switchport mode access
+SW(config-if)#switchport access vlan 10
+SW(config-if)#switdhport voice vlan 11
+
+Cisco inline power (CLP) proprietary 7 watts two pairs 
+
+PoE (type 1) 802.3af 15 watts 2 pairs
+PoE+ (type 2) 802.3at 30 watts 2 pairs
+UPoE (Type 3) 802.3bt 60 watts 4 pairs
+UPoE+ (Type 4) 802.3bt 100 watts 4 pairs
+
+power inline police action err-disable
+	disables interface and sends syslog message
+power inline police action log
+	restarts the interface and seds syslog message
+
+one way delay 150 milliseconds or less
+jitter 30 milliseconds or less
+drop 1 percent or less
+
+
+PCP
+
+0 bet effort
+3 critical application 
+4 video
+5 voice
+
+DSCP
+
+DF (Default forwarding) - best effort. value of 0
+EF (Expedited forwarding) - low delay/jitter/ (audio). value of 46
+AF (Assured forwarding) set of 12 standard values
+	Fouter classes 1 - 4
+	Three drop presedences 1 - 3
+	Formula to convert AF to DSCP = 8*class + 2*drop-presedence
+	uses left most 3 bits for class and next 2 for drop precedence. right-most bit is always set to 0
+CS (Class selector ) Set of 8 standard values that is compatible with IPP (IP Presedence)
+	uses left most 3 bits and the next 3 bits are set to 0
+	formula to convert CS value to DSCP value is 8 * CS-value (0 - 7)
+
+AF4y - interactive video
+AF3y - streaming video
+AF2y high priority data
+DF - best effort
+EF - voice traffic
+
 ```

@@ -67,7 +67,7 @@ SW1#show power inline police g0/0
 		* Jitter will negatively affect the audio quality of phone calls, so IP phones have a 'jitter buffer' to provide a fixed delay to audio packets. However, if the Jitter is too high, it will overrun the buffer and the audio quality will suffer.
 	* **Loss**:
 		* The % of packets sent that do not reach their destination.
-		* Can be caused by faulty cables or if the network is congested and the device's packet queue get full, it will start discarding packets that can't fit into the queue.
+		* Can be caused by faulty cables or if the network is congested and the device's packet queue gets full, it will start discarding packets that can't fit into the queue.
 * The following standards are recommended for acceptable interactive audio (ie. phone call, zoom call audio) quality. If these standards are not met, there could be a noticeable reduction in the quality of the phone call.
 	* **One-way delay**: 150 ms or less.
 	* **Jitter**: 30ms or less.
@@ -78,7 +78,6 @@ SW1#show power inline police g0/0
 * By default, queued messages will be forwarded in a First in First Out (FIFO) manner.
 	* Messages will be sent in the order they are received.
 * If the queue is full, new packets will be dropped. This is called *tail drop*.
-
 #### TCP Global Synchronization Problem
 * **Tail drop** is harmful because it can lead to **TCP global synchronization**.
 * Review of the **TCP sliding window**:
