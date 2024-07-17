@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/35 - SNMP (Simple Network Management Protocol).md",
                 "mode": "source",
                 "source": false
               }
@@ -87,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.51103591918945
+    "width": 330.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/35 - SNMP (Simple Network Management Protocol).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/35 - SNMP (Simple Network Management Protocol).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md"
+                "file": "CCNA/35 - SNMP (Simple Network Management Protocol).md"
               }
             }
           },
@@ -179,7 +180,9 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/34 - DHCP.md",
     "CCNA/61 - Commands By Topic.md",
+    "CCNA/33 - DNS (Domain Name System).md",
     "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/31 - CDP & LLDP.md",
     "CCNA/30 - Extended ACLs.md",
@@ -203,8 +206,6 @@
     "CCNA/12 - Subnetting.md",
     "CCNA/11 - Life of a Packet.md",
     "CCNA/10 - Static Routing.md",
-    "CCNA/9 - Routing Fundamentals.md",
-    "CCNA/8 - IPv4 Header.md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",

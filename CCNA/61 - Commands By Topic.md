@@ -239,4 +239,35 @@ ntp authentication-key 1 md5 <key>
 
 ntp peer 343 key ldkjfldj
 ntp server 234534 key sjfljslfrjw
+
+
+
+ROUTER AS A DNS SERVER
+
+ip dns server
+ip host R2 ip of R2
+
+ip name-server 
+
+ip domain-lookup
+
+
+ROUTER AS A DNS CLIENT
+ip name-server
+ip domain-lookup
+
+ip domain name lol.com
+R2.lol.com
+
+
+ip dhcp excluded-address lower bound and upper bound
+ip dhcp pool name
+network address
+
+dns-server
+
+
+
+
+
 ```
