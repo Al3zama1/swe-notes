@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/38 - FTP & TFTP.md",
+                "file": "CCNA/41 - QoS.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/38 - FTP & TFTP.md",
+                "file": "CCNA/41 - QoS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/38 - FTP & TFTP.md",
+                "file": "CCNA/41 - QoS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/38 - FTP & TFTP.md"
+                "file": "CCNA/41 - QoS.md"
               }
             }
           },
@@ -180,9 +180,11 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/40 - NAT Part 2.md",
     "CCNA/61 - Commands By Topic.md",
-    "CCNA/41 - QoS.md",
+    "CCNA/39 - NAT Part 1.md",
     "CCNA/38 - FTP & TFTP.md",
+    "CCNA/41 - QoS.md",
     "CCNA/37 - Secure Shell (SSH).md",
     "CCNA/35 - SNMP (Simple Network Management Protocol).md",
     "CCNA/36 - Syslog.md",
@@ -204,8 +206,6 @@
     "CCNA/19 - Dynamic Routing.md",
     "CCNA/18 - EtherChannel.md",
     "CCNA/14 - VLANs Part Two.md",
-    "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
-    "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",

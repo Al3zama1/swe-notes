@@ -344,4 +344,27 @@ telnet ip-address
 
 ssh -l username ip-address
 ssh username@ip-address
+
+ip ftp username
+ip ftp password 
+
+copy ftp/tftp: flash:
+
+
+inside/outside locaton
+local/global perspective
+
+R1(config-if)#ip nat inside 
+R1(config-if)#ip nat outside
+
+// you need to configure an access list to specify which addresses are to be translated
+
+R1(config)#access-list 1 permit ip wildcard
+R1(config)#ip nat pool polname
+
+R1(config)#ip nat inside source list 1 pool dl overload
+R#show ip nat translations
+R#clear ip nat translations
+R1#show ip nat statistics
+
 ```
