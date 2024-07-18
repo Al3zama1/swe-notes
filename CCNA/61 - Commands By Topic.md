@@ -522,4 +522,47 @@ Destiantion address
 source address
 transmitter address
 receiver address
+\
+
+local
+flexConnect
+sniffer
+monitor
+rogue detector
+SE-connect
+bridge/mesh
+Fex Plus bridge
+
+
+unified wlc deploymnet
+cloud-based wlc deployment
+embedded wlc deployment
+Cisco mobility express elc deployment
+
+AP deployment options
+Autonomous APs
+Lightweight APs (Split-MAC architecture)
+Cloud-based APs
+
+Autonomous APs operational modes
+repeated
+WGB workgroup bridge
+outdoor bridge
+
+Lighthweight APs operational modes
+local
+flexConnect
+sniffer
+monitor
+rogue detector
+SE connect
+Bridge/Mesh
+Flex plus Bridge
+
+WLC deployment options
+Unified WLC deploymbnet 6000
+Cloud-based WLC deploymnet 3000
+embedded WLC deploymnet 200 
+Cisco Mobility Express deploymnet 100
+
 ```
