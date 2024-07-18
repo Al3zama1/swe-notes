@@ -74,8 +74,8 @@
 	* Large networks can have thousands of APs.
 #### Autonomous AP operational Modes
 * Repeater
-* Outdoor Bridge
 * Workgroup Bridge
+* Outdoor Bridge
 ### Lightweight APs
 * The function of an AP can be split between the AP and a **Wireless LAN Controller (WLC)**
 * **Lightweight AP**s handle 'real-time' operations like transmitting/receiving RF (radio frequency) traffic, encryption/decryption of traffic, sending out beacons/probes, etc.
