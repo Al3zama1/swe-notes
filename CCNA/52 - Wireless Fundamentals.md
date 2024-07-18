@@ -115,7 +115,7 @@
 	* Basic Service Set (BSS)
 	* Extended Service Set (ESS)
 ### Basic Service Set (BSS)
-* One of the key components of the 802.11 standard is the Basic Service Set (BSS), which the fundamental building block of WANs.
+* One of the key components of the 802.11 standard is the Basic Service Set (BSS), which is the fundamental building block of WANs.
 * There are three main types of BSS:
 	* Independent Basic Service Set (IBSS)
 	* Infrastructure Basic Service Set (Infrastructure BSS)

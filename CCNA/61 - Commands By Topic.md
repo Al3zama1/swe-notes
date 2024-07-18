@@ -493,4 +493,13 @@ R#show ip vrf
 R#show ip route vrf name
 
 R#ping vrf name ip
+
+
+802.11 2mbps 2.4
+802.11a 54mbps 5
+802.11b 11mbps 2.4
+802.11g 54mbps 2.4
+802.11n 600mbps 2.4/5 wifi 4
+802.11ac 6.93gbps 5 wifi 5
+802.11ax 4*802.11ac 2.4/5/6 wifi 6
 ```
