@@ -47,7 +47,7 @@ The original 802.11 standard included two options for authentication:
 		* The client sends the encrypted challenge phrase back to the AP.
 		* The AP receives the encrypted challenge phrase from the client and encrypts its own copy of the original challenge phrase using the same shared WEP key.
 		* The AP then compares the client's encrypted challenge phrase with its own encrypted version.
-	* Note than functions carried out by the AP in the authentication process would be performed by the WLC if a split-MAC architecture was being used.
+	* Note that functions carried out by the AP in the authentication process would be performed by the WLC if a split-MAC architecture was being used.
 ### EAP (Extensible Authentication Protocol)
 * EAP is an authentication framework.
 * It defines a standard set of authentication functions that are used by the various EAP methods.
