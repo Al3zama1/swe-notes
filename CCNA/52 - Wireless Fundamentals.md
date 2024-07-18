@@ -186,7 +186,7 @@
 * An AP in **workgroup bride** (WGB) mode operates as a wireless client of another AP, and can be used to connect wired devices to the wireless network.
 	* It's a solution which allows clients that don't support wireless connections to connect to the wireless network via an AP operating as a workgroup bridge.
 * There are two kinds of WGBs:
-	* **Universal WGB** (uWGB): an 802.11 standard that allows one device to be bridged to the wireless network.
+	* **Universal WGB** (uWGB): a 802.11 standard that allows one device to be bridged to the wireless network.
 	* **WGB**: a Cisco-proprietary version of the 802.11 standard that allows multiple wired clients to be bridged to the wireless network.
 
 ![AP operating as a workgroup bridge](./img4/AP-as-a-workgroup-bridge.png)

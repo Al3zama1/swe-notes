@@ -502,4 +502,24 @@ R#ping vrf name ip
 802.11n 600mbps 2.4/5 wifi 4
 802.11ac 6.93gbps 5 wifi 5
 802.11ax 4*802.11ac 2.4/5/6 wifi 6
+
+Frame control 2
+	time and subtype of frame
+Duration/ID 2
+	time in microseconds the chanel will be dedicated to sendinding frame
+	The association between the wireless client and the AP
+Address 1, 2, 3 6
+Sequence control 2
+	Used for reasembling and removing duplicate frames
+Address 4 6
+QoS control 2
+HT control 4
+	used to faccilitate hight throughput
+packet variable size
+FCS 4
+
+Destiantion address
+source address
+transmitter address
+receiver address
 ```

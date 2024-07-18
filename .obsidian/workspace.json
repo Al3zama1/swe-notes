@@ -6,6 +6,7 @@
       {
         "id": "2f55ac37db8e9491",
         "type": "tabs",
+        "dimension": 49.96384671005061,
         "children": [
           {
             "id": "36a29b8b83c57eae",
@@ -13,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/52 - Wireless Fundamentals.md",
+                "file": "CCNA/53 - Wireless Architectures.md",
                 "mode": "source",
                 "source": false
               }
@@ -24,6 +25,7 @@
       {
         "id": "24b3f8b047bac026",
         "type": "tabs",
+        "dimension": 50.03615328994938,
         "children": [
           {
             "id": "136e61473c4a3e9e",
@@ -103,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/52 - Wireless Fundamentals.md",
+                "file": "CCNA/53 - Wireless Architectures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/52 - Wireless Fundamentals.md",
+                "file": "CCNA/53 - Wireless Architectures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/52 - Wireless Fundamentals.md"
+                "file": "CCNA/53 - Wireless Architectures.md"
               }
             }
           },
@@ -180,6 +182,7 @@
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
     "CCNA/61 - Commands By Topic.md",
+    "CCNA/53 - Wireless Architectures.md",
     "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
     "CCNA/50 - Virtualization - Containers.md",
@@ -204,7 +207,6 @@
     "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/31 - CDP & LLDP.md",
     "CCNA/30 - Extended ACLs.md",
-    "CCNA/29 - Standard ACLs.md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
