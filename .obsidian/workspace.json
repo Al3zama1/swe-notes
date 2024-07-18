@@ -182,8 +182,9 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
-    "CCNA/53 - Wireless Architectures.md",
     "CCNA/61 - Commands By Topic.md",
+    "CCNA/54 - Wireless Security.md",
+    "CCNA/53 - Wireless Architectures.md",
     "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
     "CCNA/50 - Virtualization - Containers.md",
@@ -207,7 +208,6 @@
     "CCNA/33 - DNS (Domain Name System).md",
     "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/31 - CDP & LLDP.md",
-    "CCNA/30 - Extended ACLs.md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
