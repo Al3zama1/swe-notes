@@ -69,7 +69,7 @@
 	* This is just an example, and how much the control plane is centralized varies greatly.
 * The controller can interact programmatically with the network devices using APIs.
 
-![Software-Defined networking architecture](SDN-SBI.png)
+![Software-Defined networking architecture](./img5/SDN-SBI.png)
 * The communication between the devices and the controller is done via what's called the southbound interface (SBI).
 * Even though this diagram shows a totally centralized control plane, in reality there are many different solutions.
 	* Some solutions centralize the entire control plane, and some of them only centralize some functions of the control plane.
@@ -87,7 +87,7 @@
 	* Cisco onePK (Open Network Environment Platform Kit)
 	* NETCONF
 ### Northbound Interface (NBI)
-![NBI diagram](SDN-NBI.png)
+![NBI diagram](./img5/SDN-NBI.png)
 * Using the SBI, the controller communicates with the managed devices and gathers information about them:
 	* The devices in the network
 	* The topology (how the devices are connected together)
