@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/56 - Network Automation.md",
+                "file": "CCNA/59 - Software-Defined Networking.md",
                 "mode": "source",
                 "source": false
               }
@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/55 - Wireless Configuration.md",
+                "file": "CCNA/61 - Commands By Topic.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/56 - Network Automation.md",
+                "file": "CCNA/59 - Software-Defined Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/56 - Network Automation.md",
+                "file": "CCNA/59 - Software-Defined Networking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/56 - Network Automation.md"
+                "file": "CCNA/59 - Software-Defined Networking.md"
               }
             }
           },
@@ -181,9 +181,11 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
-    "CCNA/55 - Wireless Configuration.md",
-    "CCNA/61 - Commands By Topic.md",
+    "CCNA/58 - REST APIs.md",
     "CCNA/56 - Network Automation.md",
+    "CCNA/57 - JSON, XML, & YAML.md",
+    "CCNA/61 - Commands By Topic.md",
+    "CCNA/55 - Wireless Configuration.md",
     "CCNA/60 - Ansible, Puppet, & Chef.md",
     "CCNA/59 - Software-Defined Networking.md",
     "CCNA/54 - Wireless Security.md",
@@ -205,8 +207,6 @@
     "CCNA/39 - NAT Part 1.md",
     "CCNA/38 - FTP & TFTP.md",
     "CCNA/37 - Secure Shell (SSH).md",
-    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
-    "CCNA/36 - Syslog.md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",

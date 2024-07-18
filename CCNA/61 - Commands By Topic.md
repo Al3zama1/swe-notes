@@ -570,4 +570,21 @@ WPA 3 additional security features
 * SAE (Simultaneous authentication of equals)
 * Forward secrecy
 
+Open Flow
+Cisco OpenFlex
+Cisco OpenPK
+Netconf
+
+Ternary Content Addressable Memmroy
+TCAM
+
+ASIC Application Specific Integrated Circuit
+
+Open flow
+Cisco OPenFlex
+Cisco OpenPK
+NETCONF
+
+ASIC (Applicatin specific integrated circuit)
+TMAC (Ternary content Addressable memmory)
 ```

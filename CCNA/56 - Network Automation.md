@@ -110,6 +110,6 @@
 		* No need to write scripts to parse though specific `show` commands to get the information you want.
 	* The centralized data facilitates network-wide analytics.
 * SDN tools provide the benefits of automation without the requirement of third-party scripts & apps. 
-	* You don't need experience in automation to make use SDN tools.
+	* You don't need experience in automation to make use of SDN tools.
 	* However, APIs allow third-party applications to interact with the controller, which can be very powerful if you're able to create your own apps.
 * Although SDN and automation aren't the same thing, the SDN architecture greatly facilitates the automation of various tasks in the network via the SDN controller and APIs.
