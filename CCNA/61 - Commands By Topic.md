@@ -565,4 +565,9 @@ Cloud-based WLC deploymnet 3000
 embedded WLC deploymnet 200 
 Cisco Mobility Express deploymnet 100
 
+WPA 3 additional security features
+* PMF (protected management frames)
+* SAE (Simultaneous authentication of equals)
+* Forward secrecy
+
 ```

@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md",
+                "file": "CCNA/55 - Wireless Configuration.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md",
+                "file": "CCNA/55 - Wireless Configuration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md",
+                "file": "CCNA/55 - Wireless Configuration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md"
+                "file": "CCNA/55 - Wireless Configuration.md"
               }
             }
           },
@@ -182,8 +182,12 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
-    "CCNA/61 - Commands By Topic.md",
+    "CCNA/56 - Network Automation.md",
+    "CCNA/60 - Ansible, Puppet, & Chef.md",
+    "CCNA/59 - Software-Defined Networking.md",
+    "CCNA/55 - Wireless Configuration.md",
     "CCNA/54 - Wireless Security.md",
+    "CCNA/61 - Commands By Topic.md",
     "CCNA/53 - Wireless Architectures.md",
     "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
@@ -204,10 +208,6 @@
     "CCNA/37 - Secure Shell (SSH).md",
     "CCNA/35 - SNMP (Simple Network Management Protocol).md",
     "CCNA/36 - Syslog.md",
-    "CCNA/34 - DHCP.md",
-    "CCNA/33 - DNS (Domain Name System).md",
-    "CCNA/32 - NTP (Network Time Protocol).md",
-    "CCNA/31 - CDP & LLDP.md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",

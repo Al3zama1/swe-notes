@@ -8,7 +8,7 @@
 * SW1 has an SVI in each VLAN.
 * WLC1 has an IP in each VLAN.
 * The APs will need an IP address in the management VLAN so they can communicate with the WLC. The IP addresses will be assigned via DHCP.
-	* The WLC could be configured as the DHCP server, but the switch will server as both, the the DHCP server and NTP server for this network.
+	* The WLC could be configured as the DHCP server, but the switch will server as both, the DHCP server and NTP server for this network.
 * A split-MAC architecture is being used, therefore the interfaces connected to the APs are access ports. Only the WLC needs to connect via a trunk port with all of the necessary VLANs.
 * The APs will form a CAPWAP tunnel to the WLC.
 ### Split-MAC Deployment Traffic Path Review
