@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
+                "file": "CCNA/52 - Wireless Fundamentals.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/61 - Commands By Topic.md",
+                "file": "CCNA/52 - Wireless Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/61 - Commands By Topic.md",
+                "file": "CCNA/52 - Wireless Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/61 - Commands By Topic.md"
+                "file": "CCNA/52 - Wireless Fundamentals.md"
               }
             }
           },
@@ -177,7 +177,7 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "136e61473c4a3e9e",
+  "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
     "CCNA/61 - Commands By Topic.md",

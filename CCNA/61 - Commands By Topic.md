@@ -485,4 +485,12 @@ R#show ip route vrf name
 R#ping vrf name ip
 
 
+
+R(config)#ip vrf name
+R(config-if)#ip vrf forwarding name
+
+R#show ip vrf
+R#show ip route vrf name
+
+R#ping vrf name ip
 ```
