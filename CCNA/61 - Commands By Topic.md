@@ -598,4 +598,28 @@ RLOCs specify the Edge node that is needed to reach a specific end host
 VXLAN (Virtula Extensible LAN) is the data plane which is used to send traffic between devices. It is located in the overlay.
 
 Underlay is made up of devices that use layer 3 switches and rotuerd ports with IS-IS.
+
+Ansible has control node
+inventory
+template
+variables
+playbook
+
+it is clientless
+uses YAML 
+its template is done via jinja2
+
+
+Puppet pupptet master
+client and clientless trhough proxying
+variables
+manifest
+
+resources 
+recipes
+cookbooks
+run-list
+
+cheff 10002
+puppet 8140
 ```

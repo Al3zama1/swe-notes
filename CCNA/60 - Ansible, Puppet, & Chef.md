@@ -52,7 +52,7 @@
 ![Ansible diagram](./img5/ansible.png)
 ### Puppet
 * Puppet is a configuration management tools written in Ruby.
-* Communication is done HTTPS via REST APIs.
+* Communication is done through HTTPS via REST APIs.
 * Puppet is typically agent-based.
 	* Specific software must be installed on the managed devices.
 	* Not all Cisco devices support a Puppet agent.
