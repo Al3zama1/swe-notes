@@ -182,8 +182,9 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
-    "CCNA/53 - Wireless Architectures.md",
     "CCNA/61 - Commands By Topic.md",
+    "CCNA/54 - Wireless Security.md",
+    "CCNA/53 - Wireless Architectures.md",
     "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
     "CCNA/60 - Ansible, Puppet, & Chef.md",
@@ -192,7 +193,6 @@
     "CCNA/56 - Network Automation.md",
     "CCNA/57 - JSON, XML, & YAML.md",
     "CCNA/55 - Wireless Configuration.md",
-    "CCNA/54 - Wireless Security.md",
     "CCNA/50 - Virtualization - Containers.md",
     "CCNA/49 - Virtualization & Cloud.md",
     "CCNA/48 - WAN Architecture.md",

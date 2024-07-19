@@ -727,5 +727,28 @@ Unified WLC deployment 6000
 Cloud-based WLC deployment 3000
 Embedded WLC deployment 200
 Cisco Mobility express 100
-	
+
+Wireless authentication methods
+
+Open authentication
+users are allowed to enter but once inside, it can require users to authenticate in order to obtain network access
+
+WEP (authentication and encryption)
+the client and server share a key (40 or 104 bits in length) which is combined with a 24 IV to create strong 
+the server sends a chanllenge frace, client
+
+EAP (Extensible Authentication Protocol)
+	EAP integrates with 802.1x for enterprise
+		suplicant
+		authenticator
+		authentication server
+EAP-FAST (flexible authentication via secure tunneling)
+the server sends a PAC (protection access credentials) to the client which is used in the next step to create a secure tunnel. authentication is carried out in the tunnel
+
+PEAP (protected EAP)
+	The authentication server sends a digital certificate which is used by the client to authenticate the server and create a secure tunnel in the next step to carry out authentication 
+	authenticsation is usually carried out using MS-chap
+
+EAP-TLs
+both the client and authentication server have digital certificates to create secure tunnel. in the tunnel encryption is negotiated.
 ```
