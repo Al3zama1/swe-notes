@@ -751,4 +751,12 @@ PEAP (protected EAP)
 
 EAP-TLs
 both the client and authentication server have digital certificates to create secure tunnel. in the tunnel encryption is negotiated.
+
+
+WPA3 additional security features
+	PMA (protected management frames) protects management frames in 802.11
+	SAE (simultaneous authentication of equals)
+		protect four way handshake used in personal mode when authenticating to a wireless network
+	forward secrecy
+	protects agains saving of packets and trying to decrypt them in teh future
 ```
