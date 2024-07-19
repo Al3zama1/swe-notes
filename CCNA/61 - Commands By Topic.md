@@ -622,4 +622,110 @@ run-list
 
 cheff 10002
 puppet 8140
+
+
+(config)#ip vrf name
+(config-if)#ip vrf forwarding name
+show ip vrf
+show ip route vrf name
+ping vrf name ip
+
+Application specific integrated circuit
+ternary code-addressable memmory
+
+absorbtion
+reflection
+refraction
+difraction
+scattering
+
+2.400GHz - 2.4835GHz
+5.150GHz - 5.825GHz
+
+802.11 2.4 2mbps
+802.11a 5 54mbps
+802.11b 2.4 11mbps
+801.11g 2.4 54mbps
+802.11n 2.4/5 600mbps wifi 4 HT
+802.11ac 5 6.93gbps wifi 5 VHT
+802.11ax 2.4/5/6 802.11ac*4 wifi 6
+
+
+802.11 header
+
+frame control 2 bytes 
+	contains type and subtype of frames
+Duration/ID 2 bytes
+	duration specifies the allotted time in microseconds to transmitting the frame
+	ID is an association between the wireless client and the AP being used to transport the frame
+Address1, 2, 3 (6 bytes)
+Sequence control 2 bytes
+	allows reordering of frames and duplicate address detection and removal
+Address 4 (6 bytes)
+QoS 2 bytes
+	used for class of service
+HTC 4 bytes
+	provides high throughput capabilities
+payload
+	variable in size
+FCS (4 bytes)
+	used to detect errors in the frames
+
+Address types
+Source address: original sender
+Destination address: final destination
+Transmitter address: current sender of the address
+Receiver address: current receiver of the address
+
+
+authenticated, not associated
+authenticated, associated
+
+probe request, proble response 
+	not authenticated, not associated
+authentication request, authentication response
+	authenicated, not associated
+associated request, association response
+	authenticated, associated
+
+active scanning probe request
+passive scanning beacon messages
+
+
+802.11 message types
+management
+	used to manage the BSS
+	authenitcation association
+
+control
+	control transport medium. facillitate the transportation of management and data messages
+	RTS (request to send), CTS (clear to send)
+
+data
+	client traffic
+
+autonomous APs operational modes
+repeater, workgroup bridge WGB, Outdoor bridge
+
+light weight operational modes
+local (provides BSS)
+FlexConnect (provides BSS)
+sniffer (does not provide BSS)
+monitor (does not provide BSS)
+rogue detector (does not even have a raio and no BSS)
+SE-Connect (analyzes channels)
+Bridge/Mesh Bridge mode or mesh like in autonomous
+Flex plus Bridge Bridge plus the benefits of Flex which allows locally switching traffic to wired network
+
+
+Cloud based APs use an WLC that is located on the cloud (eg. Meraki). However, only management traffic is sent to the WLC. regular traffic is sent directly to the APs, wired network. trunks are used. basically the same as autonomous APs in regards to traffic flow, but with the addition of central APs managemeent
+
+
+WIRELESS LAN CONTROLLERS DEPLOYMENTS
+
+Unified WLC deployment 6000
+Cloud-based WLC deployment 3000
+Embedded WLC deployment 200
+Cisco Mobility express 100
+	
 ```

@@ -141,7 +141,7 @@
 * Wireless devices request to associate with the BSS.
 * Wireless devices that have associated with the BSS are called 'clients' or 'stations'.
 * The area around an AP where its signal is usable is called a **BSA** (Basic Service Area).
-* This setup is commonly used in homes, offices, and publish Wi-Fi networks.
+* This setup is commonly used in homes, offices, and public Wi-Fi networks.
 #### Mesh Basic Service Set (MBSS)
 ![Service Set MBSS](./img4/service-set-MBSS.png)
 * A **MBSS** can be used in situations where it's difficult to run an Ethernet connection to every AP.
