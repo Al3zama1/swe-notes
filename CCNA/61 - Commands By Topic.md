@@ -587,4 +587,15 @@ NETCONF
 
 ASIC (Applicatin specific integrated circuit)
 TMAC (Ternary content Addressable memmory)
+
+DNA Center (Digital Network Architecture Center) is the controller in SD-Access which is Ciscos SDN solution.
+
+LISP (Locator ID Separation Protocol) is the control plane that keeps mappings of EIDs (Endpoint Identifiers) to RLOCs (Routing locators).
+
+EIDs specify to what Edge node an end host is connected to
+RLOCs specify the Edge node that is needed to reach a specific end host
+
+VXLAN (Virtula Extensible LAN) is the data plane which is used to send traffic between devices. It is located in the overlay.
+
+Underlay is made up of devices that use layer 3 switches and rotuerd ports with IS-IS.
 ```
