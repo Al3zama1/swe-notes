@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/55 - Wireless Configuration.md",
+                "file": "CCNA/56 - Network Automation.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/55 - Wireless Configuration.md",
+                "file": "CCNA/61 - Commands By Topic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/55 - Wireless Configuration.md",
+                "file": "CCNA/61 - Commands By Topic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/55 - Wireless Configuration.md"
+                "file": "CCNA/61 - Commands By Topic.md"
               }
             }
           },
@@ -180,8 +180,10 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "36a29b8b83c57eae",
+  "active": "136e61473c4a3e9e",
   "lastOpenFiles": [
+    "CCNA/56 - Network Automation.md",
+    "CCNA/55 - Wireless Configuration.md",
     "CCNA/54 - Wireless Security.md",
     "CCNA/61 - Commands By Topic.md",
     "CCNA/53 - Wireless Architectures.md",
@@ -190,9 +192,7 @@
     "CCNA/60 - Ansible, Puppet, & Chef.md",
     "CCNA/59 - Software-Defined Networking.md",
     "CCNA/58 - REST APIs.md",
-    "CCNA/56 - Network Automation.md",
     "CCNA/57 - JSON, XML, & YAML.md",
-    "CCNA/55 - Wireless Configuration.md",
     "CCNA/50 - Virtualization - Containers.md",
     "CCNA/49 - Virtualization & Cloud.md",
     "CCNA/48 - WAN Architecture.md",

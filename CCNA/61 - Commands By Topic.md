@@ -759,4 +759,11 @@ WPA3 additional security features
 		protect four way handshake used in personal mode when authenticating to a wireless network
 	forward secrecy
 	protects agains saving of packets and trying to decrypt them in teh future
+
+
+management and control plane use the cpu
+
+the data plane relies on fast forwarding, therefore it uses a Application specific integrated circuit
+
+for example mac addresses are saved in TCAM (ternary content-addressable memory)
 ```
