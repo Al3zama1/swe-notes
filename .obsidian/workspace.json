@@ -14,13 +14,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/59 - Software-Defined Networking.md",
+                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "982c70e27e7d88a5",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "24b3f8b047bac026",
@@ -106,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/59 - Software-Defined Networking.md",
+                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/59 - Software-Defined Networking.md",
+                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/59 - Software-Defined Networking.md"
+                "file": "CCNA/60 - Ansible, Puppet, & Chef.md"
               }
             }
           },
@@ -180,13 +191,13 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "36a29b8b83c57eae",
+  "active": "982c70e27e7d88a5",
   "lastOpenFiles": [
+    "CCNA/59 - Software-Defined Networking.md",
+    "CCNA/61 - Commands By Topic.md",
     "CCNA/56 - Network Automation.md",
     "CCNA/55 - Wireless Configuration.md",
-    "CCNA/59 - Software-Defined Networking.md",
     "CCNA/58 - REST APIs.md",
-    "CCNA/61 - Commands By Topic.md",
     "CCNA/54 - Wireless Security.md",
     "CCNA/53 - Wireless Architectures.md",
     "CCNA/52 - Wireless Fundamentals.md",
