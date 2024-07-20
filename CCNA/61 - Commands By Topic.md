@@ -766,4 +766,19 @@ management and control plane use the cpu
 the data plane relies on fast forwarding, therefore it uses a Application specific integrated circuit
 
 for example mac addresses are saved in TCAM (ternary content-addressable memory)
+
+// create vrf
+(config)#ip vrf name
+
+// assign vrf to router interface
+(config-if)#ip vrf forwarding name
+
+show ip vrf
+
+show ip route vrf name
+
+ping vrf name ip-address
+
+2.4 is from 2.400 - 2.4835
+5 is from 5.150 - 5.825
 ```
