@@ -21,7 +21,7 @@
 	* Data plane
 	* Control plane
 	* Management plane
-* The Data plane is the reason we buy routers and switches (and network infrastructure in general), to forward messages. However, the Control plane and Management plane are both necessary to enable the data plane to do its job. 
+* The Data plane is the reason we buy routers and switches (and network infrastructure in general), to forward messages. However, the Control and Management planes are both necessary to enable the data plane to do its job. 
 ### Data Plane
 * All tasks involved in forwarding user data/traffic from one interface to another are part of the **data plane**.
 * A router receives a message, looks for the most specific matching route in the routing table, and forwards it out of the appropriate interface to the next hop. It also de-encapsulates the original Layer 2 header, and re-encapsulates it with a new header destined for the next hop's MAC address.

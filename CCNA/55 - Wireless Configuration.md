@@ -205,6 +205,6 @@ SW1(config)#ntp master
 ![Apply ACL to the WLC](./img5/apply-WLC-ACL.png)
 * Go to 'CPU Access Control Lists' tab on the left menu to apply the ACL created.
 * The option 'Enable CPU ACL' must be checked.
-	* CPU ALCs are used to limit access to the CPU of the WLC. This limits which devices will be able to connect to the WLC via Telnet/SSH, HTTP/HTTPS, retrieve SNMP information from the WLC, etc.
+	* CPU ACLs are used to limit access to the CPU of the WLC. This limits which devices will be able to connect to the WLC via Telnet/SSH, HTTP/HTTPS, retrieve SNMP information from the WLC, etc.
 	* This doesn't affect traffic passing through the WLC, only traffic destined directly for the WLC.
 * Then select the the ACL you want to use from the list and click apply.
