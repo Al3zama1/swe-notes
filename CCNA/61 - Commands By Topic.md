@@ -797,4 +797,18 @@ source, destination, transmitter, receiver
 not authenticated, not associated, 
 authenticated, not associated,
 authenticated, associated
+
+light weight operational modes
+
+
+local 
+flexConnect
+sniffer
+monitor
+rogue detector
+SE-Connect
+Bridge/Mesh
+Flex plus bridge
+
+unified, cloud-based, embedded, Cisco Mobility Express
 ```
