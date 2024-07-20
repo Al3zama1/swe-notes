@@ -781,4 +781,20 @@ ping vrf name ip-address
 
 2.4 is from 2.400 - 2.4835
 5 is from 5.150 - 5.825
+
+frame control
+duration/ID
+address 1 - 3
+Sequence control
+address 4
+QoS Control
+HTControl 
+payload
+FCS
+
+source, destination, transmitter, receiver
+
+not authenticated, not associated, 
+authenticated, not associated,
+authenticated, associated
 ```
