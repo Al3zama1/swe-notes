@@ -811,4 +811,21 @@ Bridge/Mesh
 Flex plus bridge
 
 unified, cloud-based, embedded, Cisco Mobility Express
+
+Open authenitcation 
+WEP
+lightweight EAP
+EAP-FAST
+PEAP
+EAP-TLS
+
+WEP
+TKIP
+CCMP (AES, CBC-MAC)
+GCMP (AES, GMAC)
+
+PMF (protected management frames) protects management frames from eavesdropping
+SAE (simultaneous authentication of equals) protects the four way handshake in personal mode
+
+forward secrecey prevents storage of frames for future decryption
 ```
