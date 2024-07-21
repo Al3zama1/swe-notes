@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/2 - Interfaces and Cables.md",
+                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/2 - Interfaces and Cables.md",
+                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/2 - Interfaces and Cables.md",
+                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/2 - Interfaces and Cables.md"
+                "file": "CCNA/13 - VLANs (Virtual Local Area Networks).md"
               }
             }
           },
@@ -161,6 +161,9 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/14 - VLANs Part Two.md",
+    "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+    "CCNA/2 - Interfaces and Cables.md",
     "CCNA/60 - Ansible, Puppet, & Chef.md",
     "CCNA/48 - WAN Architecture.md",
     "CCNA/33 - DNS (Domain Name System).md",
@@ -184,9 +187,6 @@
     "CCNA/23 - OSPF Part 3.md",
     "CCNA/43 - Security Fundamentals.md",
     "CCNA/42 - QoS Part 2.md",
-    "CCNA/41 - QoS.md",
-    "CCNA/40 - NAT Part 2.md",
-    "CCNA/39 - NAT Part 1.md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
