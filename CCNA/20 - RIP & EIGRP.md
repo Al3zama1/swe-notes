@@ -46,6 +46,7 @@ R1(config-router)#network 172.16.0.0
 	* look for interfaces with an IP address that is in the specified range and activate RIP on them.
 		* Routers send RIP advertisements out of their RIP enabled interfaces.
 		* An interface enabled as RIP that is not connected to a RIP neighbor should be configured as **passive** to prevent unnecessary traffic.
+			* Loopback interfaces should also be set to passive-interfaces.
 	* Form adjacencies with connected RIP neighbors.
 	* Advertise the network prefix of RIP enabled interfaces (NOT the prefix in the network command.) with its RIP neighbors.
 * The OSPF and EIGRP `network` command operate in the same way.
