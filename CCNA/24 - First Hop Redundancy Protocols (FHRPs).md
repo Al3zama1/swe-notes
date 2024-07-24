@@ -121,3 +121,6 @@ R1(config-if)#standby 1 peempt
 
 **Show HSRP Configuration**
 `R1# show standby`
+
+### NOTE
+It is a good LAN design principle to synchronize STP with FHRP when using multi layer switches (ei. distribution switches). Make sure  that the root bridge for any given VLAN is also the 
