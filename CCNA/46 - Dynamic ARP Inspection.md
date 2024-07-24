@@ -46,7 +46,7 @@ SW1(config-if-range)#ip arp inspection limit rate 25 burst interval 2
 * The burst interval is optional. I you don't specify it, the default is 1 second.
 
 ## DAI Optional  Checks
-* By default, DAI only checks the sender MAC and IP address, to see if there is a matching entry in the DHCP snooping binding table or not.
+* By default, DAI only checks the sender MAC and IP address of ARP messages received on **untrusted** ports, to see if there is a matching entry in the DHCP snooping binding table or not.
 * DAI available check options are:
 	* **dst-mac**: Enables validation of the destination MAC address in the Ethernet header against the target MAC address in the ARP body for ARP responses. The device classifies packets with different MAC addresses as invalid and drops them.
 	* **src-mac**: Enables validation of the source MAC address in the Ethernet header against the sender MAC address in the ARP body for ARP requests and responses. The devices classifies packets with different MAC addresses as invalid and drops them.
