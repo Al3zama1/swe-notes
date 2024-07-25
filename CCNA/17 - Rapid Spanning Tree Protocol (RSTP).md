@@ -103,3 +103,4 @@ Identify the root bridge and the RSTP port role of each switch interface in the 
 	* On a real switch, the link type wold be shown as both edge and p2p in the switch's console.
 * SW1's F0/24 interface is connected to a Hub, but there are PCs connected to the hub. Therefore, it is an edge port. The hub basically doesn't exist in terms of Spanning Tree. It's different than if it were connected to a switch here.
 	* F0/24 is both, an edge port with PortFast enabled and a shared port.
+### RSTP Example 4
