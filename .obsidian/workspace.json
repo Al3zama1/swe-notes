@@ -159,8 +159,9 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "36a29b8b83c57eae",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
+    "CCNA/img5/rstp-example4.png",
     "CCNA/23 - OSPF Part 3.md",
     "CCNA/9 - Routing Fundamentals.md",
     "CCNA/10 - Static Routing.md",
@@ -186,7 +187,6 @@
     "CCNA/27 - IPv6 Part 2.md",
     "CCNA/28 - IPv6 Part 3.md",
     "CCNA/26 - IPv6.md",
-    "CCNA/22 - OSPF Part 2.md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
