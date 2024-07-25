@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/55 - Wireless Configuration.md",
+                "file": "CCNA/37 - Secure Shell (SSH).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/55 - Wireless Configuration.md",
+                "file": "CCNA/37 - Secure Shell (SSH).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/55 - Wireless Configuration.md",
+                "file": "CCNA/37 - Secure Shell (SSH).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/55 - Wireless Configuration.md"
+                "file": "CCNA/37 - Secure Shell (SSH).md"
               }
             }
           },
@@ -161,6 +161,7 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/55 - Wireless Configuration.md",
     "CCNA/14 - VLANs Part Two.md",
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
@@ -186,7 +187,6 @@
     "CCNA/22 - OSPF Part 2.md",
     "CCNA/21 - OSPF.md",
     "CCNA/20 - RIP & EIGRP.md",
-    "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
