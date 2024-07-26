@@ -41,6 +41,8 @@ BackboneFast allows switches to expire the Max Age timer on their interfaces. In
 * In classic STP, a switch interface waits 10 Hello intervals (20 seconds) before making changes to the STP topology. In rapid STP, a switch considers a neighbor lost if it misses 3 BPDUs (6 seconds). It will then flush (clear) all MAC addresses learned on that interface.
 #### RSTP Interfaces Speed Outgoing Cost
 ![stp vs rstp port cost](./img/st-vs-rstp-port-cost.png)
+
+![STP short vs long path cost](./img5/stp-short-vs-long-path-cost.png)
 #### RSTP Port States
 ![rstp port states](./img/rstp-port-states.png)
 * The listening state is gone.
