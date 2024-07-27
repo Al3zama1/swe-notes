@@ -49,6 +49,7 @@ R2(config-if)#ip ospf priority 255
 ![DR/BDR election](./img2/dr-bdr-2.png)
 * R4 became the DR, not R2. R2 became the BDR.
 	* When the DR goes down, the BDR becomes the new DR even if it doesn't have the highest OSPF interface priority / RID anymore. Then, an election is held for the next BDR.
+	* When the BDR goes down, a new election is held among the DROther to pick a new BDR.
 * DROthers (R3 and R5 in the subnet) will only move to the Full state with the DR and BDR. The neighbor state with other DROthers will be 2-way.
 	* DROthers don't form full adjacencies with other DROthers. They remain in the 2-way state.
 ##### Reset OSPF Process
