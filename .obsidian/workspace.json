@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/29 - Standard ACLs.md",
+                "file": "CCNA/37 - Secure Shell (SSH).md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/29 - Standard ACLs.md",
+                "file": "CCNA/37 - Secure Shell (SSH).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/29 - Standard ACLs.md",
+                "file": "CCNA/37 - Secure Shell (SSH).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/29 - Standard ACLs.md"
+                "file": "CCNA/37 - Secure Shell (SSH).md"
               }
             }
           },
@@ -173,9 +173,17 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/36 - Syslog.md",
+    "CCNA/61 - Commands By Topic.md",
+    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
+    "CCNA/34 - DHCP.md",
+    "CCNA/33 - DNS (Domain Name System).md",
+    "CCNA/32 - NTP (Network Time Protocol).md",
+    "CCNA/31 - CDP & LLDP.md",
+    "CCNA/30 - Extended ACLs.md",
+    "CCNA/29 - Standard ACLs.md",
     "CCNA/28 - IPv6 Part 3.md",
     "CCNA/27 - IPv6 Part 2.md",
-    "CCNA/61 - Commands By Topic.md",
     "CCNA/26 - IPv6.md",
     "CCNA/25 - TCP & UDP.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
@@ -191,14 +199,6 @@
     "CCNA/14 - VLANs Part Two.md",
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
     "CCNA/12 - Subnetting.md",
-    "CCNA/11 - Life of a Packet.md",
-    "CCNA/10 - Static Routing.md",
-    "CCNA/9 - Routing Fundamentals.md",
-    "CCNA/8 - IPv4 Header.md",
-    "CCNA/7 - Switch Interfaces.md",
-    "CCNA/5 - Ethernet LAN Switching.md",
-    "CCNA/6 - IPv4 Addressing.md",
-    "CCNA/4 - CLI Introduction.md",
     "CCNA/img5/ansible.png",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/img5/rstp-example4.png",

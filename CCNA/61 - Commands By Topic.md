@@ -874,4 +874,28 @@ standard 0180.c200.0000
 c = 12
 
 1100
+
+
+
+dequence:timestamp: %facility-severity-MNEMONIC:description
+
+
+0 emergency
+1 alert
+2 critical
+3 error
+4 warning
+5 notice
+6 informational
+7 debugging
+
+facility is the process in the device that originated the error
+mnemonic is a short code that describes the issue
+description states detailed description of the error
+
+
+sequence and timestamps are not enabled by default
+
+service timestamps log
+service sequence-numbers
 ```

@@ -67,7 +67,7 @@ The SNMP OID below is used by the NMS to retrieve the Hostname of a managed devi
 * A request sent from the manager to the agent to discover the available variables in the MIB (Management Information Base).
 #### GetBulk
 * A more efficient version of the **GetNext** message (introduced in SNMPv2) that allows mass-retrieval of information from managed devices (agent).
-### Wire Message Class
+### Write Message Class
 #### Set
 * A request sent from the manager to the agent to change the value of one or more variables. The agent will send a Response with the new value(s).
 ### Notification Message Class

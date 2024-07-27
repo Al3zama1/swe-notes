@@ -62,4 +62,4 @@ R1(config)#service sequence-numbers
 	* Messages are sent from the device to the Syslog server. The Syslog server can't actively pull information from the devices (like SNMP **Get**) or modify variables (like SNMP **Set**).
 * **SNMP** is used to retrieve and organize information about the SNMP managed devices.
 	* Can retrieve IP addresses, current interface status, temperature, CPU usage, etc.
-	* SNMP servers can use **Get** to query the clients and **Set** to modify variables on the clients.1234:56ff:fe78:90AB
+	* SNMP servers can use **Get** to query the clients and **Set** to modify variables on the clients.
