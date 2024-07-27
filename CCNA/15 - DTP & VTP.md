@@ -88,7 +88,6 @@ SW(config)#vtp mode transparent
 
 // change VTP domain
 SW(config)#vtp domain <domain-name>
-
 ```
 
 **Change VTP Version**

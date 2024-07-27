@@ -5,7 +5,7 @@
 * As much as possible, you must implement redundancy at every possible point in the network.
 #### Network Without Redundancy
 ![Network without redundancy](./img/network-without-redundancy.png)
-* If a failure occurs at the 'x' and the connection is lost, all hosts in the LAN lose connectivity to the internet.
+* If a failure occurs at 'x' and the connection is lost, all hosts in the LAN lose connectivity to the internet.
 #### Network With Redundancy
 ![Network with redundancy](./img/network-with-redundancy.png)
 * Hosts in this network can take multiple paths to reach other hosts in the  LAN and to get to the internet (outside the LAN).
