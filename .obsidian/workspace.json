@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/5 - Ethernet LAN Switching.md",
+                "file": "CCNA/15 - DTP & VTP.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/5 - Ethernet LAN Switching.md",
+                "file": "CCNA/15 - DTP & VTP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/5 - Ethernet LAN Switching.md",
+                "file": "CCNA/15 - DTP & VTP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/5 - Ethernet LAN Switching.md"
+                "file": "CCNA/15 - DTP & VTP.md"
               }
             }
           },
@@ -161,8 +161,17 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
-    "CCNA/4 - CLI Introduction.md",
+    "CCNA/14 - VLANs Part Two.md",
+    "CCNA/13 - VLANs (Virtual Local Area Networks).md",
+    "CCNA/12 - Subnetting.md",
+    "CCNA/11 - Life of a Packet.md",
+    "CCNA/10 - Static Routing.md",
+    "CCNA/9 - Routing Fundamentals.md",
+    "CCNA/8 - IPv4 Header.md",
+    "CCNA/7 - Switch Interfaces.md",
     "CCNA/5 - Ethernet LAN Switching.md",
+    "CCNA/6 - IPv4 Addressing.md",
+    "CCNA/4 - CLI Introduction.md",
     "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/2 - Interfaces and Cables.md",
     "CCNA/1 - Network Devices.md",
@@ -175,21 +184,12 @@
     "CCNA/22 - OSPF Part 2.md",
     "CCNA/25 - TCP & UDP.md",
     "CCNA/31 - CDP & LLDP.md",
-    "CCNA/7 - Switch Interfaces.md",
     "CCNA/59 - Software-Defined Networking.md",
-    "CCNA/9 - Routing Fundamentals.md",
-    "CCNA/6 - IPv4 Addressing.md",
-    "CCNA/12 - Subnetting.md",
-    "CCNA/11 - Life of a Packet.md",
-    "CCNA/10 - Static Routing.md",
     "CCNA/34 - DHCP.md",
     "CCNA/img5/rstp-example4.png",
     "CCNA/37 - Secure Shell (SSH).md",
     "CCNA/55 - Wireless Configuration.md",
-    "CCNA/14 - VLANs Part Two.md",
-    "CCNA/13 - VLANs (Virtual Local Area Networks).md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
-    "CCNA/45 - DHCP Snooping.md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",

@@ -98,7 +98,6 @@ Using Trunk ports, the number of connections between Switch to Switch and Switch
 * Other common names for access ports and trunk ports:
 	* Trunk ports: **tagged ports**
 	* Access ports: **untagged ports**
-
 #### VLAN Tagging
 * There are two main trunking protocols: 
 	* **ISL (Inter-Switch Link)**.
@@ -106,7 +105,6 @@ Using Trunk ports, the number of connections between Switch to Switch and Switch
 * ISL is an old Cisco proprietary protocol created before the industry standard IEEE 802.1Q.
 * IEEE 802.1Q is an industry standard protocol created by the IEEE (Institute of Electrical and Electronics Engineers).
 * You will probably NEVER user ISL in the real world. Even modern Cisco equipment doesn't support it. For the CCNA, you only need to learn 802.1Q.
-
 ##### 802.1Q Position In the Ethernet Frame Header
 
 | Preamble | SFD | Destination | Source | 802.1Q | Type |
@@ -181,7 +179,7 @@ SW1(config-if)#switchport mode trunk
 * After you set the encapsulation type, you can then configure the interface as a trunk.
 ##### View Trunk Interfaces
 ```
-SW1# show interface trunk
+SW1# show interfaces trunk
 Port   Mode  Encapsulation  Status     Native vlan
 Gi0/0  on    802.1q         trunking   1
 
@@ -204,9 +202,9 @@ Gi0/0  1, 10, 30
 * `Vlans in spanning tree forwarding state and not pruned`
 	* Will cover this field later
 
-##### `show vlan brief` vs `show interface trunk`
+##### `show vlan brief` vs `show interfaces trunk`
 * The `show vlan brief` command shows the access ports assigned to each VLAN, not the trunk ports that allow each VLAN.
-* Use the `show interface trunk` command instead to confirm trunk ports.
+* Use the `show interfaces trunk` command instead to confirm trunk ports.
 
 ##### Configure Allowed VLANs on a Trunk
 ```
@@ -245,7 +243,7 @@ SW1(config-if)#switchport trunk allowed vlan
 * The switch interface is configured as a regular trunk.
 * The router interface is configured with **subinterfaces**. Each subinterface is assigned a VLAN tag and IP address.
 * The router will behave as if frames arriving with a certain VLAN tag have arrived on the subinterface configured with that VLAN tag.
-* The router will tag frames sent out of each interface with the VLAN tag configured on the subinterface.
+* The router will tag frames sent out of the interface with the VLAN tag associated with the connected network where the target destination belongs in.
 #### Configure Router on a Stick (ROAS)
 ```
 R1(config-if)interface g0/0.10
