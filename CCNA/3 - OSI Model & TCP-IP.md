@@ -17,7 +17,7 @@
 * Segments and resembles data for communication between end hosts.
 * Breaks large pieces of data into smaller segments which can be more easily sent over the network and are less likely to cause transmission problems if errors occur.
 * Provides host-to-host communication.
-* provides process-to-process communication
+* provides process-to-process communication.
 #### Network
 * Provides connectivity between hosts on different networks.
 * Proves logical addressing (IP addresses).

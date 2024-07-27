@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP Inspection.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP Inspection.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP Inspection.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/46 - Dynamic ARP Inspection.md"
+                "file": "CCNA/5 - Ethernet LAN Switching.md"
               }
             }
           },
@@ -161,6 +161,13 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/4 - CLI Introduction.md",
+    "CCNA/5 - Ethernet LAN Switching.md",
+    "CCNA/3 - OSI Model & TCP-IP.md",
+    "CCNA/2 - Interfaces and Cables.md",
+    "CCNA/1 - Network Devices.md",
+    "CCNA/img5/ansible.png",
+    "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/23 - OSPF Part 3.md",
@@ -182,19 +189,13 @@
     "CCNA/14 - VLANs Part Two.md",
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
-    "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/45 - DHCP Snooping.md",
-    "CCNA/42 - QoS Part 2.md",
-    "CCNA/40 - NAT Part 2.md",
-    "CCNA/39 - NAT Part 1.md",
-    "CCNA/38 - FTP & TFTP.md",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
     "CCNA/img5/split-mac-topology-client-communication-default-gateway.png",
     "CCNA/img5/config-management-tools-comparison.png",
     "CCNA/img5/chef.png",
     "CCNA/img5/puppet.png",
-    "CCNA/img5/ansible.png",
     "CCNA/img5/configuration-provisioning.png",
     "CCNA/img5/sd-access-underlay.png",
     "CCNA/img5",
