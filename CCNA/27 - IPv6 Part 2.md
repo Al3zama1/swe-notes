@@ -72,5 +72,5 @@
 #### ::1
 * The loopback address.
 * Used to test the protocol stack on the local device.
-* Messages sent to this address are processes within the local device, but not sent to other devices.
+* Messages sent to this address are processed within the local device, but not sent to other devices.
 * IPv4 equivalent: `127.0.0.0/8`.
