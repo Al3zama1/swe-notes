@@ -854,7 +854,9 @@ netconf
 
 
 
-
+1 hello discovery and mainance of neighbors
+DBD database descritiopn used in extart and exchange
+	used in extart to decide on master and slave rotuer to decide who will begin the exchange of if
 
 
 
