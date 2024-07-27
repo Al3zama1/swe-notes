@@ -898,4 +898,21 @@ sequence and timestamps are not enabled by default
 
 service timestamps log
 service sequence-numbers
+
+
+
+hostname sdfsdf
+ip domain name dfsdfsdf
+crypto key generate rsa modulus
+
+ip ssh version 2
+
+enable secret
+access-list 1 permit host ip
+
+line vty 0 15
+login local
+exec-timeout min sec
+transport input ssh
+access-class acl in
 ```
