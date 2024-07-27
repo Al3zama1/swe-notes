@@ -91,7 +91,7 @@ IPv6 doesn't use ARP, therefore there isn't an ARP table. Instead, the devices w
 * Stands for **Stateless Address Auto-configuration** and it is an IPv6 address configuration mechanism.
 * SLAAC is a standard function of IPv6 and end hots like PCs can do this too, not just routers. Although hosts don't use Cisco IOS commands.
 * Hosts use the RS/RA messages to learn the IPv6 prefix of the local link (ie. `2001:db8::/64`), and then automatically generate an IPv6 address.
-* Using the `ipv6 addres autoconfig` command, you don't need to enter the network prefix (global routing id, subnet identifier) and interface identifier. The device uses NDP to learn the prefix used on the local link (local network).
+* Using the `ipv6 addres autoconfig` command, you don't need to enter the network prefix and interface identifier. The device uses NDP to learn the prefix used on the local link (local network).
 * The device will use EUI-64 to generate the interface ID, or it will be randomly generated (depending on the device/maker).
 
 In this example below, R1 is connected to R2. R1 is configured with an IPv6 address, but R2 doesn't have one yet. The command `ipv6 address autoconfig` is used on R2's G0/0 interface to automatically assign it an IPv6 address.
