@@ -1,7 +1,7 @@
 ## Loopback Interfaces
 * A loopback interface is a virtual interface in the router.
 * It is always up/up (unless you manually shutdown).
-* It is not dependent on a physical interface. 
+* It is not dependent on a physical interface. \
 * It provides a consistent IP address that can be used to reach/identify the router.
 ## OSPF Network Types
 ![OSPF network types comparison](./img2/ospf-network-types-comparison.png)
