@@ -59,7 +59,7 @@ R1#clear ip nat translations *
 ```
 * This will only clear the dynamic NAT entries automatically generated when NAT is performed to translate addresses for packets.
 * The static NAT entries won't time out and can't be removed unless you remove the commands that created them.
-	* `ip nat inside source static ...`
+	* `no ip nat inside source static ...`
 ### Show NAT Statistics
 ```
 R1#show ip nat statistics
