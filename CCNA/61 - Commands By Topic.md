@@ -859,5 +859,8 @@ netconf
 
 
 
+pvst mac 0100.0ccc.cccd
+standard 0180.c200.0000
+
 
 ```

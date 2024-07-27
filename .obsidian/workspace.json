@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
+                "file": "CCNA/18 - EtherChannel.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
+                "file": "CCNA/18 - EtherChannel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
+                "file": "CCNA/18 - EtherChannel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md"
+                "file": "CCNA/18 - EtherChannel.md"
               }
             }
           },
@@ -173,7 +173,9 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
+    "CCNA/18 - EtherChannel.md",
     "CCNA/61 - Commands By Topic.md",
     "CCNA/15 - DTP & VTP.md",
     "CCNA/14 - VLANs Part Two.md",
@@ -192,7 +194,6 @@
     "CCNA/1 - Network Devices.md",
     "CCNA/img5/ansible.png",
     "CCNA/46 - Dynamic ARP Inspection.md",
-    "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/23 - OSPF Part 3.md",
     "CCNA/21 - OSPF.md",
@@ -200,7 +201,6 @@
     "CCNA/25 - TCP & UDP.md",
     "CCNA/31 - CDP & LLDP.md",
     "CCNA/59 - Software-Defined Networking.md",
-    "CCNA/34 - DHCP.md",
     "CCNA/img5/rstp-example4.png",
     "CCNA/img6",
     "CCNA/img5/split-mac-deployment-client-to-client-traffic-path.png",
