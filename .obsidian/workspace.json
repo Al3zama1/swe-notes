@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/42 - QoS Part 2.md",
+                "file": "CCNA/44 - Port Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/42 - QoS Part 2.md",
+                "file": "CCNA/44 - Port Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/42 - QoS Part 2.md",
+                "file": "CCNA/44 - Port Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/42 - QoS Part 2.md"
+                "file": "CCNA/44 - Port Security.md"
               }
             }
           },
@@ -173,6 +173,8 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/43 - Security Fundamentals.md",
+    "CCNA/42 - QoS Part 2.md",
     "CCNA/41 - QoS.md",
     "CCNA/40 - NAT Part 2.md",
     "CCNA/39 - NAT Part 1.md",
@@ -197,8 +199,6 @@
     "CCNA/21 - OSPF.md",
     "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
-    "CCNA/18 - EtherChannel.md",
-    "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CCNA/img5/ansible.png",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/img5/rstp-example4.png",

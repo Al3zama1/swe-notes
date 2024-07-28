@@ -19,7 +19,7 @@
 	* The attacker spoofed thousands of fake MAC addresses.
 	* The DHCP server assigned IP addresses to these fake MAC addresses, exhausting the DHCP pool.
 	* The switch's MAC address table can also become full due to such an attack.
-* Limiting the number of MAC addresses on an interface can protect agains those attacks.
+* Limiting the number of MAC addresses on an interface can protect against those attacks.
 ## Violation Modes
 There are three different violation modes that determine what the switch will do if an unauthorized frame enters an interface configured with port security.
 * **Shutdown** (default mode)
