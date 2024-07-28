@@ -12,7 +12,7 @@
 	* VRF does not apply to Layer 2 interfaces on a switch. Only router interfaces, SVIs and routed ports on multilayer switches can be configured with VRF.
 * VRF is commonly used to facilitate MPLS.
 	* **However, the kind of VRF we are talking about here is VRF-lite (VRF without MPLS).**
-* VRF is commonly used by service providers to allow one device to carry traffic from multiple customers.
+* VRF is commonly used by service providers to allow one router to carry traffic from multiple customers.
 	* Each customer's traffic is isolated from the other.
 	* Customer IP addresses can overlap without issues because each VRF creates a separate routing table.
 

@@ -935,4 +935,11 @@ T3 = 44.736
 E1 - 2.048
 E2 - 8.448
 E3 = 34.368
+
+R#show ip vrf
+R#show ip route vrf name
+R#ping vrf name ip
+
+R(config)#ip vrf name
+R(config-if)#ip vrf forwarding name
 ```
