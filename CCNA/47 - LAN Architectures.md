@@ -1,8 +1,6 @@
-* You have studies various networking technologies: routing, STP, EtherChannel, OSPF, FHRPs, switch security features, etc.
 * There are standard 'best practices' for network design.
 	* However there are a few universal 'correct answers'.
 	* The answer to most general questions about network design is 'it depends'.
-* In the early stages of your networking career, you probably won't be asked to design networks yourself.
 * However, to understand the networks you will be configuring and troubleshooting, it's important to know some basics of network design.
 ## Common Terminologies
 ### Star Topology
