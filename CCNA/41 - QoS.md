@@ -94,6 +94,6 @@ SW1#show power inline police g0/0
 * The simultaneous increase and decrease of the window size from all hosts sending packets leads to a cycle of over-utilization, under-utilization, over-utilization, under-utilization, etc.
 #### Random Early Detection (RED)
 * When the amount of traffic in the queue reaches a certain threshold, the device will start randomly dropping packets from select TCP flows.
-* Those TCP flows that dropped packets will reduce the rate at which traffic is sent, but you will avoid global TCP synchronization, in which all TCP flows reduce and then increase the rate of transmission at the same time in waves.
+* Those TCP flows that dropped packets will reduce the rate at which traffic is sent, but you will avoid TCP global synchronization, in which all TCP flows reduce and then increase the rate of transmission at the same time in waves.
 * In standard RED, all kinds of traffic are treated the same.
 * An improved version, **Weighted Random Early Detection (WRED)**, allows you to control which packets are dropped depending on the traffic class.

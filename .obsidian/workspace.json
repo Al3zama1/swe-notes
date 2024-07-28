@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/40 - NAT Part 2.md",
-                "mode": "preview",
+                "file": "CCNA/42 - QoS Part 2.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/40 - NAT Part 2.md",
+                "file": "CCNA/42 - QoS Part 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/40 - NAT Part 2.md",
+                "file": "CCNA/42 - QoS Part 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/40 - NAT Part 2.md"
+                "file": "CCNA/42 - QoS Part 2.md"
               }
             }
           },
@@ -173,6 +173,8 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/41 - QoS.md",
+    "CCNA/40 - NAT Part 2.md",
     "CCNA/39 - NAT Part 1.md",
     "CCNA/38 - FTP & TFTP.md",
     "CCNA/37 - Secure Shell (SSH).md",
@@ -197,8 +199,6 @@
     "CCNA/19 - Dynamic Routing.md",
     "CCNA/18 - EtherChannel.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
-    "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
-    "CCNA/15 - DTP & VTP.md",
     "CCNA/img5/ansible.png",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/img5/rstp-example4.png",
