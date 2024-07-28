@@ -915,4 +915,14 @@ login local
 exec-timeout min sec
 transport input ssh
 access-class acl in
+
+
+ip dhcp snooping information option
+ip dhcp snooping limit rate
+
+errdisable recovery casue psecure-violation
+errdisable recovery cause dhcp-rate-limit
+errdisable recovery cause arp-inspection
+
+show ip dhcp snooping binding
 ```
