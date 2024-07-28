@@ -925,4 +925,14 @@ errdisable recovery cause dhcp-rate-limit
 errdisable recovery cause arp-inspection
 
 show ip dhcp snooping binding
+
+
+T1 - 1.544
+T2 = 6.312
+T3 = 44.736
+
+
+E1 - 2.048
+E2 - 8.448
+E3 = 34.368
 ```

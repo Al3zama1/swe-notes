@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/47 - LAN Architectures.md",
+                "file": "CCNA/48 - WAN Architecture.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/47 - LAN Architectures.md",
+                "file": "CCNA/48 - WAN Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/47 - LAN Architectures.md",
+                "file": "CCNA/48 - WAN Architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/47 - LAN Architectures.md"
+                "file": "CCNA/48 - WAN Architecture.md"
               }
             }
           },
@@ -173,6 +173,9 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/61 - Commands By Topic.md",
+    "CCNA/48 - WAN Architecture.md",
+    "CCNA/47 - LAN Architectures.md",
     "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/44 - Port Security.md",
     "CCNA/45 - DHCP Snooping.md",
@@ -189,8 +192,6 @@
     "CCNA/33 - DNS (Domain Name System).md",
     "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/31 - CDP & LLDP.md",
-    "CCNA/47 - LAN Architectures.md",
-    "CCNA/61 - Commands By Topic.md",
     "CCNA/30 - Extended ACLs.md",
     "CCNA/29 - Standard ACLs.md",
     "CCNA/28 - IPv6 Part 3.md",
@@ -198,7 +199,6 @@
     "CCNA/26 - IPv6.md",
     "CCNA/25 - TCP & UDP.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
-    "CCNA/23 - OSPF Part 3.md",
     "CCNA/img5/ansible.png",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/img5/rstp-example4.png",

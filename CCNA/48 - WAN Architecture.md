@@ -35,7 +35,7 @@
 * MPLS allows enterprises to form WANs over a service provider's MPLS infrastructure.
 	* MPLS is a technology that runs in the service provider's network.
 * Similar to the internet, service providers' MPLS networks are shared infrastructure because many customer enterprises connect to and share the same infrastructure to make their WAN connections.
-* Although the traffic of many different customers will be passing over this infrastructure, the label switching aspect of MPLS allows secure VPNs to be formed over the shared infrastructure.
+* Although the traffic of many different customers will be passing over this infrastructure, the label switching aspect of MPLS allows secure VPNs to be formed over the shared ISP's infrastructure.
 	* MPLS allows VPNs to be created over the MPLS infrastructure through the use of **labels**.
 * Some important terms:
 	* CE router = Customer Edge router.
@@ -56,7 +56,7 @@
 * When using a Layer 3 MPLS VPN, the CE and PE routers peer using a dynamic routing protocol (OSPF etc.), for example, to share routing information.
 	* The customer could also just write static routes, using the PE routers as the next hop.
 * For example, in the diagram above Office A's CE will peer with one PE, and Office B's CE will peer with the other PE.
-	* Office A's CE will learn about Office B's routes via this OSPF peering, and Office B's CE will learn about Office A's routes too.
+	* Office A's CE will learn about Office B's routes via this OSPF peering, and Office B's CE will also learn about Office A's routes too.
 ### Layer 2 MPLS VPN
 ![Layer 2 MPLS](./img4/layer-2-mpls.png)
 * When using a Layer 2 MPLS VPN, the CE and PE routers do not form peerings.
