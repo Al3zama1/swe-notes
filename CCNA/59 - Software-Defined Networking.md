@@ -1,6 +1,5 @@
 ## SDN Architecture
 ![SDN architecture](./img5/sdn-architecture.png)
-
 ## SD-ACCESS
 ![SD-Access Infrastructure](./img5/SD-Access-architecture.png)
 * Cisco **SD-Access** is Cisco's SDN solution for automating campus LANs.

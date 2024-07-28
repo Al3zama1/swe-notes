@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md",
+                "file": "CCNA/59 - Software-Defined Networking.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md",
+                "file": "CCNA/59 - Software-Defined Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md",
+                "file": "CCNA/59 - Software-Defined Networking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/54 - Wireless Security.md"
+                "file": "CCNA/59 - Software-Defined Networking.md"
               }
             }
           },
@@ -173,6 +173,9 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/56 - Network Automation.md",
+    "CCNA/55 - Wireless Configuration.md",
+    "CCNA/54 - Wireless Security.md",
     "CCNA/53 - Wireless Architectures.md",
     "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
@@ -196,9 +199,6 @@
     "CCNA/34 - DHCP.md",
     "CCNA/33 - DNS (Domain Name System).md",
     "CCNA/32 - NTP (Network Time Protocol).md",
-    "CCNA/31 - CDP & LLDP.md",
-    "CCNA/30 - Extended ACLs.md",
-    "CCNA/29 - Standard ACLs.md",
     "CCNA/img5/ansible.png",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/img5/rstp-example4.png",
