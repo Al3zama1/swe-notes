@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/52 - Wireless Fundamentals.md",
+                "file": "CCNA/54 - Wireless Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/52 - Wireless Fundamentals.md",
+                "file": "CCNA/54 - Wireless Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/52 - Wireless Fundamentals.md",
+                "file": "CCNA/54 - Wireless Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/52 - Wireless Fundamentals.md"
+                "file": "CCNA/54 - Wireless Security.md"
               }
             }
           },
@@ -173,6 +173,8 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/53 - Wireless Architectures.md",
+    "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
     "CCNA/61 - Commands By Topic.md",
     "CCNA/50 - Virtualization - Containers.md",
@@ -197,8 +199,6 @@
     "CCNA/31 - CDP & LLDP.md",
     "CCNA/30 - Extended ACLs.md",
     "CCNA/29 - Standard ACLs.md",
-    "CCNA/28 - IPv6 Part 3.md",
-    "CCNA/27 - IPv6 Part 2.md",
     "CCNA/img5/ansible.png",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/img5/rstp-example4.png",

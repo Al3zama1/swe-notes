@@ -153,7 +153,7 @@
 ### Cisco Mobility Express WLC Deployment:
 ![Cisco Mobility Express WLC](./img4/cisco-mobility-express-wlc.png)
 * The WLC is integrated within an APs in the network.
-	* The AP containing the WLC builds an internal CAPWAP tunnels to it and the other APs do too.
+	* The AP containing the WLC builds internal CAPWAP tunnels to it and the other APs do too.
 * A Mobility Express WLC can support up to 100 APs.
 * If more than 100 APs are needed, more APs with integrated Mobility Express WLCs can be added.
 * Suitable for a small branch office.
