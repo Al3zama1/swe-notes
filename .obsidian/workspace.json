@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/59 - Software-Defined Networking.md",
+                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/59 - Software-Defined Networking.md",
+                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/59 - Software-Defined Networking.md",
+                "file": "CCNA/60 - Ansible, Puppet, & Chef.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/59 - Software-Defined Networking.md"
+                "file": "CCNA/60 - Ansible, Puppet, & Chef.md"
               }
             }
           },
@@ -173,13 +173,16 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/61 - Commands By Topic.md",
+    "CCNA/60 - Ansible, Puppet, & Chef.md",
+    "CCNA/59 - Software-Defined Networking.md",
+    "CCNA/58 - REST APIs.md",
     "CCNA/56 - Network Automation.md",
     "CCNA/55 - Wireless Configuration.md",
     "CCNA/54 - Wireless Security.md",
     "CCNA/53 - Wireless Architectures.md",
     "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
-    "CCNA/61 - Commands By Topic.md",
     "CCNA/50 - Virtualization - Containers.md",
     "CCNA/49 - Virtualization & Cloud.md",
     "CCNA/48 - WAN Architecture.md",
@@ -196,9 +199,6 @@
     "CCNA/37 - Secure Shell (SSH).md",
     "CCNA/36 - Syslog.md",
     "CCNA/35 - SNMP (Simple Network Management Protocol).md",
-    "CCNA/34 - DHCP.md",
-    "CCNA/33 - DNS (Domain Name System).md",
-    "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/img5/ansible.png",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/img5/rstp-example4.png",

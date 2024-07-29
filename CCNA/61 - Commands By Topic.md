@@ -942,4 +942,10 @@ R#ping vrf name ip
 
 R(config)#ip vrf name
 R(config-if)#ip vrf forwarding name
+
+
+
+ansible push based uses ssh to push changes to devices and uses yaml
+
+puppet uses puppet DSL proprietary language, comunication is 
 ```
