@@ -53,6 +53,7 @@ Router(config)# end/exit
 * It has a more secure encryption mechanism, MD5 type encryption.
 * If both secret and password are set, secret takes precedence.
 * The `service password-encryption` has no effect on secret.
+* When you configure the `enable secret <password>` command, it will automatically appear in the running-config as `enable secret 5 <hash>`
 #### Configuration Files
 * Running configuration is the current, active configuration file on the device. As you enter commands in the CLI, you edit the active configuration.
 	* `Router#show running-config` shows the configuration.
