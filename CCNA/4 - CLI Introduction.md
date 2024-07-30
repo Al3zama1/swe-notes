@@ -54,6 +54,18 @@ Router(config)# end/exit
 * If both secret and password are set, secret takes precedence.
 * The `service password-encryption` has no effect on secret.
 * When you configure the `enable secret <password>` command, it will automatically appear in the running-config as `enable secret 5 <hash>`
+* The standard `enable secret <password>` command will configure an enable secret with the default hashing algorithm of the device. To configure a secret using a specific hashing algorithm, you can use the `enable algorithm-type <algorithm> secret <password>` command.
+
+Below are some password types in Cisco IOS:
+
+- Type 0: plaintext
+- Type 4: PBKDF2/SHA-256
+- Type 5: MD5
+- Type 6: AES-128
+- Type 7: Vigenere cipher
+- Type 8: PBKDF2/SHA-256 (improved version of Type 4)
+- Type 9: Scrypt
+    - Therefore **A)** is the correct answer.
 #### Configuration Files
 * Running configuration is the current, active configuration file on the device. As you enter commands in the CLI, you edit the active configuration.
 	* `Router#show running-config` shows the configuration.
