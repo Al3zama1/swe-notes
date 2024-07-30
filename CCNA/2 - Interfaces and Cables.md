@@ -16,6 +16,17 @@ Ethernet is a collection of network protocols/standards. Network protocols speci
 * BASE = baseband signaling
 * T = twisted pair
 
+Below are a few cable standards:
+
+- **Cat 3**
+    - 10 Mbps (10BASE-T)
+- **Cat 5**
+    - 100 Mbps (100BASE-T)
+- **Cat 5e**
+    - 1 Gbps (1000BASE-T)
+- **Cat6a**
+    - 10 Gbps (10GBASE-T)
+
 ## UTP Cables
 UTP stands for unshielded twisted pair. This type of cable is vulnerable to electromagnetic interference (EMI) because it has no shielding.  The twist actually helps protect agains EMI.
 * **Speeds of 100 Mbps or less only require 2 pairs (4 wires)**.
