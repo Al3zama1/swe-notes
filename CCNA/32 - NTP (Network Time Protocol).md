@@ -166,6 +166,7 @@ R3(config)#ntp peer 10.0.23.1
 ## Configuring NTP Authentication
 * NTP authentication can be configured, although it is optional.
 * It allows NTP clients to ensure they only sync to the intended servers. The client and server must be configured the same to allow syncing.
+	* Both the key-number and key-value have to match for NTP client and server to synchornize.
 * To configure NTP authentication:
 	* Enable NTP authentication: `ntp authenitcate`
 	* Create NTP key: `ntp authentication-key key-number md5 key`
