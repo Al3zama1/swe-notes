@@ -110,12 +110,12 @@
 ![Lightweight APs vs Autonomous APs traffic Path](./img4/lightweight-AP-vs-autonomous-ap-traffic-path.png)
 #### Lightweight AP Operational Modes
 * **Local**: this is the default mode where the AP offers a BSS (or multiple BSSs) for clients to associate with.
-* **FlexConnect**: Like a lightweight AP in Local mode, it offers one or more BSSs for clients to associate with. However, FlexConnect allows the AP to locally switch traffic between the wired and wireless networks if the tunnels to the WLC go down.
+* **FlexConnect**: LAPs operating in FlexConnect mode does not provide BSSs. Instead, FlexConnect mode enables a failsafe for the lightweight AP if its connection to the WLC by way of CAPWAP tunnels goes down. When configured, FlexConnect mode enables a lightweight AP to switch traffic between a given SSID and a given VLAN. FlexConnect allows the AP to locally switch traffic between the wired and wireless networks if the tunnels to the WLC go down.
 * **Sniffer**: The AP does not offer a BSS for clients. It is dedicated to capturing 802.11 frames and sending them to a device running software such as WireShark.
 * **Monitor**: The AP doe snot offer a BSS for clients. It is dedicated to receiving 802.11 frames to detect rogue devices. If a client is found to be a rogue device, an AP can send de-authentication messages to disassociate the rogue device from the AP.
 * **Rogue Detector**: The AP does not even use its radio. It listens to traffic on the wired network only, but it receives a list of suspected rogue clients and AP MAC addresses from the WLC. By listening to ARP messages on the wired network and correlating it with the information it receives from the WLC, it can detect rogue devices.
 * **SE-Connect (Spectrum Expert Connect**: The AP does not offer a BSS for clients. It is dedicated to RF spectrum analysis on all channels. It can send information to software such as Cisco Spectrum Expert on a PC to collect and analyze the data.
-* **Bridge/Mesh**: Like the autonomous AP's Outdoor Bridge mode, the lightweight AP can be a dedicated bridge between sites, even over long distances. A mesh can be made between the access points.
+* **Bridge/Mesh**: Like the autonomous AP's Outdoor Bridge mode, the lightweight AP can be a dedicated bridge between sites, even over long distances. A mesh can be made between the access points. BSSs are not provided.
 * **Flex plus Bridge**: Adds FlexConnect functionality to the Bridge/Mesh mode. Allows wireless access points to locally forward traffic even if connectivity to the WLC is lost.
 ### Cloud-Based APs
 * **Cloud-Based AP** architecture is in between autonomous AP and split-MAC architecture.
