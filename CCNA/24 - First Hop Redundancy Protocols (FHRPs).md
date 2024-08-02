@@ -124,3 +124,10 @@ R1(config-if)#standby 1 peempt
 
 ### NOTE
 It is a good LAN design principle to synchronize STP with FHRP when using multi layer switches (ie. distribution switches). Make sure  that the root bridge for any given VLAN is also the active router in the FHRP.
+
+## WLC AAA Override Feature
+The AAA Override feature on a Cisco WLC can be used to configure VLAN tagging, QoS, ACLs to individual clients based on Remote authentication Dial-In User Service (RADIUS) attributes.
+* When using the AAA Override feature, the access control server, such as Cisco Identity Services Engine (ISE), should be configured with the appropriate override properties.
+
+## RADIUS Change of Authorization (CoA)
+It can be used to modify or terminate an already authenticated session. It allows an administrator to send CoA packets from the AAA server. CoA packets can be sent to request session re-authentication, session termination, and more.

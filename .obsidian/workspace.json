@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/61 - Boson Learning.md",
+                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/61 - Boson Learning.md",
+                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/61 - Boson Learning.md",
+                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/61 - Boson Learning.md"
+                "file": "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md"
               }
             }
           },
@@ -174,6 +174,7 @@
   },
   "active": "36a29b8b83c57eae",
   "lastOpenFiles": [
+    "CCNA/61 - Boson Learning.md",
     "CCNA/img6",
     "CCNA/55 - Wireless Configuration.md",
     "CCNA/23 - OSPF Part 3.md",
@@ -181,7 +182,6 @@
     "CCNA/47 - LAN Architectures.md",
     "CCNA/53 - Wireless Architectures.md",
     "CCNA/31 - CDP & LLDP.md",
-    "CCNA/61 - Boson Learning.md",
     "CCNA/4 - CLI Introduction.md",
     "CCNA/40 - NAT Part 2.md",
     "CCNA/39 - NAT Part 1.md",
@@ -220,7 +220,6 @@
     "Untitled.canvas",
     "CCNA/img/subnetting-5.jpeg.crdownload",
     "CCNA/img/subnetting-3.jpeg.crdownload",
-    "CCNA/img/subnetting-2.jpeg.crdownload",
-    "CCNA/img/subentting-1.jpg.crdownload"
+    "CCNA/img/subnetting-2.jpeg.crdownload"
   ]
 }
