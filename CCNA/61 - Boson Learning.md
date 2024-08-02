@@ -49,3 +49,12 @@ If you already now the hash value of the password, you can use the MD5 hash valu
 ```
 username boson secret 5 eX$1mM@x
 ```
+
+## Multicast MAC Address
+The Ethernet multicast range of 0100:5E00:0000 - 0100:5E7F:FFFF has been allocated for IP multicast use. This means that the first 24 bitts of a 48-bit multicast MAC address are always 0100:5E, and the twenty-fifth bit is always set to 0. The remaining 23 bits are created from the last 23 bits of the multicast IP address.
+* The right most bit is indicates whether the MAC address is unicast or multicast.
+	* 0 - unicast
+	* 1 - multicast
+* The second right most bit indicates whether the address was globally or locally assigned.
+	* 0 - Globally administered (OUI).
+	* 1 - Locally administered.
