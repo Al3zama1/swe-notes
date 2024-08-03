@@ -6,12 +6,12 @@
 * 7 bytes (56 bits) field length.
 * Alternating 1's and 0's.
 	* 10101010 * 7
-* Allows devices to synchronize their receiver clocks.
-#### SFD (Start Frame Delimiter)
+* It is used to notify receiving hosts that a frame is being sent.
+#### SFD (Start Frame Delimiter) / SOF (Start of Frame)
 * 1 byte (8 bits) field length.
 * Alternating 1's and 0's.
 	* 10101011
-* Marks the end of the preamble and the beginning of the rest of the frame.
+* It is used for synchronization with other hosts on the LAN.
 #### Destination/Source
 * 6 bytes (48 bits) field length
 * Indicate the device sending and receiving the frame.
@@ -20,13 +20,14 @@
 #### Type/Length
 * 2 bytes (16 bits) field length.
 * A value of `1500 or less` in this field indicates the `length` of the encapsulated packet (in bytes).
+	* The Ethernet ll type field replaced the IEEE 802.3 length field. A payload field of a size in the range from 46 - 1500 bytes immediately follows the Ethernet header.
 * A value of `1536 or greater` in this field indicates the `type` of the encapsulated packet (usually IPv4, IPv6, ARP, etc...) and length is determined via other methods.
 * `IPv4`: 0x0800 hexadecimal and 2048 in decimal.
 * `IPv6`: 0x86DD hexadecimal and 34525 decimal. 
 * `ARP`: 0x0806 hexadecimal
 #### FCS (Frame Check Sequence)
 * 4 bytes (32 bits) field length.
-* Detects corrupted data by running a `CRC(Cyclic Redundancy Check)` algorithm over the received data.
+* Allows receiving devices to detects corrupted data by running a `CRC(Cyclic Redundancy Check)` algorithm over the received data.
 #### NOTE On Ethernet Frame Header Structure
 * The `Preamble + SFD` might not be included as part of the Ethernet frame header depending on how you define it.
 	* Therefore, the size of the Ethernet header + trailer could be 18 bytes (6+ 6 + 2 + 4) rather than 26 bytes.

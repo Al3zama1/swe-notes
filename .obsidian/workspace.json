@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/61 - Boson Learning.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/61 - Boson Learning.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/61 - Boson Learning.md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/61 - Boson Learning.md"
+                "file": "CCNA/5 - Ethernet LAN Switching.md"
               }
             }
           },
@@ -161,10 +161,12 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
+    "CCNA/7 - Switch Interfaces.md",
+    "CCNA/53 - Wireless Architectures.md",
+    "CCNA/61 - Boson Learning.md",
+    "CCNA/42 - QoS Part 2.md",
     "CCNA/47 - LAN Architectures.md",
     "CCNA/48 - WAN Architecture.md",
-    "CCNA/61 - Boson Learning.md",
-    "CCNA/53 - Wireless Architectures.md",
     "CCNA/59 - Software-Defined Networking.md",
     "CCNA/8 - IPv4 Header.md",
     "CCNA/40 - NAT Part 2.md",
@@ -186,8 +188,6 @@
     "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
     "CCNA/50 - Virtualization - Containers.md",
-    "CCNA/49 - Virtualization & Cloud.md",
-    "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/img5/ansible.png",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/img5/rstp-example4.png",
