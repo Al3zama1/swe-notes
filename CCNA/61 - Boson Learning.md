@@ -36,7 +36,6 @@ Configure a WLC to support HTTPS management connections. This is allowed by defa
 config network secureweb enable
 ```
 
-
 ## Device Password
 
 Enter a plain text password that should be converted to an MD5 hash and stored.
