@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2f55ac37db8e9491",
+        "id": "49d1980c7cd0c728",
         "type": "tabs",
         "children": [
           {
-            "id": "36a29b8b83c57eae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CCNA/53 - Wireless Architectures.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c959de04bb0923fc",
+            "id": "b9857cf9cdc4fcbf",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -81,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.51103591918945,
-    "collapsed": true
+    "width": 330.51103591918945
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/53 - Wireless Architectures.md",
+                "file": "CCNA/61 - Boson Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/53 - Wireless Architectures.md",
+                "file": "CCNA/61 - Boson Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/53 - Wireless Architectures.md"
+                "file": "CCNA/61 - Boson Learning.md"
               }
             }
           },
@@ -172,35 +159,35 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "36a29b8b83c57eae",
+  "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
-    "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
+    "CCNA/40 - NAT Part 2.md",
+    "CCNA/47 - LAN Architectures.md",
+    "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
+    "CCNA/56 - Network Automation.md",
     "CCNA/61 - Boson Learning.md",
-    "CCNA/img6",
+    "CCNA/54 - Wireless Security.md",
     "CCNA/55 - Wireless Configuration.md",
+    "CCNA/2 - Interfaces and Cables.md",
+    "CCNA/59 - Software-Defined Networking.md",
+    "CCNA/60 - Ansible, Puppet, & Chef.md",
+    "CCNA/53 - Wireless Architectures.md",
+    "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
+    "CCNA/img6",
     "CCNA/23 - OSPF Part 3.md",
     "CCNA/48 - WAN Architecture.md",
-    "CCNA/47 - LAN Architectures.md",
-    "CCNA/53 - Wireless Architectures.md",
     "CCNA/31 - CDP & LLDP.md",
     "CCNA/4 - CLI Introduction.md",
-    "CCNA/40 - NAT Part 2.md",
     "CCNA/39 - NAT Part 1.md",
     "CCNA/29 - Standard ACLs.md",
-    "CCNA/2 - Interfaces and Cables.md",
     "CCNA/32 - NTP (Network Time Protocol).md",
-    "CCNA/60 - Ansible, Puppet, & Chef.md",
-    "CCNA/59 - Software-Defined Networking.md",
     "CCNA/58 - REST APIs.md",
-    "CCNA/56 - Network Automation.md",
-    "CCNA/54 - Wireless Security.md",
     "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
     "CCNA/50 - Virtualization - Containers.md",
     "CCNA/49 - Virtualization & Cloud.md",
     "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/44 - Port Security.md",
-    "CCNA/45 - DHCP Snooping.md",
     "CCNA/img5/ansible.png",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/img5/rstp-example4.png",

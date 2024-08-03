@@ -58,3 +58,8 @@ The Ethernet multicast range of 0100:5E00:0000 - 0100:5E7F:FFFF has been allocat
 * The second right most bit indicates whether the address was globally or locally assigned.
 	* 0 - Globally administered (OUI).
 	* 1 - Locally administered.
+
+## Late Collisions
+Late collisions can be caused by a duplex mismatch and long cable segments.
+* The half-duplex port that is connected to a full-duplex port can report late collisions.
+* The full-duplex side will report  different errors, such as runts, FCS errors, and alignment errors.
