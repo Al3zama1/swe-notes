@@ -87,7 +87,7 @@
 	* Cisco OpFlex: used with ACI (Application Centric Infrastructure).
 	* Telnet, SSH, SNMP: used with Cisco APIC-EM.
 		* Makes no changes to the control plane. Therefore, devices run with a completely distributed control plane.
-	* Telnet, SSH, SNMP, NETCONF: used with Cisco Software Defined Access (SDA).
+	* Telnet, SSH, SNMP, NETCONF, RES: used with Cisco Software Defined Access (SDA).
 	* Cisco onePK (Open Network Environment Platform Kit)
 
 | **Criteria**                                                                     | OpenFlow     | ACI       | APIC Enterprise |
