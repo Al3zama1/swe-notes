@@ -82,13 +82,23 @@
 	* Data is exchanged between the controller and the network devices.
 	* An API on the network devices allows the controller to access information on the devices, control their data plane tables, etc.
 * Some examples of SBIs:
-	* ONF OpenFlow: used with Open Daylight Controller.
+	* ONF OpenFlow: used with OpenDaylight Controller.
 		* Daylight controller centralizes most control plane functions.
 	* Cisco OpFlex: used with ACI (Application Centric Infrastructure).
 	* Telnet, SSH, SNMP: used with Cisco APIC-EM.
 		* Makes no changes to the control plane. Therefore, devices run with a completely distributed control plane.
 	* Telnet, SSH, SNMP, NETCONF: used with Cisco Software Defined Access (SDA).
 	* Cisco onePK (Open Network Environment Platform Kit)
+
+| **Criteria**                                                                     | OpenFlow     | ACI       | APIC Enterprise |
+| -------------------------------------------------------------------------------- | ------------ | --------- | --------------- |
+| Changes how the device control plane works                                       | yes          | yes       | no              |
+| Creates a centralized point from which humans and automation control the network | yes          | yes       | yes             |
+| Degree to which the architecture centralizes the control plane                   | Mostly       | Partially | None            |
+| SBIs used                                                                        | OpenFlow     | OPFlex    | CLI, SNMP       |
+| Controllers mentioned                                                            | OpenDayLight | APIC      | APIC-EM         |
+| Organization that is the primary definer/owner                                   | ONF          | Cisco     | Cisco           |
+
 ### Northbound Interface (NBI)
 ![NBI diagram](./img5/SDN-NBI.png)
 * Using the SBI, the controller communicates with the managed devices and gathers information about them:
