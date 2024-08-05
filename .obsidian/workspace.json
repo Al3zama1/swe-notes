@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/56 - Network Automation.md",
+                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/56 - Network Automation.md",
+                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/56 - Network Automation.md",
+                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/56 - Network Automation.md"
+                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md"
               }
             }
           },
@@ -161,11 +161,12 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
+    "CCNA/23 - OSPF Part 3.md",
+    "CCNA/56 - Network Automation.md",
     "CCNA/47 - LAN Architectures.md",
     "CCNA/61 - Boson Learning.md",
     "CCNA/60 - Ansible, Puppet, & Chef.md",
     "CCNA/13 - VLANs (Virtual Local Area Networks).md",
-    "CCNA/56 - Network Automation.md",
     "CCNA/59 - Software-Defined Networking.md",
     "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/7 - Switch Interfaces.md",
@@ -180,7 +181,6 @@
     "CCNA/2 - Interfaces and Cables.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/img6",
-    "CCNA/23 - OSPF Part 3.md",
     "CCNA/31 - CDP & LLDP.md",
     "CCNA/4 - CLI Introduction.md",
     "CCNA/39 - NAT Part 1.md",
