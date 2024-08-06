@@ -159,8 +159,9 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "b9857cf9cdc4fcbf",
+  "active": "15a10c3afa389214",
   "lastOpenFiles": [
+    "AWS Certified Cloud Practitioner",
     "CCNA/23 - OSPF Part 3.md",
     "CCNA/56 - Network Automation.md",
     "CCNA/47 - LAN Architectures.md",
@@ -187,7 +188,6 @@
     "CCNA/29 - Standard ACLs.md",
     "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/58 - REST APIs.md",
-    "CCNA/52 - Wireless Fundamentals.md",
     "CCNA/img5/ansible.png",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/img5/rstp-example4.png",
