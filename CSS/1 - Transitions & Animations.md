@@ -20,3 +20,6 @@ transition: transition-property transition-duration transition-timing-function t
 ```
 * Shortcut that combines all the transition properties into one.
 ## Animations
+Animations provide keyframes for more control over animations, which allows us to create complex animations on a frame by frame basis.
+* Animations should be used to create animations that should happen without having to wait for properties that change interactively.
+* Animations and transitions can be combined.
