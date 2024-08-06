@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS/1 - Transitions & Animations.md",
+                "file": "CSS/2 - Units.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSS/1 - Transitions & Animations.md",
+                "file": "CSS/2 - Units.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSS/1 - Transitions & Animations.md",
+                "file": "CSS/2 - Units.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSS/1 - Transitions & Animations.md"
+                "file": "CSS/2 - Units.md"
               }
             }
           },
@@ -162,8 +162,9 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
-    "CSS/2 - Animations.md",
     "CSS/1 - Transitions & Animations.md",
+    "CSS/2 - Units.md",
+    "CSS/2 - Animations.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
     "CSS",
     "AWS Certified Cloud Practitioner",
@@ -190,7 +191,6 @@
     "CCNA/31 - CDP & LLDP.md",
     "CCNA/4 - CLI Introduction.md",
     "CCNA/39 - NAT Part 1.md",
-    "CCNA/29 - Standard ACLs.md",
     "CCNA/img5/ansible.png",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/img5/rstp-example4.png",
