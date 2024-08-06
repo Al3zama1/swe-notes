@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
+                "file": "CSS/1 - Transitions & Animations.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
+                "file": "CSS/1 - Transitions & Animations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
+                "file": "CSS/1 - Transitions & Animations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md"
+                "file": "CSS/1 - Transitions & Animations.md"
               }
             }
           },
@@ -159,8 +159,12 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
+    "CSS/2 - Animations.md",
+    "CSS/1 - Transitions & Animations.md",
+    "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
+    "CSS",
     "AWS Certified Cloud Practitioner",
     "CCNA/23 - OSPF Part 3.md",
     "CCNA/56 - Network Automation.md",
@@ -186,8 +190,6 @@
     "CCNA/4 - CLI Introduction.md",
     "CCNA/39 - NAT Part 1.md",
     "CCNA/29 - Standard ACLs.md",
-    "CCNA/32 - NTP (Network Time Protocol).md",
-    "CCNA/58 - REST APIs.md",
     "CCNA/img5/ansible.png",
     "CCNA/img5/stp-short-vs-long-path-cost.png",
     "CCNA/img5/rstp-example4.png",
@@ -206,8 +208,6 @@
     "CCNA/img2",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "CCNA/img/subnetting-5.jpeg.crdownload",
-    "CCNA/img/subnetting-3.jpeg.crdownload",
-    "CCNA/img/subnetting-2.jpeg.crdownload"
+    "CCNA/img/subnetting-5.jpeg.crdownload"
   ]
 }
