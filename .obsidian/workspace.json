@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.51103591918945,
-    "collapsed": true
+    "width": 330.51103591918945
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -163,8 +162,8 @@
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
     "CSS/2 - Font Units.md",
-    "CSS/3 - Positioning.md",
     "CSS/1 - Transitions & Animations.md",
+    "CSS/3 - Positioning.md",
     "CSS/2 - Units.md",
     "CSS/2 - Animations.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
