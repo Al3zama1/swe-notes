@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS/3 - Positioning.md",
+                "file": "CSS/2 - Font Units.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330.51103591918945
+    "width": 330.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSS/3 - Positioning.md",
+                "file": "CSS/2 - Font Units.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSS/3 - Positioning.md",
+                "file": "CSS/2 - Font Units.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSS/3 - Positioning.md"
+                "file": "CSS/2 - Font Units.md"
               }
             }
           },
@@ -161,9 +162,9 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
-    "CSS/2 - Font Units.md",
-    "CSS/1 - Transitions & Animations.md",
     "CSS/3 - Positioning.md",
+    "CSS/1 - Transitions & Animations.md",
+    "CSS/2 - Font Units.md",
     "CSS/2 - Units.md",
     "CSS/2 - Animations.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
