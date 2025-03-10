@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "16 - Classic Spanning Tree Protocol (STP)"
             }
+          },
+          {
+            "id": "782249ebf447ba00",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -178,7 +191,7 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "b9857cf9cdc4fcbf",
+  "active": "782249ebf447ba00",
   "lastOpenFiles": [
     "CCNA/10 - Static Routing.md",
     "CCNA/9 - Routing Fundamentals.md",
