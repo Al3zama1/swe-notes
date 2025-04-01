@@ -17,7 +17,7 @@ Use whatever static configuration method is preferred.
 ## Communication Across Router Hops
 ![Communication between devices across hops](./img/packet-travel-with-hops.png)
 ## Router Default Route
-* A **default route** is a route to 0.0.0.0/0 because it matches every route in the case no other more specific route is found.
+* A **default route** is a route to 0.0.0.0/0 because it matches every route in the event that no other more specific route is found.
 * If the router doesn't have any more specific routes that match a packet's destination IP address, the router will forward the packet using the **default route**.
 * The default route is often used to direct traffic to the internet.
 	* More specific routes are used for destinations in the internal corporate network (R1, R2, R3).
