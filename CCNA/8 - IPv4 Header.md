@@ -32,7 +32,7 @@ The header is read left to right, top to bottom. Top left being the first bit an
 	* Length of 3 bits.
 	* Bit 0 is reserved, always set to 0.
 	* Bit 1 is the don't fragment (DF bit), used to indicate a packet that should not be fragmented.
-	* Bit 2 is the more fragments (MF bit), set to 1 to indicate more fragments in the packet and 0 to indicate the last frame.
+	* Bit 2 is the more fragments (MF bit), set to 1 to indicate more fragments in the packet and 0 to indicate the last fragment.
 		* Unfragmented packets will always have their MF bit set to 0 since there are no fragments.
 	* Bit of 0 means `Not set`
 	* Bit of 1 means `Set`
