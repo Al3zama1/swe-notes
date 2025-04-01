@@ -21,7 +21,7 @@ The header is read left to right, top to bottom. Top left being the first bit an
 * **Total Length**: Indicates the total length of the packet (L3 header + L4 segment).
 	* Length of 16 bits.
 	* Measured in bytes.
-	* Minimum value of 20 bytes (IPv4 header with no encapsulated data).
+	* Minimum value of 20 bytes (IPv4 header with no Options and no encapsulated data).
 	* Maximum value of 65,535 bytes (maximum 16-bit value).
 * **Identification**: If a packet is fragmented due to being too large, this field is used to identify which packet the fragment belongs to.
 	* Length of 16 bits.
