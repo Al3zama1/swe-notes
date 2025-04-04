@@ -243,7 +243,7 @@ SW1(config-if)#switchport trunk allowed vlan
 * The switch interface is configured as a regular trunk.
 * The router interface is configured with **subinterfaces**. Each subinterface is assigned a VLAN tag and IP address.
 * The router will behave as if frames arriving with a certain VLAN tag have arrived on the subinterface configured with that VLAN tag.
-* The router will tag frames sent out of the interface with the VLAN tag associated with the connected network where the target destination belongs in.
+* The router will send frames out the subinterface where the destination ip belongs, and tag it with the tag assigned to such subinterface.
 #### Configure Router on a Stick (ROAS)
 ```
 R1(config-if)interface g0/0.10
