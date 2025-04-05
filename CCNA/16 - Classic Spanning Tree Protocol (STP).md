@@ -91,7 +91,7 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 * Each remaining collision domain will select one interface to be a **designated port** (forwarding state). The other port in the collision domain will be **non-designated** (blocking)
 * Designated Port Selection:
 	1. Interface on switch with lowest root cost.
-	2. Interface on switch with lowest bridge ID
+	2. Interface on switch with lowest Bridge ID
 
 ![](./img/stp-block-redundant-ports.png)
 * The connection between SW2 through interface G0/0 and SW3 through interface G0/1 is redundant. Therefore it must be blocked.
