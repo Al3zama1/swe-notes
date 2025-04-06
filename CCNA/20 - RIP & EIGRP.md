@@ -15,7 +15,7 @@
 ### RIPv1
 * Only advertises classful addresses (Class A, Class B, Class C). However, classful addresses are no longer used in modern networks. Don't use this version if you are going to use RIP.
 * Doesn't support VLSM and CIDR.
-* Doesn't include subnet mast information in advertisements (Response messages).
+* Doesn't include subnet mask information in advertisements (Response messages).
 	* 10.1.1.0/24 will become 10.0.0.0 (Class A address, so assumed to be /8).
 	* 172.16.192.0/18 will become 172.16.0.0 (Class B address, so assumed to be /16).
 	* 192.168.1.4/30 will become 192.168.1.0 (Class C address, so assumed to be /24).
@@ -57,7 +57,7 @@ R1(config-router)#network 172.16.0.0
 `R1(config-router)#network 172.16.0.0`
 * Because the `network` command is classful, 172.16.0.0 is assumed to be 172.16.0.0/16.
 * R1 will look for any interfaces with an IP address that matches 172.16.0.0/16.
-* 172.16.1.14 matches, therefore R1 will activate RIP on G2/0.
+* 172.16.1.14 matches, therefore R1 will activate RIP on G2/0
 * There are no RIP neighbors connected to G2/0, therefore no new adjacencies are formed.
 * R1 advertises 172.16.1.0/28 (NOT 172.16.0.0/16) to its RIP neighbors (R2, R3 in this case).
 * Although there are no RIP neighbors connected to G2/0, R1 will continuously send RIP advertisements out of G2/0. This is unnecessary traffic, so G2/0 should be configured as a **passive interface**.
