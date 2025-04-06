@@ -50,12 +50,12 @@ BackboneFast allows switches to expire the Max Age timer on their interfaces. In
 	* If a port is administratively disabled (`shutdown` command) = discarding state.
 	* If a port is enabled but blocking traffic to prevent Layer 2 loops = discarding state.
 #### RSTP Port Roles
-* The **root port** role selection remains the same as in RSTP.
+* The **root port** role selection remains in RSTP.
 	* The root bridge is the only switch that doesn't have a root port.
 * The **designated role** selection remains unchanged in RSTP.
 	* Only one per segment (collision domain).
-* The *non-designated* port role is split into two separate roles in RSTP:
-	* A **Alternate port** role is a discarding port that is decided with the same logic as non-designated (blocking state) ports in classic STP.
+* Redundant link role changes in RSTP:
+	* An **Alternate port** role is a discarding port that is decided with the same logic as non-designated (blocking state) ports in classic STP.
 		* ==Function as a backup to the root port. If the root port fails, the switch can immediately move its best alternate port to forwarding==.
 	* A **Backup port** role is a discarding port that receives a superior BPDU from *another interface on the same switch*.
 		* ==Function as a backup for a designated port==. 
