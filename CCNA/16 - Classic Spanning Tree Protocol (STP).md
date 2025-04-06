@@ -234,6 +234,8 @@ SW1(config-if)#no shutdown
 ### Loop Guard (Optional for the CCNA)
 * If you enable **loop guard** on an interface, even if the interface stops receiving BPDUs, it will not start forwarding. The interface will be disabled.
 	* This prevents loops that can happen if an interface fails only in one direction, causing what is called a 'unidirectional link' that can't receive data, but is still able to forward it, or the opposite.
+	* For example, a non-designated port stops receiving BPDUs, but the designated port on the other side has not gone down. The designated port has simply stopped sending BPDUs. If the non-designated port were to turn to a designated port, the two ports would be in a designated role and loops would be created.
+	* **This scenario is uncommon.**
 ## STP Configuration
 * STP is configured y default, but it is better to do manual configuration to ensure best performance.
 ### Configure the Spanning Tree Mode
