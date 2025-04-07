@@ -110,7 +110,7 @@ Reset ALL OSPF processes? [no]: yes
 * Router-ID order of priority:
 	1. Manual configuration.
 	2. Highest IP address on a loopback interface.
-	3. Highest IP address on a physical interface.
+	3. Highest IP address configured on any physical interface.
 * An **autonomous system boundary router**  (ASBR) is an OSPF router that connects the OSPF network to an external network.
 	* R1 is connected to the Internet. By using the **default-information originate** command, R1 becomes an ASBR.
 * Number of areas in this router: indicates the areas that the router is in. In this case, only one because this is single-area OSPF.
