@@ -11,7 +11,7 @@
 	* Port numbers provides Session multiplexing.
 * The following ranges have been designated by IANA (Internet Assigned Numbers Authority).
 	* **Well-known** port numbers: 0 - 1023.
-		* Used for major protocols like HTTP, FTC, etc and are very strictly regulated.
+		* Used for major protocols like HTTP, FTP, etc and are very strictly regulated.
 	* **Registered** port numbers: 1024 - 49151.
 		* Registration is required to use these port numbers. Although it's not as strict as with the well know port range.
 	* **Ephemeral/private/dynamic** port numbers: 49152 - 65535.
