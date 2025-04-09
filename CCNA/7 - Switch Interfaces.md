@@ -49,9 +49,9 @@ SW1(config-if-range)#no shutdown
 #### Where is Half Duplex Used
 In modern day networks, half duplex is almost never used.
 ![collision sample](./img/half-duplex-collision.png)
-In the example above, PC1 and PC3 that are sending frames at the same time. PC1 is communicating with PC2 and PC3 is communicating with PC1. 
+In the example above, PC1 and PC3 are sending frames at the same time. PC1 is communicating with PC2 and PC3 is communicating with PC1. 
 When the frames from both hosts arrive at the hub, it will try to flood both of them at once, resulting in a collision on the interface communicating with PC2. As a result, PC2 wont receive either frame intact.
-* All hosts connected to a hub are part of the same collision domain. The frames sent by one host could collide with the frames sent by other hosts connected to the same hub.
+* ==All hosts connected to a hub are part of the same collision domain==. The frames sent by one host could collide with the frames sent by other hosts connected to the same hub.
 ## Half Duplex Collision Resolution
 #### CSMA/CD (Carrier Sense Multiple Access with Collision Detection)
 It describes how devices avoid collisions in a half duplex situation and how to react in case of a collision.
