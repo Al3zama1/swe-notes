@@ -180,7 +180,7 @@ Lets assume that we are woking with a network address `192.168.5.0/24` and that 
 * Subnet 2: `192.168.5.128/26`
 
 **Broadcast to Network Address (192.168.5.255)**:
-* Broadcast messages to the network address `192.168.5.255` from inside a subnet, will only travel to the hosts inside the originating subnet.
+* Broadcast messages to the network address `192.168.5.255` from inside a the network, will only travel to the hosts inside it..
 * Broadcast messages do not go pat the router.
 **Message to Subnet Broadcast Address**:
 * Subnet 1 can reach all hosts in the same subnet by targeting the subnet's broadcast address.
