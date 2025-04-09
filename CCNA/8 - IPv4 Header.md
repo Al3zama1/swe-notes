@@ -1,4 +1,4 @@
-The header is read left to right, top to bottom. Top left being the first bit and bottom right being the last bit in the header.
+he header is read left to right, top to bottom. Top left being the first bit and bottom right being the last bit in the header.
 ![IPv4 header](./img/ipv4-header.png)
 * **Version**: Identifies the version of IP used. The IPv4 and IPv6 headers have different structures.
 	* Length of 4 bits
