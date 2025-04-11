@@ -118,7 +118,7 @@ R1 wants to contact a host in the LAN connected to R4 (192.168.4.0/24). The rout
 	* ([K1 * bandwidth + (K2 * bandwidth) / (256 - load) + K3 * delay] * [K5 / (reliability + K4)]) * 256
 * The formula is not needed for the CCNA. You can simplify the formula like this: metric = bandwidth + delay.
 	* Bandwidth of the slowest link + the delay of all links.
-	* Routers don't send PING messages to measure the delay of each link. The delay value is a default value given to router interfaces based their bandwidth.
+	* Routers don't send PING messages to measure the delay of each link. The delay value is a default value given to router interfaces based on their bandwidth.
 * The default 'K' values are k1 = 1, K2 = 0, K3 = 1, K4 = 0, K5 = 0
 ### EIGRP Terminology
 * **Reported Distance (RD)**: This is the advertised metric (cost) to reach a particular network, as reported by a neighboring router.
