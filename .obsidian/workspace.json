@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/20 - RIP & EIGRP.md",
+                "file": "CCNA/23 - OSPF Part 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20 - RIP & EIGRP"
+              "title": "23 - OSPF Part 3"
             }
           }
         ]
@@ -180,6 +180,9 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
+    "CCNA/22 - OSPF Part 2.md",
+    "CCNA/21 - OSPF.md",
+    "CCNA/20 - RIP & EIGRP.md",
     "CCNA/19 - Dynamic Routing.md",
     "CCNA/18 - EtherChannel.md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
@@ -203,9 +206,6 @@
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/61 - Boson Learning.md",
     "CCNA/62 - Clarifications.md",
-    "CCNA/35 - SNMP (Simple Network Management Protocol).md",
-    "CCNA/55 - Wireless Configuration.md",
-    "CCNA/56 - Network Automation.md",
     "CSS",
     "AWS Certified Cloud Practitioner",
     "CCNA/img6",
