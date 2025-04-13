@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/26 - IPv6.md",
+                "file": "CCNA/27 - IPv6 Part 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "26 - IPv6"
+              "title": "27 - IPv6 Part 2"
             }
           }
         ]
@@ -180,6 +180,8 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
+    "CCNA/26 - IPv6.md",
+    "CCNA/27 - IPv6 Part 2.md",
     "CCNA/25 - TCP & UDP.md",
     "CCNA/24 - First Hop Redundancy Protocols (FHRPs).md",
     "CCNA/23 - OSPF Part 3.md",
@@ -204,8 +206,6 @@
     "CCNA/4 - CLI Introduction.md",
     "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/2 - Interfaces and Cables.md",
-    "CCNA/1 - Network Devices.md",
-    "CCNA/61 - Boson Learning.md",
     "CSS",
     "AWS Certified Cloud Practitioner",
     "CCNA/img6",
