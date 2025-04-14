@@ -116,6 +116,7 @@ In this example below, R1 is connected to R2. R1 is configured with an IPv6 addr
 * **Fully Specified** static route: Both the exit interface and next hop are specified.
 #### Link-Local Next-Hops
 When using a Link-Local address as the next hop, a *fully specified* route is required, otherwise it won't work. The router isn't able to figure out, on its own, which interface that next-hop address is connected to.
+* Link-local addresses are not added to the routing table!
 ### IPv6 Static Route Types
 **Network route**: a route to a specific subnet.
 * `R1(config)#ipv6 route 2001:db8:0:3::/64 2001:db8:0:12::2`
