@@ -38,7 +38,7 @@ R2#clock read-calendar
 ```
 R1(config)#clock timezone <timezone> <hours-offset> [minutes-offset]
 ```
-* `name` is the name of the time zone.
+* `timezone` is the name of the time zone.
 * `offset` is the time difference from UTC in hours and optionally in minutes
 ### Summer Time Configuration
 * Configure the system clock to automatically adjust for daylight saving time.
