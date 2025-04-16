@@ -120,7 +120,6 @@ R1(config)#ip address 10.1.1.1 255.255.255.255
 R1(config)#exit
 R1(config)#ntp source loopback 0
 ```
-* Usually in a small network, you would just configure all of the devices to sync to public NTP servers like Google's. However, in this case R2 was configured to use R1 as an NTP server.
 * R1 was configured to use loopback 0 as the source of its NTP messages. Any NTP messages it sends, will come from the address assigned to the loopback 0 interface.
 * A loopback interface was used because they provide a consistent way where the router can be reached, which isn't dependent on the status of any particular physical interface.
 
@@ -133,6 +132,7 @@ R2(config)#ip address 10.2.2.2 255.255.255.255
 R2(config)#exit
 R2(config)#ntp source loopback 0
 ```
+* Usually in a small network, you would just configure all of the devices to sync to public NTP servers like Google's. However, in this case R2 was configured to use R1 as an NTP server.
 
 **R3 Configuration**
 ```
@@ -143,7 +143,7 @@ R3(config)#ntp server 10.2.2.2
 
 ### Configuring NTP Server Mode
 ![ntp sample network topology](./img3/ntp-sample-topology-2.png)
-If a device is already syncing to an NTP server, meaning it's an NTP client, it automatically acts as an NTP server too and other devices can sync to it. But what if there is no NTP server to sync to? You probably still want the devices in the network to have the same time, even if it is slightly inaccurate compared to the actual time.
+==If a device is already syncing to an NTP server, meaning it's an NTP client, it automatically acts as an NTP server too and other devices can sync to it==. But what if there is no NTP server to sync to? You probably still want the devices in the network to have the same time, even if it is slightly inaccurate compared to the actual time.
 
 How can you manually configure a Cisco device to operate as an NTP server, even though it isn't synced to another NTP server? 
 ```
@@ -162,7 +162,7 @@ R2(config)#ntp peer 10.0.23.2
 R3(config)#ntp peer 10.0.23.1
 ```
 * They can become peers and help each other sync their time, and also act as backups in case they lose contact with R1.
-	* Devices do not need to have the same stratum level to become peers.
+	* ==Devices do not need to have the same stratum level to become peers.==
 ## Configuring NTP Authentication
 * NTP authentication can be configured, although it is optional.
 * It allows NTP clients to ensure they only sync to the intended servers. The client and server must be configured the same to allow syncing.

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/32 - NTP (Network Time Protocol).md",
+                "file": "CCNA/33 - DNS (Domain Name System).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "32 - NTP (Network Time Protocol)"
+              "title": "33 - DNS (Domain Name System)"
             }
           }
         ]
@@ -180,6 +180,8 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
+    "CCNA/32 - NTP (Network Time Protocol).md",
+    "CCNA/33 - DNS (Domain Name System).md",
     "CCNA/31 - CDP & LLDP.md",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
     "CCNA/17 - Rapid Spanning Tree Protocol (RSTP).md",
@@ -189,8 +191,6 @@
     "CCNA/25 - TCP & UDP.md",
     "CCNA/35 - SNMP (Simple Network Management Protocol).md",
     "CCNA/34 - DHCP.md",
-    "CCNA/33 - DNS (Domain Name System).md",
-    "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/29 - Standard ACLs.md",
     "CCNA/28 - IPv6 Part 3.md",
     "CCNA/27 - IPv6 Part 2.md",
