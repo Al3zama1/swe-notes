@@ -57,14 +57,14 @@ R1(config)#clock summer-time recurring <timezone> <start> <end> [offset]
 	* **Client mode**
 	* **Symmetric active mode**
 * NTP allows accuracy of time within ~1 millisecond if the NTP server is in the same LAN, or within ~50 milliseconds if connecting to the NTP server over a WAN/the internet.
-* Some NTP servers are better than others. The distance of an NTP server from the original **reference clock** is called **stratum**.
+* Some NTP servers are better than others. ==The distance of an NTP server from the original **reference clock** is called **stratum**.==
 	* The further away from the reference clock, the higher the stratum.
 	* If the stratum level of a server is high, it is considered less accurate.
-* NTP uses UDP port 123 to communicate.
+	* NTP uses UDP port 123 to communicate.`1`
 ### Reference Clocks
 * A reference clock is usually a very accurate time device like an atomic clock or a GPS clock.
-* Reference clocks are **stratum 0** within the NTP hierarchy.
-* NTP servers directly connected to reference clocks are **stratum 1**.
+* ==Reference clocks are **stratum 0** within the NTP hierarchy.==
+* ==NTP servers directly connected to reference clocks are **stratum 1**.==
 ### NTP Hierarchy
 ![ntp hierarchy](./img3/ntp-hierarchy.png)
 * Reference clocks are **stratum 0**.
@@ -173,7 +173,7 @@ R3(config)#ntp peer 10.0.23.1
 		* For the `key-number` just use the value of 1.
 		* `key` is the password itself.
 	* Specify trusted key(s): `ntp trusted-key key-number`
-	* Specify which key to use for the server: `ntp server ip-address key key-number`.
+	* Specify which key to use for the server: `ntp server ip-address key key-number`
 		* This command isn't needed on the server itself (R1 in this case).
 
 ![ntp sample network topology](./img3/ntp-sample-topology-2.png)
