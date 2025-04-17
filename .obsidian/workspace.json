@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/35 - SNMP (Simple Network Management Protocol).md",
+                "file": "CCNA/36 - Syslog.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "35 - SNMP (Simple Network Management Protocol)"
+              "title": "36 - Syslog"
             }
           }
         ]
@@ -180,8 +180,8 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
-    "CCNA/34 - DHCP.md",
     "CCNA/35 - SNMP (Simple Network Management Protocol).md",
+    "CCNA/34 - DHCP.md",
     "CCNA/33 - DNS (Domain Name System).md",
     "CCNA/32 - NTP (Network Time Protocol).md",
     "CCNA/31 - CDP & LLDP.md",

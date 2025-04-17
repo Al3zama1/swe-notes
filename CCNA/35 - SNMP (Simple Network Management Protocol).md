@@ -27,18 +27,18 @@
 #### NMS Components
 The green section represents the SNMP software on the NMS. The NMS probably isn't a machine dedicated to SNMP. It could just be the network admin's PC which is running SNMP software. 
 
-* The **SNMP Manager** is the software on the NMS that interacts with the managed devices.
-	* It receives notifications, sends requests for information, sends configuration changes, etc.
-* The **SNMP Application** provides an interface for the network admin to interact with.
-	* Displays alerts, statistics, charts, etc.
+* ==The **SNMP Manager** is the software on the NMS that interacts with the managed devices.==
+	* ==It receives notifications, sends requests for information, sends configuration changes, etc.==
+* ==The **SNMP Application** provides an interface for the network admin to interact with.==
+	* ==Displays alerts, statistics, charts, etc.==
 #### Managed Devices Components
 The blue section represents the SNMP entity on the managed devices. 
 
-* The **SNMP Agent** is the SNMP software running on the managed devices that interacts with the SNMP Manager on the NMS.
-	* It sends notifications to/receives messages from the NMS.
-* The **Management Information Base (MIB)** is the structure that contains the variables that are managed by SNMP.
-	* Each variable is identified with an Object ID (OID).
-	* Example variables: Interface status, traffic throughput, CPU usage, temperature, etc.
+* ==The **SNMP Agent** is the SNMP software running on the managed devices that interacts with the SNMP Manager on the NMS.==
+	* ==It sends notifications to/receives messages from the NMS.==
+* ==The **Management Information Base (MIB)** is the structure that contains the variables that are managed by SNMP.==
+	* ==Each variable is identified with an Object ID (OID).==
+	* ==Example variables: Interface status, traffic throughput, CPU usage, temperature, etc.==
 ### SNMP OIDs
 * SNMP Object IDs are organized in a hierarchical structure.
 
@@ -64,7 +64,7 @@ The SNMP OID below is used by the NMS to retrieve the Hostname of a managed devi
 #### Get
 * A request sent from the manager to the agent to retrieve the value of a variable (OID), or multiple variables. The agent will send a Response message with the current value of each variable.
 #### GetNext
-* A request sent from the manager to the agent to discover the available variables in the MIB (Management Information Base).
+* A request sent from the manager to the agent to discover the available variables (OIDs) in the MIB (Management Information Base).
 #### GetBulk
 * A more efficient version of the **GetNext** message (introduced in SNMPv2) that allows mass-retrieval of information from managed devices (agent).
 ### Write Message Class
@@ -84,7 +84,7 @@ The SNMP OID below is used by the NMS to retrieve the Hostname of a managed devi
 NOTE: SNMP configuration isn't mentioned on the CCNA topics list, but could be useful.
 * Won't set up the NMS, but will set up the SNMP agent on a Cisco router.
 
-In this network, R1 is the managed device, and PC1 is the NMS, running an SNMP application.
+In this network, R1 is the managed device, and PC1 is the NMS.
 ![Network topology used to showcase SNMP configuration](./img3/SNMP-config-topology.png)
 
 ```
@@ -94,8 +94,8 @@ R1(config)#snmp-server location Jeremy's House
 * Configure optional contact information and location of the device.
 
 ```
-R1(config)#snmp-server community <password> ro
-R1(config)#snmp-server community <password> rw
+R1(config)#snmp-server community Jeremy1 ro
+R1(config)#snmp-server community Jeremy2 rw
 ```
 * Configure the SNMP community strings (passwords).
 * `ro` = read only = no Set messages.
