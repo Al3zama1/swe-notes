@@ -5,7 +5,7 @@
 	* RFC 1066 - Management information base for network management of TCP/IP-based internet.
 	* RFC 1067 - A simple network management protocol.
 * Don't let the 'Simple' in the name fool you! It can be quite complex.
-* SNMP can be used to monitor the status of devices, make configuration changes, etc.
+* ==SNMP can be used to monitor the status of devices, make configuration changes, etc.==
 * There are two main types of devices in SNMP:
 	* **Managed Devices**:
 		* These are the devices being managed using SNMP.
