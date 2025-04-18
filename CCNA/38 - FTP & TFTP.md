@@ -29,7 +29,7 @@
 	* **Connection**: TFTP client sends a request to the server, and the server responds back, initializing the connection.
 	* **Data Transfer**: The client and server exchange TFTP messages. One sends data and the other sends acknowledgements.
 	* **Connection Termination**: After the last data message has been sent, a final acknowledgement is sent to terminate the connection.
-### TFTP TID
+### TID (Transfer Identifier)
 This is beyond the scope of the CCNA
 
 ![TFTP TID](./img3/TFTP-TID.png)
