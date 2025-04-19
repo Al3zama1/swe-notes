@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/38 - FTP & TFTP.md",
+                "file": "CCNA/39 - NAT Part 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "38 - FTP & TFTP"
+              "title": "39 - NAT Part 1"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.50390243530273
+    "width": 349.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "c3b5aeab179f53b3",
@@ -180,8 +181,8 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
-    "CCNA/37 - Secure Shell (SSH).md",
     "CCNA/38 - FTP & TFTP.md",
+    "CCNA/37 - Secure Shell (SSH).md",
     "CCNA/40 - NAT Part 2.md",
     "CCNA/39 - NAT Part 1.md",
     "CCNA/36 - Syslog.md",

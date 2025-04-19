@@ -18,7 +18,8 @@
 * There are various reasons to use NAT, but the most common reason is to allow hosts with private IP addresses to communicate with other hosts over the internet.
 ### Cisco NAT Terminology
 ![Cisco NAT terminology](./img3/cisco-NAT-terminology.png)
-
+* **Outside Global**: The actual public IP address assigned to an external device.
+* **Outside Local**: The IP address of an external device as perceived from the internal network, which may be translated by the NAT device.
 ## Source NAT
 For the CCNA you have to understand **source NAT** and how to configure it on Cisco routers.
 
