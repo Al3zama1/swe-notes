@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/45 - DHCP Snooping.md",
+                "file": "CCNA/46 - Dynamic ARP Inspection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "45 - DHCP Snooping"
+              "title": "46 - Dynamic ARP Inspection"
             }
           }
         ]
@@ -180,6 +180,8 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
+    "CCNA/45 - DHCP Snooping.md",
+    "CCNA/46 - Dynamic ARP Inspection.md",
     "CCNA/44 - Port Security.md",
     "CCNA/43 - Security Fundamentals.md",
     "CCNA/42 - QoS Part 2.md",
@@ -204,8 +206,6 @@
     "CCNA/18 - EtherChannel.md",
     "CCNA/19 - Dynamic Routing.md",
     "CCNA/30 - Extended ACLs.md",
-    "CCNA/25 - TCP & UDP.md",
-    "CCNA/29 - Standard ACLs.md",
     "CSS",
     "AWS Certified Cloud Practitioner",
     "CCNA/img6",

@@ -80,7 +80,7 @@ SW1(config)#errdisable recovery cause dhcp-rate-limit
 ```
 * Enable errdisable recovery for DHCP rate limiting.
 ## DHCP Option 82 (Information Option)
-* Option 82, also know as the 'DHCP relay agent information option' is one of many DHCP options.
+* ==Option 82, also know as the 'DHCP relay agent information option'== is one of many DHCP options.
 * It provides additional information about which DHCP relay agent received the client's message, on which interface, in which VLAN, etc.
 * DHCP relay agents can add Option 82 to messages they forward to the remove DHCP server.
 * With DHCP snooping enabled, by default Cisco switches will add Option 82 to DHCP messages they receive from clients, even if the switch isn't acting as a DHCP relay agent.
@@ -95,8 +95,8 @@ SW1(config)#errdisable recovery cause dhcp-rate-limit
 SW2(config)#no ip dhcp snooping information option
 ```
 * The command also has to be specified in SW2 because otherwise it will add option 82 itself, which will cause R1 to drop it.
-* R1 will drop the message because it contains option 82, but it wasn't sent by a relay agent.
-	* `inconsistent relay information` error will be shown in the logs.
+	* R1 will drop the message because it contains option 82, but it wasn't sent by a relay agent.
+		* `inconsistent relay information` error will be shown in the logs.
 
 ## DHCP Snooping Config
 ![DHCP snooping topology](./img3/dhcp-snooping-topology.png)
