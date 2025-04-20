@@ -35,8 +35,8 @@
 * The client probably won't even notice that its traffic is being intercepted since it is reaching its destination.
 ## DHCP Messages
 * When DHCP snooping filters messages, it differentiates between **DHCP Server** messages and **DHCP Client** messages.
-	* DHCP server messages received on an untrusted port will always be discarded with no further checks.
-	* DHCP client messages received on an untrusted port will be inspected, and then the switch will decide to forward or discard the frame.
+	* ==DHCP server messages received on an untrusted port will always be discarded with no further checks.==
+	* ==DHCP client messages received on an untrusted port will be inspected, and then the switch will decide to forward or discard the frame.==
 * Messages sent by **DHCP Servers**:
 	* OFFER
 	* ACK
