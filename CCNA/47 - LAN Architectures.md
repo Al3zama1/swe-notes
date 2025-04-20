@@ -77,7 +77,7 @@
 
 
 ![Spine-Leaf architecture](./img3/spine-leaf-architecture.png)
-* It's two-tier, but different than the traditional two-tier design we looked at before.
+* It's a two-tier architecture, but different than the traditional two-tier design we looked at before.
 * There are spine switches and leaf switches.
 * There are some rules about Spine-Leaf architecture:
 	* Every Leaf switch is connected to every Spine switch.
