@@ -138,7 +138,7 @@
 	* **Round-robin**: packets are taken from each queue in order, cyclically.
 	* **Weighted round-robin**: more data is taken from high priority queues each time the scheduler reaches that queue.
 * **CBWFQ** (Class-Based Weighted Fair Queuing) is a popular method of scheduling, using a weighted round-robin scheduler while guaranteeing each queue a certain percentage of the interface's bandwidth during congestion.
-* Round-robin scheduling is not ideal for voice/video traffic. Even if the voice/video traffic receives a guaranteed minimum amount of bandwidth, round-robin can add delay and jitter because even the high priority queues have to wait their turn in the scheduler.
+	* Round-robin scheduling is not ideal for voice/video traffic. Even if the voice/video traffic receives a guaranteed minimum amount of bandwidth, round-robin can add delay and jitter because even the high priority queues have to wait their turn in the scheduler.
 
 ![QoS strict priority queue scheduling](./img3/QoS-strick-priority-queue-scheduling.png)
 * **LLQ** (Low Latency Queuing) designates one (or more) queues as *strict priority queues*.
