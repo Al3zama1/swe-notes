@@ -10,7 +10,7 @@
 * Typically, all ports connected to end network devices (switches, routers) should be configured as **trusted**, while interfaces connected to end hosts should remain **untrusted**
 ![DAI trusted and untrusted ports](./img3/dynamic-arp-inspection-trusted-untrusted-ports.png)
 * SW2's interface connected to SW1 could also be left as untrusted because it is a *downlink* leading toward the end hosts.
-* In Cisco's documentation they recommend that all interfaces connected to switches, routers, etc are configured as trusted.
+* ==In Cisco's documentation they recommend that all interfaces connected to switches, routers, etc are configured as trusted.==
 ## What Attacks Does It Prevent?
 ### ARP Poisoning (Man-in-the-Middle)
 * Similar to DHCP poisoning, ARP poisoning involves an attacker manipulating targets' ARP tables so traffic is sent to the attacker.
