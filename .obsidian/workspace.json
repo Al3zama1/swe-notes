@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/43 - Security Fundamentals.md",
+                "file": "CCNA/45 - DHCP Snooping.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "43 - Security Fundamentals"
+              "title": "45 - DHCP Snooping"
             }
           }
         ]
@@ -180,6 +180,8 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
+    "CCNA/44 - Port Security.md",
+    "CCNA/43 - Security Fundamentals.md",
     "CCNA/42 - QoS Part 2.md",
     "CCNA/41 - QoS.md",
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
@@ -204,8 +206,6 @@
     "CCNA/30 - Extended ACLs.md",
     "CCNA/25 - TCP & UDP.md",
     "CCNA/29 - Standard ACLs.md",
-    "CCNA/28 - IPv6 Part 3.md",
-    "CCNA/27 - IPv6 Part 2.md",
     "CSS",
     "AWS Certified Cloud Practitioner",
     "CCNA/img6",

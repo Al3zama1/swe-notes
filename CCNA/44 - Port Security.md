@@ -58,7 +58,7 @@ SW#show mac address-table secure
 ```
 * View all secure MAC addresses.
 ## Secure MAC address aging
-* By default, secure MAC addresses will not 'age out' (Aging time : 0 mins). They are permanent. Unless you manually delete the learned MAC address or the port is disabled and then re-enabled.
+* ==By default, secure MAC addresses will not 'age out' (Aging time : 0 mins).== They are permanent. Unless you manually delete the learned MAC address or the port is disabled and then re-enabled.
 * There is two aging types:
 	* **Absolute** (default type): After the secure MAC address is learned, the aging timer starts and the MAC is removed after the timer expires, even if the switch continues receiving frames from that source MAC address.
 	* **Inactivity**:After the secure MAC address is learned, the aging timer starts, but is reset every time a frame from that source MAC address is received on the interface.
@@ -68,7 +68,7 @@ SW1(config-if)#switchport port-security aging time <minutes>
 ```
 * Configure the secure MAC address aging timer.
 * The default aging type will be absolute.
-* By default, only dynamically learned secure MAC addresses age out.
+* By default, only dynamically learned secure MAC addresses will age out when the aging timer is configured to other than the default 0 value.
 	* Static secure MAC addresses will not age out. The command will remain in the running-config and the MAC will remain in the MAC address table.
 
 ```
