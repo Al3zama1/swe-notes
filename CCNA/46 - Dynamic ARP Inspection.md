@@ -28,10 +28,10 @@
 	* DHCP snooping and DAI both require work from the switch's CPU.
 	* Even if the attacker's messages are blocked, they can overload the switch CPU with ARP messages. If they try to do that, rate limiting will just disable the interface.
 ## DAI Rate Limiting
-* DAI rate limiting is enabled on untrusted ports by default with a rate of 15 frames per second. However, it is disabled on trusted ports by default.
-	* The DAI **burst interval** allows you to configure rate limiting like this: *x frames per y seconds*.
-* DHCP snooping rate limiting is disabled on all interfaces by default.
-	* DHCP snooping rate limiting is configured like this: *x frames per second*.
+* ==DAI rate limiting is enabled on untrusted ports by default with a rate of 15 frames per second. However, it is disabled on trusted ports by default.==
+	* ==The DAI **burst interval** allows you to configure rate limiting like this: *x frames per y seconds*.==
+* ==DHCP snooping rate limiting is disabled on all interfaces by default.==
+	* ==DHCP snooping rate limiting is configured like this: *x frames per second*.==
 * If ARP messages are received faster than the specified rate, the interface will be err-disabled.
 	* Rate limiting limits the rate that ARP messages are received on an interface, not sent by an interface.
 * Err-disabled interfaces can be re-enabled in two ways:
@@ -43,10 +43,10 @@ SW1(config)#interface range g0/1 - 2
 SW1(config-if-range)#ip arp inspection limit rate 25 burst interval 2
 ```
 * Applies a rate limit rate of 25 frames per 2 seconds.
-* The burst interval is optional. I you don't specify it, the default is 1 second.
+* The burst interval is optional. If you don't specify it, the default is 1 second.
 
 ## DAI Optional  Checks
-* By default, DAI only checks the sender MAC and IP address of ARP messages received on **untrusted** ports, to see if there is a matching entry in the DHCP snooping binding table or not.
+* ==By default, DAI only checks the sender MAC and IP address of ARP messages received on **untrusted** ports, to see if there is a matching entry in the DHCP snooping binding table or not.==
 * DAI available check options are:
 	* **dst-mac**: Enables validation of the destination MAC address in the Ethernet header against the target MAC address in the ARP body for ARP responses. The device classifies packets with different MAC addresses as invalid and drops them.
 	* **src-mac**: Enables validation of the source MAC address in the Ethernet header against the sender MAC address in the ARP body for ARP requests and responses. The devices classifies packets with different MAC addresses as invalid and drops them.
