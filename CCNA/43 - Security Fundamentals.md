@@ -42,7 +42,7 @@ Systems can be more secure or less secure, but there are no guarantees in securi
 ### Reflection/Amplification Attacks
 * In a **reflection** attack, the attacker sends traffic to a *reflector*, and spoofs the source address of its packets using the target's IP address.
 	* The *reflector* (ie. a DNS server) sends the reply to the target's IP address.
-	* If the amount of traffic sent to the target is large enough, this can result in a denial-of-service to the target.
+	* If the amount of traffic sent to the reflector is large enough, this can result in a denial-of-service to the target.
 * A reflection attack becomes an **amplification** attack when the amount of traffic sent by the attacker is small, but it triggers a large amount of traffic to be sent from the *reflector* to the target.
 ### Man-in-the-middle Attacks
 * In a **man-in-the-middle** attack, the attacker places himself between the source and destination to eavesdrop on communications, or to modify traffic before it reaches the destination.
