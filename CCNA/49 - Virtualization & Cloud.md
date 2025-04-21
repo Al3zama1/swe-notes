@@ -61,7 +61,6 @@
 		* The servers, network devices, etc are still the responsibility of the end customer, although they are not located on the customer's premises.
 * Cloud services provide an alternative that is hugely popular, and is continuing to grow.
 * Most people associate 'cloud' with public cloud providers such as AWS. Although, this is the most common use of cloud services, it's not the only one.
-
 * The American NIST (National Institute of Standards and Technology) defined cloud computing in SP (Special publication) 800-145.
 * Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.
 * To understand the cloud, it's essential to understand its components:
