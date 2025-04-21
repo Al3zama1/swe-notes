@@ -117,7 +117,7 @@
 3. The sending device sends the new packet to the device on the other side of the tunnel.
 4. The receiving device decrypts the data to get the original packet, and then forwards the original packet to its destination.
 #### Site-to-Site VPNs (IPsec) Limitations
-* IPsec doesn't support broadcast and multicast messages , only unicast. This means that routing protocols such as OSPF can't be used over the tunnels, because they rely on multicast traffic.
+* ==IPsec doesn't support broadcast and multicast messages , only unicast==. This means that routing protocols such as OSPF can't be used over the tunnels, because they rely on multicast traffic.
 	* This can be solved with **GRE over IPsec**
 * Configuring a full mesh of tunnels between many sites is a labor-intensive task.
 	* This can be solved with Cisco's **DMVPN**.
