@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "2 - Interfaces and Cables"
             }
-          },
-          {
-            "id": "6c5e28274b731a69",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.10"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -191,7 +178,7 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "6c5e28274b731a69",
+  "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
     "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/50 - Virtualization - Containers.md",
