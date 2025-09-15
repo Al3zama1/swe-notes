@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "22 - OSPF Part 2"
             }
+          },
+          {
+            "id": "6db73a35e6f039fe",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -169,6 +182,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -178,7 +192,7 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "15a10c3afa389214",
+  "active": "6db73a35e6f039fe",
   "lastOpenFiles": [
     "Network Engineering/CCNA",
     "Network Engineering",
