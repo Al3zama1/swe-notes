@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
+                "file": "CCNA/5 - Ethernet LAN Switching.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "16 - Classic Spanning Tree Protocol (STP)"
+              "title": "5 - Ethernet LAN Switching"
             }
           }
         ]
@@ -181,6 +181,7 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
+    "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
     "Network Engineering/CCNA",
     "Network Engineering",
     "CCNA/23 - OSPF Part 3.md",
@@ -226,7 +227,6 @@
     "CCNA/img4",
     "CCNA/img3",
     "Recording 20240509144112.webm",
-    "CCNA/img2",
     "Untitled 1.canvas",
     "Untitled.canvas"
   ]
