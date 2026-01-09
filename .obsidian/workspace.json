@@ -13,28 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/22 - OSPF Part 2.md",
+                "file": "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "22 - OSPF Part 2"
-            }
-          },
-          {
-            "id": "6db73a35e6f039fe",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.10"
+              "title": "16 - Classic Spanning Tree Protocol (STP)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -192,7 +179,7 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "6db73a35e6f039fe",
+  "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
     "Network Engineering/CCNA",
     "Network Engineering",
