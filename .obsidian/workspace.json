@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/6 - IPv4 Addressing.md",
+                "file": "CCNA/10 - Static Routing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6 - IPv4 Addressing"
+              "title": "10 - Static Routing"
             }
           }
         ]
@@ -181,16 +181,18 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
+    "CCNA/9 - Routing Fundamentals.md",
+    "CCNA/10 - Static Routing.md",
+    "CCNA/8 - IPv4 Header.md",
+    "CCNA/7 - Switch Interfaces.md",
+    "CCNA/6 - IPv4 Addressing.md",
     "CCNA/5 - Ethernet LAN Switching.md",
     "CCNA/4 - CLI Introduction.md",
     "CCNA/3 - OSI Model & TCP-IP.md",
-    "CCNA/8 - IPv4 Header.md",
-    "CCNA/6 - IPv4 Addressing.md",
     "CCNA/2 - Interfaces and Cables.md",
     "CCNA/1 - Network Devices.md",
     "CCNA/29 - Standard ACLs.md",
     "CCNA/28 - IPv6 Part 3.md",
-    "CCNA/7 - Switch Interfaces.md",
     "CCNA/16 - Classic Spanning Tree Protocol (STP).md",
     "Network Engineering/CCNA",
     "Network Engineering",
@@ -207,8 +209,6 @@
     "CCNA/45 - DHCP Snooping.md",
     "CCNA/44 - Port Security.md",
     "CCNA/43 - Security Fundamentals.md",
-    "CCNA/42 - QoS Part 2.md",
-    "CCNA/41 - QoS.md",
     "CSS",
     "AWS Certified Cloud Practitioner",
     "CCNA/img6",
