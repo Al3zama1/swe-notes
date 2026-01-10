@@ -7,11 +7,12 @@
 * Alternating 1's and 0's.
 	* 10101010 * 7
 * It is used to notify receiving hosts that a frame is being sent.
+* It is used for synchronization
 #### SFD (Start Frame Delimiter) / SOF (Start of Frame)
 * 1 byte (8 bits) field length.
 * Alternating 1's and 0's.
 	* 10101011
-* It is used for synchronization with other hosts on the LAN.
+* Specifies that the next byte begins the Destination MAC address field.
 #### Destination/Source
 * 6 bytes (48 bits) field length
 * Indicate the device sending and receiving the frame.
