@@ -63,7 +63,7 @@ When looking to initiate communication with another host, we often only know the
 		* Source IP address
 		* Destination IP address
 		* Source MAC address
-		* Destination MAC address with FFFF.FFFF.FFFF (broadcast address).
+		* Destination MAC address with 0000.0000.0000
 	* Upon arrival to the destination, the target host will add the information from the source host to its ARP table, enabling a unicast reply.
 * ARP Reply
 	* The reply is unicast and includes the following properties
