@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA/3 - OSI Model & TCP-IP.md",
+                "file": "CCNA/4 - CLI Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 - OSI Model & TCP-IP"
+              "title": "4 - CLI Introduction"
             }
           }
         ]
@@ -181,6 +181,7 @@
   },
   "active": "b9857cf9cdc4fcbf",
   "lastOpenFiles": [
+    "CCNA/3 - OSI Model & TCP-IP.md",
     "CCNA/2 - Interfaces and Cables.md",
     "CCNA/1 - Network Devices.md",
     "CCNA/29 - Standard ACLs.md",
@@ -208,7 +209,6 @@
     "CCNA/51 - Virtual Routing & Forwarding (VRF).md",
     "CCNA/39 - NAT Part 1.md",
     "CCNA/40 - NAT Part 2.md",
-    "CCNA/38 - FTP & TFTP.md",
     "CSS",
     "AWS Certified Cloud Practitioner",
     "CCNA/img6",
