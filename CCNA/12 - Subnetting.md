@@ -175,13 +175,9 @@ turn all host bits to 1 to get the broadcast address
 * Last usable address: 192.168.1.243/30
 * Total number of usable hosts addresses: 2^2 = 4 total addresses - 2 = 2 usable addresses.
 ## Broadcast Addresses and Subnetting
-Lets assume that we are woking with a network address `192.168.5.0/24` and that we have created the following subnets:
+Lets assume that we are working with a network address `192.168.5.0/24` and that we have created the following subnets:
 * Subnet 1: `192.168.5.0/25`
 * Subnet 2: `192.168.5.128/26`
 
-**Broadcast to Network Address (192.168.5.255)**:
-* Broadcast messages to the network address `192.168.5.255` from inside a the network, will only travel to the hosts inside it..
-* Broadcast messages do not go pat the router.
-**Message to Subnet Broadcast Address**:
-* Subnet 1 can reach all hosts in the same subnet by targeting the subnet's broadcast address.
-* Subnet 1 can reach all hosts in subnet 2 by targeting subnet 2 broadcast address. Upon arriving to the subnet, the message will be distributed to all hosts. 
+**Subnet Broadcast Messages
+* Broadcast messages are confined to the local subnet and are not forwarded by routers by default.
