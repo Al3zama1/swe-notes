@@ -67,6 +67,6 @@ SW2(config-if)#no shutdown
 * The VLAN for which the SVI is being created must exist on the switch.
 	* Creating a SVI for a non-existing VLAN, will not create the VLAN automatically.
 	* The SVI will appear with a status and protocol set to down.
-* The switch must have at least one access port in the VLAN in an up/up state, and/or one trunk port that allows the VLAN that is in an u/up state.
+* The VLAN for which the SVI is being created must be assigned to an access port in an up/up state and/or be allowed by a trunk port in an up/up state.
 * The VLAN must not be shutdown (you can use the `shutdown` command to disable a VLAN).
 * The SVI must not be shutdown (SVIs are disabled by default).
