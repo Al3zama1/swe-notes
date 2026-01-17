@@ -16,7 +16,7 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 ![broadcast storms](./img/broadcast-storms.png)
 * The Ethernet header doesn't have a TTL field. Broadcast frames will loop around switches in the network indefinitely. If enough of these looped broadcasts accumulate in the network, the network will be too congested for legitimate traffic to use the network. This is called a **broadcast storm**.
 * Spanning Tree Protocol (STP) is a Layer 2 protocol that is used to prevent infinite loops in a LAN, just like Time to Live (TTL) is used to prevent loops at Layer 3.
-* Network congestion isn't the only problem. Each time a frame arrives on a switchport, the switch uses the source MAC address field to learn the MAC address and update its MAC address table.When frames with the same source MAC address repeatedly arrive on different interfaces, the switch is continuously updating the interface associated with it in its MAC address table. This is known as **MAC Address Flapping**.
+* Network congestion isn't the only problem. Each time a frame arrives on a switchport, the switch uses the source MAC address field to learn the MAC address and update its MAC address table. When frames with the same source MAC address repeatedly arrive on different interfaces, the switch is continuously updating the interface associated with it in its MAC address table. This is known as **MAC Address Flapping**.
 ## Spanning Tree Protocol (STP)
 * This section will cover **Classic Spanning Tree protocol** which is defined in IEEE 802.1D.
 * Switches from all vendors run STP by default because it is very important to prevent Layer 2 loops.
