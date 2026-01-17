@@ -33,7 +33,7 @@ The image below shows what would happen when PC1 tried to communicate with PC2 a
 ![STP BPDU](./img/stp-bpdu.png)
 ##### Old Bridge ID Format
 ![Old bridge ID format](./img/old-bridge-id.png)
-* The Bridge Priority is compared first. If they tie, the MAC address is then compared to break the tie.
+* The Bridge Priority is compared first. If they tie, the MAC address is then compared to break the tie. 
 * The default bridge priority is 32768 on all switches, so by default the MAC address is used as the tie-breaker (lowest MAC address value becomes the root bridge).
 ##### New Bridge ID Format (Cisco PVST)
 ![Updated bridge id](./img/updated-bridge-id.png)
