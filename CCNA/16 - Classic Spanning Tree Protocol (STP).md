@@ -198,7 +198,7 @@ In the image below, SW1's G0/0 interface goes down, therefore it cannot keep on 
 * However, only interfaces connected to another switch can form a Layer 2 loop. There is no risk of forming a loop with an end host. Therefore, there is no need to wait 30 seconds on interfaces connected to end hosts. 
 * **Portfast** allows a port to move immediately to the Forwarding state, bypassing Listening and Learning. If used, it must be enabled only on ports connected to end hosts. If enabled on a port connected to another switch, it could cause a Layer 2 loop.
 * **There is a risk that cabling reassignment could lead to Layer 2 loops with Portfast enabled. For example, the reassignment of a switch interface where Portfast is enabled from an end host to another switch, resulting in loops.**
-	* **BPDU Guard** can be enabled to protect agains such loops.
+	* **BPDU Guard** can be enabled to protect against such loops.
 #### Portfast Configuration
 ```
 SW1(config)#inteface g0/2
