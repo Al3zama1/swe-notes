@@ -119,7 +119,7 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 `SW1(confgi)#show spanning-tree summary`
 * Lists each VLAN, and shows how many interfaces are in each STP state.
 	* Blocking
-	* Listenning
+	* Listening
 	* Learning
 	* Forwarding
 	* STP Active: By default, every interface that is connected to another device and enabled will have STP running.
