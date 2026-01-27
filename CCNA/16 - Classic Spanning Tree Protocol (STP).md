@@ -158,7 +158,7 @@ Below shows example where there is a tie for both root cost and Bridge ID. There
 * The STP timers on the root bridge determine the STP timers for the entire network even if they are configured differently.
 ### Hello Timer
 * Non Root Bridge switches in the network do not originate their own BPDUs, but they will forward BPDUs they receive.
-* **Switches will only forward BPDUs on their Designated ports.** Therefore, Non-Designated and Root Ports will be the ones receiving the BPDUs.
+* **Switches will only forward BPDUs on their Designated ports.** **Therefore, Non-Designated and Root Ports will be the ones receiving the BPDUs.**
 
 ###  Max Age Timer
 In the image below, SW1's G0/0 interface goes down, therefore it cannot keep on sending BPDUs to SW2's G0/1 interface. As a result, SW2's G0/1 interface will eventually reach its Max Age Timer, triggering a change in the STP topology.
