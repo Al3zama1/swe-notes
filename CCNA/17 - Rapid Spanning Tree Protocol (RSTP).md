@@ -21,10 +21,17 @@ RSTP is not a timer-based spanning tree algorithm like 802.1D. Therefore, RSTP o
 * The purpose of these features is to help blocking/discarding ports move rapidly to forwarding.
 #### PortFast
 Allows a port to move immediately to the Forwarding state, bypassing Listening and Learning. It must be used only on ports connected to end hosts and not switches, which will cause Layer 2 loops.
-#### UPlinkFast
-* Designed to improve the convergence time in a redundant network topology by quickly switching to a backup link if the primary link fails without the need to go through transitional states.
-* The immediate move to forwarding state functions like a classic STP optional feature called UplinkFast. It's built into RSTP, therefore it does not have to be activated.
+#### UplinkFast
+* It is a Cisco-proprietary optional STP feature that speeds up a switch's recovery from a direct link failure on its uplink (path) to the Root Bridge.
+	* An uplink is a link toward the root bridge, which is the root port's link.
+	* A **direct link failure** is a failure on one of the switch's directly connected links.
+* UplinkFast essentially allows a switch to transition a Non-Designated port immediately from the Blocking state to the Forwarding state after a direct link failure affects the current Root port.
+	* It is meant for switches that have at least one Non-Designated port.
+* It should only be enabled on the required switches
+	* `SW(config)# spanning-tree uplinkfast`
+	* Enabling UplinkFast sets the Bridge priority to 49152 + *extended system ID* to ensure the switch does not become the root bridge, which would defeat the purpose of UplinkFast.
 #### BackboneFast
+* It is designed to help recover from indirect link failures.
 Lets assume SW2's root port is cut off, so it stops receiving BPDUs from the root bridge (SW1). It will then assume it is the root bridge, so it will send it's own BPDUs to SW3.
 SW3 is now receiving BPDUs from both SW1 and SW2, but SW2's  BPDU are inferior - they have a higher bridge ID. Without the BackboneFast functionality, SW3 would just ignore these BPDUs from SW2 until its non-designated port, in classic STP, finally changes to a forwarding state and forwards the superior BPDUs from SW1 to SW2. SW2 then accepts SW1 as its root bridge again.
 ![](./img/backbonefast-1.png)
