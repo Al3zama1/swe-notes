@@ -23,20 +23,31 @@ RSTP is not a timer-based spanning tree algorithm like 802.1D. Therefore, RSTP o
 Allows a port to move immediately to the Forwarding state, bypassing Listening and Learning. It must be used only on ports connected to end hosts and not switches, which will cause Layer 2 loops.
 #### UplinkFast
 * It is a Cisco-proprietary optional STP feature that speeds up a switch's recovery from a direct link failure on its uplink (path) to the Root Bridge.
-	* An uplink is a link toward the root bridge, which is the root port's link.
+	* The uplink to the Root Bridge on a switch is the link connected to its Root port.
 	* A **direct link failure** is a failure on one of the switch's directly connected links.
-* UplinkFast essentially allows a switch to transition a Non-Designated port immediately from the Blocking state to the Forwarding state after a direct link failure affects the current Root port.
-	* It is meant for switches that have at least one Non-Designated port.
+* UplinkFast essentially allows a switch to transition a Non-Designated port to be a Root port in the Forwarding state after a direct link failure affects the current Root port.
 * It should only be enabled on the required switches
+	* It is meant for switches that have at least one Non-Designated port.
 	* `SW(config)# spanning-tree uplinkfast`
 	* Enabling UplinkFast sets the Bridge priority to 49152 + *extended system ID* to ensure the switch does not become the root bridge, which would defeat the purpose of UplinkFast.
 #### BackboneFast
-* It is designed to help recover from indirect link failures.
-Lets assume SW2's root port is cut off, so it stops receiving BPDUs from the root bridge (SW1). It will then assume it is the root bridge, so it will send it's own BPDUs to SW3.
-SW3 is now receiving BPDUs from both SW1 and SW2, but SW2's  BPDU are inferior - they have a higher bridge ID. Without the BackboneFast functionality, SW3 would just ignore these BPDUs from SW2 until its non-designated port, in classic STP, finally changes to a forwarding state and forwards the superior BPDUs from SW1 to SW2. SW2 then accepts SW1 as its root bridge again.
+* It is a cisco-proprietary optional STP feature that speeds up a switch's recovery from an indirect failure
+	* An **Indirect link failure** is a failure on a link that isn't directly connected to the switch. Therefore, a switch can't detect the failure.
+* It allows a switch to skip the Max-Age timer and immediately put a Non-Designated port into the Listening state (Designated role) after receiving an inferior BPDU from a neighbor. The port will transition through the states until it reaches the forwarding state.
+* It should be enabled on all switches in the LAN or it will not work.
+	* `SW(config)# spanning-tree backbonefast` 
+	
 ![](./img/backbonefast-1.png)
+* A failure on the SW1-SW2 link is an indirect link failure from SW3's perspective.
+* Lets assume SW2's root port is cut off, so it stops receiving BPDUs from the root bridge (SW1). It will then assume it is the root bridge, so it will send it's own BPDUs to SW3.
+* SW3 is now receiving BPDUs from both SW1 and SW2, but SW2's  BPDU are inferior - they have a higher bridge ID. Without the BackboneFast functionality, SW3 would just ignore these BPDUs from SW2 until its non-designated port, in classic STP, finally changes to a forwarding state and forwards the superior BPDUs from SW1 to SW2. SW2 then accepts SW1 as the Root bridge again.
+
 ![](./img/backbonefast-2.png)
-BackboneFast allows switches to expire the Max Age timer on their interfaces. In this case, SW3 expires its Max Age timer on the interface and rapidly forward the superior BPDUs from SW1 to SW2.
+* When SW3 receives SW2's BPDU messages from SW2 claiming to be the root bridge, it will send  a **RLQ Request** to the switch it thinks it is the Root Bridge to verify it is still the Root Bridge. 
+* SW1 confirms that it is still the Root Bridge by sending an **RLQ Response** to SW3.
+* SW3 confirms that SW1 is still the Root Bridge so it expires its Max-Age timer on the interface connected to SW2 to transition to a Designated port and send SW2 the superior BPDU from SW1.
+* SW2 accepts SW1 as the Root Bridge and STP finally converges again.
+* `SW3# show spanning-tree backbonefast`
 ### STP and RSTP Similarities
 * RSTP serves the same purpose as STP, blocking specific ports to prevent Layer 2 loops.
 * RSTP elects a root bridge with the same rules as STP.
