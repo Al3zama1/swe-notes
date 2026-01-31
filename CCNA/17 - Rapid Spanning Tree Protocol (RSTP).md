@@ -33,14 +33,14 @@ Allows a port to move immediately to the Forwarding state, bypassing Listening a
 #### BackboneFast
 * It is a cisco-proprietary optional STP feature that speeds up a switch's recovery from an indirect failure
 	* An **Indirect link failure** is a failure on a link that isn't directly connected to the switch. Therefore, a switch can't detect the failure.
-* It allows a switch to skip the Max-Age timer and immediately put a Non-Designated port into the Listening state (Designated role) after receiving an inferior BPDU from a neighbor. The port will transition through the states until it reaches the forwarding state.
+* It allows a switch to skip the Max-Age timer and immediately put a Non-Designated port into the Listening state (Designated role) after receiving an inferior BPDU from a neighbor. The port will transition through the states until it reaches the forwarding state and actual data can be sent.
 * It should be enabled on all switches in the LAN or it will not work.
 	* `SW(config)# spanning-tree backbonefast` 
 	
 ![](./img/backbonefast-1.png)
 * A failure on the SW1-SW2 link is an indirect link failure from SW3's perspective.
 * Lets assume SW2's root port is cut off, so it stops receiving BPDUs from the root bridge (SW1). It will then assume it is the root bridge, so it will send it's own BPDUs to SW3.
-* SW3 is now receiving BPDUs from both SW1 and SW2, but SW2's  BPDU are inferior - they have a higher bridge ID. Without the BackboneFast functionality, SW3 would just ignore these BPDUs from SW2 until its non-designated port, in classic STP, finally changes to a designated port and forwards the superior BPDUs from SW1 to SW2. SW3 will send the superior BPDUs from SW1 as soon as it enters the Listening state. SW2 then accepts SW1 as the Root bridge again
+* SW3 is now receiving BPDUs from both SW1 and SW2, but SW2's  BPDU are inferior - they have a higher bridge ID. Without the BackboneFast functionality, SW3 would just ignore these BPDUs from SW2 until its non-designated port, in classic STP, finally changes from blocking to listening state and forwards the superior BPDUs from SW1 to SW2. The port will ultimately become a Designated port. Ultimately SW2 will accept SW1 as the Root bridge again.
 
 ![](./img/backbonefast-2.png)
 * When SW3 receives SW2's BPDU messages from SW2 claiming to be the root bridge, it will send  a **RLQ Request** to the switch it thinks it is the Root Bridge to verify it is still the Root Bridge. 
